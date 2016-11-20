@@ -1,0 +1,43 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 572,
+       "width": 1015,
+       "x": 0,
+       "y": 0
+    },
+    "name": "damon@damon-ubuntu: ~",
+    "percent": 0.4,
+    "swallows": [
+       {
+        "window_role": "^ws1left$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1049,
+       "width": 1679,
+       "x": 10,
+       "y": 10
+    },
+    "name": "New Tab - Chromium",
+    "percent": 0.6,
+    "swallows": [
+       {
+        "class": "^chromium\\-browser$",
+        "instance": "^chromium\\-browser$",
+        "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+

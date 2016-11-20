@@ -1,0 +1,70 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 572,
+       "width": 1015,
+       "x": 0,
+       "y": 0
+    },
+    "name": "damon@damon-ubuntu: ~",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "window_role": "^ws10left$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 572,
+               "width": 1015,
+               "x": 0,
+               "y": 0
+            },
+            "name": "damon@damon-ubuntu: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "window_role": "^ws10topright$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 572,
+               "width": 1015,
+               "x": 0,
+               "y": 0
+            },
+            "name": "damon@damon-ubuntu: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "window_role": "^ws10bottomright$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
