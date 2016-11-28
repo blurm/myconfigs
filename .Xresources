@@ -1,4 +1,3 @@
-rofi.lines: 5
 rofi.eh: 1
 !rofi.fullscreen: true
 rofi.width: 1920
@@ -33,3 +32,5 @@ rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
 !rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
 !rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
 
+Xft.dpi: 145
+!Xft.dpi: 96
