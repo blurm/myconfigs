@@ -34,3 +34,5 @@ rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
 
 Xft.dpi: 145
 !Xft.dpi: 96
+! Mouse cursor size
+Xcursor.size: 48
