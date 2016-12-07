@@ -92,6 +92,10 @@ sudo apt -y install git
 
     # Partition Tools
     sudo apt -y install gparted
+
+    # See system info from cli
+    sudo add-apt-repository ppa:dawidd0811/neofetch
+    sudo apt update && sudo apt -y install neofetch
 ## }
 
 ## 系统美化 {
@@ -134,7 +138,18 @@ sudo apt -y install smplayer
     # 美化系统，类似Unity-tweak-tools，在这里修改theme
     sudo apt -y install lxappearance
     # 更换桌面壁纸
-    sudo apt -y install feh
+    #sudo apt -y install feh
+    # Nitrogen支持多显示器壁纸设置
+    git clone git@github.com:l3ib/nitrogen.git
+    cd nitrongen
+    sudo apt -y install dh-autoreconf
+    sudo apt -y install libgtk2.0-dev
+    sudo apt -y install libgtkmm-2.4-dev
+    ./configure
+    make
+    sudo make install
+    cd ..
+    rm -rf nitrogen
     # i3-wm
     echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list
     sudo apt update
