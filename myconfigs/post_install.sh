@@ -17,6 +17,7 @@ echo '------------ Installing Building environment -------------'
 sudo apt -y install build-essential cmake
 sudo apt -y install python-dev python3-dev
 sudo apt -y install python-pip
+sudo pip install --upgrade pip
 sudo apt -y install git
 
 ## 安装网络相关 {
@@ -88,6 +89,9 @@ sudo apt -y install git
 
     # Logitech mouse
     sudo apt -y install xbindkeys
+
+    # Partition Tools
+    sudo apt -y install gparted
 ## }
 
 ## 系统美化 {
@@ -103,14 +107,21 @@ sudo apt -y install git
     sudo apt-key add - < Release.key
     rm -rvf Release.key
 
+    echo '----------------------- fonts ---------------------------'
     # TODO 安装字体(i3,awesome font)
-    mkdir .fonts
+    mkdir -p .local/share/fonts
     wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
     wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-    mv PowerlineSymbols.otf ~/.fonts/
-    fc-cache -vf ~/.fonts/
+    mv PowerlineSymbols.otf ~/.local/share/fonts/
+    fc-cache -vf ~/.local/share/fonts
     mkdir -p ~/.config/fontconfig/conf.d/
     mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+    git clone https://github.com/powerline/fonts.git
+    cd fonts
+    ./install.sh
+    cd ..
+    rm -rf fonts
 ## }
 
 ## Media
@@ -133,7 +144,7 @@ sudo apt -y install smplayer
     # 系统状态栏，用来取代i3status
     sudo apt -y install i3blocks
     # 去掉Nautilus默认启动桌面
-    gsettings set org.gnome.desktop.background show-desktop-icons false
+    #gsettings set org.gnome.desktop.background show-desktop-icons false
 ## }
 
 ## Developing tools {
@@ -193,6 +204,7 @@ sudo apt -y install smplayer
     # Install plugins for Vim
     vim +PluginInstall +qall
 
-    cd ~/.vim/bundle/YouCompleteMe
-    sudo ./install.py --all
+    #cd ~/.vim/bundle/YouCompleteMe
+    #sudo ./install.py --all
 ## }
+

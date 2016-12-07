@@ -131,6 +131,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+# move workspace 7 to the second screen
+workspace "$ws7" output HDMI3
 # Next workspace or Previous workspace
 #bindsym Mod1+Tab workspace next
 #bindsym Mod1+Shift+Tab workspace prev
@@ -193,11 +195,16 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # -------------------------  Auto start ------------------------------------------------
-exec xrandr --dpi 152
+# Adjust dpi and rotation. The smaller The number of dpi the smaller the size
+exec xrandr --output DP1 --dpi 152
+#exec xrandr --output HDMI3 --rotate left
+exec xbindkeys
 
 exec compton
 # Set wallpaper with feh, since the config in unity not work under i3
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/No-Mans-Sky-4-K-Wallpaper.jpg
+#exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/No-Mans-Sky-4-K-Wallpaper.jpg
+# Set wallpaper for different monitors with Nitrogen
+exec --no-startup-id nitrogen --restore
 
 # Restore pre-defined layout
 #exec --no-startup-id "i3-msg 'workspace $ws9; append_layout /home/damon/.config/i3/workspace-9.json'"
