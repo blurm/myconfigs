@@ -183,10 +183,10 @@ set $urgent-bg-color     #E53935
 
 # ------------------------- Custom Key binding -----------------------------------------
 # Using rofi instead of dmenu 
-bindsym $mod+space exec bash -c "rofi -show drun"
+bindsym $mod+space exec bash -c 'rofi -show run'
 
 # Shortcuts for apps
-bindsym $mod+c exec chromium-browser
+bindsym $mod+c exec google-chrome
 bindsym Print exec gnome-screenshot -i
 
 # Pulse Audio controls
