@@ -25,19 +25,19 @@ sudo apt -y install git
     echo '----------------- Shadowsocks -------------------'
     sudo apt -y install shadowsocks
     # Shadowsocks config
-    (
-        echo '$a';
-        echo '{';
-        echo '    "server":"52.78.108.174",';
-        echo '    "server_port":8989,';
-        echo '    "local_port":1080,';
-        echo '    "password":"teddysun.com",';
-        echo '    "timeout":600,';
-        echo '    "method":"aes-256-cfb"';
-        echo '}';
-        echo '.';
-        echo 'wq'
-    ) | ed -s ~/.config/shadowsocks.json
+    #(
+        #echo '$a';
+        #echo '{';
+        #echo '    "server":"52.78.108.174",';
+        #echo '    "server_port":8989,';
+        #echo '    "local_port":1080,';
+        #echo '    "password":"teddysun.com",';
+        #echo '    "timeout":600,';
+        #echo '    "method":"aes-256-cfb"';
+        #echo '}';
+        #echo '.';
+        #echo 'wq'
+    #) | ed -s ~/.config/shadowsocks.json
 
     # proxychains-ng 在终端环境使用shadowsocks翻墙
     git clone https://github.com/rofl0r/proxychains-ng.git
@@ -56,7 +56,8 @@ sudo apt -y install git
 ## Web Tools {
     echo '----------------- Web Tools -------------------'
     # Need to start shadowsocks first to use proxychains
-    gnome-terminal -x sslocal -c ~/.config/shadowsocks.json
+    # 需要把shadowsocks.json提前从mydata/backup/sys_install_backup中拷贝过来
+    gnome-terminal -x sslocal -c ~/myconfigs/shadowsocks.json
     sleep 5
 
     # wget -O - 表示将下载内容写入标准输出，不保存在任何文件当中
@@ -109,7 +110,9 @@ sudo apt -y install git
     # Arc Theme
     sudo sh -c 'echo "deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /" >> /etc/apt/sources.list.d/arc-theme.list'
     sudo apt update
+    echo '---------------- Start install arc theme -----------------'
     sudo apt -y install arc-theme
+    echo '---------------- End install arc theme -----------------'
     wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
     sudo apt-key add - < Release.key
     rm -rvf Release.key

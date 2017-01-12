@@ -1,25 +1,3 @@
-vmi
-vim
-diff ~/.vim/MySnips/java.snippets ~/.vim/bundle/vim-snippets/UltiSnips/java.snippets 
-vim ~/.vim/bundle/vim-snippets/snippets/java.snippets 
-vim
-vim
-cd mydata/linux\ tools/
-ls
-cd IDEA/
-ls
-cd idea-IC-162.1447.26/
-ls
-cat NOTICE.txt | less
-cat build.txt | less
-fg 1
-vim
-cd ../..
-cd ..
-cd vim
-vim
-diff ~/.vim/bundle/vim-snippets/UltiSnips/java.snippets ~/.vim/MySnips/java.snippets -y -W 100
-ls -l ~/.vim/bundle/vim-snippets/UltiSnips/
 cp ~/.vim/bundle/vim-snippets/UltiSnips/java.snippets ~/.vim/MySnips/java_new.snippets
 ls -l
 ls -l ~/.vim/bundle/vim-snippets/UltiSnips/
@@ -2665,3 +2643,25 @@ sudo reboot
 vim.tiny post_install1.sh
 chmod a+x post_install1.sh 
 ./post_install1.sh 
+./post_install1.sh | tee post_install.log
+exit
+vim.tiny post_install1.sh 
+vim post_install2.sh 
+:wq
+ls
+cd myconfigs
+ls
+exit
+touch post_install1.sh
+touch post_install2.sh
+touch post_install.log
+ls
+vim.tiny post_install1.sh
+vim.tiny post_install2.sh
+vim.tiny post_install1.sh
+chmod +x post_install1.sh
+ls
+chmod +x post_install2.sh
+ls
+apt-cache policy arc-theme
+vim post_install.log 
