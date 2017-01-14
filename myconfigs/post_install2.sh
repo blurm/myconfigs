@@ -16,3 +16,11 @@
     mkdir mydata
     mkdir mydata-p
 ## }
+
+## VirtualBox {
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" >> /etc/apt/sources.list'
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo apt update
+sudo apt -y install dkms
+#sudo apt -y install virtualbox-5.1
+## }
