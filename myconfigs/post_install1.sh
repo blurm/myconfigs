@@ -56,9 +56,7 @@ sudo apt -y install git
 ## Web Tools {
     echo '----------------- Web Tools -------------------'
     # Need to start shadowsocks first to use proxychains
-    # 需要把shadowsocks.json提前从mydata/backup/sys_install_backup中拷贝过来
-    cp ~/mydata/backup/sys_install_backup/shadowsocks.json ~/myconfigs
-    gnome-terminal -x sslocal -c ~/myconfigs/shadowsocks.json
+    gnome-terminal -x sslocal -c ~/mydata/backup/sys_install_backup/shadowsocks.json
     sleep 5
 
     # wget -O - 表示将下载内容写入标准输出，不保存在任何文件当中
