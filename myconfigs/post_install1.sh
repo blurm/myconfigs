@@ -57,6 +57,7 @@ sudo apt -y install git
     echo '----------------- Web Tools -------------------'
     # Need to start shadowsocks first to use proxychains
     # 需要把shadowsocks.json提前从mydata/backup/sys_install_backup中拷贝过来
+    cp ~/mydata/backup/sys_install_backup/shadowsocks.json ~/myconfigs
     gnome-terminal -x sslocal -c ~/myconfigs/shadowsocks.json
     sleep 5
 
@@ -77,6 +78,7 @@ sudo apt -y install git
 
 ## System tools {
     echo '----------------- System Tools -------------------'
+    sudo apt -y install samba
     sudo apt -y install unity-tweak-tool
     sudo apt -y install gnome-tweak-tool
     sudo apt -y install bleachbit
@@ -109,13 +111,13 @@ sudo apt -y install git
 
     # Arc Theme
     sudo sh -c 'echo "deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /" >> /etc/apt/sources.list.d/arc-theme.list'
-    sudo apt update
-    echo '---------------- Start install arc theme -----------------'
-    sudo apt -y install arc-theme
-    echo '---------------- End install arc theme -----------------'
     wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key
     sudo apt-key add - < Release.key
-    rm -rvf Release.key
+    sudo apt update
+    echo '---------------- Start install arc theme -----------------'
+    sudo apt install arc-theme
+    echo '---------------- End install arc theme -----------------'
+    rm Release.key
 
     echo '----------------------- fonts ---------------------------'
     # TODO 安装字体(i3,awesome font)
@@ -132,6 +134,9 @@ sudo apt -y install git
     ./install.sh
     cd ..
     rm -rf fonts
+
+    # fontawesome-web
+    cp ~/mydata/backup/sys_install_backup/fontawesome-webfont.ttf ~/.local/share/fonts
 ## }
 
 ## Media
