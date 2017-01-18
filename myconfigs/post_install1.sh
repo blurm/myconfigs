@@ -40,7 +40,7 @@ sudo apt -y install git
     #) | ed -s ~/.config/shadowsocks.json
 
     # proxychains-ng 在终端环境使用shadowsocks翻墙
-    git clone https://github.com/rofl0r/proxychains-ng.git
+    proxychains4 git clone https://github.com/rofl0r/proxychains-ng.git
     cd proxychains-ng
     ./configure --prefix=/usr --sysconfdir=/etc
     make
@@ -77,8 +77,11 @@ sudo apt -y install git
 ## System tools {
     echo '----------------- System Tools -------------------'
     sudo apt -y install samba
+    # Check gnome terminal profile values
+    sudo apt -y install dconf-editor
     sudo apt -y install unity-tweak-tool
     sudo apt -y install gnome-tweak-tool
+    # System Cleaning
     sudo apt -y install bleachbit
 
     # Psensor 检查CPU温度
@@ -127,7 +130,7 @@ sudo apt -y install git
     mkdir -p ~/.config/fontconfig/conf.d/
     mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
-    git clone https://github.com/powerline/fonts.git
+    proxychains4 git clone https://github.com/powerline/fonts.git
     cd fonts
     ./install.sh
     cd ..
@@ -149,7 +152,7 @@ sudo apt -y install smplayer
     # 更换桌面壁纸
     #sudo apt -y install feh
     # Nitrogen支持多显示器壁纸设置
-    git clone git@github.com:l3ib/nitrogen.git
+    proxychains4 git clone git@github.com:l3ib/nitrogen.git
     cd nitrongen
     sudo apt -y install dh-autoreconf
     sudo apt -y install libgtk2.0-dev
@@ -179,7 +182,7 @@ sudo apt -y install smplayer
     # Python2 support for Vim (Used by some plugins like ropevim)
     sudo apt -y install vim-gnome-py2
     # Vim plugin - Vundle
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    proxychains4 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
     # Java
     sudo add-apt-repository ppa:webupd8team/java
