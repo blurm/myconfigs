@@ -23,6 +23,9 @@ sudo apt -y install python-pip
 sudo pip install --upgrade pip
 echo '------------ git -------------'
 sudo apt -y install git
+git config --global user.name "damon"
+git config --global user.email "blurm@126.com"
+git remote set-url origin git@github.com:blurm/myconfigs.git
 
 ## 安装网络相关 {
     # Shadowsocks
@@ -75,6 +78,9 @@ sudo apt -y install git
     echo '----------------- chromium-browser -------------------'
     sudo apt -y install chromium-browser
 ## }
+
+echo '------------------------ calibre ------------------------------'
+sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
 ## sogou input (Need to download manually)
 
