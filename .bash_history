@@ -1,12 +1,3 @@
-cp ~/.vim/bundle/vim-snippets/UltiSnips/java.snippets ~/.vim/MySnips/java_new.snippets
-ls -l
-ls -l ~/.vim/bundle/vim-snippets/UltiSnips/
-cd ~/.vim/MySnips/
-ls
-mv java.snippets java_old.snippets
-ls
-mv java_new.snippets java.snippets
-ls
 rm java_old.snippets 
 ls
 exit
@@ -2665,3 +2656,12 @@ chmod +x post_install2.sh
 ls
 apt-cache policy arc-theme
 vim post_install.log 
+sudo fdisk -l
+sudo mount /dev/sdd1 ~/mydata
+mkdir mydata
+ls
+ls mydata
+cd mydata/backup/sys_install_backup/
+ls
+cat post_install1.sh 
+./post_install1.sh 

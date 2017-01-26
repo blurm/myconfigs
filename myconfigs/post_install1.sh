@@ -20,12 +20,12 @@ echo '------------ python-dev, pythone3-dev -------------'
 sudo apt -y install python-dev python3-dev
 echo '------------ python-pip -------------'
 sudo apt -y install python-pip
-sudo pip install --upgrade pip
+# Alawyas time out, don't know why
+#sudo pip install --upgrade pip
 echo '------------ git -------------'
 sudo apt -y install git
 git config --global user.name "damon"
 git config --global user.email "blurm@126.com"
-git remote set-url origin git@github.com:blurm/myconfigs.git
 
 ## 安装网络相关 {
     # Shadowsocks
@@ -77,6 +77,7 @@ git remote set-url origin git@github.com:blurm/myconfigs.git
     ## chromium-browser
     echo '----------------- chromium-browser -------------------'
     sudo apt -y install chromium-browser
+    sudo apt -y install adobe-flashplugin
 ## }
 
 echo '------------------------ calibre ------------------------------'
@@ -234,12 +235,12 @@ sudo apt -y install smplayer
     # GSM Model接口
     sudo apt -y install minicom
 
-    sudo pip install flake8
-    sudo pip install rope
-    sudo pip install ropemode
+    sudo -H pip install flake8
+    sudo -H pip install rope
+    sudo -H pip install ropemode
 
-    sudo pip install requests
-    sudo pip install selenium
+    sudo -H pip install requests
+    sudo -H pip install selenium
     sudo apt -y install phantomjs
 
 

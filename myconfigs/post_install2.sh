@@ -11,6 +11,11 @@
     cd ~/myconfigs
     git config core.worktree "../../"
     git reset --hard origin/master
+    # Using SSL
+    git remote set-url origin git@github.com:blurm/myconfigs.git
+    # Generate new SSL key
+    ssh-keygen -t rsa -b 4096 -C "blurm@126.com"
+    xclip -sel clip < ~/.ssh/id_rsa.pub
     cd ~
 
     # Install plugins for Vim
@@ -33,7 +38,7 @@ sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_rel
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo apt update
 sudo apt -y install dkms
-#sudo apt -y install virtualbox-5.1
+sudo apt -y install virtualbox-5.1
 ## }
 
 echo '---------------------- gnome terminal settings ---------------------'
@@ -68,4 +73,9 @@ echo '---------------------- gnome terminal settings ---------------------'
     gsettings set \
         org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/ \
         palette "['rgb(0,43,54)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(54,118,190)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)', 'rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)']"
+## }
+
+## Default program selection {
+    cat /usr/share/applications/defaults.list | grep video >> ~/.local/share/applications/mimeapps.list
+    sed -i "s/org.gnome.Totem.desktop/smplayer.desktop/g" mimeapps.list
 ## }
