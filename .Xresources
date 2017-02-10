@@ -1,14 +1,16 @@
 rofi.eh: 1
 !rofi.fullscreen: true
-rofi.width: 1920
-rofi.padding: 470
+rofi.width: 1720
+rofi.padding: 370
+rofi.lines: 8
 rofi.line-margin: 20
 rofi.opacity: 95
 rofi.bw: 0
-rofi.font: System San Francisco Display 18
+rofi.font: System San Francisco Display 30
 rofi.sidebar-mode: false
 rofi.scrollbar-width: 0
 rofi.separator-style: none
+rofi.modi: drun,run,ssh,window
 !rofi.fake-transparency:              true
 !rofi.fake-background:                /home/damon/Pictures/font1.jpg
 

@@ -38,13 +38,22 @@ sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_rel
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo apt update
 sudo apt -y install dkms
-sudo apt -y install virtualbox-5.1
+# virtualbox 5.1 has bug for i3 right now (auto resize doesn't work properly)
+sudo apt -y install virtualbox-5.0
+# Needed by 5.0 extension package install.
+sudo apt -y install gksu
+# Need to re-login
+sudo usermod -aG vboxusers damon
 ## }
 
 echo '---------------------- gnome terminal settings ---------------------'
 ## Restore gnome terminal profile {
     profile=$(gsettings get org.gnome.Terminal.ProfilesList default)
     profile=${profile:1:-1}
+    gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+    gsettings set org.gnome.nautilus.preferences default-sort-order 'modification_date'
+    gsettings set org.gnome.nautilus.list-view default-zoom-level 'standard'
+
     gsettings set \
         org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${profile}/ \
         use-theme-colors false
@@ -77,5 +86,5 @@ echo '---------------------- gnome terminal settings ---------------------'
 
 ## Default program selection {
     cat /usr/share/applications/defaults.list | grep video >> ~/.local/share/applications/mimeapps.list
-    sed -i "s/org.gnome.Totem.desktop/smplayer.desktop/g" mimeapps.list
+    sed -i "s/org.gnome.Totem.desktop/smplayer.desktop/g" ~/.local/share/applications/mimeapps.list
 ## }

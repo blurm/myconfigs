@@ -182,7 +182,7 @@ set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
 # ------------------------- Custom Key binding -----------------------------------------
-# Using rofi instead of dmenu 
+# Using rofi instead of dmenu
 bindsym $mod+space exec bash -c 'rofi -show run'
 
 # Shortcuts for apps
