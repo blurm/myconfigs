@@ -30,7 +30,21 @@ git config --global user.email "blurm@126.com"
 ## 安装网络相关 {
     # Shadowsocks
     echo '----------------- Shadowsocks -------------------'
-    sudo apt -y install shadowsocks
+    sudo -H pip install shadowsocks
+    # 使用chacha20加密shadowsocks通信，需要安装libsodium
+    sudo apt -y install python-m2crypto
+    wget https://github.com/jedisct1/libsodium/releases/download/1.0.11/libsodium-1.0.11.tar.gz
+    tar xf libsodium-1.0.11.tar.gz && cd libsodium-1.0.11
+    sudo ./configure
+    sudo make
+    sudo make install
+    sudo ldconfig
+    sudo rm -rvf libsodium*
+
+    # 优化文件描述符
+    echo '* soft nofile 51200' >> /etc/security/limits.conf
+    echo '* hard nofile 51200' >> /etc/security/limits.conf
+    ulimit -n 51200
     # Shadowsocks config
     #(
         #echo '$a';
