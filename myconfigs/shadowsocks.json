@@ -1,8 +1,0 @@
-{
-    "server":"52.199.236.223",
-    "server_port":8388,
-    "local_port":1080,
-    "password":"3424",
-    "timeout":300,
-    "method":"chacha20"
-}
