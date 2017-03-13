@@ -182,8 +182,9 @@ set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
 # ------------------------- Custom Key binding -----------------------------------------
-# Using rofi instead of dmenu
+# Using rofi instead of dmenu. Other configs can be found in ./Xresources
 bindsym $mod+space exec bash -c 'rofi -show run'
+#bindsym Mod4+space exec bash -c 'locate home media | rofi -threads 0 -dmenu -i -p "locate:"'
 
 # Shortcuts for apps
 bindsym $mod+c exec google-chrome
@@ -251,4 +252,3 @@ bar {
             urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
 }
-
