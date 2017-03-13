@@ -104,6 +104,13 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
 
 ## System tools {
     echo '----------------- System Tools -------------------'
+    echo '----------------- Ranger (file manager)-------------------'
+    git clone https://github.com/ranger/ranger.git
+    cd ranger
+    sudo make install
+    cp install_log.txt ~/mydata/backup/sys_install_backup/ranger_install_log.txt
+    cd ..
+    sudo rm -rvf ranger
     echo '----------------- samba -------------------'
     sudo apt -y install samba
     # Check gnome terminal profile values
