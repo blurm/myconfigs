@@ -104,6 +104,8 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
 
 ## System tools {
     echo '----------------- System Tools -------------------'
+    echo '----------------- unrar -------------------'
+    sudo apt -y install unrar
     echo '----------------- Ranger (file manager)-------------------'
     git clone https://github.com/ranger/ranger.git
     cd ranger
@@ -111,6 +113,12 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     cp install_log.txt ~/mydata/backup/sys_install_backup/ranger_install_log.txt
     cd ..
     sudo rm -rvf ranger
+    ranger --copy-config=all
+    # Preview softwares
+    sudo apt -y install w3m-img
+    sudo apt -y install atool
+    sudo apt -y install highlight
+    sudo apt -y install mediainfo
     echo '----------------- samba -------------------'
     sudo apt -y install samba
     # Check gnome terminal profile values

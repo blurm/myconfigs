@@ -188,6 +188,8 @@ bindsym $mod+space exec bash -c 'rofi -show run'
 
 # Shortcuts for apps
 bindsym $mod+c exec google-chrome
+bindsym Mod4+v exec virtualbox
+bindsym Mod4+r exec gnome-terminal -e ranger
 bindsym Print exec gnome-screenshot -i
 
 # Pulse Audio controls
