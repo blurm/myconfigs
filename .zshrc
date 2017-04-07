@@ -122,6 +122,9 @@ ZSH_HIGHLIGHT_STYLES[assign]=none
 HISTSIZE=1000000      # Number of lines kept in memories
 SAVEHIST=1000000      # Number of lines kept in history file
 
+# Change shell edit mode from emac to vi
+#set -o vi
+
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.

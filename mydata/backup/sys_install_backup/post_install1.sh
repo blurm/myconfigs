@@ -20,6 +20,7 @@ echo '------------ python-dev, pythone3-dev -------------'
 sudo apt -y install python-dev python3-dev
 echo '------------ python-pip -------------'
 sudo apt -y install python-pip
+sudo apt -y install python3-pip
 # Alawyas time out, don't know why
 #sudo pip install --upgrade pip
 echo '------------ git -------------'
@@ -104,6 +105,10 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
 
 ## System tools {
     echo '----------------- System Tools -------------------'
+    echo '----------------- htop -------------------'
+    sudo apt -y install htop
+    echo '----------------- Input Methods -------------------'
+    sudo apt -y install fcitx-googlepinyin fcitx-sunpinyin
     echo '----------------- unrar -------------------'
     sudo apt -y install unrar
     echo '----------------- Ranger (file manager)-------------------'
@@ -119,8 +124,11 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     sudo apt -y install atool
     sudo apt -y install highlight
     sudo apt -y install mediainfo
+    sudo apt -y install xsel
     echo '----------------- samba -------------------'
     sudo apt -y install samba
+    echo '----------------- minidlna -------------------'
+    sudo apt -y install minidlna
     # Check gnome terminal profile values
     echo '----------------- dconf-editor -------------------'
     sudo apt -y install dconf-editor
@@ -196,9 +204,19 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     fc-cache -vf ~/.local/share/fonts
 ## }
 
-## Media
-echo '----------------------- smplayer ---------------------------'
-sudo apt -y install smplayer
+## Entertainment
+    echo '----------------------- smplayer ---------------------------'
+    sudo apt -y install smplayer
+    echo '----------------------- kodi ---------------------------'
+    sudo add-apt-repository ppa:team-xbmc/ppa
+    sudo apt update
+    sudo apt -y install kodi
+
+## Photo & Media
+    echo '----------------------- Darktable ---------------------------'
+    sudo add-apt-repository ppa:pmjdebruijn/darktable-release
+    sudo apt update
+    sudo apt -y install darktable
 
 ## i3wm {
     echo '----------------- i3wm -------------------'
