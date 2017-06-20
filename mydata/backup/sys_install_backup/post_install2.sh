@@ -22,9 +22,15 @@
     echo '---------------------- vim plugins ---------------------'
     proxychains4 vim +PluginInstall +qall
 
-    cd ~/.vim/bundle/YouCompleteMe
     echo '---------------------- YouCompleteMe ---------------------'
+    cd ~/.vim/bundle/YouCompleteMe
     sudo ./install.py
+    cd ~
+
+    echo '---------------------- ropevim ---------------------'
+    cd ~/.vim/bundle/ropevim
+    sudo python setup.py install
+    cd ~
 ## }
 
 ## Make dir for mounting {

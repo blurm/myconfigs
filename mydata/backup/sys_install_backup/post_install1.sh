@@ -282,12 +282,15 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     # GSM Model接口
     sudo apt -y install minicom
 
+    # Plugins for Python2
     sudo -H pip install flake8
     sudo -H pip install rope
     sudo -H pip install ropemode
 
     sudo -H pip install requests
     sudo -H pip install selenium
+    sudo -H pip install pyquery
+    sudo -H pip install beautifulsoup4
     sudo apt -y install phantomjs
 
 
