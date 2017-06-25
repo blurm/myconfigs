@@ -297,6 +297,7 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     # nodejs
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt -y install nodejs
+    # Error and problem detecting tool for Vim
     sudo npm install -g jshint;
 ## }
 

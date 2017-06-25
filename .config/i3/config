@@ -183,11 +183,12 @@ set $urgent-bg-color     #E53935
 
 # ------------------------- Custom Key binding -----------------------------------------
 # Using rofi instead of dmenu. Other configs can be found in ./Xresources
-bindsym $mod+space exec bash -c 'rofi -show run'
+bindsym $mod+space exec bash -c 'rofi -show drun'
 #bindsym Mod4+space exec bash -c 'locate home media | rofi -threads 0 -dmenu -i -p "locate:"'
 
 # Shortcuts for apps
 bindsym $mod+c exec google-chrome
+bindsym $mod+n exec /home/damon/mydata/linux\ tools/Story-writer-linux64/Story-writer
 bindsym Mod4+v exec virtualbox
 bindsym Mod4+r exec gnome-terminal -e ranger
 bindsym Print exec gnome-screenshot -i

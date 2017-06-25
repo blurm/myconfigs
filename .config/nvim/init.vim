@@ -6,7 +6,6 @@
 "
 " Author: Damon Ma
 " Repo: https://github.com/blurm/myconfigs
-"
 
 " Plugin definations ------------------------------------------------------- {{{
 
@@ -36,10 +35,11 @@
     Plug 'honza/vim-snippets'
     Plug 'tpope/vim-fugitive'
 
-    " Syntax & hightlight
+    " Syntax & hightlight & format
     Plug 'scrooloose/syntastic'  " Syntax check framework
     Plug 'Shutnik/jshint2.vim' " Javascript
     Plug 'python-rope/ropevim' " Python
+    Plug 'Chiel92/vim-autoformat' " Format framework
 
     " Utils
     Plug 'jiangmiao/auto-pairs'
@@ -158,8 +158,8 @@ set tm=500
 
 " 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
 set relativenumber number
-au FocusLost * :set norelativenumber number
-au FocusGained * :set relativenumber
+autocmd FocusLost * :set norelativenumber number
+autocmd FocusGained * :set relativenumber
 " 插入模式下用绝对行号, 普通模式下用相对
 autocmd InsertEnter * :set norelativenumber number
 autocmd InsertLeave * :set relativenumber
@@ -174,6 +174,13 @@ nnoremap <F2> :call NumberToggle()<CR>
 " Turn off hightlight until next search
 nnoremap <F4> :noh<CR>
 
+" Remember cursor position between vim sessions
+autocmd BufReadPost *
+            \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+            \   exe "normal! g'\"" |
+            \ endif
+" center buffer around cursor when opening files
+autocmd BufRead * normal zz
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Formatting
@@ -217,6 +224,22 @@ set noswapfile
 
 "Exit insert mode
 imap kj <Esc>
+
+" No need for ex mode
+nnoremap Q <nop>
+
+" Navigate between display lines
+noremap  <silent> k gk
+noremap  <silent> j gj
+
+" 跳转到行首和行位的非空字符
+noremap H ^
+noremap L g_
+noremap J 5j
+noremap K 5k
+noremap <Leader>j J
+
+nnoremap ; :
 
 nnoremap p p=`]
 " Copy & paste to system clipboard
@@ -285,6 +308,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " 启用标记折叠。所有文本将按照特定标记（默认为{{{和}}}）自动折叠。
 autocmd FileType vim setlocal foldmethod=marker
+" foldlevel 0 代表全部折叠都生效，1：部分生效，99：不折叠
 autocmd FileType vim setlocal foldlevel=0
 
 " }}}
@@ -332,6 +356,15 @@ autocmd InsertLeave * call Fcitx2en()
 
 " Plugin Settings ----------------------------------------------------------{{{
 
+"   autoformat {
+    noremap <F6> :Autoformat<CR>
+    " 避免使用aggressive，有时会更改具体程序
+    "let g:formatdef_autopep8 = "'autopep8 - --aggressive --range '.a:firstline.' '.a:lastline"
+    let g:formatter_yapf_style = 'pep8'
+    let g:formatters_python = ['yapf']
+    let g:autoformat_verbosemode=1
+"let g:session_default_to_last = 1
+"   }
     "   deoplete {
         let g:deoplete#enable_at_startup = 1
 "   }
@@ -382,7 +415,7 @@ nnoremap <silent> <leader>i :JavaImportOrganize<cr>
 " Search for the javadocs of the element under the cursor with <leader>d
 nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
 " Search element under the cursor
-au FileType java
+autocmd FileType java
             \ nnoremap <silent> <buffer> <leader>r :Java %<cr>
 nnoremap <silent> <leader>s :JavaSearchContext<cr>
 "nnoremap <silent> <leader>r :Java %<cr>
@@ -417,7 +450,9 @@ nnoremap <silent> <Leader>9 :9wincmd w<CR>
 "   }
 "   Easymotion {
 map <SPACE> <Plug>(easymotion-f)
+map <leader>f <Plug>(easymotion-F)
 let g:EasyMotion_smartcase = 1
+"let g:EasyMotion_do_mapping = 1
 " 1 will match 1 and !; ! matches !
 let g:EasyMotion_use_smartsign_us = 1 " US layout
 "   }
@@ -458,7 +493,7 @@ let ropevim_goto_def_newwin="tabnew"
 let ropevim_autoimport_modules = ["os.*","traceback", "xml.etree"]
 "imap <c-space> <C-R>=RopeCodeAssistInsertMode()<CR>
 
-au FileType python
+autocmd FileType python
             \ noremap <silent> <buffer> <C-]> :RopeGotoDefinition<CR>
 " }
 "   Gundo {
