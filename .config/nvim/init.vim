@@ -19,17 +19,12 @@
     Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] } " autocomplete for Javascript
     Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
-    " Color scheme
-    Plug 'altercation/vim-colors-solarized'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
     " Navigation & Searching
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     Plug 'jistr/vim-nerdtree-tabs'
     Plug 'ctrlpvim/ctrlp.vim' " replace kien/ctrlp.vim. this works better with devicons
+    Plug 'Shougo/denite.nvim'
+    Plug 'Shougo/unite.vim'
 
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
@@ -53,6 +48,13 @@
     Plug 'tpope/vim-repeat'
     Plug 'easymotion/vim-easymotion'
     Plug 'godlygeek/tabular'       " For text filtering and alignment
+
+    " Color scheme. Warning: devicons must be loaded last
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
     " Useless Plugins
     "Plug 'vim-scripts/VisIncr'
@@ -396,57 +398,80 @@ let g:UltiSnipsSnippetsDir="~/.vim/MySnips"
 let g:UltiSnipsSnippetDirectories = ['/home/damon/.vim/MySnips']
 "   }
 "   Airline {
-" When complete option was triggered, a scratch window will display.
-" When work with airline, a new buffer named [no nam] will be created
-" displaying same content with scratch window. This will lead to a
-" flickering when cycling complete options
-set completeopt-=preview
-let g:airline_powerline_fonts=1
-let g:airline_theme='bubblegum'
-"let g:airline_theme='badwolf'
-let g:airline#extensions#tabline#enabled = 1
+        " When complete option was triggered, a scratch window will display.
+        " When work with airline, a new buffer named [no nam] will be created
+        " displaying same content with scratch window. This will lead to a
+        " flickering when cycling complete options
+        set completeopt-=preview
+        let g:airline_powerline_fonts=1
+        let g:airline_theme='bubblegum'
+        "let g:airline_theme='badwolf'
+        let g:airline#extensions#tabline#enabled = 1
+        let g:airline#extensions#tabline#buffer_idx_mode = 1
+        let g:airline#extensions#tabline#buffer_idx_format = {
+                    \ '0': '0 ',
+                    \ '1': '1 ',
+                    \ '2': '2 ',
+                    \ '3': '3 ',
+                    \ '4': '4 ',
+                    \ '5': '5 ',
+                    \ '6': '6 ',
+                    \ '7': '7 ',
+                    \ '8': '8 ',
+                    \ '9': '9 ',
+                    \}
+        nmap <leader>1 <Plug>AirlineSelectTab1
+        nmap <leader>2 <Plug>AirlineSelectTab2
+        nmap <leader>3 <Plug>AirlineSelectTab3
+        nmap <leader>4 <Plug>AirlineSelectTab4
+        nmap <leader>5 <Plug>AirlineSelectTab5
+        nmap <leader>6 <Plug>AirlineSelectTab6
+        nmap <leader>7 <Plug>AirlineSelectTab7
+        nmap <leader>8 <Plug>AirlineSelectTab8
+        nmap <leader>9 <Plug>AirlineSelectTab9
+
+        let g:airline_section_c='win[%{tabpagewinnr(tabpagenr())}]'
+        nnoremap <silent> <Leader><Leader>1 :1wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>2 :2wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>3 :3wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>4 :4wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>5 :5wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>6 :6wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>7 :7wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>8 :8wincmd w<CR>
+        nnoremap <silent> <Leader><Leader>9 :9wincmd w<CR>
+
+        " Show window number on airline's section c
+        "    let g:airline_section_a='a'
+        "    let g:airline_section_b='b'
+        "    let g:airline_section_c='c'
+        "    let g:airline_section_x='x'
+        "let g:airline_section_z = airline#section#create(['windowswap', 'obsession', '%3p%%', 'linenr', 'maxlinenr', '[%{tabpagewinnr(tabpagenr())}] %{&encoding}'])
+        "    let g:airline_section_z='z'
+
+        " Just press <Leader><number> and be taken to the window number you want.
+        "let i = 1
+        "while i <= 9
+        "execute 'nnoremap <silent> <Leader>' . i . ' :' . i . 'wincmd w<CR>'
+        "let i = i + 1
+        "endwhile
+
 "   }
 "   CtrlP {
-let g:ctrlp_map = '<Leader>o'
+        let g:ctrlp_map = '<Leader>o'
 "   }
 "   Eclim {
-" Import the class under the cursor with <leader>i
-nnoremap <silent> <leader>i :JavaImportOrganize<cr>
-" Search for the javadocs of the element under the cursor with <leader>d
-nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
-" Search element under the cursor
-autocmd FileType java
-            \ nnoremap <silent> <buffer> <leader>r :Java %<cr>
-nnoremap <silent> <leader>s :JavaSearchContext<cr>
-"nnoremap <silent> <leader>r :Java %<cr>
+        " Import the class under the cursor with <leader>i
+        nnoremap <silent> <leader>i :JavaImportOrganize<cr>
+        " Search for the javadocs of the element under the cursor with <leader>d
+        nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
+        " Search element under the cursor
+        autocmd FileType java
+                    \ nnoremap <silent> <buffer> <leader>r :Java %<cr>
+        nnoremap <silent> <leader>s :JavaSearchContext<cr>
+        "nnoremap <silent> <leader>r :Java %<cr>
 "   }
 "   Airline {
-" ---------------- Airline -----------------------------
-" Show window number on airline's section c
-"    let g:airline_section_a='a'
-"    let g:airline_section_b='b'
-"    let g:airline_section_c='c'
-"    let g:airline_section_x='x'
-"let g:airline_section_z = airline#section#create(['windowswap', 'obsession', '%3p%%', 'linenr', 'maxlinenr', '[%{tabpagewinnr(tabpagenr())}] %{&encoding}'])
-"    let g:airline_section_z='z'
-let g:airline_section_c='win[%{tabpagewinnr(tabpagenr())}]'
-
-" Just press <Leader><number> and be taken to the window number you want.
-let i = 1
-while i <= 9
-    execute 'nnoremap <silent> <Leader>' . i . ' :' . i . 'wincmd w<CR>'
-    let i = i + 1
-endwhile
-
-nnoremap <silent> <Leader>1 :1wincmd w<CR>
-nnoremap <silent> <Leader>2 :2wincmd w<CR>
-nnoremap <silent> <Leader>3 :3wincmd w<CR>
-nnoremap <silent> <Leader>4 :4wincmd w<CR>
-nnoremap <silent> <Leader>5 :5wincmd w<CR>
-nnoremap <silent> <Leader>6 :6wincmd w<CR>
-nnoremap <silent> <Leader>7 :7wincmd w<CR>
-nnoremap <silent> <Leader>8 :8wincmd w<CR>
-nnoremap <silent> <Leader>9 :9wincmd w<CR>
 "   }
 "   Easymotion {
 map <SPACE> <Plug>(easymotion-f)
@@ -504,8 +529,10 @@ nnoremap <F3> :TagbarToggle<CR>
 "   }
 "   devicons & nerdtree syntax highlight {
 " loading the plugin 
-"let g:webdevicons_enable = 1
-"let g:webdevicons_enable_ctrlp = 1
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_ctrlp = 1
+let g:webdevicons_enable_unite = 1
+let g:webdevicons_enable_denite = 1
 " 去掉图标后面灰色的背景
 autocmd FileType nerdtree setlocal nolist
 let g:NERDTreeFileExtensionHighlightFullName = 1
@@ -517,4 +544,9 @@ let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 " Show the folder icons
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 " }
+" }}}
+
+" neovim settings ----------------------------------------------------------{{{
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
 " }}}
