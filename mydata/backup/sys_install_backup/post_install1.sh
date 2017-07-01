@@ -302,7 +302,7 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
 ## }
 
 ## Terminal Tools {
-## Need to put it at last, since chsh will interrupt the install process
+    ## Need to put it at last, since chsh will interrupt the install process
     echo '--------------------- zsh ----------------------------'
     # Zsh
     sudo apt -y install zsh

@@ -187,8 +187,8 @@ bindsym $mod+space exec bash -c 'rofi -show drun'
 #bindsym Mod4+space exec bash -c 'locate home media | rofi -threads 0 -dmenu -i -p "locate:"'
 
 # Shortcuts for apps
-bindsym $mod+c exec google-chrome
-bindsym $mod+n exec /home/damon/mydata/linux\ tools/Story-writer-linux64/Story-writer
+bindsym Mod4+c exec google-chrome
+bindsym Mod4+n exec /home/damon/mydata/linux\ tools/Story-writer-linux64/Story-writer
 bindsym Mod4+v exec virtualbox
 bindsym Mod4+r exec gnome-terminal -e ranger
 bindsym Print exec gnome-screenshot -i
@@ -255,3 +255,5 @@ bar {
             urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
         }
 }
+
+# vim:filetype=i3

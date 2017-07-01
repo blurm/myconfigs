@@ -1,5 +1,6 @@
 # reload non-login shell env
 alias sz="source $HOME/.zshrc"
+#alias rg="~/mydata/linux\ tools/ripgrep-0.5.2-x86_64-unknown-linux-musl/rg"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -134,9 +135,27 @@ setopt HIST_IGNORE_ALL_DUPS      # If a new line is a duplicate, remove the olde
 setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
 setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
 setopt HIST_FIND_NO_DUPS         # Ignore duplicates when searching
-setopt HIST_NO_STORE             # Don't store `history` or `fc` command lines
 setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history file.
+setopt HIST_NO_STORE             # Don't store `history` or `fc` command lines
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt SHARE_HISTORY             # Share history between all sessions.
 #}}}
+
+# fzf settings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# -g glob : 搜索模式
+# --files : 显示要搜的文件（但不进行搜索），与-g搭配显示符合的文件路径
+# --no-ignore : Don't respect ignore files (.gitignore, .ignore, etc.)
+# --hidden : Search hidden directories and files
+# --follow : Follow symlinks.
+# 2> /dev/null : 不回显错误信息
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules,*.swp,dist,*.coffee}/*" 2> /dev/null'
+#export FZF_ALT_C_COMMAND="bfs -type d -nohidden"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --null | xargs -0 dirname | uniq'
+export FZF_DEFAULT_OPTS='
+--reverse --ansi
+--color fg:244,bg:237,hl:65,fg+:15,bg+:242,hl+:83
+--color info:108,prompt:109,spinner:108,pointer:168,marker:168
+'

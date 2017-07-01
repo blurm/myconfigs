@@ -1,8 +1,12 @@
 #!/bin/bash
 
-## Install oh-my-zsh plugin {
+## Install oh-my-zsh plugin and other terminal tools {
     echo '---------------------- zsh-syntax-highlighting ---------------------'
     proxychains4 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+    # fzf
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
 ## }
 
 ## Clone dotfiles from Git {
@@ -39,17 +43,17 @@
 ## }
 
 ## VirtualBox {
-echo '---------------------- virtualbox ---------------------'
-sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" >> /etc/apt/sources.list'
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-sudo apt update
-sudo apt -y install dkms
-# virtualbox 5.1 has bug for i3 right now (auto resize doesn't work properly)
-sudo apt -y install virtualbox-5.0
-# Needed by 5.0 extension package install.
-sudo apt -y install gksu
-# Need to re-login
-sudo usermod -aG vboxusers damon
+    echo '---------------------- virtualbox ---------------------'
+    sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" >> /etc/apt/sources.list'
+    wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+    sudo apt update
+    sudo apt -y install dkms
+    # virtualbox 5.1 has bug for i3 right now (auto resize doesn't work properly)
+    sudo apt -y install virtualbox-5.0
+    # Needed by 5.0 extension package install.
+    sudo apt -y install gksu
+    # Need to re-login
+    sudo usermod -aG vboxusers damon
 ## }
 
 echo '---------------------- gnome terminal settings ---------------------'

@@ -144,3 +144,5 @@ HISTTIMEFORMAT="%Y-%m-%d %T "
 
 # With histverify set, a call like !-3 only writes the replacement from your history to your command line, but doesn't execute it directly
 shopt -s histverify
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
