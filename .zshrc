@@ -153,7 +153,9 @@ setopt SHARE_HISTORY             # Share history between all sessions.
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules,*.swp,dist,*.coffee}/*" 2> /dev/null'
 #export FZF_ALT_C_COMMAND="bfs -type d -nohidden"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*" --null | xargs -0 dirname | uniq'
+export FZF_ALT_C_COMMAND='rg --files --no-ignore --hidden --follow --glob \
+    "!{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}*" \
+    --null /home/damon/ | xargs -0 dirname | uniq'
 export FZF_DEFAULT_OPTS='
 --reverse --ansi
 --color fg:244,bg:237,hl:65,fg+:15,bg+:242,hl+:83
