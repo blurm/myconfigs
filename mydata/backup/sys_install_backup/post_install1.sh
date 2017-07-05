@@ -11,6 +11,8 @@ sudo apt update
 #sudo apt upgrade
 #sleep 5
 
+mkdir -p ~/mydata/git
+
 ### 安装软件
 ## 设置软件安装环境
 echo '------------ Installing Building environment -------------'
@@ -63,6 +65,7 @@ git config --global user.email "blurm@126.com"
 
     # proxychains-ng 在终端环境使用shadowsocks翻墙
     echo '----------------- proxychains-ng -------------------'
+    cd ~/mydata/git
     git clone https://github.com/rofl0r/proxychains-ng.git
     cd proxychains-ng
     ./configure --prefix=/usr --sysconfdir=/etc
@@ -72,8 +75,6 @@ git config --global user.email "blurm@126.com"
     mkdir -v ~/.proxychains
     cp -v /etc/proxychains.conf ~/.proxychains
     sudo sed -i -e 's/^socks4.*$/socks5 127.0.0.1 1080/g' ~/.proxychains/proxychains.conf
-    cd ..
-    rm -rvf proxychains-ng
 ## }
 
 ## Web Tools {
@@ -112,12 +113,11 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     echo '----------------- unrar -------------------'
     sudo apt -y install unrar
     echo '----------------- Ranger (file manager)-------------------'
+    cd ~/mydata/git
     git clone https://github.com/ranger/ranger.git
     cd ranger
     sudo make install
     cp install_log.txt ~/mydata/backup/sys_install_backup/ranger_install_log.txt
-    cd ..
-    sudo rm -rvf ranger
     ranger --copy-config=all
     # Preview softwares
     sudo apt -y install w3m-img
@@ -192,15 +192,18 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     mkdir -vp ~/.config/fontconfig/conf.d/
     mv -v 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
+    cd ~/mydata/git
     proxychains4 git clone https://github.com/powerline/fonts.git
     cd -v fonts
     ./install.sh
-    cd -v ..
-    rm -rvf fonts
 
     # fontawesome-web
     echo '----------------------- fontawesome ---------------------------'
-    cp ~/mydata/backup/sys_install_backup/fontawesome-webfont.ttf ~/.local/share/fonts
+    cd ~/mydata/git
+    git clone https://github.com/FortAwesome/Font-Awesome.git
+    cd Font-Awesome
+    cp ~/mydata/git/Font-Awesome/fonts/fontawesome-webfont.ttf ~/.local/share/fonts
+    #cp ~/mydata/backup/sys_install_backup/fontawesome-webfont.ttf ~/.local/share/fonts
     fc-cache -vf ~/.local/share/fonts
 ## }
 
@@ -229,20 +232,20 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     # 更换桌面壁纸
     #sudo apt -y install feh
     # Nitrogen支持多显示器壁纸设置
-    echo '----------------------- nitrogen ---------------------------'
-    proxychains4 git clone git@github.com:l3ib/nitrogen.git
-    cd -v nitrongen
-    echo '----------------------- nitrogen dh-autoreconf ---------------------------'
-    sudo apt -y install dh-autoreconf
-    echo '----------------------- nitrogen libgtk2.0-dev ---------------------------'
-    sudo apt -y install libgtk2.0-dev
-    echo '----------------------- nitrogen libgtkmm ---------------------------'
-    sudo apt -y install libgtkmm-2.4-dev
-    ./configure
-    make
-    sudo make install
-    cd ..
-    rm -rvf nitrogen
+    #echo '----------------------- nitrogen ---------------------------'
+    #cd ~/mydata/git
+    #proxychains4 git clone git@github.com:l3ib/nitrogen.git
+    #cd -v nitrongen
+    #echo '----------------------- nitrogen dh-autoreconf ---------------------------'
+    #sudo apt -y install dh-autoreconf
+    #echo '----------------------- nitrogen libgtk2.0-dev ---------------------------'
+    #sudo apt -y install libgtk2.0-dev
+    #echo '----------------------- nitrogen libgtkmm ---------------------------'
+    #sudo apt -y install libgtkmm-2.4-dev
+    #./configure
+    #make
+    #sudo make install
+
     # i3-wm
     echo '----------------------- i3wm ---------------------------'
     echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list

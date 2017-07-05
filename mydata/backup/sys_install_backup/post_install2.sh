@@ -138,7 +138,8 @@ echo '---------------------- gnome terminal settings ---------------------'
     # ag
     cd ~/mydata/git/
     git clone https://github.com/ggreer/the_silver_searcher.git
-    sudo apt install liblzma-dev
+    sudo apt -y install automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev
     cd ~/mydata/git/the_silver_searcher
+    ./build.sh
     sudo make install
 ## }
