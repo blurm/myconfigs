@@ -86,10 +86,17 @@ testCommandExe 'pip3 show pyquery'
 testCommandExe 'pip show beautifulsoup4'
 testCommandExe 'pip show selenium'
 testCommandExe 'pip show jedi'
+testCommandExe 'pip show yapf'
 testCommandExe 'phantomjs --version'
 testCommandExe 'nodejs --version'
 testCommandExe 'jshint --version'
 testCommandExe 'npm view tern version'
 testCommandExe 'zsh --version'
+
+
+testCommandExe 'virtualbox --help'
+testCommandExe 'nvim --version'
+testCommandExe 'fzf --version'
+testCommandExe 'ag --version'
 
 echo "-----Install testing ended-----"
