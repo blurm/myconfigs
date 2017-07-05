@@ -22,7 +22,7 @@ echo '------------ python-pip -------------'
 sudo apt -y install python-pip
 sudo apt -y install python3-pip
 # Alawyas time out, don't know why
-#sudo pip install --upgrade pip
+sudo pip install --upgrade pip
 echo '------------ git -------------'
 sudo apt -y install git
 git config --global user.name "damon"
@@ -293,12 +293,19 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     sudo -H pip install beautifulsoup4
     sudo apt -y install phantomjs
 
+    sudo -H pip install pyquery
+    sudo -H pip3 install pyquery
+    sudo -H pip install beautifulsoup4
+    sudo -H pip install jedi
+    sudo -H pip install --upgrade autopep8
+    sudo -H pip install yapf
 
     # nodejs
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt -y install nodejs
     # Error and problem detecting tool for Vim
-    sudo npm install -g jshint;
+    sudo npm install -g jshint
+    sudo npm install -g tern
 ## }
 
 ## Terminal Tools {

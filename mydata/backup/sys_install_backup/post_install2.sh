@@ -3,10 +3,6 @@
 ## Install oh-my-zsh plugin and other terminal tools {
     echo '---------------------- zsh-syntax-highlighting ---------------------'
     proxychains4 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-    # fzf
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install
 ## }
 
 ## Clone dotfiles from Git {
@@ -43,15 +39,25 @@
 ## }
 
 ## VirtualBox {
-    echo '---------------------- virtualbox ---------------------'
+    #echo '---------------------- virtualbox ---------------------'
+    #sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" >> /etc/apt/sources.list'
+    #wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+    #sudo apt update
+    #sudo apt -y install dkms
+    ## virtualbox 5.1 has bug for i3 right now (auto resize doesn't work properly)
+    #sudo apt -y install virtualbox-5.0
+    ## Needed by 5.0 extension package install.
+    #sudo apt -y install gksu
+    ## Need to re-login
+    #sudo usermod -aG vboxusers damon
+
+    echo '---------------------- virtualbox5.1 ---------------------'
     sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -c -s) contrib" >> /etc/apt/sources.list'
     wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
     sudo apt update
     sudo apt -y install dkms
     # virtualbox 5.1 has bug for i3 right now (auto resize doesn't work properly)
-    sudo apt -y install virtualbox-5.0
-    # Needed by 5.0 extension package install.
-    sudo apt -y install gksu
+    sudo apt -y install virtualbox-5.1
     # Need to re-login
     sudo usermod -aG vboxusers damon
 ## }
@@ -97,4 +103,42 @@ echo '---------------------- gnome terminal settings ---------------------'
 ## Default program selection {
     cat /usr/share/applications/defaults.list | grep video >> ~/.local/share/applications/mimeapps.list
     sed -i "s/org.gnome.Totem.desktop/smplayer.desktop/g" ~/.local/share/applications/mimeapps.list
+## }
+
+## neovim {
+    cd ~/mydata/git/
+    git clone https://github.com/neovim/neovim.git
+    cd ~/mydata/git/neovim
+    git checkout v0.2.0
+    sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+    sudo apt -y install lua-coxpcall
+    make clean
+    make distclean
+    make
+    rm -r build/
+    make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+    make install
+
+    sudo apt -y install python-software-properties
+    sudo pip2 install --upgrade neovim
+    sudo pip3 install --upgrade neovim
+
+    sudo ln -s ~/neovim/bin/nvim /usr/local/bin/nvim
+
+    # nerd fonts
+    cd ~/mydata/git/
+    git clone https://github.com/ryanoasis/nerd-fonts.git
+    cd ~/mydata/git/nerd-fonts
+    ./install.sh
+
+    # fzf
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+
+    # ag
+    cd ~/mydata/git/
+    git clone https://github.com/ggreer/the_silver_searcher.git
+    sudo apt install liblzma-dev
+    cd ~/mydata/git/the_silver_searcher
+    sudo make install
 ## }
