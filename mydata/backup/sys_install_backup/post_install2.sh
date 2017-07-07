@@ -18,7 +18,9 @@
     xclip -sel clip < ~/.ssh/id_rsa.pub
     cd ~
 
-    # Install plugins for Vim
+## }
+
+## Install plugins for Vim {
     echo '---------------------- vim plugins ---------------------'
     proxychains4 vim +PluginInstall +qall
 
@@ -31,6 +33,9 @@
     cd ~/.vim/bundle/ropevim
     sudo python setup.py install
     cd ~
+
+    echo '---------------------- ctags for tagbar ---------------------'
+    sudo apt -y install exuberant-ctags
 ## }
 
 ## Make dir for mounting {

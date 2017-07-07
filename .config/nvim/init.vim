@@ -490,6 +490,7 @@ let g:vim_json_syntax_conceal = 1
 
 "Exit insert mode
 imap kj <Esc>
+nnoremap <leader>ms :messages<CR>
 
 " No need for ex mode
 nnoremap Q <nop>
