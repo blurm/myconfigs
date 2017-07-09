@@ -290,7 +290,7 @@ autocmd FileType python
 nnoremap <F5> :GundoToggle<CR>
 "   }
 "   Tagbar {
-nnoremap <F3> :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 "   }
 "   devicons & nerdtree syntax highlight {
 " loading the plugin

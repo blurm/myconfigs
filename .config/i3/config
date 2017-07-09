@@ -188,7 +188,7 @@ bindsym $mod+space exec bash -c 'rofi -show drun'
 
 # Shortcuts for apps
 bindsym Mod4+c exec google-chrome
-bindsym Mod4+n exec /home/damon/mydata/linux\ tools/Story-writer-linux64/Story-writer
+bindsym Mod4+n exec /home/damon/mydata/linux\ tools/Story-writer/Story-writer
 bindsym Mod4+v exec virtualbox
 bindsym Mod4+r exec gnome-terminal -e ranger
 bindsym Print exec gnome-screenshot -i
