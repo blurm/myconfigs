@@ -55,8 +55,8 @@
 
     " Color scheme & layout. Warning: devicons must be loaded last
     Plug 'altercation/vim-colors-solarized'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
 
@@ -76,6 +76,7 @@
     Plug 'ap/vim-css-color'
     Plug 'Shougo/echodoc.vim'
     Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
+    Plug 'tpope/vim-scriptease'
 
 
 
@@ -234,8 +235,6 @@ autocmd FileType java
 nnoremap <silent> <leader>js :JavaSearchContext<cr>
 "nnoremap <silent> <leader>r :Java %<cr>
 "   }
-"   Airline {
-"   }
 "   Easymotion {
 map <SPACE><SPACE> <Plug>(easymotion-f)
 map <leader>f <Plug>(easymotion-F)
@@ -361,7 +360,8 @@ set colorcolumn=80 " 80个字符的限制
 " 256 colors setting for nvim
 set termguicolors
 let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark='hard'
+" soft, medium, hard
+let g:gruvbox_contrast_dark='medium'
 colorscheme gruvbox
 
 set tabpagemax=15 " Only show 15 tabs
@@ -456,10 +456,10 @@ set splitright " Puts new vsplit windows to the right of the current
 set splitbelow " Puts new split windows to the bottom of the current
 "set linespace=5 " 字符间插入的像素行数目,only work for gvim
 
-" set fillchar
+" set fillchar 
 "hi VertSplit ctermbg=NONE guibg=NONE
-"hi VertSplit guibg=#282828 guifg=#181A1F
-"set fillchars+=vert:│
+hi VertSplit guibg=#282828 guifg=#181A1F
+set fillchars+=vert:│
 "set fillchars=vert:\ ,stl:\ ,stlnc:\ " 在被分割的窗口间显示空白，便于阅读
 "set matchpairs+=<:> " Match, to be used with %
 set pastetoggle=<F12> " pastetoggle (sane indentation on pastes)
@@ -681,7 +681,7 @@ call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
 " --no-heading : Don't group matches by each file. Then file names will be shown for every line matched.
 " --vimgrep : Show results with every match on its own line, including line numbers and column numbers.
 "             With this option, a line with more than one match will be printed more than once.
-call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--no-heading', '--no-ignore'])
+call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden', '--no-heading', '--no-ignore'])
 call denite#custom#var('grep', 'recursive_opts', [])
 call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
 call denite#custom#var('grep', 'separator', ['--'])
@@ -708,53 +708,44 @@ call denite#custom#var('menu', 'menus', s:menus)
 " When work with airline, a new buffer named [no nam] will be created
 " displaying same content with scratch window. This will lead to a
 " flickering when cycling complete options
-set completeopt-=preview
-let g:airline_powerline_fonts=1
 "let g:airline_theme='violet'
 "let g:airline_theme='badwolf'
 "let g:airline#extensions#tabline#show_tab_nr = 1
-let g:airline#extensions#tabline#tab_nr_type= 2
-let g:airline#extensions#tabline#show_tab_type = 1
-let g:airline#extensions#tabline#buffers_label = 'BUFFERS'
-let g:airline#extensions#tabline#tabs_label = 'TABS'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline#extensions#tabline#buffer_idx_format = {
-            \ '0': '0 ',
-            \ '1': '➊ ',
-            \ '2': '➋ ',
-            \ '3': '➌ ',
-            \ '4': '➍ ',
-            \ '5': '➎ ',
-            \ '6': '➏ ',
-            \ '7': '➐ ',
-            \ '8': '➑ ',
-            \ '9': '➒ ',
-            \}
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
 
-function! s:bubble_num(num, type) abort
-    let list = []
-    call add(list,['➊', '➋', '➌', '➍', '➎', '➏', '➐', '➑', '➒', '➓'])
-    call add(list,['➀', '➁', '➂', '➃', '➄', '➅', '➆', '➇', '➈', '➉'])
-    call add(list,['⓵', '⓶', '⓷', '⓸', '⓹', '⓺', '⓻', '⓼', '⓽', '⓾'])
-    let n = ''
-    try
-        let n = list[a:type][a:num-1]
-    catch
-    endtry
-    return  n
-endfunction
-"let g:airline_section_c=s:bubble_num(tabpagewinnr(tabpagenr()), 1)
-let g:airline_section_c='win[%{tabpagewinnr(tabpagenr())}]'
+let g:damonvim_airline_enable = 1
+if g:damonvim_airline_enable == 0
+    set completeopt-=preview
+	let g:airline_powerline_fonts=1
+	let g:airline#extensions#tabline#tab_nr_type= 2
+	let g:airline#extensions#tabline#show_tab_type = 1
+	let g:airline#extensions#tabline#buffers_label = 'BUFFERS'
+	let g:airline#extensions#tabline#tabs_label = 'TABS'
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tabline#buffer_idx_mode = 1
+	let g:airline#extensions#tabline#buffer_idx_format = {
+				\ '0': '0 ',
+				\ '1': '➊ ',
+				\ '2': '➋ ',
+				\ '3': '➌ ',
+				\ '4': '➍ ',
+				\ '5': '➎ ',
+				\ '6': '➏ ',
+				\ '7': '➐ ',
+				\ '8': '➑ ',
+				\ '9': '➒ ',
+				\}
+	nmap <leader>1 <Plug>AirlineSelectTab1
+	nmap <leader>2 <Plug>AirlineSelectTab2
+	nmap <leader>3 <Plug>AirlineSelectTab3
+	nmap <leader>4 <Plug>AirlineSelectTab4
+	nmap <leader>5 <Plug>AirlineSelectTab5
+	nmap <leader>6 <Plug>AirlineSelectTab6
+	nmap <leader>7 <Plug>AirlineSelectTab7
+	nmap <leader>8 <Plug>AirlineSelectTab8
+	nmap <leader>9 <Plug>AirlineSelectTab9
+
+	let g:airline_section_c='win[%{tabpagewinnr(tabpagenr())}]'
+endif
 nnoremap <silent> <SPACE>1 :1wincmd w<CR>
 nnoremap <silent> <SPACE>2 :2wincmd w<CR>
 nnoremap <silent> <SPACE>3 :3wincmd w<CR>
@@ -764,6 +755,19 @@ nnoremap <silent> <SPACE>6 :6wincmd w<CR>
 nnoremap <silent> <SPACE>7 :7wincmd w<CR>
 nnoremap <silent> <SPACE>8 :8wincmd w<CR>
 nnoremap <silent> <SPACE>9 :9wincmd w<CR>
+"function! s:bubble_num(num, type) abort
+    "let list = []
+    "call add(list,['➊', '➋', '➌', '➍', '➎', '➏', '➐', '➑', '➒', '➓'])
+    "call add(list,['➀', '➁', '➂', '➃', '➄', '➅', '➆', '➇', '➈', '➉'])
+    "call add(list,['⓵', '⓶', '⓷', '⓸', '⓹', '⓺', '⓻', '⓼', '⓽', '⓾'])
+    "let n = ''
+    "try
+        "let n = list[a:type][a:num-1]
+    "catch
+    "endtry
+    "return  n
+"endfunction
+"let g:airline_section_c=s:bubble_num(tabpagewinnr(tabpagenr()), 1)
 
 " Show window number on airline's section c
 "    let g:airline_section_a='a'
@@ -780,21 +784,6 @@ nnoremap <silent> <SPACE>9 :9wincmd w<CR>
 "let i = i + 1
 "endwhile
 
-" }}}
-
-" vim-gitgutter ------------------------------------------------------------{{{
-let g:NERDTreeIndicatorMapCustom = {
-            \ "Modified"  : "✹",
-            \ "Staged"    : "✚",
-            \ "Untracked" : "✭",
-            \ "Renamed"   : "➜",
-            \ "Unmerged"  : "═",
-            \ "Deleted"   : "✖",
-            \ "Dirty"     : "✗",
-            \ "Clean"     : "✔︎",
-            \ 'Ignored'   : '☒',
-            \ "Unknown"   : "?"
-            \ }
 " }}}
 
 " Startify ------------------------------------------------------------------{{{
@@ -1037,5 +1026,40 @@ nnoremap <leader>s :Startify<CR>
 "endf
 " }}}
 "
+" SpaceVim ------------------------------------------------------------------{{{
+let g:spacevim_enable_key_frequency = 0
+let g:spacevim_enable_cursorcolumn     = 0
+let g:spacevim_enable_neomake          = 1
+let g:spacevim_enable_ycm              = 0
+let g:spacevim_sidebar_width           = 30
+let g:spacevim_enable_cursorline       = 0
+let g:spacevim_error_symbol            = '✖'
+let g:spacevim_warning_symbol          = '⚠'
+let g:spacevim_terminal_cursor_shape = 2
+let g:spacevim_use_colorscheme         = 1
+let g:spacevim_buffer_index_type = 0
+let g:spacevim_windows_index_type = 0
+let g:spacevim_enable_tabline_filetype_icon = 1
+let g:spacevim_enable_os_fileformat_icon = 0
+let g:spacevim_enable_powerline_fonts  = 1
+let g:spacevim_statusline_separator = 'arrow'
+
+call damonvim#statusline#init()
+call damonvim#tabline#config()
+
+autocmd VimEnter * call VimEnter()
+
+function! VimEnter() abort
+    call damonvim#api#import('vim#highlight').hide_in_normal('EndOfBuffer')
+    " load statusline
+    set laststatus=2
+    call damonvim#statusline#def_colors()
+    setlocal statusline=%!damonvim#statusline#get(1)
+    " Load tabline
+    call SpaceVim#layers#core#tabline#def_colors()
+    set showtabline=2
+endfunction
+" }}}
+
 " sample ------------------------------------------------------------------{{{
 " }}}
