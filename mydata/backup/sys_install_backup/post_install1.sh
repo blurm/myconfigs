@@ -112,6 +112,8 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     sudo apt -y install fcitx-googlepinyin fcitx-sunpinyin
     echo '----------------- unrar -------------------'
     sudo apt -y install unrar
+    echo '----------------- ppa-purge -------------------'
+    sudo apt -y install ppa-purge
     echo '----------------- Ranger (file manager)-------------------'
     cd ~/mydata/git
     git clone https://github.com/ranger/ranger.git
