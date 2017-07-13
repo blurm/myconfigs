@@ -55,8 +55,6 @@
 
     " Color scheme & layout. Warning: devicons must be loaded last
     Plug 'altercation/vim-colors-solarized'
-    "Plug 'vim-airline/vim-airline'
-    "Plug 'vim-airline/vim-airline-themes'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
 
@@ -81,6 +79,8 @@
 
 
     " Useless Plugins
+    "Plug 'vim-airline/vim-airline'
+    "Plug 'vim-airline/vim-airline-themes'
     "Plug 'itchyny/vim-cursorword' " Underlines the word under the cursor
     "Plug 'Shougo/vimfiler.vim'
     "ap/vim-css-colorPlug 'ctrlpvim/ctrlp.vim' " replace kien/ctrlp.vim. this
@@ -180,15 +180,17 @@ let g:autoformat_verbosemode=1
 let g:session_default_to_last = 1
 "   }
 "   deoplete {
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#set('buffer', 'mark', 'ℬ')
-call deoplete#custom#set('ternjs', 'mark', '')
-call deoplete#custom#set('omni', 'mark', '⌾')
-call deoplete#custom#set('file', 'mark', 'file')
-call deoplete#custom#set('jedi', 'mark', '')
-call deoplete#custom#set('javacomplete2', 'mark', '')
-call deoplete#custom#set('typescript', 'mark', '')
-call deoplete#custom#set('neosnippet', 'mark', '')
+if exists('g:deoplete#enable_at_startup')
+    let g:deoplete#enable_at_startup = 1
+    call deoplete#custom#set('buffer', 'mark', 'ℬ')
+    call deoplete#custom#set('ternjs', 'mark', '')
+    call deoplete#custom#set('omni', 'mark', '⌾')
+    call deoplete#custom#set('file', 'mark', 'file')
+    call deoplete#custom#set('jedi', 'mark', '')
+    call deoplete#custom#set('javacomplete2', 'mark', '')
+    call deoplete#custom#set('typescript', 'mark', '')
+    call deoplete#custom#set('neosnippet', 'mark', '')
+endif
 "   }
 "   vim-session {
 nnoremap <Leader>os :OpenSession<CR>
@@ -362,7 +364,7 @@ set termguicolors
 let g:gruvbox_italic=1
 " soft, medium, hard
 let g:gruvbox_contrast_dark='medium'
-colorscheme gruvbox
+silent! colorscheme gruvbox
 
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
@@ -402,13 +404,12 @@ set wildmode=list:longest,full " Command <Tab> completion, list matches, then lo
 set whichwrap=b,s,h,l,<,>,[,] " Backspace and cursor keys wrap too
 set scrolljump=5 " Lines to scroll when cursor leaves screen
 set scrolloff=3 " Minimum lines to keep above and below cursor
-"set foldmethod=indent "syntax
-"set nofoldenable "启动vim时关闭代码折叠
+set nofoldenable "启动vim时关闭代码折叠
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 set cmdheight=2
 set hid
-set lazyredraw
+"set lazyredraw
 set magic
 set mat=2
 " No annoying sound on errors
@@ -497,8 +498,8 @@ nnoremap Q <nop>
 nnoremap q: <nop>
 
 " Navigate between display lines
-noremap  <silent> k gk
-noremap  <silent> j gj
+noremap <silent> k gk
+noremap <silent> j gj
 
 " 跳转到行首和行位的非空字符
 noremap H ^
@@ -646,60 +647,61 @@ endif
 " }}}
 
 " Denite --------------------------------------------------------------------{{{
+if exists(':denite')
+    let s:menus = {}
 
-let s:menus = {}
+    call denite#custom#option('_', {
+                \ 'prompt': '❯',
+                \ 'winheight': 10,
+                \ 'reversed': 1,
+                \ 'highlight_matched_char': 'Underlined',
+                \ 'highlight_mode_normal': 'CursorLine',
+                \ 'updatetime': 1,
+                \ 'auto_resize': 1,
+                \})
+    "call denite#custom#option('TSDocumentSymbol', {
+    "\ 'prompt': ' @' ,
+    "\ 'reversed': 0,
+    "\})
+    "
+    "call denite#custom#var('file_rec', 'command',
+    "\ ['rg', '--files', '--glob', '!.git', ''])
+    " 添加-u选项，因为rg会检索所有文件夹下的gitignore和ignore文件，包括父文件夹的
+    " -u表示忽略这两个文件的设置
+    " --hidden : Search hidden directories and files. (Hidden directories and files are skipped by default.)
+    " --files : Print each file that would be searched (but don't search).
+    call denite#custom#var('file_rec', 'command',['rg', '--hidden', '--files', '--glob', '!.git', '--no-ignore'])
+    call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
+    call denite#custom#var('grep', 'command', ['rg'])
+    call denite#custom#source('grep', 'matchers', ['matcher_regexp'])
 
-call denite#custom#option('_', {
-            \ 'prompt': '❯',
-            \ 'winheight': 10,
-            \ 'reversed': 1,
-            \ 'highlight_matched_char': 'Underlined',
-            \ 'highlight_mode_normal': 'CursorLine',
-            \ 'updatetime': 1,
-            \ 'auto_resize': 1,
-            \})
-"call denite#custom#option('TSDocumentSymbol', {
-            "\ 'prompt': ' @' ,
-            "\ 'reversed': 0,
-            "\})
-            "
-"call denite#custom#var('file_rec', 'command',
-            "\ ['rg', '--files', '--glob', '!.git', ''])
-" 添加-u选项，因为rg会检索所有文件夹下的gitignore和ignore文件，包括父文件夹的
-" -u表示忽略这两个文件的设置
-" --hidden : Search hidden directories and files. (Hidden directories and files are skipped by default.)
-" --files : Print each file that would be searched (but don't search).
-call denite#custom#var('file_rec', 'command',['rg', '--hidden', '--files', '--glob', '!.git', '--no-ignore'])
-call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
-call denite#custom#var('grep', 'command', ['rg'])
-call denite#custom#source('grep', 'matchers', ['matcher_regexp'])
+    call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+                \ [ '.git/', '.gvfs/', '.ropeproject/', '__pycache__/',
+                \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
 
-call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
-            \ [ '.git/', '.gvfs/', '.ropeproject/', '__pycache__/',
-            \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
+    " --no-heading : Don't group matches by each file. Then file names will be shown for every line matched.
+    " --vimgrep : Show results with every match on its own line, including line numbers and column numbers.
+    "             With this option, a line with more than one match will be printed more than once.
+    call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden', '--no-heading', '--no-ignore'])
+    call denite#custom#var('grep', 'recursive_opts', [])
+    call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
+    call denite#custom#var('grep', 'separator', ['--'])
+    call denite#custom#var('grep', 'final_opts', [])
 
-" --no-heading : Don't group matches by each file. Then file names will be shown for every line matched.
-" --vimgrep : Show results with every match on its own line, including line numbers and column numbers.
-"             With this option, a line with more than one match will be printed more than once.
-call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--hidden', '--no-heading', '--no-ignore'])
-call denite#custom#var('grep', 'recursive_opts', [])
-call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
-call denite#custom#var('grep', 'separator', ['--'])
-call denite#custom#var('grep', 'final_opts', [])
+    nnoremap <silent> <leader>df :Denite file_rec<CR>
+    nnoremap <silent> <leader>dg :Denite grep<CR>
+    nnoremap <silent> <leader>dl :Denite line<CR>
+    nnoremap <silent> <leader>dr :Denite file_mru<CR>
+    nnoremap <silent> <leader>dh :Denite help<CR>
 
-nnoremap <silent> <leader>df :Denite file_rec<CR>
-nnoremap <silent> <leader>dg :Denite grep<CR>
-nnoremap <silent> <leader>dl :Denite line<CR>
-nnoremap <silent> <leader>dr :Denite file_mru<CR>
-nnoremap <silent> <leader>dh :Denite help<CR>
-
-"nnoremap <silent> <Leader>i :Denite menu:ionic <CR>
-call denite#custom#map('insert','<C-j>','<denite:move_to_next_line>','noremap')
-call denite#custom#map('insert','<C-k>','<denite:move_to_previous_line>','noremap')
-call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
-            \ [ '.git/', '.ropeproject/', '__pycache__/',
-            \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
-call denite#custom#var('menu', 'menus', s:menus)
+    "nnoremap <silent> <Leader>i :Denite menu:ionic <CR>
+    call denite#custom#map('insert','<C-j>','<denite:move_to_next_line>','noremap')
+    call denite#custom#map('insert','<C-k>','<denite:move_to_previous_line>','noremap')
+    call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+                \ [ '.git/', '.ropeproject/', '__pycache__/',
+                \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
+    call denite#custom#var('menu', 'menus', s:menus)
+endif
 
 "}}}
 
@@ -1029,6 +1031,7 @@ nnoremap <leader>s :Startify<CR>
 " SpaceVim ------------------------------------------------------------------{{{
 let g:spacevim_enable_key_frequency = 0
 let g:spacevim_enable_cursorcolumn     = 0
+let g:spacevim_enable_ale          = 1
 let g:spacevim_enable_neomake          = 1
 let g:spacevim_enable_ycm              = 0
 let g:spacevim_sidebar_width           = 30
@@ -1054,11 +1057,36 @@ function! VimEnter() abort
     " load statusline
     set laststatus=2
     call damonvim#statusline#def_colors()
-    setlocal statusline=%!damonvim#statusline#get(1)
+    "setlocal statusline=%!damonvim#statusline#get(1)
     " Load tabline
     call SpaceVim#layers#core#tabline#def_colors()
     set showtabline=2
 endfunction
+
+function! LinterStatus() abort
+    let bufnum = expand("<abuf>")
+    echom 'bufnum' . bufnum
+    let l:counts = ale#statusline#Count(bufnum)
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+                \   '%dW %dE',
+                \   all_non_errors,
+                \   all_errors
+                \)
+endfunction
+
+function! MyTest() abort
+    let m = LinterStatus()
+    echom m
+endfunction
+"autocmd BufWinEnter,BufRead,BufReadPost,WinEnter,FileType * call MyTest()
+augroup YourGroup
+    autocmd!
+    autocmd User ALELint call LinterStatus()
+augroup END
 " }}}
 
 " sample ------------------------------------------------------------------{{{
