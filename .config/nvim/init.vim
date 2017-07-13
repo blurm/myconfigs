@@ -76,9 +76,8 @@
     Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
     Plug 'tpope/vim-scriptease'
 
-
-
     " Useless Plugins
+    "Plug 'neomake/neomake'
     "Plug 'vim-airline/vim-airline'
     "Plug 'vim-airline/vim-airline-themes'
     "Plug 'itchyny/vim-cursorword' " Underlines the word under the cursor
@@ -369,6 +368,7 @@ silent! colorscheme gruvbox
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
 set cursorline " Highlight current line
+hi CursorLine term=bold cterm=bold guibg=Grey35
 "highlight clear SignColumn " SignColumn should match background
 "highlight clear LineNr " Current line number row will have same background color in relative mode
 "highlight clear CursorLineNr " Remove highlight color from current line number
@@ -409,6 +409,7 @@ set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 set cmdheight=2
 set hid
+" This option will delay cursor line scroll
 "set lazyredraw
 set magic
 set mat=2
@@ -498,8 +499,8 @@ nnoremap Q <nop>
 nnoremap q: <nop>
 
 " Navigate between display lines
-noremap <silent> k gk
-noremap <silent> j gj
+noremap  <silent> k gk
+noremap  <silent> j gj
 
 " 跳转到行首和行位的非空字符
 noremap H ^
@@ -583,6 +584,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 " Fold 代码折叠 ------------------------------------------------------------{{{
 
 " 启用标记折叠。所有文本将按照特定标记（默认为{{{和}}}）自动折叠。
+" 开启本选项在有代码折叠的脚本里，高亮行会产生延迟，需要:set nofoldenable
 autocmd FileType vim setlocal foldmethod=marker
 " foldlevel 0 代表全部折叠都生效，1：部分生效，99：不折叠
 autocmd FileType vim setlocal foldlevel=0
@@ -1059,7 +1061,7 @@ function! VimEnter() abort
     call damonvim#statusline#def_colors()
     "setlocal statusline=%!damonvim#statusline#get(1)
     " Load tabline
-    call SpaceVim#layers#core#tabline#def_colors()
+    call damonvim#tabline#def_colors()
     set showtabline=2
 endfunction
 
