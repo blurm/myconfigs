@@ -331,9 +331,7 @@ let g:table_mode_corner="|"
 " standard location
 let mapleader=","
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  General  ---------------------------------------------------{{{
 syntax enable
 syntax on
 set mouse=a                 " Automatically enable mouse usage
@@ -354,9 +352,9 @@ set fileencodings=utf-8,gbk,cp936,latin-1
 filetype on
 set updatetime=250
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vim UI
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" }}}
+
+"  Vim UI  ---------------------------------------------------{{{
 set number " Line numbers on
 set background=dark
 set colorcolumn=80 " 80个字符的限制
@@ -437,10 +435,9 @@ autocmd BufReadPost *
             \ endif
 " center buffer around cursor when opening files
 autocmd BufRead * normal zz
+" }}}
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Formatting
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Formatting  ---------------------------------------------------{{{
 set wrap " Wrap long lines
 set autoindent " Indent at the same level of the previous line
 set shiftwidth=4 " Use indents of 4 spaces
@@ -468,16 +465,16 @@ autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,pe
 autocmd FileType haskell,puppet,ruby,yml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType haskell setlocal commentstring=--\ %s
 autocmd FileType java set tags=~/dev/jdk1.8.0_40/src/.tags
+" }}}
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"  Files Backup Undo  ----------------------------------------------{{{
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
 set nowb
 set noswapfile
 let g:vim_json_syntax_conceal = 1
 "let $BASH_ENV = "/home/damon/.config/nvim/vim_bash"
+" }}}
 " }}}
 
 " Key Mappings -------------------------------------------------------------{{{
