@@ -1042,12 +1042,12 @@ let g:spacevim_enable_os_fileformat_icon = 0
 let g:spacevim_enable_powerline_fonts  = 1
 let g:spacevim_statusline_separator = 'arrow'
 
-call damonvim#statusline#init()
-call damonvim#tabline#config()
-
 autocmd VimEnter * call VimEnter()
 
 function! VimEnter() abort
+    call damonvim#statusline#init()
+    call damonvim#tabline#config()
+
     call damonvim#api#import('vim#highlight').hide_in_normal('EndOfBuffer')
     " load statusline
     set laststatus=2
