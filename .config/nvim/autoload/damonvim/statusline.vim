@@ -73,6 +73,13 @@ function! damonvim#statusline#init() abort
         autocmd!
         autocmd BufWinEnter,WinEnter,FileType
                     \ * let &l:statusline = damonvim#statusline#get(1)
+        if exists('g:ale_enabled')
+            autocmd!
+            " unsilent for echom output. User ALELint is set to silent
+            " defaultly
+            autocmd User ALELint unsilent
+                        \ let &l:statusline = damonvim#statusline#get(1)
+        endif
         autocmd BufWinLeave,WinLeave * let &l:statusline = damonvim#statusline#get()
         autocmd ColorScheme * call damonvim#statusline#def_colors()
     augroup END
@@ -122,15 +129,17 @@ if g:spacevim_enable_ale
             return ''
         endif
         let counts = ale#statusline#Count(bufnr(''))
-        echo "bufnr: " . bufnr("%")
-        echom "ale counts: " . string(counts)
+        "echom string(counts)
         let warnings = get(counts, 'warning', 0)
         let errors = get(counts, 'error', 0)
+        let style_warnings = get(counts, 'style_warning', 0)
+        let style_errors = get(counts, 'style_error', 0)
         let l =  ' %#SpaceVim_statusline_warn#•' . warnings . ' '
-        let l .=  ' ' . '%#SpaceVim_statusline_error#•' . errors  . ' '
+        let l .=  '%#SpaceVim_statusline_error#•' . errors  . ' '
+        let l .=  '%#SpaceVim_statusline_style_warn#•' . style_warnings . ' '
+        let l .=  '%#SpaceVim_statusline_style_error#•' . style_errors  . ' '
         "let l .=  warnings ? ' %#SpaceVim_statusline_warn#●' . warnings . ' ' : ''
         "let l .=  errors ? (warnings ? '' : ' ') . '%#SpaceVim_statusline_error#●' . errors  . ' ' : ''
-        echom l
         return l
     endfunction
 else
@@ -157,9 +166,9 @@ function! s:active() abort
         call add(lsec, ' ' . &filetype . ' ')
     endif
     let rsec = []
-    "if index(s:loaded_sections, 'syntax checking') != -1 && s:syntax_checking() != ''
-        "call add(lsec, s:syntax_checking())
-    "endif
+    if index(s:loaded_sections, 'syntax checking') != -1 && s:syntax_checking() != ''
+        call add(lsec, s:syntax_checking())
+    endif
 
     if index(s:loaded_sections, 'minor mode lighters') != -1
         call add(lsec, s:modes())
@@ -216,6 +225,8 @@ function! damonvim#statusline#def_colors() abort
     exe 'hi! SpaceVim_statusline_z ctermbg=' . t[3][1] . ' ctermfg=' . t[3][1] . ' guibg=' . t[3][0] . ' guifg=' . t[3][0]
     hi! SpaceVim_statusline_error ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fb4934 gui=bold
     hi! SpaceVim_statusline_warn ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fabd2f gui=bold
+    hi! SpaceVim_statusline_style_error ctermbg=003 ctermfg=Black guibg=#504945 guifg=#EC7063 gui=bold
+    hi! SpaceVim_statusline_style_warn ctermbg=003 ctermfg=Black guibg=#504945 guifg=#F9E79F gui=bold
     call s:HI.hi_separator('SpaceVim_statusline_a', 'SpaceVim_statusline_b')
     call s:HI.hi_separator('SpaceVim_statusline_a_bold', 'SpaceVim_statusline_b')
     call s:HI.hi_separator('SpaceVim_statusline_ia', 'SpaceVim_statusline_b')
