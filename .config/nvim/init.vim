@@ -52,6 +52,7 @@
     Plug 'tpope/vim-fugitive'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'airblade/vim-gitgutter'
+    let g:gitgutter_enabled = 0
 
     " Color scheme & layout. Warning: devicons must be loaded last
     Plug 'altercation/vim-colors-solarized'
@@ -133,13 +134,14 @@ let g:ale_linters = {
             \}
 "highlight clear ALEErrorSign
 "highlight clear ALEWarningSign
-"autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
-"autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
-highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
-highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
+autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
+autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
+"highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
+"highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
 "hi! ALEWarningSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fabd2f gui=bold
 "hi! ALEErrorSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fb4934 gui=bold
 let g:ale_enabled = 1
+let g:ale_lint_on_save = 1
 let g:ale_set_highlights = 1
 "let g:ale_sign_column_always = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
@@ -1048,12 +1050,27 @@ function! VimEnter() abort
     " load statusline
     set laststatus=2
     call damonvim#statusline#def_colors()
-    "setlocal statusline=%!damonvim#statusline#get(1)
+    setlocal statusline=%!damonvim#statusline#get(1)
     " Load tabline
     call damonvim#tabline#def_colors()
     set showtabline=2
 endfunction
 
+" }}}
+
+" Profile ------------------------------------------------------------------{{{
+function! RecordLog() abort
+    profile start vim_profile.log
+    profile func *
+    profile file *
+endfunction
+
+function! RecordLogEnd() abort
+    profile pause
+    noautocmd qall!
+endfunction
+nnoremap <leader>ls :call RecordLog()<CR>
+nnoremap <leader>le :call RecordLogEnd()<CR>
 " }}}
 
 " sample ------------------------------------------------------------------{{{
