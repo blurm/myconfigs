@@ -131,17 +131,22 @@ let g:ale_linters = {
             \ 'markdown' : ['mdl'],
             \ 'javascript' : ['eslint'],
             \}
+"highlight clear ALEErrorSign
+"highlight clear ALEWarningSign
 highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
 highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
+"hi! ALEWarningSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fabd2f gui=bold
+"hi! ALEErrorSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fb4934 gui=bold
 let g:ale_enabled = 1
 let g:ale_set_highlights = 1
-let g:ale_sign_column_always = 0
+"let g:ale_sign_column_always = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
-let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
-let g:ale_sign_error = '•'
-let g:ale_sign_warning = '•'
-let g:ale_echo_msg_error_str = '✹ Error'
+"let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = ' •'
+let g:ale_echo_msg_error_str = '✖ Error'
 let g:ale_echo_msg_warning_str = '⚠ Warning'
+highlight ALEErrorSign guibg=yellow guifg=red ctermbg=NONE ctermfg=red
 
 " For a more fancy ale statusline
 function! ALEGetError()
@@ -227,9 +232,9 @@ let g:ctrlp_map = '<Leader>o'
 "   }
 "   Eclim {
 " Import the class under the cursor with <leader>i
-nnoremap <silent> <leader>i :JavaImportOrganize<cr>
+nnoremap <silent> <leader>ji :JavaImportOrganize<cr>
 " Search for the javadocs of the element under the cursor with <leader>d
-nnoremap <silent> <leader>d :JavaDocSearch -x declarations<cr>
+nnoremap <silent> <leader>jd :JavaDocSearch -x declarations<cr>
 " Search element under the cursor
 autocmd FileType java
             \ nnoremap <silent> <buffer> <leader>r :Java %<cr>
@@ -433,7 +438,7 @@ function! NumberToggle()
     endif
 endfunc
 nnoremap <F2> :call NumberToggle()<CR>
-" Turn off hightlight until next search
+" Turn off highlight until next search
 nnoremap <F4> :noh<CR>
 
 " Remember cursor position between vim sessions
@@ -649,7 +654,6 @@ endif
 " }}}
 
 " Denite --------------------------------------------------------------------{{{
-if exists(':denite')
     let s:menus = {}
 
     call denite#custom#option('_', {
@@ -703,7 +707,6 @@ if exists(':denite')
                 \ [ '.git/', '.ropeproject/', '__pycache__/',
                 \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
     call denite#custom#var('menu', 'menus', s:menus)
-endif
 
 "}}}
 
@@ -1065,30 +1068,6 @@ function! VimEnter() abort
     set showtabline=2
 endfunction
 
-function! LinterStatus() abort
-    let bufnum = expand("<abuf>")
-    echom 'bufnum' . bufnum
-    let l:counts = ale#statusline#Count(bufnum)
-
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
-
-    return l:counts.total == 0 ? 'OK' : printf(
-                \   '%dW %dE',
-                \   all_non_errors,
-                \   all_errors
-                \)
-endfunction
-
-function! MyTest() abort
-    let m = LinterStatus()
-    echom m
-endfunction
-"autocmd BufWinEnter,BufRead,BufReadPost,WinEnter,FileType * call MyTest()
-augroup YourGroup
-    autocmd!
-    autocmd User ALELint call LinterStatus()
-augroup END
 " }}}
 
 " sample ------------------------------------------------------------------{{{
