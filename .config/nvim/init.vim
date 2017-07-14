@@ -187,6 +187,10 @@ let g:autoformat_verbosemode=1
 let g:session_default_to_last = 1
 "   }
 "   deoplete {
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 1
+let g:deoplete#enable_smart_case = 1
+
 if exists('g:deoplete#enable_at_startup')
     let g:deoplete#enable_at_startup = 1
     call deoplete#custom#set('buffer', 'mark', 'ℬ')
