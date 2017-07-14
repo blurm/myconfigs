@@ -133,6 +133,8 @@ let g:ale_linters = {
             \}
 "highlight clear ALEErrorSign
 "highlight clear ALEWarningSign
+"autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
+"autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
 highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
 highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
 "hi! ALEWarningSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fabd2f gui=bold
@@ -142,38 +144,37 @@ let g:ale_set_highlights = 1
 "let g:ale_sign_column_always = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 "let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
-let g:ale_sign_error = '✖'
-let g:ale_sign_warning = ' •'
+let g:ale_sign_error = '•'
+let g:ale_sign_warning = '•'
 let g:ale_echo_msg_error_str = '✖ Error'
 let g:ale_echo_msg_warning_str = '⚠ Warning'
-highlight ALEErrorSign guibg=yellow guifg=red ctermbg=NONE ctermfg=red
 
 " For a more fancy ale statusline
-function! ALEGetError()
-    let l:res = ale#statusline#Status()
-    if l:res ==# 'OK'
-        return ''
-    else
-        let l:e_w = split(l:res)
-        if len(l:e_w) == 2 || match(l:e_w, 'E') > -1
-            return ' •' . matchstr(l:e_w[0], '\d\+') .' '
-        endif
-    endif
-endfunction
+"function! ALEGetError()
+    "let l:res = ale#statusline#Status()
+    "if l:res ==# 'OK'
+        "return ''
+    "else
+        "let l:e_w = split(l:res)
+        "if len(l:e_w) == 2 || match(l:e_w, 'E') > -1
+            "return ' •' . matchstr(l:e_w[0], '\d\+') .' '
+        "endif
+    "endif
+"endfunction
 
-function! ALEGetWarning()
-    let l:res = ale#statusline#Status()
-    if l:res ==# 'OK'
-        return ''
-    else
-        let l:e_w = split(l:res)
-        if len(l:e_w) == 2
-            return ' •' . matchstr(l:e_w[1], '\d\+')
-        elseif match(l:e_w, 'W') > -1
-            return ' •' . matchstr(l:e_w[0], '\d\+')
-        endif
-    endif
-endfunction
+"function! ALEGetWarning()
+    "let l:res = ale#statusline#Status()
+    "if l:res ==# 'OK'
+        "return ''
+    "else
+        "let l:e_w = split(l:res)
+        "if len(l:e_w) == 2
+            "return ' •' . matchstr(l:e_w[1], '\d\+')
+        "elseif match(l:e_w, 'W') > -1
+            "return ' •' . matchstr(l:e_w[0], '\d\+')
+        "endif
+    "endif
+"endfunction
 "   }
 
 "   autoformat {
@@ -374,9 +375,6 @@ set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
 set cursorline " Highlight current line
 hi CursorLine term=bold cterm=bold guibg=Grey35
-"highlight clear SignColumn " SignColumn should match background
-"highlight clear LineNr " Current line number row will have same background color in relative mode
-"highlight clear CursorLineNr " Remove highlight color from current line number
 
 if has('cmdline_info')
 set ruler " Show the ruler
@@ -384,17 +382,6 @@ set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
 set showcmd " Show partial commands in status line and
 " Selected characters/lines in visual mode
 endif
-
-"if has('statusline')
-"set laststatus=2
-
-" Broken down into easily includeable segments
-"set statusline=%<%f\ " Filename
-"set statusline+=%w%h%m%r " Options
-"set statusline+=\ [%{&ff}/%Y] " Filetype
-"set statusline+=\ [%{getcwd()}] " Current dir
-"set statusline+=%=%-14.(%l,%c%V%)\ %p%% " Right aligned file nav info
-
 
 set backspace=indent,eol,start " Backspace for dummies
 set showmatch " Show matching brackets/parenthesis
@@ -501,7 +488,7 @@ nnoremap <leader>ms :messages<CR>
 
 " No need for ex mode
 nnoremap Q <nop>
-nnoremap q: <nop>
+"nnoremap q: <nop>
 
 " Navigate between display lines
 noremap  <silent> k gk
@@ -1037,7 +1024,6 @@ nnoremap <leader>s :Startify<CR>
 let g:spacevim_enable_key_frequency = 0
 let g:spacevim_enable_cursorcolumn     = 0
 let g:spacevim_enable_ale          = 1
-let g:spacevim_enable_neomake          = 1
 let g:spacevim_enable_ycm              = 0
 let g:spacevim_sidebar_width           = 30
 let g:spacevim_enable_cursorline       = 0
