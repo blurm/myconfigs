@@ -3,6 +3,7 @@
 " SpaceVim_statusline_a 显示窗口编号的部分
 " SpaceVim_statusline_b 文件名和文件大小
 " SpaceVim_statusline_c FileType
+
 scriptencoding utf-8
 
 let g:_spacevim_statusline_loaded = 1
@@ -54,6 +55,7 @@ let s:modes = {
             \ },
             \ }
 
+" 需要加载的模块
 let s:loaded_sections = ['syntax checking', 'major mode', 'minor mode lighters', 'version control info', 'cursorpos']
 " 获得左右分隔符，比如， 
 let [s:lsep , s:rsep] = get(s:separators, g:spacevim_statusline_separator, s:separators['arrow'])
@@ -75,9 +77,10 @@ function! damonvim#statusline#init() abort
                     \ * let &l:statusline = damonvim#statusline#get(1)
         if exists('g:ale_enabled')
             autocmd!
+            " Generate ale syntax checking count
             " unsilent for echom output. User ALELint is set to silent
             " defaultly
-            autocmd User ALELint unsilent
+            autocmd User ALELint,Startified unsilent
                         \ let &l:statusline = damonvim#statusline#get(1)
         endif
         autocmd BufWinLeave,WinLeave * let &l:statusline = damonvim#statusline#get()
@@ -99,7 +102,47 @@ function! damonvim#statusline#get(...) abort
         "return '%#SpaceVim_statusline_ia# ' . s:winnr(1) . ' %#SpaceVim_statusline_a_b#'
                     "\ . '%#SpaceVim_statusline_b# tagbar %#SpaceVim_statusline_b_c#'
     elseif &filetype ==# 'startify'
+        let lsec = [' ', ' Startify ']
+        let lock =  ' %#SpaceVim_statusline_lock#' . ''
+        call add(lsec, lock)
+        let rsec = []
+        "" file type
+        "if index(s:loaded_sections, 'major mode') != -1 && !empty(&filetype)
+            "call add(lsec, ' ' . &filetype . ' ')
+        "endif
+        "let rsec = []
+        "if index(s:loaded_sections, 'syntax checking') != -1 && s:syntax_checking() != ''
+            "call add(lsec, s:syntax_checking())
+        "endif
+        "" 各种小功能的图标
+        "if index(s:loaded_sections, 'minor mode lighters') != -1
+            "call add(lsec, s:modes())
+        "endif
+        "" git info
+        "if index(s:loaded_sections, 'version control info') != -1
+            "call add(lsec, s:git_branch())
+        "endif
+        "call add(lsec, SpaceVim#plugins#searcher#count())
+        "if index(s:loaded_sections, 'battery status') != -1
+        "call add(rsec, s:battery_status())
+        "endif
+        "call add(rsec, '%{" " . &ff . " | " . (&fenc!=""?&fenc:&enc) . " "}')
+        "if index(s:loaded_sections, 'cursorpos') != -1
+            "call add(rsec, s:cursorpos())
+        "endif
+        "call add(rsec, ' %P ')
+        "if index(s:loaded_sections, 'time') != -1
+            "call add(rsec, s:time())
+        "endif
+
+        "if index(s:loaded_sections, 'whitespace') != -1
+            "call add(rsec, s:whitespace())
+        "endif
         call fugitive#detect(getcwd())
+        return s:STATUSLINE.build(lsec, rsec, s:lsep, s:rsep,
+                    \ 'SpaceVim_statusline_a', 'SpaceVim_statusline_b', 'SpaceVim_statusline_c', 'SpaceVim_statusline_z')
+        "return s:STATUSLINE.build([' ',' Startify ', '  ' . ' ' . ' '], [], s:lsep, s:rsep,
+                    "\ 'SpaceVim_statusline_ia', 'SpaceVim_statusline_b', 'SpaceVim_statusline_c', 'SpaceVim_statusline_z')
     elseif &filetype ==# 'denite'
         return '%#SpaceVim_statusline_a_bold# %{damonvim##statusline#denite_mode()} '
                     \ . '%#SpaceVim_statusline_a_bold_SpaceVim_statusline_b# '
@@ -159,9 +202,10 @@ endif
 " 返回当前激活窗口的statusline
 function! s:active() abort
     let lsec = [s:winnr(), s:filename()]
-    if index(s:loaded_sections, 'search status') != -1
-        call add(lsec, s:search_status())
-    endif
+    "if index(s:loaded_sections, 'search status') != -1
+        "call add(lsec, s:search_status())
+    "endif
+    " file type
     if index(s:loaded_sections, 'major mode') != -1 && !empty(&filetype)
         call add(lsec, ' ' . &filetype . ' ')
     endif
@@ -169,10 +213,11 @@ function! s:active() abort
     if index(s:loaded_sections, 'syntax checking') != -1 && s:syntax_checking() != ''
         call add(lsec, s:syntax_checking())
     endif
-
+    " 各种小功能的图标
     if index(s:loaded_sections, 'minor mode lighters') != -1
         call add(lsec, s:modes())
     endif
+    " git info
     if index(s:loaded_sections, 'version control info') != -1
         call add(lsec, s:git_branch())
     endif
@@ -227,6 +272,8 @@ function! damonvim#statusline#def_colors() abort
     hi! SpaceVim_statusline_warn ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fabd2f gui=bold
     hi! SpaceVim_statusline_style_error ctermbg=003 ctermfg=Black guibg=#504945 guifg=#EC7063 gui=bold
     hi! SpaceVim_statusline_style_warn ctermbg=003 ctermfg=Black guibg=#504945 guifg=#F9E79F gui=bold
+    hi! SpaceVim_statusline_lock ctermbg=003 ctermfg=Black guibg=#3c3836 guifg=#fabd2f gui=bold
+    "SpaceVim_statusline_c xxx ctermfg=246 ctermbg=237 guifg=#a89984 guibg=#3c3836
     call s:HI.hi_separator('SpaceVim_statusline_a', 'SpaceVim_statusline_b')
     call s:HI.hi_separator('SpaceVim_statusline_a_bold', 'SpaceVim_statusline_b')
     call s:HI.hi_separator('SpaceVim_statusline_ia', 'SpaceVim_statusline_b')
@@ -321,6 +368,7 @@ function! s:git_branch() abort
     return ''
 endfunction
 
+" cursor position [row num]:[column num]
 function! s:cursorpos() abort
     return ' %l:%c '
 endfunction
