@@ -74,18 +74,21 @@ function! damonvim#statusline#init() abort
     augroup SpaceVim_statusline
         autocmd!
         autocmd BufWinEnter,WinEnter,FileType
-                    \ * let &l:statusline = damonvim#statusline#get(1)
-        if exists('g:ale_enabled')
-            autocmd!
-            " Generate ale syntax checking count
-            " unsilent for echom output. User ALELint is set to silent
-            " defaultly
-            autocmd User ALELint,Startified unsilent
-                        \ let &l:statusline = damonvim#statusline#get(1)
-        endif
-        autocmd BufWinLeave,WinLeave * let &l:statusline = damonvim#statusline#get()
+                    \ * call damonvim#statusline#initAle(1)
+        autocmd BufWinLeave,WinLeave * call damonvim#statusline#initAle(0)
         autocmd ColorScheme * call damonvim#statusline#def_colors()
     augroup END
+endfunction
+
+function! damonvim#statusline#initAle(isActive)
+    if a:isActive > 0
+        if exists('g:ale_enabled')
+            "autocmd!
+            autocmd User ALELint,Startified unsilent
+                        \ let &l:statusline = damonvim#statusline#get(1)
+       endif
+    endif
+    let &l:statusline = damonvim#statusline#get(a:isActive)
 endfunction
 
 " a:0 = 1 BufWinEnter, WinEnter, Filetype
@@ -144,7 +147,7 @@ function! damonvim#statusline#get(...) abort
         "return s:STATUSLINE.build([' ',' Startify ', '  ' . ' ' . ' '], [], s:lsep, s:rsep,
                     "\ 'SpaceVim_statusline_ia', 'SpaceVim_statusline_b', 'SpaceVim_statusline_c', 'SpaceVim_statusline_z')
     elseif &filetype ==# 'denite'
-        return '%#SpaceVim_statusline_a_bold# %{damonvim##statusline#denite_mode()} '
+        return '%#SpaceVim_statusline_a_bold# %{damonvim#statusline#denite_mode()} '
                     \ . '%#SpaceVim_statusline_a_bold_SpaceVim_statusline_b# '
                     \ . '%#SpaceVim_statusline_b#%{denite#get_status_sources()} %#SpaceVim_statusline_b_SpaceVim_statusline_z# '
                     \ . '%#SpaceVim_statusline_z#%=%#SpaceVim_statusline_c_SpaceVim_statusline_z#'
@@ -159,7 +162,7 @@ function! damonvim#statusline#get(...) abort
                     "\ . '%#SpaceVim_statusline_b# %{getcwd()}%#SpaceVim_statusline_b_SpaceVim_statusline_c#'
                     "\ . '%#SpaceVim_statusline_c# %{SpaceVim#plugins#flygrep#lineNr()}'
     endif
-    if a:0 > 0
+    if a:0 > 0 && a:1 > 0
         return s:active()
     else
         return s:inactive()
@@ -300,6 +303,21 @@ function! damonvim#statusline#mode(mode)
         let w:spacevim_statusline_mode = a:mode
     endif
     return ''
+endfunction
+
+function! damonvim#statusline#denite_mode()
+    let t = s:colors_template
+    let dmode = split(denite#get_status_mode())[1]
+    if get(w:, 'spacevim_statusline_mode', '') != dmode
+        if dmode == 'NORMAL'
+            exe 'hi! SpaceVim_statusline_a_bold cterm=bold gui=bold ctermbg=' . t[0][2] . ' ctermfg=' . t[0][3] . ' guibg=' . t[0][1] . ' guifg=' . t[0][0]
+        elseif dmode == 'INSERT'
+            exe 'hi! SpaceVim_statusline_a_bold cterm=bold gui=bold ctermbg=' . t[4][3] . ' ctermfg=' . t[4][2] . ' guibg=' . t[4][1] . ' guifg=' . t[4][0]
+        endif
+        call s:HI.hi_separator('SpaceVim_statusline_a_bold', 'SpaceVim_statusline_b')
+        let w:spacevim_statusline_mode = dmode
+    endif
+    return dmode
 endfunction
 
 " a:0 BufWinEnter, WinEnter, Filetype
