@@ -132,10 +132,11 @@ let g:ale_linters = {
             \ 'markdown' : ['mdl'],
             \ 'javascript' : ['eslint'],
             \}
-"highlight clear ALEErrorSign
-"highlight clear ALEWarningSign
 autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
-autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
+autocmd User ALELint highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836 gui=bold
+autocmd User ALELint highlight ALEStyleErrorSign guifg=#AF7AC5 guibg=#3c3836 gui=bold
+autocmd User ALELint highlight ALEStyleWarningSign guifg=#F9E79F guibg=#3c3836 gui=bold
+
 "highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
 "highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
 "hi! ALEWarningSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fabd2f gui=bold
@@ -377,8 +378,8 @@ silent! colorscheme gruvbox
 
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
-set cursorline " Highlight current line
-hi CursorLine term=bold cterm=bold guibg=Grey35
+"set cursorline " Highlight current line
+"hi CursorLine term=bold cterm=bold guibg=Grey35
 
 if has('cmdline_info')
 set ruler " Show the ruler
@@ -540,7 +541,10 @@ nnoremap <leader>sb :%s/
 " Select all
 nnoremap <C-a> ggVG
 
-" Command line mode  命令行模式增强
+" Scroll up half page
+nnoremap <C-s> <C-u>
+
+" Command line mode  命令行模式增强 ---------------{{{
 "cnoremap <C-h> <backspace>
 cnoremap <C-d> <Del>
 " to begin of command line
@@ -562,6 +566,7 @@ cnoremap <C-j> <Down>
 cnoremap <C-b> <Left>
 " cursor right
 cnoremap <C-f> <Right>
+" }}}
 
 " Adjust current window's size
 nmap <A-Down> <C-W>-
@@ -646,15 +651,16 @@ endif
 
 " Denite --------------------------------------------------------------------{{{
     let s:menus = {}
-
+    " statusline=0 is nesessary if you want to custom statusline
     call denite#custom#option('_', {
                 \ 'prompt': '❯',
-                \ 'winheight': 10,
+                \ 'winheight': 15,
                 \ 'reversed': 1,
                 \ 'highlight_matched_char': 'Underlined',
                 \ 'highlight_mode_normal': 'CursorLine',
                 \ 'updatetime': 1,
                 \ 'auto_resize': 1,
+                \ 'statusline' : 0,
                 \})
     "call denite#custom#option('TSDocumentSymbol', {
     "\ 'prompt': ' @' ,
@@ -667,7 +673,11 @@ endif
     " -u表示忽略这两个文件的设置
     " --hidden : Search hidden directories and files. (Hidden directories and files are skipped by default.)
     " --files : Print each file that would be searched (but don't search).
-    call denite#custom#var('file_rec', 'command',['rg', '--hidden', '--files', '--glob', '!.git', '--no-ignore'])
+    call denite#custom#var('file_rec',
+                \ 'command',['rg', '--hidden', '--files', '--glob',
+                    \ '!{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}',
+                    \ '--no-ignore'
+                    \])
     call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
     call denite#custom#var('grep', 'command', ['rg'])
     call denite#custom#source('grep', 'matchers', ['matcher_regexp'])
