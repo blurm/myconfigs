@@ -28,6 +28,7 @@ function! damonvim#tabline#config() abort
         autocmd!
         autocmd ColorScheme * call damonvim#tabline#def_colors()
     augroup END
+    " Create the key mapping for buffer index jumping
     for i in range(1, 9)
         exe "nmap <silent> <leader>" . i . " :call damonvim#tabline#jump("
                     \ . i . ")<CR>"
@@ -43,10 +44,13 @@ function! damonvim#tabline#config() abort
 endfunction
 
 function! damonvim#tabline#get() abort
+    " last tab's page number
     let nr = tabpagenr('$')
     let t = ''
     if nr > 1
+        " current tab page number
         let ct = tabpagenr()
+        " If current tab page is the first tab page
         if ct == 1
             let t = '%#SpaceVim_tabline_a#  '
         else
@@ -72,7 +76,7 @@ function! damonvim#tabline#get() abort
             if g:spacevim_enable_tabline_filetype_icon
                 let icon = s:file.fticon(name)
                 if !empty(icon)
-                    let name = name . ' ' . icon 
+                    let name = name . ' ' . icon
                 endif
             endif
             let t .= id . ' ' . name
