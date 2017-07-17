@@ -376,13 +376,10 @@ set colorcolumn=80 " 80个字符的限制
 "let g:solarized_visibility="normal"
 
 " 256 colors setting for nvim
-if has("nvim")
-    set termguicolors
-else
-    set t_Co=256
-    let &t_8f = "[38;2;%lu;%lu;%lum"
-    let &t_8b = "[48;2;%lu;%lu;%lum"
-endif
+set termguicolors
+"set t_Co=256
+"let &t_8f = "[38;2;%lu;%lu;%lum"
+"let &t_8b = "[48;2;%lu;%lu;%lum"
 let g:gruvbox_italic=1
 " soft, medium, hard
 let g:gruvbox_contrast_dark='medium'
@@ -390,8 +387,10 @@ silent! colorscheme gruvbox
 
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
-"set cursorline " Highlight current line
-"hi CursorLine term=bold cterm=bold guibg=Grey35
+if !has("nvim")
+    set cursorline " Highlight current line
+    hi CursorLine term=bold cterm=bold guibg=Grey35
+endif
 
 if has('cmdline_info')
 set ruler " Show the ruler
@@ -427,21 +426,23 @@ set noerrorbells
 set novisualbell
 set tm=500
 
-"" 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
-"set relativenumber number
-"autocmd FocusLost * :set norelativenumber number
-"autocmd FocusGained * :set relativenumber
-"" 插入模式下用绝对行号, 普通模式下用相对
-"autocmd InsertEnter * :set norelativenumber number
-"autocmd InsertLeave * :set relativenumber
-"function! NumberToggle()
-    "if(&relativenumber == 1)
-        "set norelativenumber number
-    "else
-        "set relativenumber
-    "endif
-"endfunc
-"nnoremap <F2> :call NumberToggle()<CR>
+" 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
+if !has('nvim')
+    set relativenumber number
+    "autocmd FocusLost * :set norelativenumber number
+    "autocmd FocusGained * :set relativenumber
+    "" 插入模式下用绝对行号, 普通模式下用相对
+    "autocmd InsertEnter * :set norelativenumber number
+    "autocmd InsertLeave * :set relativenumber
+    "function! NumberToggle()
+        "if(&relativenumber == 1)
+            "set norelativenumber number
+        "else
+            "set relativenumber
+        "endif
+    "endfunc
+    "nnoremap <F2> :call NumberToggle()<CR>
+endif
 
 " Turn off highlight until next search
 nnoremap <F4> :noh<CR>
