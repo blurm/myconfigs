@@ -132,8 +132,8 @@ let g:ale_linters = {
             \ 'markdown' : ['mdl'],
             \ 'javascript' : ['eslint'],
             \}
-autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
-autocmd User ALELint highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836 gui=bold
+autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
+autocmd User ALELint highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
 autocmd User ALELint highlight ALEStyleErrorSign guifg=#AF7AC5 guibg=#3c3836 gui=bold
 autocmd User ALELint highlight ALEStyleWarningSign guifg=#F9E79F guibg=#3c3836 gui=bold
 
@@ -147,6 +147,8 @@ let g:ale_set_highlights = 1
 "let g:ale_sign_column_always = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 "let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
+"let g:ale_sign_error = ''
+"let g:ale_sign_warning = ''
 let g:ale_sign_error = '•'
 let g:ale_sign_warning = '•'
 let g:ale_echo_msg_error_str = '✖ Error'
@@ -1086,4 +1088,5 @@ nnoremap <leader>le :call RecordLogEnd()<CR>
 " }}}
 
 " sample ------------------------------------------------------------------{{{
+
 " }}}
