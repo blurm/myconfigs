@@ -15,11 +15,14 @@
     " Developing tools
 
     " Autocomplete & Snips
+    Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'} " autocomplete for Java
+    autocmd FileType java setlocal omnifunc=javacomplete#Complete
 if has("nvim")
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-jedi', {'for': 'python'} " autocomplete for Python
-    Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'} " autocomplete for Java
     Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] } " autocomplete for Javascript
+else
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 endif
     Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
     Plug 'SirVer/ultisnips'
@@ -228,6 +231,11 @@ autocmd InsertLeave *.json setlocal concealcursor=inc
 let g:nerdtree_tabs_open_on_console_startup=0
 nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 "   }
+"   YouCompleteMe {
+    let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+    let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+    let g:SuperTabDefaultCompletionType = '<C-n>'
+"   }
 "   UltiSnips {
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
@@ -352,7 +360,7 @@ set encoding=utf8
 set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
 set virtualedit=onemore             " Allow for cursor beyond last character
-set history=2000                    " Store a ton of history (default is 20)
+set history=5000                    " Store a ton of history (default is 20)
 "set spell                           " Spell checking on
 set hidden                          " Allow buffer switching without saving
 set iskeyword-=.                    " '.' is an end of word designator
@@ -388,8 +396,8 @@ silent! colorscheme gruvbox
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
 if !has("nvim")
-    set cursorline " Highlight current line
-    hi CursorLine term=bold cterm=bold guibg=Grey35
+    "set cursorline " Highlight current line
+    "hi CursorLine term=bold cterm=bold guibg=Grey35
 endif
 
 if has('cmdline_info')
@@ -808,6 +816,13 @@ nnoremap <silent> <SPACE>9 :9wincmd w<CR>
 " }}}
 
 " Startify ------------------------------------------------------------------{{{
+
+if has('nvim')
+    let g:version ='NVIM ' . matchstr(execute('version'), 'NVIM v\zs[^\n]*')
+else
+    let g:version ='VIM ' . matchstr(execute('version'), 'VIM - Vi IMproved \zs[^(]*')
+endif
+
 let g:my_welcome_bannars = [
             \ [
             \'',
@@ -908,7 +923,7 @@ let g:my_welcome_bannars = [
             \ [
             \'',
             \'',
-            \'',
+            \'    Welcome to',
             \'',
             \'    ████████▄     ▄████████   ▄▄▄▄███▄▄▄▄    ▄██████▄  ███▄▄▄▄    ▄█    █▄   ▄█    ▄▄▄▄███▄▄▄▄   ',
             \'    ███   ▀███   ███    ███ ▄██▀▀▀███▀▀▀██▄ ███    ███ ███▀▀▀██▄ ███    ███ ███  ▄██▀▀▀███▀▀▀██▄ ',
@@ -919,7 +934,7 @@ let g:my_welcome_bannars = [
             \'    ███   ▄███   ███    ███ ███   ███   ███ ███    ███ ███   ███ ███    ███ ███  ███   ███   ███ ',
             \'    ████████▀    ███    █▀   ▀█   ███   █▀   ▀██████▀   ▀█   █▀   ▀██████▀  █▀    ▀█   ███   █▀  ',
             \'',
-            \'    ',
+            \'                                                                        version: '. g:version,
             \'    ',
             \'    ',
             \ ],
