@@ -23,6 +23,7 @@ if has("nvim")
     Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] } " autocomplete for Javascript
 else
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+    Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
 endif
     Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
     Plug 'SirVer/ultisnips'
@@ -650,7 +651,8 @@ endfunction
 
 set ttimeoutlen=150
 "退出插入模式
-autocmd InsertLeave * call Fcitx2en()
+" FocusGained doesn't work for vim, only for nvim and gvim
+autocmd InsertLeave,FocusGained * call Fcitx2en()
 "进入插入模式
 "autocmd InsertEnter * call Fcitx2zh()
 "##### auto fcitx end ######
@@ -1114,5 +1116,4 @@ nnoremap <leader>le :call RecordLogEnd()<CR>
 " }}}
 
 " sample ------------------------------------------------------------------{{{
-
 " }}}
