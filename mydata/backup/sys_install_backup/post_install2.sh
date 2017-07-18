@@ -130,6 +130,11 @@ echo '---------------------- gnome terminal settings ---------------------'
 
     sudo ln -s ~/neovim/bin/nvim /usr/local/bin/nvim
 
+    # vim-plug
+    # nvim
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
     # nerd fonts
     cd ~/mydata/git/
     git clone https://github.com/ryanoasis/nerd-fonts.git

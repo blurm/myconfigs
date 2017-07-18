@@ -264,13 +264,13 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
 ## Developing tools {
     echo '----------------- Developing Tools -------------------'
     # Vim
-    echo '----------------------- vim ---------------------------'
-    sudo apt -y remove vim-tiny
-    sudo apt -y install vim-gnome
-    # Python2 support for Vim (Used by some plugins like ropevim)
-    sudo apt -y install vim-gnome-py2
-    # Vim plugin - Vundle
-    proxychains4 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    #echo '----------------------- vim ---------------------------'
+    #sudo apt -y remove vim-tiny
+    #sudo apt -y install vim-gnome
+    ## Python2 support for Vim (Used by some plugins like ropevim)
+    #sudo apt -y install vim-gnome-py2
+    ## Vim plugin - Vundle
+    #proxychains4 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
     # Java
     echo '----------------------- java ---------------------------'
