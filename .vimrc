@@ -510,7 +510,7 @@ let g:vim_json_syntax_conceal = 1
 " Key (re)mappings {
 
 "Exit insert mode
-imap kj <Esc>
+"imap kj <Esc>
 nnoremap <leader>ms :messages<CR>
 
 " No need for ex mode
@@ -528,18 +528,15 @@ noremap J 5j
 noremap K 5k
 noremap <Leader>j J
 
-"nnoremap ; :
+nnoremap ; :
 
 nnoremap p p=`]
 " Copy & paste to system clipboard
 vmap <Leader>y "+y
 nmap <Leader>y "+y
 nmap <Leader>yy "+yy
-"vmap <Leader>d "+d
 vmap <Leader>p "+p
 nmap <Leader>p "+p
-"nmap <Leader>P "+P
-"vmap <Leader>P "+P
 
 " Insert a new line without entering insert mode
 "set timeout timeoutlen=300 ttimeoutlen=100
@@ -568,6 +565,8 @@ nnoremap <C-s> <C-u>
 
 " Command line mode  命令行模式增强 ---------------{{{
 "cnoremap <C-h> <backspace>
+cnoremap <C-n> <Down>
+cnoremap <C-p> <Up>
 cnoremap <C-d> <Del>
 " to begin of command line
 cnoremap <C-a> <Home>
