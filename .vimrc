@@ -7,13 +7,26 @@
 " Author: Damon Ma
 " Repo: https://github.com/blurm/myconfigs
 
+let loadPlug = 1
+let loadSysSetting = 1
+let loadKeyMapping = 1
+let loadFold = 1
+let loadFunc = 1
+let loadNvim = 1
+let loadDenite = 1
+let loadAirline = 1
+let loadStartify = 1
+let loadVimfiler = 1
+let loadSpaceVim = 1
+let loadProfile = 1
+
+
 " Plugin definations ------------------------------------------------------- {{{
 
     " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
     call plug#begin('~/.vim/plugged')
 
-    " Developing tools
-
+if loadPlug == 1
     " Autocomplete & Snips
     Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'} " autocomplete for Java
     autocmd FileType java setlocal omnifunc=javacomplete#Complete
@@ -80,8 +93,14 @@ endif
     Plug 'thinca/vim-quickrun'
     Plug 'ap/vim-css-color'
     Plug 'Shougo/echodoc.vim'
+    "set noshowmode
+    let g:echodoc_enable_at_startup = 1
     Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
     Plug 'tpope/vim-scriptease'
+    Plug 'mzlogin/vim-markdown-toc' " Generate table of content
+    Plug 'tenfyzhong/tagbar-markdown.vim'
+    Plug 'dyng/ctrlsf.vim'
+    Plug 'Yggdroot/LeaderF'
 
     " Useless Plugins
     "Plug 'neomake/neomake'
@@ -104,14 +123,36 @@ endif
     "Plug 'MattesGroeger/vim-bookmarks'
     "Plug 'Shougo/junkfile.vim' " Create temporary file for testing or memo
 
-    call plug#end()
+endif
 
+    call plug#end()
 
     " Need asign this first before being used
     let mapleader=","
 " }}}
 
 " Plugin Settings ----------------------------------------------------------{{{
+" LeaderF {
+let g:Lf_ShortcutF = '<leader>l'
+nnoremap <leader>ll :LeaderfSelf<CR>
+nnoremap <leader>lc :LeaderfHistoryCmd<CR>
+nnoremap <leader>ls :LeaderfHistorySearch<CR>
+nnoremap <leader>lf :LeaderfFunction<CR>
+nnoremap <leader>lh :LeaderfHelp<CR>
+let g:Lf_ExternalCommand = 'rg %s --files --no-ignore --hidden --follow --glob
+                                \gc !{.git/,
+                                   \gc.gvfs,
+                                   \gc.cache/dconf,
+                                   \gc.config/chromium,
+                                   \gc.config/pulse,
+                                   \gc.config/google-chrome}'
+"let g:Lf_UseVersionControlTool = 0
+"let g:Lf_WildIgnore = {
+            "\ 'dir': ['.svn','.git','.hg'],
+            "\ 'file': ['.gitignore']
+            "\}
+"let g:Lf_CommandMap = {'<C-C>': ['<Esc>', '<C-C>']}
+" }
 " Goyo {
 nnoremap <leader>gy :Goyo<CR>
 " }
@@ -319,6 +360,14 @@ nnoremap <F5> :GundoToggle<CR>
 "   }
 "   Tagbar {
 nnoremap <F8> :TagbarToggle<CR>
+"let g:tagbar_type_markdown = {
+    "\ 'ctagstype' : 'markdown',
+    "\ 'kinds' : [
+        "\ 'h:Heading_L1',
+        "\ 'i:Heading_L2',
+        "\ 'k:Heading_L3'
+    "\ ]
+    "\ }
 "   }
 "   devicons & nerdtree syntax highlight {
 " loading the plugin
@@ -345,6 +394,7 @@ let g:table_mode_corner="|"
 "   }
 " }}}
 
+if loadSysSetting == 1
 " System Settings  ---------------------------------------------------------{{{
 
 " The default leader is '\', but many people prefer ',' as it's in a
@@ -424,7 +474,7 @@ set scrolloff=3 " Minimum lines to keep above and below cursor
 set nofoldenable "启动vim时关闭代码折叠
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
-set cmdheight=2
+set cmdheight=3
 set hid
 " This option will delay cursor line scroll
 "set lazyredraw
@@ -504,7 +554,9 @@ let g:vim_json_syntax_conceal = 1
 "let $BASH_ENV = "/home/damon/.config/nvim/vim_bash"
 " }}}
 " }}}
+endif
 
+if loadKeyMapping == 1
 " Key Mappings -------------------------------------------------------------{{{
 
 " Key (re)mappings {
@@ -528,6 +580,7 @@ noremap J 5j
 noremap K 5k
 noremap <Leader>j J
 
+nnoremap ' ;
 nnoremap ; :
 
 nnoremap p p=`]
@@ -590,19 +643,28 @@ cnoremap <C-f> <Right>
 " }}}
 
 " Adjust current window's size
-nmap <A-Down> <C-W>-
-nmap <A-Up> <C-W>+
-nmap <A-Left> <C-W>>
-nmap <A-Right> <C-W><
+nmap <Down> <C-W>6-
+nmap <Up> <C-W>6+
+nmap <Left> <C-W>10>
+nmap <Right> <C-W>10<
 
 " Auto save current buffer when leave insert mode
-autocmd InsertLeave * update
+"autocmd InsertLeave * update
+function! Autosave()
+    if &filetype !=# 'ctrlsf'
+        update
+    endif
+endfunction
+
+autocmd InsertLeave * call Autosave()
 
 " Shortcut for opening .vimrc
 nmap <leader>v :e $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 " }}}
+endif
 
+if loadFold == 1
 " Fold 代码折叠 ------------------------------------------------------------{{{
 
 " 启用标记折叠。所有文本将按照特定标记（默认为{{{和}}}）自动折叠。
@@ -615,7 +677,9 @@ autocmd FileType python setlocal foldmethod=indent
 autocmd FileType css,scss setlocal foldmethod=marker
 autocmd FileType css,scss setlocal foldmarker={,}
 " }}}
+endif
 
+if loadFunc == 1
 " Functions ----------------------------------------------------------------{{{
 " function {
 function! StripTrailingWhitespace()
@@ -657,7 +721,9 @@ autocmd InsertLeave,FocusGained * call Fcitx2en()
 "##### auto fcitx end ######
 " }
 " }}}
+endif
 
+if loadNvim == 1
 " neovim settings ----------------------------------------------------------{{{
 
 if has("nvim")
@@ -670,7 +736,9 @@ if has("nvim")
     tmap kj <c-\><c-n><esc><cr>
 endif
 " }}}
+endif
 
+if loadDenite == 1
 " Denite --------------------------------------------------------------------{{{
     let s:menus = {}
     " statusline=0 is nesessary if you want to custom statusline
@@ -732,7 +800,9 @@ endif
     call denite#custom#var('menu', 'menus', s:menus)
 
 "}}}
+endif
 
+if loadAirline == 1
 " Airline -----------------------------------------------------------------{{{
 " When complete option was triggered, a scratch window will display.
 " When work with airline, a new buffer named [no nam] will be created
@@ -815,7 +885,9 @@ nnoremap <silent> <SPACE>9 :9wincmd w<CR>
 "endwhile
 
 " }}}
+endif
 
+if loadStartify == 1
 " Startify ------------------------------------------------------------------{{{
 
 if has('nvim')
@@ -985,7 +1057,9 @@ let g:startify_skiplist = [
             \ ]
 nnoremap <leader>s :Startify<CR>
 " }}}
+endif
 
+if loadVimfiler == 1
 " vimfiler ------------------------------------------------------------------{{{
 "let g:vimfiler_as_default_explorer = 1
 "let g:vimfiler_restore_alternate_file = 1
@@ -1062,7 +1136,9 @@ nnoremap <leader>s :Startify<CR>
     "nmap <buffer> <Right> <Plug>(vimfiler_smart_l)
 "endf
 " }}}
-"
+endif
+
+if loadSpaceVim == 1
 " SpaceVim ------------------------------------------------------------------{{{
 let g:spacevim_enable_key_frequency = 0
 let g:spacevim_enable_cursorcolumn     = 0
@@ -1098,8 +1174,10 @@ function! VimEnter() abort
 endfunction
 
 " }}}
+endif
 
-" Profile ------------------------------------------------------------------{{{
+if loadProfile == 1
+" Profile Record -----------------------------------------------------------{{{
 function! RecordLog() abort
     profile start vim_profile.log
     profile func *
@@ -1113,6 +1191,9 @@ endfunction
 nnoremap <leader>ls :call RecordLog()<CR>
 nnoremap <leader>le :call RecordLogEnd()<CR>
 " }}}
+endif
 
 " sample ------------------------------------------------------------------{{{
+let g:ctrlsf_ackprg = '/usr/local/bin/ag'
+let g:ctrlsf_debug_mode = 0
 " }}}
