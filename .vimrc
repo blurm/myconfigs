@@ -93,7 +93,6 @@ endif
     Plug 'thinca/vim-quickrun'
     Plug 'ap/vim-css-color'
     Plug 'Shougo/echodoc.vim'
-    "set noshowmode
     let g:echodoc_enable_at_startup = 1
     Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
     Plug 'tpope/vim-scriptease'
@@ -101,6 +100,7 @@ endif
     Plug 'tenfyzhong/tagbar-markdown.vim'
     Plug 'dyng/ctrlsf.vim'
     Plug 'Yggdroot/LeaderF'
+    "Plug 'vim-scripts/BufOnly.vim'
 
     " Useless Plugins
     "Plug 'neomake/neomake'
@@ -135,7 +135,7 @@ endif
 " LeaderF {
 let g:Lf_ShortcutF = '<leader>l'
 nnoremap <leader>ll :LeaderfSelf<CR>
-nnoremap <leader>lc :LeaderfHistoryCmd<CR>
+nnoremap <leader>c :LeaderfHistoryCmd<CR>
 nnoremap <leader>ls :LeaderfHistorySearch<CR>
 nnoremap <leader>lf :LeaderfFunction<CR>
 nnoremap <leader>lh :LeaderfHelp<CR>
@@ -301,7 +301,7 @@ nnoremap <silent> <leader>ji :JavaImportOrganize<cr>
 nnoremap <silent> <leader>jd :JavaDocSearch -x declarations<cr>
 " Search element under the cursor
 autocmd FileType java
-            \ nnoremap <silent> <buffer> <leader>r :Java %<cr>
+            \ nnoremap <silent> <buffer> <leader>jr :Java %<cr>
 nnoremap <silent> <leader>js :JavaSearchContext<cr>
 "nnoremap <silent> <leader>r :Java %<cr>
 "   }
@@ -474,7 +474,7 @@ set scrolloff=3 " Minimum lines to keep above and below cursor
 set nofoldenable "启动vim时关闭代码折叠
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
-set cmdheight=3
+set cmdheight=2
 set hid
 " This option will delay cursor line scroll
 "set lazyredraw
@@ -486,7 +486,7 @@ set novisualbell
 set tm=500
 
 " 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
-if !has('nvim')
+"if !has('nvim')
     set relativenumber number
     "autocmd FocusLost * :set norelativenumber number
     "autocmd FocusGained * :set relativenumber
@@ -501,7 +501,7 @@ if !has('nvim')
         "endif
     "endfunc
     "nnoremap <F2> :call NumberToggle()<CR>
-endif
+"endif
 
 " Turn off highlight until next search
 nnoremap <F4> :noh<CR>
@@ -527,7 +527,7 @@ set splitright " Puts new vsplit windows to the right of the current
 set splitbelow " Puts new split windows to the bottom of the current
 "set linespace=5 " 字符间插入的像素行数目,only work for gvim
 
-" set fillchar 
+" set fillchar
 "hi VertSplit ctermbg=NONE guibg=NONE
 hi VertSplit guibg=#282828 guifg=#181A1F
 set fillchars+=vert:│
@@ -538,8 +538,7 @@ set pastetoggle=<F12> " pastetoggle (sane indentation on pastes)
 " Remove trailing whitespaces and ^M chars
 " To disable the stripping of whitespace, add the following to your
 " .vimrc.before.local file:
-let g:spf13_keep_trailing_whitespace = 1
-autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> if !exists('g:spf13_keep_trailing_whitespace') | call StripTrailingWhitespace() | endif
+autocmd FileType vim,c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> call StripTrailingWhitespace()
 autocmd FileType haskell,puppet,ruby,yml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType haskell setlocal commentstring=--\ %s
 autocmd FileType java set tags=~/dev/jdk1.8.0_40/src/.tags
@@ -586,14 +585,16 @@ nnoremap ; :
 nnoremap p p=`]
 " Copy & paste to system clipboard
 vmap <Leader>y "+y
-nmap <Leader>y "+y
+nmap <Leader>y :echo("good")<CR>
 nmap <Leader>yy "+yy
 vmap <Leader>p "+p
 nmap <Leader>p "+p
 
 " Insert a new line without entering insert mode
 "set timeout timeoutlen=300 ttimeoutlen=100
-nmap <CR> o<ESC>
+if !empty(&filetype)
+    nmap <CR> o<ESC>
+endif
 " <S-CR> doesn't work. Known issue
 "nmap <S-CR> O<ESC>j
 
@@ -651,7 +652,8 @@ nmap <Right> <C-W>10<
 " Auto save current buffer when leave insert mode
 "autocmd InsertLeave * update
 function! Autosave()
-    if &filetype !=# 'ctrlsf'
+    if !empty(&filetype) && &filetype !=# 'ctrlsf'
+        call StripTrailingWhitespace()
         update
     endif
 endfunction
@@ -683,6 +685,7 @@ if loadFunc == 1
 " Functions ----------------------------------------------------------------{{{
 " function {
 function! StripTrailingWhitespace()
+    echom "strip"
     " Preparation: save last search, and cursor position.
     let _s=@/
     let l = line(".")
@@ -1188,8 +1191,8 @@ function! RecordLogEnd() abort
     profile pause
     noautocmd qall!
 endfunction
-nnoremap <leader>ls :call RecordLog()<CR>
-nnoremap <leader>le :call RecordLogEnd()<CR>
+nnoremap <leader>rs :call RecordLog()<CR>
+nnoremap <leader>re :call RecordLogEnd()<CR>
 " }}}
 endif
 
