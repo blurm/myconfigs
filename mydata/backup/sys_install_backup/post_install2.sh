@@ -117,11 +117,11 @@ echo '---------------------- gnome terminal settings ---------------------'
     git checkout v0.2.0
     sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
     sudo apt -y install lua-coxpcall
-    make clean
-    make distclean
-    make
+    #make
     rm -r build/
-    make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+    make distclean
+    make clean
+    make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim" CMAKE_BUILD_TYPE=Release
     make install
 
     sudo apt -y install python-software-properties
