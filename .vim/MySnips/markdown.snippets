@@ -10,8 +10,7 @@ extends pelican
 #############
 
 snippet h1 "Header h1" b
-# ${1:Header name}
-
+# ${1:${VISUAL:Header name}}
 $0
 endsnippet
 
@@ -22,8 +21,7 @@ $0
 endsnippet
 
 snippet h2 "Header h2" b
-## ${1:Header name}
-
+## ${1:${VISUAL:Header name}}
 $0
 endsnippet
 
@@ -34,8 +32,7 @@ $0
 endsnippet
 
 snippet h3 "Header h3" b
-### ${1:Header name}
-
+### ${1:${VISUAL:Header name}}
 $0
 endsnippet
 
@@ -118,7 +115,7 @@ snippet * "Italic"
 *${1:${VISUAL:Text}}*$0
 endsnippet
 
-snippet _ "Strong"
+snippet s "Strong"
 __${1:${VISUAL:Text}}__$0
 endsnippet
 
@@ -215,11 +212,11 @@ endsnippet
 ##########
 
 snippet ` "Inline code"
-\`${1:code}\` $0
+\`${1:${VISUAL:code}}\` $0
 endsnippet
 
 snippet ~ "Code" b
-~~~${1:${VISUAL:Language}}
+~~~${1:shell}
 ${2:${VISUAL:Code}}
 ~~~
 $0

@@ -561,7 +561,6 @@ if loadKeyMapping == 1
 " Key (re)mappings {
 
 "Exit insert mode
-"imap kj <Esc>
 nnoremap <leader>ms :messages<CR>
 
 " No need for ex mode
@@ -591,10 +590,10 @@ vmap <Leader>p "+p
 nmap <Leader>p "+p
 
 " Insert a new line without entering insert mode
+nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 "set timeout timeoutlen=300 ttimeoutlen=100
-if !empty(&filetype)
-    nmap <CR> o<ESC>
-endif
+
 " <S-CR> doesn't work. Known issue
 "nmap <S-CR> O<ESC>j
 
@@ -650,7 +649,6 @@ nmap <Left> <C-W>10>
 nmap <Right> <C-W>10<
 
 " Auto save current buffer when leave insert mode
-"autocmd InsertLeave * update
 function! Autosave()
     if !empty(&filetype) && &filetype !=# 'ctrlsf'
         call StripTrailingWhitespace()
@@ -685,7 +683,6 @@ if loadFunc == 1
 " Functions ----------------------------------------------------------------{{{
 " function {
 function! StripTrailingWhitespace()
-    echom "strip"
     " Preparation: save last search, and cursor position.
     let _s=@/
     let l = line(".")
@@ -717,7 +714,7 @@ endfunction
 
 set ttimeoutlen=150
 "退出插入模式
-" FocusGained doesn't work for vim, only for nvim and gvim
+" FocusGained doesn't work for vim, only for nvim and gvim Need extra plugin
 autocmd InsertLeave,FocusGained * call Fcitx2en()
 "进入插入模式
 "autocmd InsertEnter * call Fcitx2zh()

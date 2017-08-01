@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/insertleave
+~MSle0~/leaderf
 
 # Last Substitute Search Pattern:
 ~MSle0&SpaceVim
@@ -21,11 +21,43 @@ $
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1500960381,,"x"
+|2,0,1501570483,,"x"
+:q
+|2,0,1501153474,,"q"
 :w
-|2,0,1500871330,,"w"
+|2,0,1501153390,,"w"
 :mes
-|2,0,1500871200,,"mes"
+|2,0,1501062427,,"mes"
+:version
+|2,0,1501061894,,"version"
+:e vim_reg.md
+|2,0,1501038197,,"e vim_reg.md"
+:h BufOnly
+|2,0,1501038152,,"h BufOnly"
+:h Bufonly
+|2,0,1501038143,,"h Bufonly"
+:BufOnly
+|2,0,1501038127,,"BufOnly"
+:marks
+|2,0,1501037929,,"marks"
+:;x
+|2,0,1501037915,,";x"
+:h only
+|2,0,1501037719,,"h only"
+:h showmode
+|2,0,1501035070,,"h showmode"
+:h 'fileignorecase'
+|2,0,1501033432,,"h 'fileignorecase'"
+:UltiSnipsEdit
+|2,0,1501033069,,"UltiSnipsEdit"
+:CtrlSF
+|2,0,1501033046,,"CtrlSF"
+:bu
+|2,0,1501038635,,"bu"
+:verbose <lekkader>p
+|2,0,1501038496,,"verbose <lekkader>p"
+:verbose <leader>p
+|2,0,1501038471,,"verbose <leader>p"
 :CtrlSF ss
 |2,0,1500871195,,"CtrlSF ss"
 :e $MYVIMRC
@@ -36,8 +68,6 @@ $
 |2,0,1500871107,,"e "
 :CtrlSF status
 |2,0,1500871090,,"CtrlSF status"
-:CtrlSF
-|2,0,1500871078,,"CtrlSF"
 :Messages
 |2,0,1500858939,,"Messages"
 :CtrlSF sta
@@ -52,8 +82,6 @@ $
 |2,0,1500526717,,"vimgrep /statusline/ **"
 :pwd
 |2,0,1500526706,,"pwd"
-:q
-|2,0,1500526335,,"q"
 :jumps
 |2,0,1500526119,,"jumps"
 :'<,'>
@@ -94,8 +122,6 @@ $
 |2,0,1500375987,,"h winEnter"
 :cd ~
 |2,0,1500369807,,"cd ~"
-:version
-|2,0,1500352445,,"version"
 :h \H
 |2,0,1500352944,,"h \\H"
 :echo g:version
@@ -124,6 +150,40 @@ $
 |2,0,1500287396,,"py import sys"
 
 # Search String History (newest to oldest):
+? \s\+$
+|2,1,1501570482,,"\\s\\+$"
+?/leaderf
+|2,1,1501062411,47,"leaderf"
+?/leader.p
+|2,1,1501038684,47,"leader.p"
+?/\v\<(leader)\>
+|2,1,1501037273,47,"\\v\\<(leader)\\>"
+?/\v\<(leader)\>\1
+|2,1,1501036101,47,"\\v\\<(leader)\\>\\1"
+?/leader.
+|2,1,1501035696,47,"leader."
+?/leader>c
+|2,1,1501035511,47,"leader>c"
+?/leader>lc
+|2,1,1501035502,47,"leader>lc"
+?/=3
+|2,1,1501034248,47,"=3"
+?/\v=3$
+|2,1,1501034238,47,"\\v=3$"
+?/ = 3
+|2,1,1501034209,47," = 3"
+?/ = 3$
+|2,1,1501034205,47," = 3$"
+?/ = 2
+|2,1,1501034190,47," = 2"
+?/echo
+|2,1,1501034169,47,"echo"
+?/ignorecase
+|2,1,1501033222,47,"ignorecase"
+?/\cdown
+|2,1,1501033190,47,"\\cdown"
+?/down
+|2,1,1501033178,47,"down"
 ?/insertleave
 |2,1,1500871323,47,"insertleave"
 ?/#38
@@ -192,8 +252,6 @@ $
 |2,1,0,47,"lazy"
 ?/hi!
 |2,1,0,47,"hi!"
-?/echo
-|2,1,0,47,"echo"
 ? \<hi\>
 |2,1,0,,"\\<hi\\>"
 ? \<group2dict\>
@@ -230,6 +288,8 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@post3.sh
+|2,3,1501062394,,"post3.sh"
 @statusline
 |2,3,1500526752,,"statusline"
 @.java
@@ -252,369 +312,429 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	        // mei
-|3,0,0,1,1,0,1500534319,"        // mei"
-""1	LINE	0
+"0	CHAR	0
+	StripTrailingWhitespace(
+|3,0,0,0,1,0,1501153367,"StripTrailingWhitespace("
+"1	LINE	0
 	
-|3,1,1,1,1,0,1500871029,""
+|3,0,1,1,1,0,1501153411,""
 "2	LINE	0
-	endif
-|3,0,2,1,1,0,1500871025,"endif"
+	[color "status"]
+	    added = green
+|3,0,2,1,2,0,1501153409,"[color \"status\"]","    added = green"
 "3	LINE	0
-	vmap 
-|3,0,3,1,1,0,1500533720,"vmap "
+	    make clean
+|3,0,3,1,1,0,1501064067,"    make clean"
 "4	LINE	0
+	    make distclean
+|3,0,4,1,1,0,1501064064,"    make distclean"
+"5	LINE	0
+	nmap <Leader>x "+y
+|3,0,5,1,1,0,1501038709,"nmap <Leader>x \"+y"
+"6	LINE	0
+	
+|3,0,6,1,1,0,1500871029,""
+"7	LINE	0
+	endif
+|3,0,7,1,1,0,1500871025,"endif"
+"8	LINE	0
+	vmap 
+|3,0,8,1,1,0,1500533720,"vmap "
+"9	LINE	0
 	"nmap <Leader>P "+P
 	"vmap <Leader>P "+P
-|3,0,4,1,2,0,1500533587,"\"nmap <Leader>P \"+P","\"vmap <Leader>P \"+P"
-"5	LINE	0
-	"vmap <Leader>d "+d
-|3,0,5,1,1,0,1500533586,"\"vmap <Leader>d \"+d"
-"6	CHAR	0
-	how it comes how it goes is it
-	
-|3,0,6,0,2,0,1500525884,"how it comes how it goes is it",""
-"7	CHAR	0
-	how it comes how it goes is it
-	
-|3,0,7,0,2,0,1500525879,"how it comes how it goes is it",""
-"8	LINE	0
-	
-	        //
-|3,0,8,1,2,0,1500525709,"","        //"
-"9	CHAR	0
-	
-	        //
-|3,0,9,0,2,0,1500525704,"","        //"
+|3,0,9,1,2,0,1500533587,"\"nmap <Leader>P \"+P","\"vmap <Leader>P \"+P"
 "g	CHAR	0
 	;
 |3,0,16,0,1,0,1500526341,";"
 "i	CHAR	0
 			
 |3,0,18,0,1,0,1500351034,"		"
+"j	CHAR	0
+	
+|3,0,19,0,1,0,1501062432,""
 "q	CHAR	0
 	
 |3,0,26,0,1,0,1500274327,""
-"-	CHAR	0
-	c
-|3,0,36,0,1,0,1500534680,"c"
+""-	CHAR	0
+	(
+|3,1,36,0,1,0,1501153386,"("
 
 # File marks:
 'M  33  21  ~/mydata/git/JD_Utils/javatest.java
 |4,77,33,21,1500523635,"~/mydata/git/JD_Utils/javatest.java"
-'0  2  23  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,48,2,23,1500960381,"~/myconfigs/.git/COMMIT_EDITMSG"
-'1  3  25  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,49,3,25,1500960284,"~/myconfigs/.git/COMMIT_EDITMSG"
-'2  1  25  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,50,1,25,1500960284,"~/myconfigs/.git/COMMIT_EDITMSG"
-'3  21  4  ~/Startify
-|4,51,21,4,1500874570,"~/Startify"
-'4  630  8  ~/.vimrc
-|4,52,630,8,1500871332,"~/.vimrc"
-'5  21  18  ~/.vimrc
-|4,53,21,18,1500871184,"~/.vimrc"
-'6  21  18  ~/.vimrc
-|4,54,21,18,1500871184,"~/.vimrc"
-'7  13  15  ~/.vimrc
-|4,55,13,15,1500871136,"~/.vimrc"
-'8  13  15  ~/.vimrc
-|4,56,13,15,1500871136,"~/.vimrc"
-'9  13  15  ~/.vimrc
-|4,57,13,15,1500871136,"~/.vimrc"
+'0  1  32  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,48,1,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
+'1  2  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,49,2,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
+'2  1  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,50,1,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
+'3  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,51,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+'4  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,52,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+'5  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,53,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+'6  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,54,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+'7  39  5  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,55,39,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
+'8  39  5  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,56,39,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
+'9  38  5  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,57,38,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
--'  2  23  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,23,1500960381,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,0,1500960356,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  25  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,25,1500960284,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,4,0,1500960240,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1  32  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1500960240,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  21  4  ~/Startify
-|4,39,21,4,1500874570,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1500874570,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1500874570,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1500874570,"~/Startify"
--'  45  0  ~/Startify
-|4,39,45,0,1500874568,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1500874568,"~/Startify"
--'  45  0  ~/Startify
-|4,39,45,0,1500874568,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1500874568,"~/Startify"
--'  45  0  ~/Startify
-|4,39,45,0,1500874568,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1500874568,"~/Startify"
--'  45  0  ~/Startify
-|4,39,45,0,1500874568,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1500874568,"~/Startify"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  630  8  ~/.vimrc
-|4,39,630,8,1500871332,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  473  13  ~/.vimrc
-|4,39,473,13,1500871326,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  247  8  ~/.vimrc
-|4,39,247,8,1500871325,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  12  21  ~/.vimrc
-|4,39,12,21,1500871323,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1500871314,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  635  5  ~/.vimrc
-|4,39,635,5,1500871242,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  23  0  ~/.vimrc
-|4,39,23,0,1500871214,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  21  18  ~/.vimrc
-|4,39,21,18,1500871184,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
--'  16  15  ~/.vimrc
-|4,39,16,15,1500871173,"~/.vimrc"
+|4,39,2,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,3,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,2,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1197  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1197,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  37  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,37,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  37  5  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,37,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  4  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,4,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  3  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,3,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  2  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,2,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  2  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,2,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  134  14  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,134,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  133  14  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,133,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  133  14  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,133,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  132  14  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,132,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  132  14  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,132,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1,20,1501153316,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1,20,1501153316,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
+|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
 
 # History of marks within files (newest to oldest):
 
 > ~/myconfigs/.git/COMMIT_EDITMSG
-	*	1500960380	0
-	"	2	23
-	^	2	24
-	.	2	23
-	+	24	23
-	+	10	59
-	+	24	0
-	+	10	26
-	+	22	23
-	+	10	28
-	+	20	29
-	+	10	34
-	+	16	1
-	+	10	6
-	+	16	0
-	+	17	0
-	+	10	1
-	+	14	25
-	+	10	33
-	+	13	48
-	+	12	45
-	+	11	0
-	+	10	15
-	+	9	14
-	+	8	11
-	+	4	22
-	+	7	37
-	+	4	12
-	+	5	27
-	+	4	23
-	+	3	25
-	+	2	23
+	*	1501570482	0
+	"	1	32
+	^	1	33
+	.	1	32
+	+	28	23
+	+	14	59
+	+	28	0
+	+	14	26
+	+	26	23
+	+	14	28
+	+	24	29
+	+	14	34
+	+	20	1
+	+	14	6
+	+	20	0
+	+	21	0
+	+	14	1
+	+	18	25
+	+	14	33
+	+	17	48
+	+	16	45
+	+	15	0
+	+	14	15
+	+	13	14
+	+	12	11
+	+	8	22
+	+	11	37
+	+	8	12
+	+	9	27
+	+	8	23
+	+	7	25
+	+	6	23
+	+	3	16
+	+	42	0
+	+	4	35
+	+	42	0
+	+	1	32
+
+> ~/.gitconfig
+	*	1501153412	0
+	"	5	1
+	.	6	0
+	+	6	7
+	+	6	16
+	+	6	0
+
+> ~/mydata/backup/sys_install_backup/post_install2.sh
+	*	1501110203	0
+	"	124	65
+	^	123	14
+	.	120	0
+	+	25	0
+	+	26	0
+	+	28	0
+	+	30	0
+	+	34	0
+	+	30	39
+	+	32	0
+	+	34	0
+	+	32	9
+	+	33	7
+	+	124	65
+	+	123	13
+	+	120	0
+	+	122	0
+	+	120	0
+
+> ~/[denite]
+	*	1501109752	0
+	"	12	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/backup/sys_install_backup/post_install3.sh
+	*	1501109751	0
+	"	16	0
+	^	7	9
+	.	7	0
+	+	7	0
+
+> ~/.vim/autoload/damonvim/statusline.vim
+	*	1501064743	0
+	"	373	0
+	^	351	12
+	.	351	11
+	+	351	11
+
+> ~/mydata/vim/evernote_md/vim8_build.md
+	*	1501062578	0
+	"	6	0
+
+> ~/NERD_tree_1
+	*	1501062551	0
+	"	13	1
+	.	1	0
+	+	1	0
 
 > ~/.vimrc
-	*	1500871330	0
-	"	630	8
-	^	126	0
-	.	630	0
-	+	21	0
-	+	27	0
-	+	383	0
-	+	387	4
-	+	199	0
+	*	1501062461	0
+	"	139	21
+	^	589	14
+	.	589	13
 	+	200	0
-	+	215	4
-	+	384	0
-	+	385	17
-	+	386	18
-	+	384	0
-	+	386	0
-	+	383	0
-	+	384	0
+	+	201	0
+	+	216	4
+	+	385	0
+	+	386	17
+	+	387	18
+	+	385	0
 	+	387	0
-	+	447	0
-	+	436	0
+	+	384	0
+	+	385	0
+	+	388	0
+	+	448	0
+	+	437	0
+	+	397	0
+	+	395	12
 	+	396	0
-	+	394	12
-	+	395	0
-	+	397	4
+	+	398	4
 	+	23	81
 	+	20	0
 	+	23	0
 	+	27	0
-	+	200	0
+	+	201	0
 	+	20	0
 	+	23	0
 	+	27	0
 	+	23	0
 	+	18	0
 	+	19	0
-	+	958	0
-	+	958	11
-	+	958	4
-	+	958	0
-	+	958	64
-	+	937	86
-	+	937	0
-	+	937	99
-	+	958	9
-	+	958	0
-	+	819	0
-	+	937	106
-	+	823	83
-	+	401	0
-	+	1117	39
-	+	652	57
+	+	959	0
+	+	959	11
+	+	959	4
+	+	959	0
+	+	959	64
+	+	938	86
+	+	938	0
+	+	938	99
+	+	959	9
+	+	959	0
+	+	820	0
+	+	938	106
+	+	824	83
+	+	402	0
+	+	1118	39
+	+	653	57
 	+	85	0
 	+	85	10
 	+	85	0
@@ -622,33 +742,33 @@ $
 	+	20	0
 	+	23	0
 	+	20	0
-	+	550	0
-	+	534	0
-	+	534	1
-	+	534	0
-	+	492	0
-	+	497	0
-	+	504	0
-	+	500	0
-	+	534	0
-	+	524	0
-	+	545	4
-	+	543	0
-	+	545	0
-	+	538	0
-	+	545	0
-	+	538	0
+	+	551	0
 	+	535	0
-	+	536	0
+	+	535	1
 	+	535	0
+	+	493	0
+	+	498	0
+	+	505	0
+	+	501	0
+	+	535	0
+	+	525	0
+	+	546	4
+	+	544	0
+	+	546	0
+	+	539	0
+	+	546	0
+	+	539	0
 	+	536	0
-	+	535	10
-	+	146	46
+	+	537	0
+	+	536	0
+	+	537	0
+	+	536	10
+	+	147	46
 	+	10	15
-	+	128	0
-	+	125	0
-	+	128	0
+	+	129	0
 	+	126	0
+	+	129	0
+	+	127	0
 	+	10	15
 	+	12	21
 	+	13	15
@@ -666,7 +786,71 @@ $
 	+	23	81
 	+	23	0
 	+	12	21
-	+	630	0
+	+	631	0
+	+	104	0
+	+	103	0
+	+	590	0
+	+	589	13
+	p	103	4
+
+> /usr/share/vim/vim80/Cmd_History/LeaderF
+	*	1501062440	0
+	"	1	0
+	.	1	0
+	+	183	0
+	+	130	0
+	+	128	0
+	+	66	0
+	+	1	0
+
+> /usr/share/vim/vim80/Self/LeaderF
+	*	1501062420	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> [denite]
+	*	1501062079	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> NERD_tree_1
+	*	1501062002	0
+	"	13	1
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/evernote_md/vim_reg.md
+	*	1501038220	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/windows.txt
+	*	1501037915	0
+	"	364	40
+
+> ~/.vim/MySnips/vim.snippets
+	*	1501035468	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/options.txt
+	*	1501035088	0
+	"	6711	5
+
+> ~/.vim/MySnips/startify.snippets
+	*	1501034273	0
+	"	1	0
+	^	1	0
+
+> /usr/share/vim/vim80/File/LeaderF
+	*	1501033080	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.viminfo
+	*	1501029034	0
+	"	895	1
 
 > ~/__CtrlSF__
 	*	1500871195	0
@@ -741,19 +925,6 @@ $
 	*	1500534565	0
 	"	666	37
 
-> ~/[denite]
-	*	1500534540	0
-	"	14	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/autoload/damonvim/statusline.vim
-	*	1500533345	0
-	"	9	16
-	^	351	12
-	.	351	11
-	+	351	11
-
 > ~/.vim/autoload/damonvim/[denite]
 	*	1500526753	0
 	"	12	0
@@ -763,10 +934,6 @@ $
 > ~/.vim/autoload/damonvim/Highlight test
 	*	1500526733	0
 	"	21	8
-
-> /usr/share/vim/vim80/doc/options.txt
-	*	1500523123	0
-	"	4394	5
 
 > /usr/share/icons/DMZ-White/cursor.theme
 	*	1500462003	0
@@ -824,13 +991,6 @@ $
 	*	1500376803	0
 	"	303	18
 
-> ~/mydata/backup/sys_install_backup/post_install3.sh
-	*	1500376083	0
-	"	19	0
-	^	7	9
-	.	7	0
-	+	7	0
-
 > ~/myconfigs/[denite]
 	*	1500369788	0
 	"	1	0
@@ -886,10 +1046,6 @@ $
 	*	1500290702	0
 	"	777	42
 
-> ~/.viminfo
-	*	1500286805	0
-	"	895	1
-
 > ~/i3blocks.conf
 	*	1500285735	0
 	"	68	11
@@ -922,12 +1078,6 @@ $
 	"	1	0
 	.	2	0
 	+	2	0
-
-> ~/NERD_tree_1
-	*	1500274331	0
-	"	15	1
-	.	1	0
-	+	1	0
 
 > ~/.vim/plugged/YouCompleteMe/doc/youcompleteme.txt
 	*	1500272713	0
@@ -962,21 +1112,6 @@ $
 	+	1	0
 	+	69	0
 	+	68	0
-
-> ~/mydata/backup/sys_install_backup/post_install2.sh
-	"	1	0
-	^	33	8
-	.	33	7
-	+	25	0
-	+	26	0
-	+	28	0
-	+	30	0
-	+	34	0
-	+	30	39
-	+	32	0
-	+	34	0
-	+	32	9
-	+	33	7
 
 > ~/.config/nvim/init.vim
 	"	247	0
@@ -1681,62 +1816,3 @@ $
 
 > ~/mydata/git/requests-2/iReserve/bcolors.py
 	"	1	0
-
-> ~/jd.py
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/myutil.pyc
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/myutil.py
-	"	1	0
-
-> ~/.vim/MySnips/python.snippets
-	"	712	11
-
-> ~/.zshrc
-	"	58	82
-	^	58	90
-	.	58	82
-	+	143	0
-	+	126	0
-	+	58	82
-	+	58	0
-	+	58	82
-
-> ~/.oh-my-zsh/plugins/.zshrc
-	"	1	0
-
-> ~/.zsh
-	"	1	0
-
-> /etc/samba/smb.conf
-	"	199	17
-	^	199	18
-	.	199	17
-	+	261	16
-	+	263	18
-	+	264	18
-	+	266	19
-	+	269	0
-	+	267	0
-	+	262	5
-	+	264	22
-	+	199	17
-
-> /media/damon/Banq/autorun.inf
-	"	1	0
-
-> /etc/minidlna.conf
-	"	25	11
-	^	25	12
-	.	25	11
-	+	25	33
-	+	87	18
-	+	25	11
-
-> ~/mydata/vim/iphone.js
-	"	1	8
-	^	1	9
-	.	1	8
-	+	1	8
