@@ -18,6 +18,9 @@ git clone https://github.com/vim/vim.git
 cd vim
 ./configure --with-features=huge \
     --enable-multibyte \
+    --enable-gtk2-check \
+    --enable-gnome-check \
+    --with-x \
     --enable-rubyinterp=yes \
     --enable-python3interp=yes \
     --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
@@ -25,6 +28,7 @@ cd vim
     --enable-luainterp=yes \
     --enable-gui=gtk2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/share/vim/vim80
+# Make deb package and install it
 sudo checkinstall --pkgname vim8installdeb --default
 _
 ## Install plugins for Vim {
