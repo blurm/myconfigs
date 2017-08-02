@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1501570483,,"x"
+|2,0,1501570616,,"x"
 :q
 |2,0,1501153474,,"q"
 :w
@@ -151,7 +151,7 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1501570482,,"\\s\\+$"
+|2,1,1501570615,,"\\s\\+$"
 ?/leaderf
 |2,1,1501062411,47,"leaderf"
 ?/leader.p
@@ -363,38 +363,70 @@ $
 # File marks:
 'M  33  21  ~/mydata/git/JD_Utils/javatest.java
 |4,77,33,21,1500523635,"~/mydata/git/JD_Utils/javatest.java"
-'0  1  32  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,48,1,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
-'1  2  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,49,2,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
-'2  1  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,50,1,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
-'3  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,51,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
-'4  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,52,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
-'5  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,53,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
-'6  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,54,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
-'7  39  5  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,55,39,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
-'8  39  5  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,56,39,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
-'9  38  5  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,57,38,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
+'0  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,48,1,20,1501570616,"~/myconfigs/.git/COMMIT_EDITMSG"
+'1  2  11  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,49,2,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
+'2  1  11  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,50,1,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
+'3  3  32  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,51,3,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
+'4  2  32  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,52,2,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
+'5  2  32  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,53,2,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
+'6  1  32  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,54,1,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
+'7  4  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,55,4,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
+'8  3  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,56,3,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
+'9  3  33  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,57,3,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1,20,1501570616,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,2,0,1501570597,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1  11  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,3,0,1501570504,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,2,0,1501570504,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  1  32  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,1,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,4,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,3,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,2,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  1  33  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,1,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  5  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,5,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,4,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,3,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,2,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  668  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,668,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  667  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,667,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  667  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,667,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
@@ -403,6 +435,20 @@ $
 |4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1201  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1201,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1200  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1200,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1200  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1200,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
@@ -411,6 +457,20 @@ $
 |4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  1197  0  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,1197,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  41  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,41,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  40  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,40,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  40  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,40,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
+-'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
+|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
 |4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
 -'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
@@ -437,6 +497,54 @@ $
 |4,39,5,1,1501153413,"~/.gitconfig"
 -'  5  1  ~/.gitconfig
 |4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
+-'  5  1  ~/.gitconfig
+|4,39,5,1,1501153413,"~/.gitconfig"
 -'  6  4  ~/.gitconfig
 |4,39,6,4,1501153405,"~/.gitconfig"
 -'  6  4  ~/.gitconfig
@@ -453,179 +561,73 @@ $
 |4,39,6,4,1501153405,"~/.gitconfig"
 -'  6  4  ~/.gitconfig
 |4,39,6,4,1501153405,"~/.gitconfig"
--'  4  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,4,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,33,1501153380,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  134  14  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,134,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  133  14  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,133,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  133  14  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,133,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  132  14  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,132,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  132  14  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,132,14,1501153368,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,20,1501153316,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,20,1501153316,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  124  65  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,124,65,1501110205,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  16  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,16,0,1501109756,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
--'  19  0  ~/mydata/backup/sys_install_backup/post_install3.sh
-|4,39,19,0,1501109741,"~/mydata/backup/sys_install_backup/post_install3.sh"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
+-'  6  4  ~/.gitconfig
+|4,39,6,4,1501153405,"~/.gitconfig"
 
 # History of marks within files (newest to oldest):
 
 > ~/myconfigs/.git/COMMIT_EDITMSG
-	*	1501570482	0
-	"	1	32
-	^	1	33
-	.	1	32
+	*	1501570615	0
+	"	1	20
+	^	1	21
+	.	1	20
+	+	30	23
+	+	16	59
+	+	30	0
+	+	16	26
 	+	28	23
-	+	14	59
-	+	28	0
-	+	14	26
-	+	26	23
-	+	14	28
-	+	24	29
-	+	14	34
-	+	20	1
-	+	14	6
-	+	20	0
-	+	21	0
-	+	14	1
-	+	18	25
-	+	14	33
-	+	17	48
-	+	16	45
-	+	15	0
-	+	14	15
-	+	13	14
-	+	12	11
-	+	8	22
-	+	11	37
-	+	8	12
-	+	9	27
+	+	16	28
+	+	26	29
+	+	16	34
+	+	22	1
+	+	16	6
+	+	22	0
+	+	23	0
+	+	16	1
+	+	20	25
+	+	16	33
+	+	19	48
+	+	18	45
+	+	17	0
+	+	16	15
+	+	15	14
+	+	14	11
+	+	10	22
+	+	13	37
+	+	10	12
+	+	11	27
+	+	10	23
+	+	9	25
 	+	8	23
-	+	7	25
-	+	6	23
-	+	3	16
-	+	42	0
-	+	4	35
-	+	42	0
-	+	1	32
+	+	5	16
+	+	44	0
+	+	6	35
+	+	44	0
+	+	3	32
+	+	25	0
+	+	1	20
 
 > ~/.gitconfig
 	*	1501153412	0
