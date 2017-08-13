@@ -33,7 +33,8 @@ if loadPlug == 1
 if has("nvim")
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-jedi', {'for': 'python'} " autocomplete for Python
-    Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] } " autocomplete for Javascript
+    " autocomplete for Javascript. Need add .tern-project to take effect
+    Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 else
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
     Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
@@ -96,11 +97,15 @@ endif
     let g:echodoc_enable_at_startup = 1
     Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
     Plug 'tpope/vim-scriptease'
+    Plug 'plasticboy/vim-markdown'
     Plug 'mzlogin/vim-markdown-toc' " Generate table of content
     Plug 'tenfyzhong/tagbar-markdown.vim'
     Plug 'dyng/ctrlsf.vim'
     Plug 'Yggdroot/LeaderF'
     "Plug 'vim-scripts/BufOnly.vim'
+    Plug 'othree/yajs.vim'
+    "Plug 'othree/javascript-libraries-syntax.vim'
+    Plug 'hail2u/vim-css3-syntax'
 
     " Useless Plugins
     "Plug 'neomake/neomake'
@@ -179,8 +184,8 @@ let g:ale_linters = {
             \ 'markdown' : ['mdl'],
             \ 'javascript' : ['eslint'],
             \}
-autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836
-autocmd User ALELint highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836
+autocmd User ALELint highlight ALEErrorSign guifg=#fb4934 guibg=#3c3836 gui=bold
+autocmd User ALELint highlight ALEWarningSign guifg=#fe8019 guibg=#3c3836 gui=bold
 autocmd User ALELint highlight ALEStyleErrorSign guifg=#AF7AC5 guibg=#3c3836 gui=bold
 autocmd User ALELint highlight ALEStyleWarningSign guifg=#F9E79F guibg=#3c3836 gui=bold
 
@@ -190,7 +195,10 @@ autocmd User ALELint highlight ALEStyleWarningSign guifg=#F9E79F guibg=#3c3836 g
 "hi! ALEErrorSign ctermbg=003 ctermfg=Black guibg=#504945 guifg=#fb4934 gui=bold
 let g:ale_enabled = 1
 let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
 let g:ale_set_highlights = 1
+"let g:ale_set_quickfix = 1 " Push info into quicklist instead of loclist
+"let g:ale_open_list = 1 " Open loclist or quickfix when ale is triggered
 "let g:ale_sign_column_always = 0
 let g:ale_echo_msg_format = '[#%linter%#] %s [%severity%]'
 "let g:ale_statusline_format = ['E•%d', 'W•%d', 'OK']
@@ -231,8 +239,11 @@ let g:ale_echo_msg_warning_str = '⚠ Warning'
 
 "   autoformat {
 noremap <F6> :Autoformat<CR>
-let g:formatter_yapf_style = 'pep8'
 let g:formatters_python = ['yapf']
+let g:formatter_yapf_style = 'pep8'
+"let g:formatters_javascript = ['eslint']
+"let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
+
 let g:autoformat_verbosemode=1
 let g:session_default_to_last = 1
 "   }
@@ -676,6 +687,7 @@ autocmd FileType vim setlocal foldlevel=0
 autocmd FileType python setlocal foldmethod=indent
 autocmd FileType css,scss setlocal foldmethod=marker
 autocmd FileType css,scss setlocal foldmarker={,}
+autocmd FileType javascript,typescript,json set foldmethod=syntax
 " }}}
 endif
 

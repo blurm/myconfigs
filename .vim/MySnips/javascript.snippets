@@ -9,14 +9,14 @@ endsnippet
 # Function
 snippet fun
 function ${1:function_name}(${2}) {
-	${0:${VISUAL}}
+    ${0:${VISUAL:pass}}
 }
 endsnippet
 
 # Anonymous Function
 snippet f "" w
 function(${1}) {
-	${0:${VISUAL}}
+	${0:${VISUAL:pass}}
 }
 endsnippet
 
@@ -63,7 +63,7 @@ endsnippet
 # if
 snippet if "if (condition) { ... }"
 if (${1:true}) {
-	${0:${VISUAL}}
+    ${0:pass${VISUAL}}
 }
 endsnippet
 
@@ -126,13 +126,13 @@ return ${0:result};
 endsnippet
 
 snippet for "for (...) {...}"
-for (var ${1:i} = 0, ${2:len} = ${3:Things.length}; $1 < $2; $1++) {
+for (let ${1:i} = 0, ${2:len} = ${3:Things.length}; $1 < $2; $1++) {
 	${0:${VISUAL}}
 }
 endsnippet
 
 snippet forr "reversed for (...) {...}"
-for (var ${2:i} = ${1:Things.length} - 1; $2 >= 0; $2--) {
+for (let ${2:i} = ${1:Things.length} - 1; $2 >= 0; $2--) {
 	${0:${VISUAL}}
 }
 endsnippet
@@ -151,7 +151,7 @@ endsnippet
 
 # For in loop
 snippet fori
-for (var ${1:prop} in ${2:object}) {
+for (let ${1:prop} in ${2:object}) {
 	${0:$2[$1]}
 }
 endsnippet
@@ -391,4 +391,10 @@ endsnippet
 # setTimeout function
 snippet timeout
 setTimeout(function () {${0}}${2}, ${1:10});
+endsnippet
+
+snippet st
+static ${1:method}(${2:param}) {
+	${0:pass}
+}
 endsnippet
