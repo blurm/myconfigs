@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/leaderf
+~MSle0~/omni
 
 # Last Substitute Search Pattern:
 ~MSle0&SpaceVim
@@ -20,16 +20,40 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1502583922,,"q"
 :x
-|2,0,1501671377,,"x"
+|2,0,1503113068,,"x"
+:q
+|2,0,1503108988,,"q"
+:wa
+|2,0,1503108987,,"wa"
+:RopeGotoDefinition
+|2,0,1503108959,,"RopeGotoDefinition"
+:jjjkkkkjj
+|2,0,1503108895,,"jjjkkkkjj"
+:pwd
+|2,0,1503108863,,"pwd"
+:version
+|2,0,1503108767,,"version"
+:py3 print(os.getcwd())
+|2,0,1503107885,,"py3 print(os.getcwd())"
+:py3 os.getcwd()
+|2,0,1503107875,,"py3 os.getcwd()"
+:py3 import os
+|2,0,1503107869,,"py3 import os"
+:py3 print os.getcwd()
+|2,0,1503107863,,"py3 print os.getcwd()"
+:py import os
+|2,0,1503107832,,"py import os"
+:lcd mydata/
+|2,0,1503107825,,"lcd mydata/"
+:lcd mydata/git/
+|2,0,1503106801,,"lcd mydata/git/"
+:xa
+|2,0,1503054084,,"xa"
 :w
-|2,0,1501153390,,"w"
+|2,0,1503051558,,"w"
 :mes
 |2,0,1501062427,,"mes"
-:version
-|2,0,1501061894,,"version"
 :e vim_reg.md
 |2,0,1501038197,,"e vim_reg.md"
 :h BufOnly
@@ -72,16 +96,12 @@ $
 |2,0,1500858939,,"Messages"
 :CtrlSF sta
 |2,0,1500858918,,"CtrlSF sta"
-:xa
-|2,0,1500534684,,"xa"
 :h range
 |2,0,1500534555,,"h range"
 :
 |2,0,1500533918,,""
 :vimgrep /statusline/ **
 |2,0,1500526717,,"vimgrep /statusline/ **"
-:pwd
-|2,0,1500526706,,"pwd"
 :jumps
 |2,0,1500526119,,"jumps"
 :'<,'>
@@ -151,7 +171,15 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1501671376,,"\\s\\+$"
+|2,1,1503113067,,"\\s\\+$"
+?/omni
+|2,1,1503051384,47,"omni"
+?/javascript
+|2,1,1503051379,47,"javascript"
+?/tern#complete
+|2,1,1503049776,47,"tern#complete"
+?/tern#com
+|2,1,1503049766,47,"tern#com"
 ?/leaderf
 |2,1,1501062411,47,"leaderf"
 ?/leader.p
@@ -288,6 +316,12 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@ropevim
+|2,3,1503108822,,"ropevim"
+@j
+|2,3,1503051592,,"j"
+@jd.js
+|2,3,1503049850,,"jd.js"
 @post3.sh
 |2,3,1501062394,,"post3.sh"
 @statusline
@@ -316,34 +350,33 @@ $
 	StripTrailingWhitespace(
 |3,0,0,0,1,0,1501153367,"StripTrailingWhitespace("
 "1	LINE	0
-	
-|3,0,1,1,1,0,1501153411,""
+	        "jquery",
+|3,0,1,1,1,0,1503049918,"        \"jquery\","
 "2	LINE	0
+	Finish tag sortin
+|3,0,2,1,1,0,1503038366,"Finish tag sortin"
+"3	LINE	0
+	
+|3,0,3,1,1,0,1501153411,""
+"4	LINE	0
 	[color "status"]
 	    added = green
-|3,0,2,1,2,0,1501153409,"[color \"status\"]","    added = green"
-"3	LINE	0
-	    make clean
-|3,0,3,1,1,0,1501064067,"    make clean"
-"4	LINE	0
-	    make distclean
-|3,0,4,1,1,0,1501064064,"    make distclean"
+|3,0,4,1,2,0,1501153409,"[color \"status\"]","    added = green"
 "5	LINE	0
-	nmap <Leader>x "+y
-|3,0,5,1,1,0,1501038709,"nmap <Leader>x \"+y"
+	    make clean
+|3,0,5,1,1,0,1501064067,"    make clean"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1500871029,""
+	    make distclean
+|3,0,6,1,1,0,1501064064,"    make distclean"
 "7	LINE	0
-	endif
-|3,0,7,1,1,0,1500871025,"endif"
+	nmap <Leader>x "+y
+|3,0,7,1,1,0,1501038709,"nmap <Leader>x \"+y"
 "8	LINE	0
-	vmap 
-|3,0,8,1,1,0,1500533720,"vmap "
+	
+|3,0,8,1,1,0,1500871029,""
 "9	LINE	0
-	"nmap <Leader>P "+P
-	"vmap <Leader>P "+P
-|3,0,9,1,2,0,1500533587,"\"nmap <Leader>P \"+P","\"vmap <Leader>P \"+P"
+	endif
+|3,0,9,1,1,0,1500871025,"endif"
 "g	CHAR	0
 	;
 |3,0,16,0,1,0,1500526341,";"
@@ -353,246 +386,454 @@ $
 "j	CHAR	0
 	
 |3,0,19,0,1,0,1501062432,""
-"q	CHAR	0
-	
-|3,0,26,0,1,0,1500274327,""
 ""-	CHAR	0
-	(
-|3,1,36,0,1,0,1501153386,"("
+	s
+|3,1,36,0,1,0,1503051447,"s"
 
 # File marks:
 'M  33  21  ~/mydata/git/JD_Utils/javatest.java
 |4,77,33,21,1500523635,"~/mydata/git/JD_Utils/javatest.java"
-'0  1  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,48,1,0,1502583922,"~/myconfigs/.git/COMMIT_EDITMSG"
-'1  1  22  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,49,1,22,1501671377,"~/myconfigs/.git/COMMIT_EDITMSG"
-'2  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,50,1,20,1501570616,"~/myconfigs/.git/COMMIT_EDITMSG"
-'3  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,51,1,20,1501570616,"~/myconfigs/.git/COMMIT_EDITMSG"
-'4  2  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,52,2,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
-'5  1  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,53,1,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
-'6  2  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,54,2,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
-'7  1  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,55,1,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
-'8  2  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,56,2,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
-'9  1  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,57,1,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
+'0  2  19  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
+|4,48,2,19,1503113068,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
+'1  287  17  ~/mydata/git/JD_Utils/jd.py
+|4,49,287,17,1503108988,"~/mydata/git/JD_Utils/jd.py"
+'2  21  4  ~/Startify
+|4,50,21,4,1503108771,"~/Startify"
+'3  21  4  ~/Startify
+|4,51,21,4,1503107543,"~/Startify"
+'4  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,52,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+'5  21  4  ~/Startify
+|4,53,21,4,1503104206,"~/Startify"
+'6  21  4  ~/Startify
+|4,54,21,4,1503104206,"~/Startify"
 
 # Jumplist (newest first):
--'  1  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,0,1502583922,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  22  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,22,1501671377,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  20  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,20,1501570616,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1501570597,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1501570597,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1501570597,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  11  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,11,1501570514,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,0,1501570504,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,0,1501570504,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,0,1501570504,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1501570504,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  32  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,32,1501570483,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,4,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,4,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,4,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1501570469,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1  33  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1,33,1501570444,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  5  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,5,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  5  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,5,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  5  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,5,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  4  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,4,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  3  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,3,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  2  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,2,0,1501570415,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  668  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,668,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  667  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,667,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  668  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,668,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  667  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,667,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  668  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,668,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  667  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,667,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  667  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,667,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  666  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,666,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  665  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,665,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  664  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,664,0,1501153474,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1201  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1201,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1200  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1200,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1197  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1197,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1201  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1201,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1200  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1200,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1197  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1197,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1201  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1201,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1200  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1200,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1200  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1200,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1199  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1199,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1198  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1198,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  1197  0  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,1197,0,1501153463,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  41  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,41,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  40  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,40,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  37  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,37,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  41  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,41,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  40  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,40,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  37  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,37,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  41  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,41,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  40  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,40,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  40  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,40,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  39  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,39,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  38  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,38,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  37  1  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,37,1,1501153461,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  37  5  ~/myconfigs/.git/COMMIT_EDITMSG
-|4,39,37,5,1501153437,"~/myconfigs/.git/COMMIT_EDITMSG"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
--'  5  1  ~/.gitconfig
-|4,39,5,1,1501153413,"~/.gitconfig"
+-'  2  19  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
+|4,39,2,19,1503113068,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
+-'  3  0  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
+|4,39,3,0,1503113003,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
+-'  287  17  ~/mydata/git/JD_Utils/jd.py
+|4,39,287,17,1503108988,"~/mydata/git/JD_Utils/jd.py"
+-'  287  17  ~/mydata/git/JD_Utils/jd.py
+|4,39,287,17,1503108988,"~/mydata/git/JD_Utils/jd.py"
+-'  288  18  ~/mydata/git/JD_Utils/jd.py
+|4,39,288,18,1503108939,"~/mydata/git/JD_Utils/jd.py"
+-'  288  18  ~/mydata/git/JD_Utils/jd.py
+|4,39,288,18,1503108939,"~/mydata/git/JD_Utils/jd.py"
+-'  21  4  ~/Startify
+|4,39,21,4,1503108771,"~/Startify"
+-'  21  4  ~/Startify
+|4,39,21,4,1503108771,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503107794,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503107794,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503107794,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503107794,"~/Startify"
+-'  21  4  ~/Startify
+|4,39,21,4,1503107543,"~/Startify"
+-'  21  4  ~/Startify
+|4,39,21,4,1503107543,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503106785,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503106785,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503106785,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503106785,"~/Startify"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
+-'  21  4  ~/Startify
+|4,39,21,4,1503104206,"~/Startify"
+-'  21  4  ~/Startify
+|4,39,21,4,1503104206,"~/Startify"
+-'  21  4  ~/Startify
+|4,39,21,4,1503104206,"~/Startify"
+-'  21  4  ~/Startify
+|4,39,21,4,1503104206,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503104191,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503104191,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503104191,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503104191,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503104191,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503104191,"~/Startify"
+-'  48  0  ~/Startify
+|4,39,48,0,1503104191,"~/Startify"
+-'  1  0  ~/Startify
+|4,39,1,0,1503104191,"~/Startify"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
 
 # History of marks within files (newest to oldest):
 
-> ~/myconfigs/.git/COMMIT_EDITMSG
-	*	1502583903	0
+> ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
+	*	1503113067	0
+	"	2	19
+	^	2	20
+	.	2	19
+	+	13	36
+	+	12	0
+	+	11	24
+	+	10	29
+	+	9	44
+	+	8	33
+	+	7	0
+	+	6	31
+	+	5	31
+	+	4	30
+	+	4	0
+	+	3	24
+	+	2	19
+
+> ~/mydata/git/JD_Utils/jd.py
+	*	1503108987	0
+	"	287	17
+	^	288	19
+	.	288	0
+	+	295	0
+	+	292	49
+	+	293	0
+	+	251	46
+	+	251	53
+	+	251	0
+	+	251	47
+	+	282	48
+	+	293	66
+	+	251	62
+	+	251	41
+	+	251	46
+	+	251	0
+	+	251	24
+	+	251	0
+	+	251	19
+	+	251	65
+	+	251	0
+	+	251	43
+	+	251	25
+	+	251	38
+	+	251	47
+	+	251	0
+	+	6	21
+	+	10	0
+	+	14	0
+	+	251	0
+	+	276	0
+	+	275	84
+	+	296	0
+	+	277	0
+	+	251	40
+	+	251	32
+	+	251	0
+	+	30	0
+	+	31	0
+	+	251	0
+	+	32	0
+	+	251	0
+	+	253	0
+	+	251	0
+	+	251	52
+	+	251	0
+	+	251	14
+	+	251	22
+	+	251	49
+	+	251	0
+	+	254	0
+	+	252	0
+	+	278	0
+	+	275	0
+	+	274	0
+	+	271	56
+	+	272	48
+	+	293	53
+	+	294	43
+	+	10	0
+	+	251	28
+	+	251	35
+	+	472	0
+	+	473	0
+	+	251	0
+	+	444	0
+	+	438	17
+	+	457	15
+	+	459	0
+	+	445	29
+	+	446	25
+	+	444	0
+	+	458	22
+	+	457	21
+	+	458	28
+	+	446	36
+	+	438	0
+	+	475	0
+	+	474	0
+	+	478	0
+	+	474	19
+	+	137	44
+	+	124	0
+	+	472	0
+	+	473	0
+	+	266	78
+	+	283	40
+	+	291	68
+	+	282	28
+	+	283	28
+	+	291	51
+	+	282	0
+	+	283	0
+	+	288	0
+
+> ~/.vim/plugged/ropevim/doc/ropevim.txt
+	*	1503108905	0
+	"	324	0
+
+> ~/[denite]
+	*	1503108809	0
+	"	15	0
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim80/Mru/LeaderF
+	*	1503106984	0
+	"	3	0
+	.	1	0
+	+	3	0
+	+	1	0
+
+> ~/NERD_tree_1
+	*	1503106788	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
+	*	1503105170	0
 	"	1	0
-	^	1	23
-	.	1431	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+	*	1503104202	0
+	"	170	0
+	^	177	8
+	.	177	0
+	+	179	0
+	+	178	0
+	+	177	0
+	+	2	0
+	+	177	0
+
+> /usr/share/vim/vim80/File/LeaderF
+	*	1503104193	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/test.js
+	*	1503054626	0
+	"	1	44
+	.	1	43
+	+	1	43
+
+> ~/mydata/git/JD_Utils/javatest.java
+	*	1503054083	0
+	"	5	0
+	.	6	0
+	+	7	0
+	+	48	4
+	+	48	0
+	+	48	9
+	+	48	0
+	+	48	30
+	+	48	35
+	+	48	11
+	+	48	10
+	+	48	0
+	+	48	10
+	+	48	0
+	+	48	41
+	+	48	34
+	+	48	14
+	+	48	10
+	+	48	18
+	+	48	10
+	+	48	0
+	+	48	10
+	+	48	0
+	+	48	11
+	+	48	10
+	+	48	22
+	+	48	0
+	+	48	11
+	+	48	0
+	+	8	0
+	+	33	21
+	+	39	0
+	+	19	0
+	+	11	23
+	+	41	11
+	+	27	0
+	+	28	0
+	+	30	0
+	+	31	0
+	+	32	0
+	+	34	0
+	+	35	0
+	+	36	0
+	+	35	0
+	+	36	0
+	+	35	21
+	+	34	0
+	+	6	0
+
+> ~/myconfigs/.git/COMMIT_EDITMSG
+	*	1503051792	0
+	"	1	0
+	^	1	34
+	.	1	33
 	+	30	23
 	+	16	59
 	+	30	0
@@ -629,81 +870,13 @@ $
 	+	25	0
 	+	1	22
 	+	1431	0
-
-> ~/.gitconfig
-	*	1501153412	0
-	"	5	1
-	.	6	0
-	+	6	7
-	+	6	16
-	+	6	0
-
-> ~/mydata/backup/sys_install_backup/post_install2.sh
-	*	1501110203	0
-	"	124	65
-	^	123	14
-	.	120	0
-	+	25	0
-	+	26	0
-	+	28	0
-	+	30	0
-	+	34	0
-	+	30	39
-	+	32	0
-	+	34	0
-	+	32	9
-	+	33	7
-	+	124	65
-	+	123	13
-	+	120	0
-	+	122	0
-	+	120	0
-
-> ~/[denite]
-	*	1501109752	0
-	"	12	0
-	.	1	0
-	+	1	0
-
-> ~/mydata/backup/sys_install_backup/post_install3.sh
-	*	1501109751	0
-	"	16	0
-	^	7	9
-	.	7	0
-	+	7	0
-
-> ~/.vim/autoload/damonvim/statusline.vim
-	*	1501064743	0
-	"	373	0
-	^	351	12
-	.	351	11
-	+	351	11
-
-> ~/mydata/vim/evernote_md/vim8_build.md
-	*	1501062578	0
-	"	6	0
-
-> ~/NERD_tree_1
-	*	1501062551	0
-	"	13	1
-	.	1	0
-	+	1	0
+	+	1	33
 
 > ~/.vimrc
-	*	1501062461	0
-	"	139	21
-	^	589	14
-	.	589	13
-	+	200	0
-	+	201	0
-	+	216	4
-	+	385	0
-	+	386	17
-	+	387	18
-	+	385	0
-	+	387	0
-	+	384	0
-	+	385	0
+	*	1503051788	0
+	"	34	0
+	^	351	52
+	.	39	0
 	+	388	0
 	+	448	0
 	+	437	0
@@ -794,7 +967,120 @@ $
 	+	103	0
 	+	590	0
 	+	589	13
+	+	37	0
+	+	109	0
+	+	39	0
+	+	351	0
+	+	109	0
+	+	39	0
+	+	109	0
+	+	39	0
+	+	351	50
+	+	39	0
 	p	103	4
+
+> ~/.vimrc.bak1
+	*	1503051769	0
+	"	76	0
+
+> ~/mydata/vim/chrome_extentions/imdb/.tern-project
+	*	1503050891	0
+	"	4	0
+	.	4	0
+	+	5	0
+	+	4	0
+	+	5	0
+	+	4	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/[denite]
+	*	1503049844	0
+	"	10	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/douban_info.js
+	*	1503049840	0
+	"	39	0
+	^	3	18
+	.	3	0
+	+	4	0
+	+	3	0
+
+> ~/mydata/git/DoubanX_crx/js/view/template.js
+	*	1502927041	0
+	"	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/[denite]
+	*	1502927021	0
+	"	10	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/git/parse-torrent-name/tests/test_parse.py
+	*	1502773518	0
+	"	1	0
+
+> ~/.Xresources
+	*	1502597733	0
+	"	42	0
+	^	42	16
+	.	42	15
+	+	9	40
+	+	5	9
+	+	3	13
+	+	9	41
+	+	3	13
+	+	4	14
+	+	13	29
+	+	40	29
+	+	42	15
+
+> ~/.gitconfig
+	*	1501153412	0
+	"	5	1
+	.	6	0
+	+	6	7
+	+	6	16
+	+	6	0
+
+> ~/mydata/backup/sys_install_backup/post_install2.sh
+	*	1501110203	0
+	"	124	65
+	^	123	14
+	.	120	0
+	+	25	0
+	+	26	0
+	+	28	0
+	+	30	0
+	+	34	0
+	+	30	39
+	+	32	0
+	+	34	0
+	+	32	9
+	+	33	7
+	+	124	65
+	+	123	13
+	+	120	0
+	+	122	0
+	+	120	0
+
+> ~/mydata/backup/sys_install_backup/post_install3.sh
+	*	1501109751	0
+	"	16	0
+	^	7	9
+	.	7	0
+	+	7	0
+
+> ~/.vim/autoload/damonvim/statusline.vim
+	*	1501064743	0
+	"	373	0
+	^	351	12
+	.	351	11
+	+	351	11
+
+> ~/mydata/vim/evernote_md/vim8_build.md
+	*	1501062578	0
+	"	6	0
 
 > /usr/share/vim/vim80/Cmd_History/LeaderF
 	*	1501062440	0
@@ -845,12 +1131,6 @@ $
 	"	1	0
 	^	1	0
 
-> /usr/share/vim/vim80/File/LeaderF
-	*	1501033080	0
-	"	1	0
-	.	1	0
-	+	1	0
-
 > ~/.viminfo
 	*	1501029034	0
 	"	895	1
@@ -872,57 +1152,6 @@ $
 	+	2	1
 	+	2	0
 	+	1	1
-
-> ~/mydata/git/JD_Utils/javatest.java
-	*	1500534644	0
-	"	34	7
-	^	41	13
-	.	34	0
-	+	7	0
-	+	48	4
-	+	48	0
-	+	48	9
-	+	48	0
-	+	48	30
-	+	48	35
-	+	48	11
-	+	48	10
-	+	48	0
-	+	48	10
-	+	48	0
-	+	48	41
-	+	48	34
-	+	48	14
-	+	48	10
-	+	48	18
-	+	48	10
-	+	48	0
-	+	48	10
-	+	48	0
-	+	48	11
-	+	48	10
-	+	48	22
-	+	48	0
-	+	48	11
-	+	48	0
-	+	8	0
-	+	33	21
-	+	39	0
-	+	19	0
-	+	11	23
-	+	41	11
-	+	27	0
-	+	28	0
-	+	30	0
-	+	31	0
-	+	32	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	35	0
-	+	36	0
-	+	35	21
-	+	34	0
 
 > /usr/share/vim/vim80/doc/cmdline.txt
 	*	1500534565	0
@@ -1021,21 +1250,6 @@ $
 	.	2	15
 	+	1	0
 	+	2	15
-
-> ~/.Xresources
-	*	1500339873	0
-	"	42	15
-	^	42	16
-	.	42	15
-	+	9	40
-	+	5	9
-	+	3	13
-	+	9	41
-	+	3	13
-	+	4	14
-	+	13	29
-	+	40	29
-	+	42	15
 
 > /root/.bashrc
 	*	1500338804	0
@@ -1517,111 +1731,6 @@ $
 	+	17	0
 	+	16	0
 
-> ~/mydata/git/JD_Utils/jd.py
-	"	283	0
-	^	291	51
-	.	283	0
-	+	295	0
-	+	292	49
-	+	293	0
-	+	251	46
-	+	251	53
-	+	251	0
-	+	251	0
-	+	251	0
-	+	251	47
-	+	282	48
-	+	293	66
-	+	251	62
-	+	251	41
-	+	251	46
-	+	251	0
-	+	251	24
-	+	251	0
-	+	251	0
-	+	251	19
-	+	251	65
-	+	251	0
-	+	251	43
-	+	251	25
-	+	251	38
-	+	251	47
-	+	251	0
-	+	251	0
-	+	6	21
-	+	10	0
-	+	14	0
-	+	251	0
-	+	276	0
-	+	275	84
-	+	296	0
-	+	277	0
-	+	251	40
-	+	251	32
-	+	251	0
-	+	251	0
-	+	251	0
-	+	30	0
-	+	31	0
-	+	251	0
-	+	32	0
-	+	251	0
-	+	253	0
-	+	251	0
-	+	251	0
-	+	251	52
-	+	251	0
-	+	251	0
-	+	251	0
-	+	251	0
-	+	251	14
-	+	251	22
-	+	251	49
-	+	251	0
-	+	254	0
-	+	252	0
-	+	278	0
-	+	275	0
-	+	274	0
-	+	271	56
-	+	272	48
-	+	293	53
-	+	294	43
-	+	10	0
-	+	251	28
-	+	251	35
-	+	472	0
-	+	473	0
-	+	251	0
-	+	444	0
-	+	438	17
-	+	457	15
-	+	459	0
-	+	445	29
-	+	446	25
-	+	444	0
-	+	458	22
-	+	457	21
-	+	458	28
-	+	446	36
-	+	438	0
-	+	475	0
-	+	474	0
-	+	478	0
-	+	474	19
-	+	137	44
-	+	124	0
-	+	472	0
-	+	473	0
-	+	266	78
-	+	283	40
-	+	291	68
-	+	282	28
-	+	283	28
-	+	291	51
-	+	282	0
-	+	283	0
-
 > ~/mydata/git/requests-2/iReserve/ireserve_smsupdate.py
 	"	33	11
 
@@ -1658,164 +1767,4 @@ $
 	+	215	0
 
 > ~/mydata/git/requests-2/iReserve/ireserve_runme.py
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/ireserve.py
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/sql/insert.sql
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/sql/init.sql
-	"	137	0
-
-> ~/mydata/git/requests-2/iReserve/monitor_run_me.py
-	"	1	0
-
-> ~/mydata/git/JD_AutoSubmit/jd.py
-	"	74	8
-	^	81	56
-	.	81	55
-	+	81	55
-
-> ~/mydata/git/JD_Utils/test
-	"	3	0
-	^	6	0
-	.	3	0
-	+	4	4
-	+	5	0
-	+	6	0
-	+	2	0
-	+	3	0
-
-> ~/mydata/git/JD_Utils/couponConfig
-	"	1	0
-
-> ~/mydata/git/JD_Utils/couponConfigHelper.py
-	"	6	0
-	^	8	17
-	.	8	16
-	+	1	0
-	+	8	16
-
-> ~/mydata/git/jd/coupon.py
-	"	78	0
-	^	66	0
-	.	66	0
-	+	98	0
-	+	96	14
-	+	87	28
-	+	102	0
-	+	122	36
-	+	70	27
-	+	137	0
-	+	8	27
-	+	130	19
-	+	137	0
-	+	134	0
-	+	130	13
-	+	133	0
-	+	131	39
-	+	132	38
-	+	131	0
-	+	131	19
-	+	131	34
-	+	131	0
-	+	132	63
-	+	122	0
-	+	123	0
-	+	113	0
-	+	130	0
-	+	128	0
-	+	131	0
-	+	128	0
-	+	129	0
-	+	130	0
-	+	123	0
-	+	103	49
-	+	107	32
-	+	123	0
-	+	70	27
-	+	127	42
-	+	124	0
-	+	70	27
-	+	127	42
-	+	131	39
-	+	87	51
-	+	95	13
-	+	95	30
-	+	87	0
-	+	10	0
-	+	9	34
-	+	100	0
-	+	101	0
-	+	88	0
-	+	93	0
-	+	94	0
-	+	89	19
-	+	92	0
-	+	89	8
-	+	90	0
-	+	92	0
-	+	90	28
-	+	92	13
-	+	89	56
-	+	91	0
-	+	90	0
-	+	91	35
-	+	37	0
-	+	38	0
-	+	38	68
-	+	38	0
-	+	38	0
-	+	37	18
-	+	38	0
-	+	42	0
-	+	4	10
-	+	37	26
-	+	54	8
-	+	54	4
-	+	54	0
-	+	46	0
-	+	54	0
-	+	50	0
-	+	49	0
-	+	51	0
-	+	54	0
-	+	36	0
-	+	5	8
-	+	7	0
-	+	56	32
-	+	86	7
-	+	86	0
-	+	86	7
-	+	107	0
-	+	86	0
-	+	85	7
-	+	105	0
-	+	106	47
-	+	85	18
-	+	85	0
-	+	63	0
-	+	68	0
-	+	64	0
-	+	72	0
-	+	65	0
-	+	66	0
-
-> ~/mydata/git/jd/NERD_tree_1
-	"	24	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/mydata/git/requests-2/iReserve/config.ini
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/configHelper.py
-	"	73	17
-
-> ~/mydata/git/requests-2/iReserve/bcolors.py
 	"	1	0

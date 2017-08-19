@@ -19,6 +19,7 @@ let loadStartify = 1
 let loadVimfiler = 1
 let loadSpaceVim = 1
 let loadProfile = 1
+let loadDeoplete = 1
 
 
 " Plugin definations ------------------------------------------------------- {{{
@@ -29,12 +30,12 @@ let loadProfile = 1
 if loadPlug == 1
     " Autocomplete & Snips
     Plug 'artur-shaik/vim-javacomplete2', {'for': 'java'} " autocomplete for Java
-    autocmd FileType java setlocal omnifunc=javacomplete#Complete
+    "autocmd FileType java setlocal omnifunc=javacomplete#Complete
 if has("nvim")
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-jedi', {'for': 'python'} " autocomplete for Python
     " autocomplete for Javascript. Need add .tern-project to take effect
-    Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+    Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'], 'commit': '9eaedeab499e2d0a34fba72afa1ff65d34752cbf' }
 else
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
     Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
@@ -79,7 +80,7 @@ endif
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
 
-    " to be test
+    "" to be test
     Plug 'morhetz/gruvbox'
     Plug 'mhinz/vim-startify'
     Plug 'tpope/vim-unimpaired'
@@ -102,10 +103,11 @@ endif
     Plug 'tenfyzhong/tagbar-markdown.vim'
     Plug 'dyng/ctrlsf.vim'
     Plug 'Yggdroot/LeaderF'
-    "Plug 'vim-scripts/BufOnly.vim'
     Plug 'othree/yajs.vim'
     "Plug 'othree/javascript-libraries-syntax.vim'
     Plug 'hail2u/vim-css3-syntax'
+    Plug 'vim-scripts/BufOnly.vim'
+    Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
 
     " Useless Plugins
     "Plug 'neomake/neomake'
@@ -137,13 +139,21 @@ endif
 " }}}
 
 " Plugin Settings ----------------------------------------------------------{{{
+" others {
+nnoremap <leader>cf :CtrlSF<SPACE>
+nnoremap <leader>bo :BufOnly<CR>
+map <SPACE> <plug>NERDCommenterToggle
+" }
 " LeaderF {
 let g:Lf_ShortcutF = '<leader>l'
+"let g:Lf_PythonVersion=2
 nnoremap <leader>ll :LeaderfSelf<CR>
 nnoremap <leader>c :LeaderfHistoryCmd<CR>
 nnoremap <leader>ls :LeaderfHistorySearch<CR>
 nnoremap <leader>lf :LeaderfFunction<CR>
 nnoremap <leader>lh :LeaderfHelp<CR>
+nnoremap <leader>lb :LeaderfBuffer<CR>
+nnoremap <leader>lr :LeaderfMru<CR>
 let g:Lf_ExternalCommand = 'rg %s --files --no-ignore --hidden --follow --glob
                                 \gc !{.git/,
                                    \gc.gvfs,
@@ -248,10 +258,16 @@ let g:autoformat_verbosemode=1
 let g:session_default_to_last = 1
 "   }
 "   deoplete {
-if has("nvim")
+if has("nvim") && loadDeoplete == 1
     let g:deoplete#enable_at_startup = 1
     let g:deoplete#enable_ignore_case = 1
     let g:deoplete#enable_smart_case = 1
+
+    "let g:deoplete#omni#functions = {}
+    "let g:deoplete#omni#functions.javascript = [
+                "\ 'tern#Complete',
+                "\ 'jspc#omni'
+                "\]
 
     if exists('g:deoplete#enable_at_startup')
         let g:deoplete#enable_at_startup = 1
@@ -262,8 +278,18 @@ if has("nvim")
         call deoplete#custom#set('jedi', 'mark', '')
         call deoplete#custom#set('javacomplete2', 'mark', '')
         call deoplete#custom#set('typescript', 'mark', '')
-        call deoplete#custom#set('neosnippet', 'mark', '')
+        call deoplete#custom#set('ultisnips', 'mark', '')
     endif
+    " Set bin if you have many instalations
+    let g:deoplete#sources#ternjs#tern_bin = '/usr/bin/tern'
+
+    let g:deoplete#enable_profile = 1
+    call deoplete#enable_logging('DEBUG', 'deoplete.log')
+    call deoplete#custom#source('tern', 'debug_enabled', 1)
+
+    " Use tern_for_vim.
+    let g:tern#command = ["tern"]
+    let g:tern#arguments = ["--persistent"]
 endif
 "   }
 "   vim-session {
@@ -317,8 +343,12 @@ nnoremap <silent> <leader>js :JavaSearchContext<cr>
 "nnoremap <silent> <leader>r :Java %<cr>
 "   }
 "   Easymotion {
-map <SPACE><SPACE> <Plug>(easymotion-f)
-map <leader>f <Plug>(easymotion-F)
+"map <SPACE><SPACE> <Plug>(easymotion-f)
+"map <leader>f <Plug>(easymotion-F)
+map f <Plug>(easymotion-f)
+map F <Plug>(easymotion-F)
+map t <Plug>(easymotion-t)
+map T <Plug>(easymotion-T)
 let g:EasyMotion_smartcase = 1
 "let g:EasyMotion_do_mapping = 1
 " 1 will match 1 and !; ! matches !
@@ -504,14 +534,14 @@ set tm=500
     "" 插入模式下用绝对行号, 普通模式下用相对
     "autocmd InsertEnter * :set norelativenumber number
     "autocmd InsertLeave * :set relativenumber
-    "function! NumberToggle()
-        "if(&relativenumber == 1)
-            "set norelativenumber number
-        "else
-            "set relativenumber
-        "endif
-    "endfunc
-    "nnoremap <F2> :call NumberToggle()<CR>
+    function! NumberToggle()
+        if(&relativenumber == 1)
+            set norelativenumber number
+        else
+            set relativenumber
+        endif
+    endfunc
+    nnoremap <F2> :call NumberToggle()<CR>
 "endif
 
 " Turn off highlight until next search
@@ -601,8 +631,10 @@ vmap <Leader>p "+p
 nmap <Leader>p "+p
 
 " Insert a new line without entering insert mode
-nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+"nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+"nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+nnoremap <silent><C-j> :set paste<CR>o<Esc>:set nopaste<CR>
+nnoremap <silent><C-k> :set paste<CR>O<Esc>:set nopaste<CR>
 "set timeout timeoutlen=300 ttimeoutlen=100
 
 " <S-CR> doesn't work. Known issue
@@ -619,7 +651,7 @@ nnoremap <leader>xb :bp<cr>:bd #<cr>
 nnoremap <leader>xw :q<cr>
 
 nnoremap <leader>w :wall<cr>
-nnoremap <leader>sb :%s/
+nnoremap <leader>s :%s/
 
 " Select all
 nnoremap <C-a> ggVG
@@ -1067,7 +1099,7 @@ let g:startify_skiplist = [
             \ escape(fnamemodify(resolve($VIMRUNTIME), ':p'), '\') .'doc',
             \ 'bundle/.*/doc',
             \ ]
-nnoremap <leader>s :Startify<CR>
+nnoremap <leader>st :Startify<CR>
 " }}}
 endif
 
