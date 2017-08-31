@@ -288,6 +288,7 @@ if has("nvim") && loadDeoplete == 1
     call deoplete#custom#source('tern', 'debug_enabled', 1)
 
     " Use tern_for_vim.
+    let g:tern_show_argument_hints='on_move'
     let g:tern#command = ["tern"]
     let g:tern#arguments = ["--persistent"]
 endif

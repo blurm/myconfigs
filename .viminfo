@@ -11,29 +11,113 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/omni
+~MSle0~/permission
 
 # Last Substitute Search Pattern:
-~MSle0&SpaceVim
+~MSle0&JD
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1503113068,,"x"
+|2,0,1504107533,,"x"
+:xa
+|2,0,1504107464,,"xa"
+:w
+|2,0,1504104178,,"w"
+:Bookmark
+|2,0,1504059226,,"Bookmark"
 :q
-|2,0,1503108988,,"q"
+|2,0,1503991878,,"q"
+:vs
+|2,0,1503910027,,"vs"
+:pwd
+|2,0,1503925514,,"pwd"
+:.,.+5w
+|2,0,1503904699,,".,.+5w"
+:echo g:tern_show_argument_hints
+|2,0,1503811286,,"echo g:tern_show_argument_hints"
 :wa
-|2,0,1503108987,,"wa"
+|2,0,1503805912,,"wa"
+:lol ../
+|2,0,1503741823,,"lol ../"
+:lol ..
+|2,0,1503741815,,"lol .."
+:%s/JD/Amazon/g
+|2,0,1503651306,,"%s/JD/Amazon/g"
+:%s/class="/class="vimiumReset /gc
+|2,0,1503543678,,"%s/class=\"/class=\"vimiumReset /gc"
+:%s/\v(^\.)@=/#rating4U_movie /gc
+|2,0,1503536370,,"%s/\\v(^\\.)@=/#rating4U_movie /gc"
+:%s/\v(^\.)@=/#rating4U_movie/gc
+|2,0,1503536358,,"%s/\\v(^\\.)@=/#rating4U_movie/gc"
+:%s/\v(^.)@=/#rating4U_movie/gc
+|2,0,1503536332,,"%s/\\v(^.)@=/#rating4U_movie/gc"
+:%s/\v.movie-rating/#rating4U_movie/gc
+|2,0,1503536057,,"%s/\\v.movie-rating/#rating4U_movie/gc"
+:%s/class="movie-rating"/id="rating4U_movie"/gc
+|2,0,1503536031,,"%s/class=\"movie-rating\"/id=\"rating4U_movie\"/gc"
+:%s/class="movie-rating"
+|2,0,1503536006,,"%s/class=\"movie-rating\""
+:Gundo
+|2,0,1503535384,,"Gundo"
+:q!
+|2,0,1503396231,,"q!"
+:e sss
+|2,0,1503376550,,"e sss"
+:wx
+|2,0,1503310560,,"wx"
+:'<,'>s/\.rating/.rating .movie-rating/c
+|2,0,1503242939,,"'<,'>s/\\.rating/.rating .movie-rating/c"
+:'<,'>s/\.rating/.movie-rating/c
+|2,0,1503242925,,"'<,'>s/\\.rating/.movie-rating/c"
+:%s/\.rating/.movie-rating .rating/
+|2,0,1503242856,,"%s/\\.rating/.movie-rating .rating/"
+:%s/\.movie-rating \.rating/.rating/gc
+|2,0,1503233672,,"%s/\\.movie-rating \\.rating/.rating/gc"
+:%s/movie-douban/movie-rating/gc
+|2,0,1503231971,,"%s/movie-douban/movie-rating/gc"
+:%s/\.rating/.movie-rating .rating/gc
+|2,0,1503229654,,"%s/\\.rating/.movie-rating .rating/gc"
+: %s/doubanx_close/rating_close/g
+|2,0,1503228150,," %s/doubanx_close/rating_close/g"
+:%s/\'\.con/' .con/gc
+|2,0,1503226740,,"%s/\\'\\.con/' .con/gc"
+:%s/'
+|2,0,1503226704,,"%s/'"
+:%s/'.con'/' .con/gc
+|2,0,1503226692,,"%s/'.con'/' .con/gc"
+:%s/doubanx_close/rating_close/g
+|2,0,1503221369,,"%s/doubanx_close/rating_close/g"
+:  %s/book-douban/movie-rating/gc
+|2,0,1503220984,,"  %s/book-douban/movie-rating/gc"
+:version
+|2,0,1503220580,,"version"
+: %s/book-douban/movie-douban/gc
+|2,0,1503220495,," %s/book-douban/movie-douban/gc"
+:%s/
+|2,0,1503220465,,"%s/"
+: bufdo %s/rating_right/rating_star/g
+|2,0,1503220213,," bufdo %s/rating_right/rating_star/g"
+:bufdo %s/movie-douban/movie-rating/g
+|2,0,1503191864,,"bufdo %s/movie-douban/movie-rating/g"
+:%s/movie-douban/movie_rating/g
+|2,0,1503191774,,"%s/movie-douban/movie_rating/g"
+:%s/book-douban/movie-douban/gc
+|2,0,1503189782,,"%s/book-douban/movie-douban/gc"
+:h leaderf
+|2,0,1503189153,,"h leaderf"
+:h denite
+|2,0,1503189122,,"h denite"
+:%s/book-douban-head/tag_group .tag/gc
+|2,0,1503114620,,"%s/book-douban-head/tag_group .tag/gc"
+:%s/f6f6f1/333/gc
+|2,0,1503112886,,"%s/f6f6f1/333/gc"
 :RopeGotoDefinition
 |2,0,1503108959,,"RopeGotoDefinition"
 :jjjkkkkjj
 |2,0,1503108895,,"jjjkkkkjj"
-:pwd
-|2,0,1503108863,,"pwd"
-:version
-|2,0,1503108767,,"version"
 :py3 print(os.getcwd())
 |2,0,1503107885,,"py3 print(os.getcwd())"
 :py3 os.getcwd()
@@ -48,10 +132,6 @@ $
 |2,0,1503107825,,"lcd mydata/"
 :lcd mydata/git/
 |2,0,1503106801,,"lcd mydata/git/"
-:xa
-|2,0,1503054084,,"xa"
-:w
-|2,0,1503051558,,"w"
 :mes
 |2,0,1501062427,,"mes"
 :e vim_reg.md
@@ -116,8 +196,6 @@ $
 |2,0,1500522941,,"h incsearch"
 :h read
 |2,0,1500458764,,"h read"
-:q!
-|2,0,1500458734,,"q!"
 :map <CR>
 |2,0,1500435703,,"map <CR>"
 :imap <CR> <ESC>
@@ -136,8 +214,6 @@ $
 |2,0,1500376511,,"h focus"
 :h winenter
 |2,0,1500376243,,"h winenter"
-:vs
-|2,0,1500376087,,"vs"
 :h winEnter
 |2,0,1500375987,,"h winEnter"
 :cd ~
@@ -171,7 +247,387 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1503113067,,"\\s\\+$"
+|2,1,1504107533,,"\\s\\+$"
+?/permission
+|2,1,1504103853,47,"permission"
+?/chrome
+|2,1,1504059428,47,"chrome"
+?/nav
+|2,1,1504059415,47,"nav"
+?/nav-logo
+|2,1,1504059408,47,"nav-logo"
+?/container
+|2,1,1504059390,47,"container"
+?/head
+|2,1,1504059380,47,"head"
+? \<renderTags\>
+|2,1,1504011666,,"\\<renderTags\\>"
+?/tag
+|2,1,1504011655,47,"tag"
+?/h3
+|2,1,1504009056,47,"h3"
+?/inner
+|2,1,1504008051,47,"inner"
+? \<ratings_wrapper\>
+|2,1,1504007841,,"\\<ratings_wrapper\\>"
+?/wrapper
+|2,1,1504007592,47,"wrapper"
+?/rating_wrapper
+|2,1,1504007587,47,"rating_wrapper"
+?/tag_item
+|2,1,1503903806,47,"tag_item"
+? \<rate\>
+|2,1,1503902517,,"\\<rate\\>"
+? \<renderRate\>
+|2,1,1503902509,,"\\<renderRate\\>"
+? \<renderMovieIntro\>
+|2,1,1503902302,,"\\<renderMovieIntro\\>"
+?/movie
+|2,1,1503902298,47,"movie"
+?/max
+|2,1,1503899480,47,"max"
+?/detail
+|2,1,1503898945,47,"detail"
+? \<mouseLeave\>
+|2,1,1503898400,,"\\<mouseLeave\\>"
+?/showmode
+|2,1,1503820554,47,"showmode"
+? \<RATING4U_MAX_WIDTH\>
+|2,1,1503813956,,"\\<RATING4U_MAX_WIDTH\\>"
+?/title
+|2,1,1503810810,47,"title"
+?/, title
+|2,1,1503808407,47,", title"
+? \<rating4U_stop\>
+|2,1,1503805065,,"\\<rating4U_stop\\>"
+? \<target\>
+|2,1,1503804084,,"\\<target\\>"
+? \<tag\>
+|2,1,1503802335,,"\\<tag\\>"
+?/resolved
+|2,1,1503801933,47,"resolved"
+?/finised
+|2,1,1503801711,47,"finised"
+?/tern
+|2,1,1503801438,47,"tern"
+?/ev.data
+|2,1,1503799976,47,"ev.data"
+?/on start
+|2,1,1503799873,47,"on start"
+? \<that\>
+|2,1,1503798546,,"\\<that\\>"
+? \<options\>
+|2,1,1503798134,,"\\<options\\>"
+?//
+|2,1,1503798085,47,"/"
+? \<checkIfBook\>
+|2,1,1503797870,,"\\<checkIfBook\\>"
+?/focus
+|2,1,1503797638,47,"focus"
+? \<createOptions\>
+|2,1,1503797451,,"\\<createOptions\\>"
+?/#666
+|2,1,1503755247,47,"#666"
+?/ul
+|2,1,1503754424,47,"ul"
+?/rating4
+|2,1,1503767448,47,"rating4"
+?/$target
+|2,1,1503762665,47,"$target"
+? \<link\>
+|2,1,1503759013,,"\\<link\\>"
+?/author
+|2,1,1503748774,47,"author"
+? \<formatAuthor\>
+|2,1,1503748424,,"\\<formatAuthor\\>"
+? \<regIsBook\>
+|2,1,1503746912,,"\\<regIsBook\\>"
+?/popErr
+|2,1,1503743617,47,"popErr"
+?/1000
+|2,1,1503742866,47,"1000"
+?/112
+|2,1,1503742856,47,"112"
+? \<formatPublisher\>
+|2,1,1503741978,,"\\<formatPublisher\\>"
+? \<REGEX_REMOVE_BRACE\>
+|2,1,1503741728,,"\\<REGEX_REMOVE_BRACE\\>"
+? \<publisher\>
+|2,1,1503740096,,"\\<publisher\\>"
+? \<bookName\>
+|2,1,1503739871,,"\\<bookName\\>"
+?/<div class="books
+|2,1,1503738319,47,"<div class=\"books"
+?/producttitle
+|2,1,1503737190,47,"producttitle"
+?/productline
+|2,1,1503737111,47,"productline"
+?/createOptions
+|2,1,1503736526,47,"createOptions"
+?/amazon
+|2,1,1503671030,47,"amazon"
+? \<formatData\>
+|2,1,1503667370,,"\\<formatData\\>"
+? JD
+|2,1,1503651306,,"JD"
+?/a:link
+|2,1,1503649411,47,"a:link"
+?/380
+|2,1,1503647589,47,"380"
+? \<tips\>
+|2,1,1503647158,,"\\<tips\\>"
+? \<rating4U_movie\>
+|2,1,1503644859,,"\\<rating4U_movie\\>"
+?/\.left
+|2,1,1503644077,47,"\\.left"
+?/left
+|2,1,1503642851,47,"left"
+?/\v.left
+|2,1,1503642806,47,"\\v.left"
+?/.left
+|2,1,1503642799,47,".left"
+? \<listH\>
+|2,1,1503642706,,"\\<listH\\>"
+? \<list\>
+|2,1,1503642549,,"\\<list\\>"
+?/rating_section
+|2,1,1503640374,47,"rating_section"
+? \<mainDiv\>
+|2,1,1503638216,,"\\<mainDiv\\>"
+?/$tips
+|2,1,1503637908,47,"$tips"
+? \<container\>
+|2,1,1503634777,,"\\<container\\>"
+? \<renderContainer\>
+|2,1,1503634157,,"\\<renderContainer\\>"
+?/wrap
+|2,1,1503627127,47,"wrap"
+?/ li
+|2,1,1503626644,47," li"
+?/globes
+|2,1,1503624368,47,"globes"
+?/z-
+|2,1,1503561749,47,"z-"
+?/renderrate
+|2,1,1503556995,47,"renderrate"
+?/renderrating
+|2,1,1503556989,47,"renderrating"
+?/label
+|2,1,1503552138,47,"label"
+? \<resultArr\>
+|2,1,1503551539,,"\\<resultArr\\>"
+?/semi-
+|2,1,1503551456,47,"semi-"
+?/semico
+|2,1,1503551446,47,"semico"
+?/seli
+|2,1,1503551437,47,"seli"
+? \<sortTags\>
+|2,1,1503551054,,"\\<sortTags\\>"
+?/tags
+|2,1,1503551032,47,"tags"
+?/rendertag
+|2,1,1503550820,47,"rendertag"
+?/genre
+|2,1,1503546050,47,"genre"
+?/tag\/
+|2,1,1503546021,47,"tag\\/"
+?/tag/
+|2,1,1503546016,47,"tag/"
+?/tag:link
+|2,1,1503545026,47,"tag:link"
+?/rendertags
+|2,1,1503544617,47,"rendertags"
+?/link
+|2,1,1503544201,47,"link"
+?/tag_group
+|2,1,1503543880,47,"tag_group"
+? class="
+|2,1,1503543678,,"class=\""
+?/class="
+|2,1,1503543626,47,"class=\""
+?/baseWra
+|2,1,1503542322,47,"baseWra"
+? \v(^\.)@=
+|2,1,1503536370,,"\\v(^\\.)@="
+? \v(^.)@=
+|2,1,1503536332,,"\\v(^.)@="
+? \v.movie-rating
+|2,1,1503536057,,"\\v.movie-rating"
+?/movie-rating
+|2,1,1503536043,47,"movie-rating"
+? class="movie-rating"
+|2,1,1503536031,,"class=\"movie-rating\""
+?/youku
+|2,1,1503530824,47,"youku"
+? \<formatBookname\>
+|2,1,1503450724,,"\\<formatBookname\\>"
+? \<nameStr\>
+|2,1,1503450718,,"\\<nameStr\\>"
+? \<matchCN\>
+|2,1,1503450569,,"\\<matchCN\\>"
+? \<matchEN\>
+|2,1,1503450555,,"\\<matchEN\\>"
+? \<isMatchAuthor\>
+|2,1,1503447714,,"\\<isMatchAuthor\\>"
+?/bookmark
+|2,1,1503500352,47,"bookmark"
+?/rarbg
+|2,1,1503479262,47,"rarbg"
+?/web
+|2,1,1503476042,47,"web"
+?/clean
+|2,1,1503474672,47,"clean"
+?/DTS
+|2,1,1503473405,47,"DTS"
+?/pattern
+|2,1,1503473389,47,"pattern"
+?/parse
+|2,1,1503473085,47,"parse"
+?/search
+|2,1,1503376557,47,"search"
+?/average
+|2,1,1503373075,47,"average"
+?/arial
+|2,1,1503372487,47,"arial"
+?/arail
+|2,1,1503372482,47,"arail"
+?/font:
+|2,1,1503372396,47,"font:"
+?/font
+|2,1,1503372388,47,"font"
+?/font-fa
+|2,1,1503371738,47,"font-fa"
+?/test
+|2,1,1503370493,47,"test"
+?/pulse
+|2,1,1503338481,47,"pulse"
+?/loader
+|2,1,1503338144,47,"loader"
+?/ h3
+|2,1,1503337659,47," h3"
+?/-head
+|2,1,1503337643,47,"-head"
+?/imdbRating
+|2,1,1503337276,47,"imdbRating"
+?/star
+|2,1,1503337237,47,"star"
+?/strong
+|2,1,1503337165,47,"strong"
+?/imdb_rating
+|2,1,1503336832,47,"imdb_rating"
+?/rating_num
+|2,1,1503336710,47,"rating_num"
+?/rating_star
+|2,1,1503336683,47,"rating_star"
+?/.rating
+|2,1,1503300991,47,".rating"
+?/tag_grou
+|2,1,1503300847,47,"tag_grou"
+?/tag_gr
+|2,1,1503300762,47,"tag_gr"
+?/_right
+|2,1,1503285855,47,"_right"
+?/_star
+|2,1,1503285849,47,"_star"
+?/_num
+|2,1,1503283478,47,"_num"
+?/douban_rating
+|2,1,1503283369,47,"douban_rating"
+?/doubanx
+|2,1,1503282330,47,"doubanx"
+?/.ll
+|2,1,1503247371,47,".ll"
+?/padding:20
+|2,1,1503243069,47,"padding:20"
+? \.rating
+|2,1,1503242939,,"\\.rating"
+?/png
+|2,1,1503238100,47,"png"
+?/douban
+|2,1,1503238065,47,"douban"
+? \.movie-rating \.rating
+|2,1,1503233672,,"\\.movie-rating \\.rating"
+?/ .rating
+|2,1,1503232070,47," .rating"
+?/.movie-rating
+|2,1,1503232053,47,".movie-rating"
+? movie-douban
+|2,1,1503231971,,"movie-douban"
+?/-douban-head
+|2,1,1503231939,47,"-douban-head"
+?/movie-douban-head
+|2,1,1503231917,47,"movie-douban-head"
+?/.logo
+|2,1,1503231819,47,".logo"
+?/movie.*head
+|2,1,1503229824,47,"movie.*head"
+?/^.rating
+|2,1,1503229540,47,"^.rating"
+?/30
+|2,1,1503229302,47,"30"
+?/close
+|2,1,1503228224,47,"close"
+? doubanx_close
+|2,1,1503228150,,"doubanx_close"
+?/doubanx_
+|2,1,1503228132,47,"doubanx_"
+?/rating_closs
+|2,1,1503228125,47,"rating_closs"
+?/video_tag
+|2,1,1503227548,47,"video_tag"
+? \<type\>
+|2,1,1503227085,,"\\<type\\>"
+?/new Templ
+|2,1,1503226960,47,"new Templ"
+?/type
+|2,1,1503226933,47,"type"
+? \'\.con
+|2,1,1503226740,,"\\'\\.con"
+?/\'\.con
+|2,1,1503226724,47,"\\'\\.con"
+?/' \.con'
+|2,1,1503226709,47,"' \\.con'"
+? '.con'
+|2,1,1503226692,,"'.con'"
+?/logo
+|2,1,1503221739,47,"logo"
+?/douban_cl
+|2,1,1503221380,47,"douban_cl"
+?/book-douban.left:af
+|2,1,1503221260,47,"book-douban.left:af"
+?/starstop
+|2,1,1503221039,47,"starstop"
+? book-douban
+|2,1,1503220984,,"book-douban"
+? rating_right
+|2,1,1503220213,,"rating_right"
+?/ll
+|2,1,1503219931,47,"ll"
+?/clear
+|2,1,1503219525,47,"clear"
+?/float
+|2,1,1503192473,47,"float"
+?/tag_tiem
+|2,1,1503191600,47,"tag_tiem"
+?/not_show
+|2,1,1503191348,47,"not_show"
+?/multi
+|2,1,1503189163,47,"multi"
+? \<getTagLength\>
+|2,1,1503111119,,"\\<getTagLength\\>"
+?/\v#\d+
+|2,1,1503115439,47,"\\v#\\d+"
+?/#\d+
+|2,1,1503115433,47,"#\\d+"
+? book-douban-head
+|2,1,1503114620,,"book-douban-head"
+?/rating
+|2,1,1503114101,47,"rating"
+? f6f6f1
+|2,1,1503112886,,"f6f6f1"
+?/background-color
+|2,1,1503112844,47,"background-color"
 ?/omni
 |2,1,1503051384,47,"omni"
 ?/javascript
@@ -236,8 +692,6 @@ $
 |2,1,1500458754,47,"fileSec"
 ?/ESC
 |2,1,1500433179,47,"ESC"
-?/focus
-|2,1,1500377157,47,"focus"
 ?/cursorline
 |2,1,1500353187,47,"cursorline"
 ?/rope
@@ -316,6 +770,40 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@/home/damon/mydata/vim/chrome_extentions/imdb/test_ribbon.css
+|2,3,1503925617,,"/home/damon/mydata/vim/chrome_extentions/imdb/test_ribbon.css"
+@/home/damon/mydata/vim/chrome_extentions/imdb/test_ribbon.html
+|2,3,1503925538,,"/home/damon/mydata/vim/chrome_extentions/imdb/test_ribbon.html"
+@ 
+|2,3,1503741865,," "
+@REGEX_REMOVE_BRACE
+|2,3,1503741849,,"REGEX_REMOVE_BRACE"
+@/home/damon/mydata/vim/chrome_extentions/imdb/js/controller/amazon_response.txt
+|2,3,1503737065,,"/home/damon/mydata/vim/chrome_extentions/imdb/js/controller/amazon_response.txt"
+@/home/damon/mydata/vim/chrome_extentions/imdb/js/controller/amazon_response.html
+|2,3,1503736594,,"/home/damon/mydata/vim/chrome_extentions/imdb/js/controller/amazon_response.html"
+@/home/damon/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js
+|2,3,1503651190,,"/home/damon/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js"
+@multicursor
+|2,3,1503560039,,"multicursor"
+@/home/damon/mydata/vim/chrome_extentions/imdb/js/model/test_data.js
+|2,3,1503333761,,"/home/damon/mydata/vim/chrome_extentions/imdb/js/model/test_data.js"
+@bookcss
+|2,3,1503280172,,"bookcss"
+@template
+|2,3,1503225385,,"template"
+@movie
+|2,3,1503220347,,"movie"
+@movie.css
+|2,3,1503220325,,"movie.css"
+@test.html
+|2,3,1503189600,,"test.html"
+@test.css
+|2,3,1503189562,,"test.css"
+@;q
+|2,3,1503189111,,";q"
+@/home/damon/mydata/vim/chrome_extentions/imdb/css/movie.css
+|2,3,1503112300,,"/home/damon/mydata/vim/chrome_extentions/imdb/css/movie.css"
 @ropevim
 |2,3,1503108822,,"ropevim"
 @j
@@ -346,37 +834,53 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	StripTrailingWhitespace(
-|3,0,0,0,1,0,1501153367,"StripTrailingWhitespace("
-"1	LINE	0
-	        "jquery",
-|3,0,1,1,1,0,1503049918,"        \"jquery\","
+"0	LINE	0
+	                                        <a href="https://${data.type}.douban.com/subject/${data.id}/reviews" target="_blank">评价人数不足</a>
+|3,0,0,1,1,0,1504008479,"                                        <a href=\"https://${data.type}.douban.com/subject/${data.id}/reviews\" target=\"_blank\">评价人数不足</a>"
+""1	LINE	0
+	    "permissions": [
+	        "activeTab",
+	        "*://*/*"
+	    ],
+|3,1,1,1,4,0,1504103999,"    \"permissions\": [","        \"activeTab\",","        \"*://*/*\"","    ],"
 "2	LINE	0
-	Finish tag sortin
-|3,0,2,1,1,0,1503038366,"Finish tag sortin"
+	        "*://*/*"
+|3,0,2,1,1,0,1504103987,"        \"*://*/*\""
 "3	LINE	0
-	
-|3,0,3,1,1,0,1501153411,""
+	    /*background: url('chrome-extension://__MSG_@@extension_id__/css/images/unhappy.png') no-repeat 0 0;*/
+	    /*background-image:url('chrome-extension://__MSG_@@extension_id__/css/images/unhappy.png');*/
+	    /*background-size: 80px;*/
+|3,0,3,1,3,0,1504059437,"    /*background: url('chrome-extension://__MSG_@@extension_id__/css/images/unhappy.png') no-repeat 0 0;*/","    /*background-image:url('chrome-extension://__MSG_@@extension_id__/css/images/unhappy.png');*/","    /*background-size: 80px;*/"
 "4	LINE	0
-	[color "status"]
-	    added = green
-|3,0,4,1,2,0,1501153409,"[color \"status\"]","    added = green"
-"5	LINE	0
-	    make clean
-|3,0,5,1,1,0,1501064067,"    make clean"
-"6	LINE	0
-	    make distclean
-|3,0,6,1,1,0,1501064064,"    make distclean"
-"7	LINE	0
-	nmap <Leader>x "+y
-|3,0,7,1,1,0,1501038709,"nmap <Leader>x \"+y"
-"8	LINE	0
+	/*.imdb_rating .imdb_rating_star {*/
+	    /*background: url('chrome-extension://__MSG_@@extension_id__/css/images/if_favorites_18321.png') no-repeat 0 0;*/
+	    /*background-image:url('chrome-extension://__MSG_@@extension_id__/css/images/if_favorites_18321.png');*/
+	    /*background-size: cover;*/
+	    /*float:left;*/
+	    /*width:45px;*/
+	    /*height:45px;*/
+	/*}*/
 	
-|3,0,8,1,1,0,1500871029,""
+|3,0,4,1,9,0,1504059313,"/*.imdb_rating .imdb_rating_star {*/","    /*background: url('chrome-extension://__MSG_@@extension_id__/css/images/if_favorites_18321.png') no-repeat 0 0;*/","    /*background-image:url('chrome-extension://__MSG_@@extension_id__/css/images/if_favorites_18321.png');*/","    /*background-size: cover;*/","    /*float:left;*/","    /*width:45px;*/","    /*height:45px;*/","/*}*/",""
+"5	LINE	0
+	        "default_popup": "popup.html",
+|3,0,5,1,1,0,1504057187,"        \"default_popup\": \"popup.html\","
+"6	LINE	0
+	    "browser_action": {
+	        "default_icon": "icon3.png",
+	        "default_popup": "popup.html",
+	        "default_title": "Rating info for Books & Movies"
+	    },
+|3,0,6,1,5,0,1504057143,"    \"browser_action\": {","        \"default_icon\": \"icon3.png\",","        \"default_popup\": \"popup.html\",","        \"default_title\": \"Rating info for Books & Movies\"","    },"
+"7	LINE	0
+	                                <strong class="rating_num">${data.rating}</strong>
+|3,0,7,1,1,0,1504009024,"                                <strong class=\"rating_num\">${data.rating}</strong>"
+"8	LINE	0
+	                            <a href="https://${data.type}.douban.com/subject/${data.id}" target="_blank"></a>
+|3,0,8,1,1,0,1504009012,"                            <a href=\"https://${data.type}.douban.com/subject/${data.id}\" target=\"_blank\"></a>"
 "9	LINE	0
-	endif
-|3,0,9,1,1,0,1500871025,"endif"
+	
+|3,0,9,1,1,0,1504008923,""
 "g	CHAR	0
 	;
 |3,0,16,0,1,0,1500526341,";"
@@ -384,252 +888,1653 @@ $
 			
 |3,0,18,0,1,0,1500351034,"		"
 "j	CHAR	0
+	jkoleujjjjjjjjjjjjjVjjjjjjjJjjjy 143jpzz15jn;w
+|3,0,19,0,1,0,1503220656,"jkoleujjjjjjjjjjjjjVjjjjjjjJjjjy 143jpzz15j\n;w"
+"k	CHAR	0
+	kkkkkkkkjj
+|3,0,20,0,1,0,1503649013,"kkkkkkkkjj"
+"q	CHAR	0
 	
-|3,0,19,0,1,0,1501062432,""
-""-	CHAR	0
-	s
-|3,1,36,0,1,0,1503051447,"s"
+|3,0,26,0,1,0,1503375807,""
+"-	CHAR	0
+	,
+|3,0,36,0,1,0,1504103990,","
 
 # File marks:
 'M  33  21  ~/mydata/git/JD_Utils/javatest.java
 |4,77,33,21,1500523635,"~/mydata/git/JD_Utils/javatest.java"
-'0  2  19  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
-|4,48,2,19,1503113068,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
-'1  287  17  ~/mydata/git/JD_Utils/jd.py
-|4,49,287,17,1503108988,"~/mydata/git/JD_Utils/jd.py"
-'2  21  4  ~/Startify
-|4,50,21,4,1503108771,"~/Startify"
-'3  21  4  ~/Startify
-|4,51,21,4,1503107543,"~/Startify"
-'4  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,52,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
-'5  21  4  ~/Startify
-|4,53,21,4,1503104206,"~/Startify"
-'6  21  4  ~/Startify
-|4,54,21,4,1503104206,"~/Startify"
+'0  1  57  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,48,1,57,1504107533,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+'1  6  18  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,49,6,18,1504107465,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+'2  2  23  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,50,2,23,1504060811,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+'3  1  23  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,51,1,23,1504060811,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+'4  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,52,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+'5  221  51  ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+|4,53,221,51,1504012613,"~/mydata/vim/chrome_extentions/imdb/js/view/template.js"
+'6  2  18  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
+|4,54,2,18,1504011908,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
+'7  112  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js
+|4,55,112,0,1503991878,"~/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js"
+'8  107  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js
+|4,56,107,0,1503991878,"~/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js"
+'9  500  0  ~/mydata/vim/chrome_extentions/imdb/css/movie.css
+|4,57,500,0,1503931284,"~/mydata/vim/chrome_extentions/imdb/css/movie.css"
 
 # Jumplist (newest first):
--'  2  19  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
-|4,39,2,19,1503113068,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
--'  3  0  ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
-|4,39,3,0,1503113003,"~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG"
--'  287  17  ~/mydata/git/JD_Utils/jd.py
-|4,39,287,17,1503108988,"~/mydata/git/JD_Utils/jd.py"
--'  287  17  ~/mydata/git/JD_Utils/jd.py
-|4,39,287,17,1503108988,"~/mydata/git/JD_Utils/jd.py"
--'  288  18  ~/mydata/git/JD_Utils/jd.py
-|4,39,288,18,1503108939,"~/mydata/git/JD_Utils/jd.py"
--'  288  18  ~/mydata/git/JD_Utils/jd.py
-|4,39,288,18,1503108939,"~/mydata/git/JD_Utils/jd.py"
--'  21  4  ~/Startify
-|4,39,21,4,1503108771,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1503108771,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503107794,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503107794,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503107794,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503107794,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1503107543,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1503107543,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503106785,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503106785,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503106785,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503106785,"~/Startify"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  1  0  ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
-|4,39,1,0,1503105176,"~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG"
--'  21  4  ~/Startify
-|4,39,21,4,1503104206,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1503104206,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1503104206,"~/Startify"
--'  21  4  ~/Startify
-|4,39,21,4,1503104206,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503104191,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503104191,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503104191,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503104191,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503104191,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503104191,"~/Startify"
--'  48  0  ~/Startify
-|4,39,48,0,1503104191,"~/Startify"
--'  1  0  ~/Startify
-|4,39,1,0,1503104191,"~/Startify"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
--'  177  0  ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-|4,39,177,0,1503057090,"~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js"
+-'  1  57  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,39,1,57,1504107533,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+-'  2  0  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,39,2,0,1504107495,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+-'  6  18  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,6,18,1504107465,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  6  18  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,6,18,1504107465,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  20  0  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,20,0,1504107460,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  20  0  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,20,0,1504107460,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  5  20  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,5,20,1504107458,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  5  20  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,5,20,1504107458,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  4  13  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,4,13,1504107457,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  4  13  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,4,13,1504107457,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  42  0  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,42,0,1504107454,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  42  0  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,42,0,1504107454,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  333  0  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,333,0,1504103883,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  333  0  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,333,0,1504103883,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  1  0  ~/mydata/git/DoubanX_crx/manifest.json
+|4,39,1,0,1504103873,"~/mydata/git/DoubanX_crx/manifest.json"
+-'  1  0  ~/mydata/git/DoubanX_crx/manifest.json
+|4,39,1,0,1504103873,"~/mydata/git/DoubanX_crx/manifest.json"
+-'  199  0  ~/mydata/git/DoubanX_crx/manifest.json
+|4,39,199,0,1504103862,"~/mydata/git/DoubanX_crx/manifest.json"
+-'  199  0  ~/mydata/git/DoubanX_crx/manifest.json
+|4,39,199,0,1504103862,"~/mydata/git/DoubanX_crx/manifest.json"
+-'  17  0  ~/mydata/git/DoubanX_crx/manifest.json
+|4,39,17,0,1504103856,"~/mydata/git/DoubanX_crx/manifest.json"
+-'  17  0  ~/mydata/git/DoubanX_crx/manifest.json
+|4,39,17,0,1504103856,"~/mydata/git/DoubanX_crx/manifest.json"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,1,0,1504098673,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+|4,39,1,0,1504098673,"~/mydata/vim/chrome_extentions/rating4U/manifest.json"
+-'  306  0  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,306,0,1504098670,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  306  0  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,306,0,1504098670,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  1  23  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,39,1,23,1504060811,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+-'  3  0  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,39,3,0,1504060797,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+-'  2  0  ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+|4,39,2,0,1504060797,"~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG"
+-'  305  21  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,305,21,1504059440,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  305  21  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,305,21,1504059440,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  378  4  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,378,4,1504059438,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  378  4  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,378,4,1504059438,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,1,0,1504059428,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+|4,39,1,0,1504059428,"~/mydata/vim/chrome_extentions/rating4U/css/book.css"
+-'  17  6  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,17,6,1504059424,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  17  6  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,17,6,1504059424,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  29  30  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,29,30,1504059418,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  29  30  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,29,30,1504059418,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  155  0  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,155,0,1504059415,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  155  0  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,155,0,1504059415,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  129  40  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,129,40,1504059390,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  129  40  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,129,40,1504059390,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  234  8  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,234,8,1504059380,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  234  8  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,234,8,1504059380,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  207  34  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,207,34,1504059357,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  207  34  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,207,34,1504059357,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  4  21  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,4,21,1504059353,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  306  34  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,306,34,1504059353,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  4  21  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,4,21,1504059353,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  306  34  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,306,34,1504059353,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,1,0,1504059343,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+|4,39,1,0,1504059343,"~/mydata/vim/chrome_extentions/rating4U/js/view/template.js"
+-'  154  21  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,154,21,1504059317,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  154  21  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,154,21,1504059317,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  167  0  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,167,0,1504059314,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  167  0  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,167,0,1504059314,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,1,0,1504059249,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+|4,39,1,0,1504059249,"~/mydata/vim/chrome_extentions/rating4U/css/movie.css"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/css/star.css
+|4,39,1,0,1504059242,"~/mydata/vim/chrome_extentions/rating4U/css/star.css"
+-'  1  0  ~/mydata/vim/chrome_extentions/rating4U/css/star.css
+|4,39,1,0,1504059242,"~/mydata/vim/chrome_extentions/rating4U/css/star.css"
+-'  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,39,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+-'  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,39,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+-'  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,39,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+-'  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,39,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+-'  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,39,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+-'  146  0  ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+|4,39,146,0,1504059196,"~/mydata/vim/chrome_extentions/imdb/js/base/common.js"
+-'  17  32  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,17,32,1504058758,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  17  32  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,17,32,1504058758,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  17  32  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,17,32,1504058758,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  17  32  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,17,32,1504058758,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  17  32  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,17,32,1504058758,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  17  32  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,17,32,1504058758,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  11  23  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,11,23,1504058118,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  11  23  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,11,23,1504058118,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  11  23  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,11,23,1504058118,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  11  23  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,11,23,1504058118,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  180  0  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,180,0,1504057915,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  180  0  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,180,0,1504057915,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  180  0  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,180,0,1504057915,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  180  0  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,180,0,1504057915,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  23  6  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,23,6,1504057241,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  23  6  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,23,6,1504057241,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  23  6  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,23,6,1504057241,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  23  6  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,23,6,1504057241,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  20  4  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,20,4,1504057180,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  20  4  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,20,4,1504057180,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  20  4  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,20,4,1504057180,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  20  4  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,20,4,1504057180,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  4  9  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,4,9,1504057003,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  4  9  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,4,9,1504057003,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  4  9  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,4,9,1504057003,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  4  9  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,4,9,1504057003,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  47  16  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,47,16,1504056962,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  47  16  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,47,16,1504056962,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  47  16  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,47,16,1504056962,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  47  16  ~/mydata/vim/chrome_extentions/imdb/manifest.json
+|4,39,47,16,1504056962,"~/mydata/vim/chrome_extentions/imdb/manifest.json"
+-'  221  51  ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+|4,39,221,51,1504012613,"~/mydata/vim/chrome_extentions/imdb/js/view/template.js"
+-'  221  51  ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+|4,39,221,51,1504012613,"~/mydata/vim/chrome_extentions/imdb/js/view/template.js"
+-'  221  51  ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+|4,39,221,51,1504012613,"~/mydata/vim/chrome_extentions/imdb/js/view/template.js"
+-'  221  51  ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+|4,39,221,51,1504012613,"~/mydata/vim/chrome_extentions/imdb/js/view/template.js"
+-'  221  51  ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+|4,39,221,51,1504012613,"~/mydata/vim/chrome_extentions/imdb/js/view/template.js"
 
 # History of marks within files (newest to oldest):
 
-> ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
-	*	1503113067	0
-	"	2	19
-	^	2	20
-	.	2	19
-	+	13	36
-	+	12	0
-	+	11	24
-	+	10	29
-	+	9	44
-	+	8	33
+> ~/mydata/vim/chrome_extentions/rating4U/.git/COMMIT_EDITMSG
+	*	1504107533	0
+	"	1	57
+	^	1	58
+	.	1	57
+	+	2	23
+	+	1	57
+
+> ~/mydata/vim/chrome_extentions/rating4U/manifest.json
+	*	1504107464	0
+	"	6	18
+	^	5	245
+	.	6	0
+	+	4	21
+	+	5	242
+	+	20	0
+	+	6	0
+
+> ~/mydata/vim/chrome_extentions/rating4U/js/view/template.js
+	*	1504103881	0
+	"	333	0
+
+> ~/mydata/git/DoubanX_crx/manifest.json
+	*	1504103863	0
+	"	1	0
+
+> /usr/share/vim/vim80/Mru/LeaderF
+	*	1504103840	0
+	"	1	0
+	.	1	0
+	+	769	0
+	+	652	0
+	+	420	0
+	+	319	0
+	+	276	0
+	+	5	0
+	+	1	0
+
+> ~/NERD_tree_1
+	*	1504098670	0
+	"	53	1
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/rating4U/css/book.css
+	*	1504098646	0
+	"	306	0
+	.	378	0
+	+	378	0
+
+> ~/mydata/vim/chrome_extentions/rating4U/css/movie.css
+	*	1504059418	0
+	"	17	6
+	.	167	0
+	+	167	0
+
+> ~/mydata/vim/chrome_extentions/rating4U/css/star.css
+	*	1504059240	0
+	"	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/base/common.js
+	*	1504059194	0
+	"	146	0
+	^	146	76
+	.	146	0
+	+	66	58
+	+	86	54
+	+	97	83
+	+	96	95
+	+	146	40
+	+	146	84
+	+	139	0
+	+	141	0
+	+	139	0
+	+	7	30
+	+	6	20
+	+	20	0
+	+	20	23
+	+	20	41
+	+	20	0
+	+	21	0
+	+	20	0
+	+	2	52
+	+	20	0
+	+	139	0
+	+	141	0
+	+	13	0
+	+	139	0
+	+	141	0
+	+	142	20
+	+	146	40
+	+	10	35
+	+	15	0
+	+	16	0
+	+	15	20
+	+	16	36
+	+	18	0
+	+	20	0
+	+	18	0
+	+	14	36
+	+	85	26
+	+	99	0
+	+	57	0
+	+	57	28
+	+	57	22
+	+	57	61
+	+	88	0
+	+	90	38
+	+	57	0
+	+	85	0
+	+	102	0
+	+	101	66
+	+	81	32
+	+	146	40
+	+	181	0
+	+	146	40
+	+	152	0
+	+	149	10
+	+	153	39
+	+	149	28
+	+	152	22
+	+	149	0
+	+	150	26
+	+	150	0
+	+	159	27
+	+	57	35
+	+	81	0
+	+	84	0
+	+	81	16
+	+	84	0
+	+	85	0
+	+	83	0
+	+	81	0
+	+	82	0
+	+	100	0
+	+	101	0
+	+	104	9
+	+	103	0
+	+	89	54
+	+	57	54
+	+	81	35
+	+	100	36
+	+	83	0
+	+	102	0
+	+	98	0
+	+	94	0
+	+	93	0
+	+	57	0
+	+	79	0
+	+	82	0
+	+	101	39
+	+	57	0
+	+	93	0
+	+	150	0
+	+	82	70
+	+	57	116
+	+	57	0
+	+	64	0
+	+	57	0
+	+	64	0
+	+	85	0
+	+	58	0
+	+	147	0
+	+	146	0
+	l	149	0
+	o	146	40
+
+> ~/mydata/vim/chrome_extentions/imdb/manifest.json
+	*	1504058470	0
+	"	17	32
+	^	17	33
+	.	17	32
+	+	56	0
+	+	92	0
+	+	117	0
+	+	56	0
+	+	88	0
+	+	90	0
+	+	89	30
+	+	56	0
+	+	89	24
+	+	113	0
+	+	114	25
+	+	119	37
+	+	118	37
+	+	57	0
+	+	119	0
+	+	118	37
+	+	68	0
+	+	67	0
+	+	66	39
+	+	27	0
+	+	28	0
+	+	27	17
+	+	179	0
+	+	178	9
+	+	155	0
+	+	158	0
+	+	164	35
+	+	164	0
+	+	157	0
+	+	158	0
+	+	157	59
+	+	158	0
+	+	157	0
+	+	163	0
+	+	163	55
+	+	176	0
+	+	163	0
+	+	157	30
+	+	27	30
 	+	7	0
-	+	6	31
-	+	5	31
-	+	4	30
+	+	8	0
+	+	154	0
+	+	143	0
+	+	142	0
+	+	154	0
+	+	151	23
+	+	151	0
+	+	14	13
+	+	47	0
+	+	48	0
+	+	47	17
+	+	99	0
+	+	102	0
+	+	101	39
+	+	104	24
+	+	107	36
+	+	101	35
+	+	47	35
+	+	4	37
+	+	5	122
+	+	16	0
+	+	18	0
+	+	9	22
+	+	10	22
+	+	11	23
+	+	17	32
+	a	164	35
+	k	27	30
+
+> ~/mydata/vim/chrome_extentions/imdb/.git/COMMIT_EDITMSG
+	*	1504011907	0
+	"	2	18
+	^	2	19
+	.	2	18
+	+	39	36
+	+	38	0
+	+	37	24
+	+	36	29
+	+	35	44
+	+	34	33
+	+	33	0
+	+	32	31
+	+	31	31
+	+	30	30
+	+	30	0
+	+	29	24
+	+	28	19
+	+	27	0
+	+	26	28
+	+	25	47
+	+	24	0
+	+	23	5
+	+	22	17
+	+	19	25
+	+	17	30
+	+	18	0
+	+	15	22
+	+	14	9
+	+	13	20
+	+	11	45
+	+	10	51
+	+	31	0
+	+	8	50
+	+	7	24
+	+	5	10
+	+	2	18
+
+> ~/mydata/vim/chrome_extentions/imdb/js/view/template.js
+	*	1504011746	0
+	"	221	51
+	^	221	52
+	.	221	51
+	+	286	0
+	+	286	60
+	+	296	0
+	+	296	21
+	+	296	65
+	+	296	0
+	+	296	47
+	+	286	53
+	+	286	0
+	+	286	50
+	+	235	0
+	+	236	0
+	+	235	31
+	+	236	12
+	+	236	13
+	+	236	20
+	+	236	25
+	+	233	26
+	+	286	0
+	+	261	0
+	+	236	88
+	+	243	39
+	+	237	0
+	+	236	30
+	+	243	39
+	+	282	48
+	+	268	0
+	+	266	48
+	+	261	0
+	+	243	38
+	+	234	15
+	+	244	71
+	+	244	0
+	+	244	32
+	+	245	0
+	+	244	30
+	+	246	0
+	+	245	0
+	+	250	0
+	+	246	0
+	+	247	0
+	+	251	17
+	+	234	27
+	+	251	28
+	+	254	0
+	+	251	26
+	+	254	0
+	+	255	0
+	+	254	0
+	+	252	43
+	+	277	29
+	+	276	39
+	+	292	0
+	+	294	0
+	+	296	0
+	+	234	0
+	+	244	17
+	+	245	0
+	+	186	38
+	+	188	0
+	+	196	30
+	+	197	0
+	+	196	30
+	+	188	0
+	+	189	0
+	+	188	0
+	+	192	0
+	+	252	0
+	+	252	54
+	+	259	33
+	+	252	0
+	+	253	60
+	+	289	106
+	+	272	106
+	+	295	0
+	+	194	0
+	+	193	44
+	+	194	142
+	+	195	46
+	+	193	44
+	+	194	0
+	+	195	0
+	+	194	71
+	+	204	53
+	+	166	0
+	+	166	105
+	+	166	0
+	+	267	0
+	+	268	0
+	+	267	109
+	+	267	0
+	+	286	0
+	+	166	0
+	+	283	0
+	+	283	109
+	+	286	0
+	+	284	0
+	+	221	51
+	m	193	39
+
+> ~/mydata/vim/chrome_extentions/imdb/css/movie.css
+	*	1504009064	0
+	"	281	14
+	^	281	15
+	.	281	14
+	+	69	16
+	+	69	0
+	+	113	0
+	+	59	0
+	+	59	6
+	+	60	0
+	+	64	0
+	+	66	0
+	+	67	0
+	+	65	0
+	+	66	15
+	+	59	0
+	+	68	0
+	+	66	145
+	+	66	17
+	+	54	0
+	+	53	0
+	+	499	25
+	+	499	12
+	+	499	0
+	+	499	12
+	+	499	0
+	+	499	28
+	+	499	17
+	+	499	0
+	+	465	0
+	+	469	11
+	+	485	0
+	+	478	0
+	+	485	0
+	+	493	0
+	+	485	18
+	+	472	13
+	+	476	0
+	+	483	19
+	+	482	20
+	+	486	16
+	+	490	13
+	+	485	0
+	+	487	18
+	+	490	17
+	+	486	16
+	+	490	13
+	+	487	18
+	+	497	0
+	+	477	28
+	+	497	0
+	+	499	0
+	+	499	16
+	+	515	16
+	+	500	16
+	+	501	18
+	+	507	0
+	+	520	0
+	+	519	22
+	+	503	23
+	+	517	20
+	+	510	23
+	+	490	21
+	+	516	16
+	+	517	0
+	+	507	28
+	+	517	0
+	+	503	19
+	+	516	16
+	+	503	15
+	+	513	0
+	+	500	0
+	+	500	22
+	+	500	0
+	+	516	15
+	+	502	13
+	+	503	15
+	+	518	21
+	+	518	18
+	+	516	0
+	+	521	0
+	+	518	18
+	+	495	15
+	+	486	15
+	+	472	13
+	+	482	18
+	+	487	18
+	+	486	0
+	+	490	25
+	+	510	20
+	+	491	0
+	+	491	21
+	+	503	0
+	+	491	0
+	+	480	17
+	+	510	21
+	+	490	13
+	+	137	0
+	+	153	0
+	+	164	24
+	+	417	0
+	+	138	22
+	+	417	25
+	+	281	14
+	m	502	15
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/amazon.js
+	*	1504007675	0
+	"	6	0
+	^	79	58
+	.	84	0
+	+	40	0
+	+	55	13
+	+	62	0
+	+	68	0
+	+	69	64
+	+	67	0
+	+	85	84
+	+	85	0
+	+	87	74
+	+	28	76
+	+	69	80
+	+	85	0
+	+	93	37
+	+	87	59
+	+	85	46
+	+	93	43
+	+	43	43
+	+	28	0
+	+	56	0
+	+	56	30
+	+	8	28
+	+	56	72
+	+	90	52
+	+	56	56
+	+	43	0
+	+	7	28
+	+	92	0
+	+	96	0
+	+	94	0
+	+	88	0
+	+	87	87
+	+	87	0
+	+	89	0
+	+	55	0
+	+	55	57
+	+	21	0
+	+	55	0
+	+	55	52
+	+	55	63
+	+	56	0
+	+	55	0
+	+	43	34
+	+	43	67
+	+	20	0
+	+	69	0
+	+	70	0
+	+	69	0
+	+	43	0
+	+	54	0
+	+	43	37
+	+	55	0
+	+	45	0
+	+	54	0
+	+	45	50
+	+	43	0
+	+	46	0
+	+	48	0
+	+	51	60
+	+	50	0
+	+	42	0
+	+	53	0
+	+	55	0
+	+	43	0
+	+	55	0
+	+	50	0
+	+	44	73
+	+	43	50
+	+	89	66
+	+	19	38
+	+	6	24
+	+	75	44
+	+	82	0
+	+	75	44
+	+	97	14
+	+	75	0
+	+	82	0
+	+	75	45
+	+	78	46
+	+	81	41
+	+	82	21
+	+	82	0
+	+	81	39
+	+	112	0
+	+	74	21
+	+	99	0
+	+	78	50
+	+	78	32
+	+	76	34
+	+	78	0
+	+	77	21
+	+	78	0
+	+	80	40
+	+	108	19
+	+	101	59
+	+	100	0
+	+	83	0
+	+	108	0
+	+	109	15
+	+	79	57
+	+	84	0
+	k	75	8
+
+> ~/mydata/vim/chrome_extentions/imdb/test_ribbon.css
+	*	1503928101	0
+	"	1	0
+	.	140	0
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	13
+	+	140	0
+
+> ~/mydata/vim/chrome_extentions/imdb/test_ribbon.html
+	*	1503925856	0
+	"	6	56
+	^	11	60
+	.	11	57
+	+	9	10
+	+	17	0
+	+	16	4
+	+	10	0
+	+	7	0
+	+	4	63
+	+	15	0
+	+	14	18
+	+	13	24
+	+	11	57
+
+> ~/mydata/vim/chrome_extentions/imdb/test.html
+	*	1503925547	0
+	"	1	0
+	.	88	0
+	+	122	0
+	+	10	10
+	+	10	129
+	+	10	53
+	+	10	52
+	+	10	10
+	+	10	56
+	+	10	10
+	+	10	65
+	+	10	83
+	+	10	77
+	+	10	116
+	+	10	10
+	+	10	69
+	+	10	10
+	+	10	57
+	+	10	61
+	+	10	58
+	+	10	46
+	+	10	10
+	+	10	57
+	+	10	58
+	+	10	10
+	+	10	75
+	+	10	10
+	+	10	33
+	+	10	10
+	+	10	33
+	+	10	29
+	+	10	30
+	+	10	10
+	+	90	0
+	+	88	0
+
+> ~/mydata/vim/chrome_extentions/imdb/test.css
+	*	1503925502	0
+	"	484	0
+	.	392	0
+	+	66	11
+	+	44	22
+	+	66	8
+	+	66	10
+	+	66	0
+	+	66	15
+	+	44	0
+	+	55	0
+	+	66	0
+	+	86	0
+	+	66	0
+	+	44	0
+	+	3	0
+	+	44	13
+	+	69	14
+	+	3	0
+	+	44	0
+	+	46	16
+	+	50	0
+	+	54	0
+	+	63	0
+	+	51	18
+	+	44	26
+	+	46	0
+	+	68	15
+	+	51	0
+	+	55	0
+	+	81	14
+	+	47	17
+	+	48	14
+	+	81	13
+	+	57	14
+	+	3	0
+	+	51	0
+	+	50	0
+	+	51	0
+	+	62	0
+	+	5	0
+	+	20	0
+	+	19	0
+	+	16	11
+	+	21	0
+	+	11	25
+	+	21	0
+	+	96	0
+	+	95	0
+	+	2	29
+	+	22	0
+	+	24	0
+	+	34	0
+	+	158	0
+	+	162	0
+	+	170	0
+	+	174	0
+	+	180	0
+	+	190	0
+	+	193	0
+	+	197	0
+	+	201	0
+	+	206	0
+	+	212	0
+	+	26	0
+	+	40	0
+	+	44	0
+	+	42	0
+	+	44	0
+	+	40	0
+	+	42	0
+	+	43	23
+	+	43	0
+	+	144	0
+	+	50	0
+	+	49	0
+	+	50	0
+	+	63	0
+	+	241	0
+	+	263	0
+	+	282	0
+	+	291	12
+	+	2	0
+	+	3	0
+	+	1	0
+	+	2	0
+	+	344	0
+	+	345	0
+	+	7	11
+	+	347	12
+	+	349	0
+	+	346	12
+	+	353	0
+	+	380	13
+	+	372	18
+	+	375	0
+	+	388	0
+	+	389	0
+	+	390	0
+	+	391	0
+	+	392	0
+	m	43	4
+
+> ~/mydata/git/DoubanX_crx/js/view/template.js
+	*	1503902423	0
+	"	18	26
+
+> ~/mydata/vim/chrome_extentions/imdb/css/book.css
+	*	1503902286	0
+	"	143	0
+	^	143	11
+	.	143	0
+	+	1	3
+	+	6	0
+	+	1	1
+	+	72	22
+	+	154	0
+	+	72	0
+	+	222	0
+	+	196	0
+	+	197	0
+	+	199	0
+	+	209	0
+	+	210	21
+	+	277	14
+	+	215	51
+	+	276	0
+	+	215	0
+	+	214	0
+	+	226	17
+	+	222	19
+	+	15	21
+	+	65	22
+	+	353	0
+	+	61	15
+	+	26	29
+	+	26	28
+	+	26	0
+	+	19	19
+	+	53	0
+	+	144	0
+	+	19	14
+	+	20	15
+	+	143	0
+
+> ~/mydata/vim/chrome_extentions/imdb/.eslintrc.js
+	*	1503899490	0
+	"	102	23
+	^	102	24
+	.	102	23
+	+	277	0
+	+	8	0
+	+	9	21
+	+	10	5
+	+	102	23
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/douban_info.js
+	*	1503840563	0
+	"	117	0
+	.	115	0
+	+	6	0
+	+	5	0
+	+	255	45
+	+	214	0
+	+	256	61
+	+	150	42
+	+	150	41
+	+	152	0
+	+	150	0
+	+	171	0
+	+	170	0
+	+	171	0
+	+	3	89
+	+	171	42
+	+	97	47
+	+	110	87
+	+	120	43
+	+	95	50
+	+	116	46
+	+	158	23
+	+	161	41
+	+	158	0
+	+	167	0
+	+	162	0
+	+	163	0
+	+	162	42
+	+	163	55
+	+	162	19
+	+	166	0
+	+	167	0
+	+	165	0
+	+	166	0
+	+	120	0
+	+	301	31
+	+	105	0
+	+	106	0
+	+	105	47
+	+	107	0
+	+	108	25
+	+	114	42
+	+	107	46
+	+	99	13
+	+	99	0
+	+	1	0
+	+	1	6
+	+	1	9
+	+	1	20
+	+	1	21
+	+	105	62
+	+	99	56
+	+	99	0
+	+	79	0
+	+	1	0
+	+	115	0
+
+> ~/.vimrc
+	*	1503839972	0
+	"	490	4
+	^	490	4
+	.	490	0
+	+	398	0
+	+	396	12
+	+	397	0
+	+	399	4
+	+	23	81
+	+	20	0
+	+	23	0
+	+	27	0
+	+	201	0
+	+	20	0
+	+	23	0
+	+	27	0
+	+	23	0
+	+	18	0
+	+	19	0
+	+	960	0
+	+	960	11
+	+	960	4
+	+	960	0
+	+	960	64
+	+	939	86
+	+	939	0
+	+	939	99
+	+	960	9
+	+	960	0
+	+	821	0
+	+	939	106
+	+	825	83
+	+	403	0
+	+	1119	39
+	+	654	57
+	+	85	0
+	+	85	10
+	+	85	0
+	+	23	147
+	+	20	0
+	+	23	0
+	+	20	0
+	+	552	0
+	+	536	0
+	+	536	1
+	+	536	0
+	+	494	0
+	+	499	0
+	+	506	0
+	+	502	0
+	+	536	0
+	+	526	0
+	+	547	4
+	+	545	0
+	+	547	0
+	+	540	0
+	+	547	0
+	+	540	0
+	+	537	0
+	+	538	0
+	+	537	0
+	+	538	0
+	+	537	10
+	+	147	46
+	+	10	15
+	+	129	0
+	+	126	0
+	+	129	0
+	+	127	0
+	+	10	15
+	+	12	21
+	+	13	15
+	+	10	15
+	+	11	21
+	+	14	15
+	+	15	15
+	+	16	17
+	+	17	18
+	+	18	19
+	+	19	19
+	+	20	19
+	+	21	18
+	+	23	80
+	+	23	81
+	+	23	0
+	+	12	21
+	+	632	0
+	+	104	0
+	+	103	0
+	+	591	0
+	+	590	13
+	+	37	0
+	+	109	0
+	+	39	0
+	+	352	0
+	+	109	0
+	+	39	0
+	+	109	0
+	+	39	0
+	+	352	50
+	+	39	0
+	+	292	0
+	+	291	42
+	+	490	0
+	p	103	4
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
+	*	1503800063	0
+	"	73	8
+	^	53	27
+	.	1	0
+	+	63	0
+	+	62	0
+	+	1	0
+	+	62	0
+	+	2	0
+	+	2	35
+	+	2	24
+	+	2	0
+	+	39	35
+	+	50	28
+	+	53	26
+	+	62	0
+	+	2	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/base_info.js
+	*	1503798486	0
+	"	15	0
+	^	29	23
+	.	29	22
+	+	25	14
+	+	29	22
+
+> /usr/share/vim/vim80/File/LeaderF
+	*	1503755240	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/util.js
+	*	1503751710	0
+	"	113	0
+	^	4	0
+	.	4	0
+	+	5	0
+	+	52	0
+	+	43	0
+	+	44	0
+	+	45	64
+	+	65	0
+	+	66	67
+	+	103	0
+	+	104	40
+	+	69	43
+	+	70	60
+	+	63	0
+	+	3	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	3	0
+	+	2	0
+	+	62	50
+	+	63	0
+	+	62	45
+	+	110	65
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	93
+	+	2	0
+	+	1	93
 	+	4	0
-	+	3	24
-	+	2	19
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/amazon_response.txt
+	*	1503744147	0
+	"	6751	13
+	.	6751	0
+	+	2	0
+	+	11	0
+	+	6751	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/[denite]
+	*	1503741849	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/NERD_tree_1
+	*	1503741794	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/git/DoubanX_crx/js/controller/amazon.js
+	*	1503668089	0
+	"	5	18
+	^	11	29
+	.	11	28
+	+	11	28
+
+> ~/mydata/git/DoubanX_crx/js/model/douban.json
+	*	1503668031	0
+	"	1	0
+
+> ~/mydata/git/DoubanX_crx/js/model/doubanx.js
+	*	1503667783	0
+	"	93	36
+	^	93	37
+	.	93	36
+	+	42	23
+	+	89	0
+	+	88	33
+	+	93	36
+
+> /usr/share/vim/vim80/Buffer/LeaderF
+	*	1503667241	0
+	"	3	0
+	.	1	0
+	+	3	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/youku.js
+	*	1503647586	0
+	"	2	4
+	.	22	0
+	+	22	0
+	+	22	51
+	+	22	0
+	+	22	45
+	+	22	0
+	+	22	27
+	+	22	0
+	+	23	0
+	+	22	0
+	+	22	48
+	+	22	25
+	+	22	58
+	+	22	37
+	+	22	46
+	+	22	56
+	+	22	0
+	+	22	25
+	+	22	0
+	+	22	17
+	+	22	46
+	+	22	0
+	+	22	32
+	+	22	26
+	+	22	43
+	+	22	0
+	+	22	49
+	+	22	0
+	+	22	62
+	+	22	0
+	+	22	20
+	+	22	31
+	+	22	39
+	+	22	35
+	+	22	36
+	+	22	0
+	+	22	57
+	+	22	0
+	+	22	35
+	+	22	25
+	+	22	0
+	+	22	9
+	+	22	0
+	+	22	36
+	+	22	24
+	+	22	46
+	+	22	0
+	+	22	12
+	+	22	0
+	+	22	8
+	+	22	9
+	+	22	16
+	+	22	17
+	+	22	0
+	+	22	25
+	+	22	0
+	+	22	36
+	+	22	20
+	+	22	0
+
+> ~/mydata/project/iReserve/ireserve_smsupdate.py
+	*	1503588177	0
+	"	206	4
+
+> ~/mydata/git/requests-2/iReserve/todo.markdown
+	*	1503587969	0
+	"	1	0
+
+> ~/.vim/plugged/vim-multiple-cursors/doc/multiple_cursors.txt
+	*	1503560044	0
+	"	33	43
+
+> ~/mydata/vim/chrome_extentions/imdb/[denite]
+	*	1503560030	0
+	"	15	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/utils/parse_torrent_name/parser.js
+	*	1503500486	0
+	"	14	41
+	^	14	42
+	.	14	41
+	+	32	0
+	+	33	23
+	+	34	0
+	+	44	41
+	+	14	34
+	+	23	44
+	+	5	138
+	+	14	41
+
+> ~/mydata/vim/chrome_extentions/imdb/NERD_tree_1
+	*	1503500484	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/git/parse-torrent-name/PTN/parse.py
+	*	1503498965	0
+	"	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/rarbg.js
+	*	1503479088	0
+	"	8	54
+	^	8	55
+	.	8	54
+	+	26	20
+	+	25	0
+	+	25	46
+	+	9	62
+	+	25	0
+	+	9	0
+	+	17	0
+	+	12	0
+	+	9	0
+	+	11	0
+	+	10	0
+	+	9	43
+	+	8	0
+	+	9	0
+	+	8	54
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/ttmeiju.js
+	*	1503474653	0
+	"	7	15
+	^	10	15
+	.	7	0
+	+	7	34
+	+	5	62
+	+	4	0
+	+	7	26
+	+	10	11
+	+	7	14
+	+	10	0
+	+	7	8
+	+	10	11
+	+	10	13
+	+	7	13
+	+	10	14
+	+	7	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/utils/parse_torrent_name/patterns.js
+	*	1503473384	0
+	"	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/lib/jquery-3.2.1.min.js
+	*	1503472991	0
+	"	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/sss
+	*	1503376569	0
+	"	125	0
+	.	2	0
+	+	2	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/test_data.js
+	*	1503376545	0
+	"	1	0
+	^	7	16
+	.	1	18
+	+	5	29
+	+	7	17
+	+	5	43
+	+	8	21
+	+	12	37
+	+	6	14
+	+	12	8
+	+	13	0
+	+	14	0
+	+	13	13
+	+	15	0
+	+	14	1
+	+	10	28
+	+	11	26
+	+	1	18
+	+	7	14
+	+	2	24
+	+	1	18
+	+	7	15
+	+	1	18
+
+> ~/mydata/vim/chrome_extentions/imdb/js/controller/qq.js
+	*	1503376003	0
+	"	65	22
+	^	65	24
+	.	65	23
+	+	66	0
+	+	65	0
+	+	64	13
+	+	65	12
+	+	64	34
+	+	65	23
+
+> ~/mydata/vim/chrome_extentions/imdb/css/loaders.css
+	*	1503338555	0
+	"	42	29
+	^	50	0
+	.	42	29
+	+	51	0
+	+	2	0
+	+	3	0
+	+	1	28
+	+	50	0
+	+	43	0
+	+	44	0
+	+	42	29
+	m	43	4
+
+> ~/mydata/vim/chrome_extentions/imdb/css/[denite]
+	*	1503280156	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/vim/chrome_extentions/imdb/js/model/imdb_info.js
+	*	1503235820	0
+	"	4	0
+
+> /usr/share/vim/vim80/Cmd_History/LeaderF
+	*	1503228145	0
+	"	1	0
+	^	86	29
+	.	1	0
+	+	355	0
+	+	302	0
+	+	300	0
+	+	238	0
+	+	1	0
+	+	131	0
+	+	1	0
+
+> ~/.vim/plugged/LeaderF/doc/leaderf.txt
+	*	1503189165	0
+	"	497	28
+
+> ~/.vim/plugged/denite.nvim/doc/denite.txt
+	*	1503189141	0
+	"	938	31
+
+> ~/[denite]
+	*	1503189083	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/myconfigs/.git/COMMIT_EDITMSG
+	*	1503113195	0
+	"	1	57
+	^	1	58
+	.	2	0
+	+	31	23
+	+	17	59
+	+	31	0
+	+	17	26
+	+	29	23
+	+	17	28
+	+	27	29
+	+	17	34
+	+	23	1
+	+	17	6
+	+	23	0
+	+	24	0
+	+	17	1
+	+	21	25
+	+	17	33
+	+	20	48
+	+	19	45
+	+	18	0
+	+	17	15
+	+	16	14
+	+	15	11
+	+	11	22
+	+	14	37
+	+	11	12
+	+	12	27
+	+	11	23
+	+	10	25
+	+	9	23
+	+	6	16
+	+	45	0
+	+	7	35
+	+	45	0
+	+	4	32
+	+	26	0
+	+	2	22
+	+	1432	0
+	+	2	33
+	+	2	0
+
+> ~/NERD_tree_2
+	*	1503112277	0
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/__Tagbar__.1
+	*	1503111055	0
+	"	1	0
+	.	5	0
+	+	5	0
 
 > ~/mydata/git/JD_Utils/jd.py
 	*	1503108987	0
@@ -732,45 +2637,9 @@ $
 	*	1503108905	0
 	"	324	0
 
-> ~/[denite]
-	*	1503108809	0
-	"	15	0
-	.	1	0
-	+	1	0
-
-> /usr/share/vim/vim80/Mru/LeaderF
-	*	1503106984	0
-	"	3	0
-	.	1	0
-	+	3	0
-	+	1	0
-
-> ~/NERD_tree_1
-	*	1503106788	0
-	"	4	0
-	.	1	0
-	+	1	0
-
 > ~/.vim/plugged/deoplete-ternjs/.git/COMMIT_EDITMSG
 	*	1503105170	0
 	"	1	0
-
-> ~/mydata/vim/chrome_extentions/imdb/js/controller/jd.js
-	*	1503104202	0
-	"	170	0
-	^	177	8
-	.	177	0
-	+	179	0
-	+	178	0
-	+	177	0
-	+	2	0
-	+	177	0
-
-> /usr/share/vim/vim80/File/LeaderF
-	*	1503104193	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/mydata/vim/chrome_extentions/imdb/test.js
 	*	1503054626	0
@@ -829,156 +2698,6 @@ $
 	+	34	0
 	+	6	0
 
-> ~/myconfigs/.git/COMMIT_EDITMSG
-	*	1503051792	0
-	"	1	0
-	^	1	34
-	.	1	33
-	+	30	23
-	+	16	59
-	+	30	0
-	+	16	26
-	+	28	23
-	+	16	28
-	+	26	29
-	+	16	34
-	+	22	1
-	+	16	6
-	+	22	0
-	+	23	0
-	+	16	1
-	+	20	25
-	+	16	33
-	+	19	48
-	+	18	45
-	+	17	0
-	+	16	15
-	+	15	14
-	+	14	11
-	+	10	22
-	+	13	37
-	+	10	12
-	+	11	27
-	+	10	23
-	+	9	25
-	+	8	23
-	+	5	16
-	+	44	0
-	+	6	35
-	+	44	0
-	+	3	32
-	+	25	0
-	+	1	22
-	+	1431	0
-	+	1	33
-
-> ~/.vimrc
-	*	1503051788	0
-	"	34	0
-	^	351	52
-	.	39	0
-	+	388	0
-	+	448	0
-	+	437	0
-	+	397	0
-	+	395	12
-	+	396	0
-	+	398	4
-	+	23	81
-	+	20	0
-	+	23	0
-	+	27	0
-	+	201	0
-	+	20	0
-	+	23	0
-	+	27	0
-	+	23	0
-	+	18	0
-	+	19	0
-	+	959	0
-	+	959	11
-	+	959	4
-	+	959	0
-	+	959	64
-	+	938	86
-	+	938	0
-	+	938	99
-	+	959	9
-	+	959	0
-	+	820	0
-	+	938	106
-	+	824	83
-	+	402	0
-	+	1118	39
-	+	653	57
-	+	85	0
-	+	85	10
-	+	85	0
-	+	23	147
-	+	20	0
-	+	23	0
-	+	20	0
-	+	551	0
-	+	535	0
-	+	535	1
-	+	535	0
-	+	493	0
-	+	498	0
-	+	505	0
-	+	501	0
-	+	535	0
-	+	525	0
-	+	546	4
-	+	544	0
-	+	546	0
-	+	539	0
-	+	546	0
-	+	539	0
-	+	536	0
-	+	537	0
-	+	536	0
-	+	537	0
-	+	536	10
-	+	147	46
-	+	10	15
-	+	129	0
-	+	126	0
-	+	129	0
-	+	127	0
-	+	10	15
-	+	12	21
-	+	13	15
-	+	10	15
-	+	11	21
-	+	14	15
-	+	15	15
-	+	16	17
-	+	17	18
-	+	18	19
-	+	19	19
-	+	20	19
-	+	21	18
-	+	23	80
-	+	23	81
-	+	23	0
-	+	12	21
-	+	631	0
-	+	104	0
-	+	103	0
-	+	590	0
-	+	589	13
-	+	37	0
-	+	109	0
-	+	39	0
-	+	351	0
-	+	109	0
-	+	39	0
-	+	109	0
-	+	39	0
-	+	351	50
-	+	39	0
-	p	103	4
-
 > ~/.vimrc.bak1
 	*	1503051769	0
 	"	76	0
@@ -994,24 +2713,6 @@ $
 
 > ~/mydata/vim/chrome_extentions/imdb/js/model/[denite]
 	*	1503049844	0
-	"	10	0
-	.	1	0
-	+	1	0
-
-> ~/mydata/vim/chrome_extentions/imdb/js/model/douban_info.js
-	*	1503049840	0
-	"	39	0
-	^	3	18
-	.	3	0
-	+	4	0
-	+	3	0
-
-> ~/mydata/git/DoubanX_crx/js/view/template.js
-	*	1502927041	0
-	"	1	0
-
-> ~/mydata/vim/chrome_extentions/imdb/[denite]
-	*	1502927021	0
 	"	10	0
 	.	1	0
 	+	1	0
@@ -1081,16 +2782,6 @@ $
 > ~/mydata/vim/evernote_md/vim8_build.md
 	*	1501062578	0
 	"	6	0
-
-> /usr/share/vim/vim80/Cmd_History/LeaderF
-	*	1501062440	0
-	"	1	0
-	.	1	0
-	+	183	0
-	+	130	0
-	+	128	0
-	+	66	0
-	+	1	0
 
 > /usr/share/vim/vim80/Self/LeaderF
 	*	1501062420	0
@@ -1242,529 +2933,3 @@ $
 	"	15	0
 	.	1	0
 	+	1	0
-
-> /root/.Xdefaults
-	*	1500341244	0
-	"	2	0
-	^	2	16
-	.	2	15
-	+	1	0
-	+	2	15
-
-> /root/.bashrc
-	*	1500338804	0
-	"	99	0
-
-> /root/.profile
-	*	1500338798	0
-	"	1	0
-
-> /usr/share/vim/vim80/doc/if_pyth.txt
-	*	1500290702	0
-	"	777	42
-
-> ~/i3blocks.conf
-	*	1500285735	0
-	"	68	11
-	^	68	12
-	.	68	11
-	+	51	0
-	+	50	6
-	+	62	0
-	+	68	8
-	+	69	6
-	+	70	9
-	+	66	13
-	+	47	37
-	+	48	0
-	+	62	69
-	+	47	74
-	+	62	73
-	+	67	0
-	+	66	14
-	+	71	13
-	+	80	0
-	+	73	0
-	+	72	72
-	+	87	0
-	+	86	71
-	+	68	11
-
-> ~/.vim/MySnips/java.snippets
-	*	1500274670	0
-	"	1	0
-	.	2	0
-	+	2	0
-
-> ~/.vim/plugged/YouCompleteMe/doc/youcompleteme.txt
-	*	1500272713	0
-	"	200	3
-
-> ~/.config/nvim/autoload/damonvim/statusline.vim
-	*	1500264197	0
-	"	345	0
-	.	400	0
-	+	401	0
-	+	400	0
-
-> ~/myconfigs/init.vim.bak3
-	*	1500263569	0
-	"	1020	0
-
-> ~/.config/nvim/autoload/damonvim/api/vim/statusline.vim
-	*	1500262156	0
-	"	6	0
-	^	46	18
-	.	46	17
-	+	46	17
-
-> ~/.vim/autoload/damonvim/api/vim/statusline.vim
-	"	1	0
-
-> ~/mydata/vim/color-spaces.pl
-	"	68	0
-	^	68	1
-	.	68	0
-	+	12	0
-	+	1	0
-	+	69	0
-	+	68	0
-
-> ~/.config/nvim/init.vim
-	"	247	0
-	^	1033	0
-	.	783	0
-	+	1038	0
-	+	1040	0
-	+	1036	0
-	+	1036	0
-	+	1036	0
-	+	1040	0
-	+	1035	1
-	+	1035	0
-	+	1025	0
-	+	1026	0
-	+	1027	0
-	+	1028	0
-	+	1029	0
-	+	1030	0
-	+	1031	0
-	+	1034	0
-	+	1031	0
-	+	1031	0
-	+	1031	0
-	+	1031	0
-	+	1031	0
-	+	1034	0
-	+	1031	0
-	+	1032	0
-	+	1033	0
-	+	1031	0
-	+	1041	0
-	+	782	0
-	+	783	0
-
-> ~/.config/nvim/init.vim.bak
-	"	159	0
-
-> ~/.vim/init.vim
-	"	80	0
-
-> /usr/share/vim/vim74/doc/syntax.txt
-	"	4549	0
-
-> ~/.config/nvim/autoload/damonvim/api/vim/highlight.vim
-	"	6	5
-	^	6	22
-	.	8	0
-	+	117	17
-	+	7	26
-	+	8	7
-	+	7	8
-	+	8	11
-	+	96	0
-	+	8	0
-	+	10	0
-	+	8	15
-	+	10	0
-	+	9	0
-	+	12	0
-	+	5	0
-	+	7	0
-	+	5	16
-	+	8	0
-	+	6	0
-	+	8	0
-
-> ~/.config/nvim/autoload/damonvim/theme/gruvbox.vim
-	"	16	17
-	^	16	18
-	.	16	17
-	+	16	17
-
-> ~/.config/nvim/autoload/SpaceVim/mapping/guide/theme/gruvbox.vim
-	"	1	0
-	.	26	0
-	+	17	0
-	+	26	0
-
-> /usr/share/vim/vim74/doc/eval.txt
-	"	4897	26
-
-> /usr/share/vim/vim74/doc/index.txt
-	"	6	8
-
-> ~/.config/nvim/autoload/damonvim/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/.config/nvim/autoload/SpaceVim/layers/core/statusline.vim
-	"	348	42
-
-> ~/.config/nvim/autoload/damonvim/api.vim
-	"	23	14
-	^	23	15
-	.	23	14
-	+	29	19
-	+	3	0
-	+	22	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	30	27
-	+	23	14
-
-> ~/.config/nvim/autoload/damonvim/api/messletters.vim
-	"	2	5
-
-> /usr/share/vim/vim74/doc/repeat.txt
-	"	701	1
-
-> ~/.config/nvim/autoload/damonvim/api/time.vim
-	"	9	17
-	^	9	18
-	.	9	17
-	+	9	17
-
-> ~/.config/nvim/autoload/damonvim/api/vim/compatible.vim
-	"	1	10
-
-> ~/.config/nvim/autoload/SpaceVim/api.vim
-	"	2	0
-
-> ~/.config/nvim/autoload/SpaceVim/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.config/nvim/autoload/SpaceVim/api/api.vim
-	"	1	0
-
-> ~/.config/nvim/NERD_tree_1
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/ControlP
-	"	10	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> /usr/share/vim/vim74/doc/visual.txt
-	"	1	0
-
-> ~/.profile
-	"	20	22
-	^	20	23
-	.	20	22
-	+	20	22
-
-> ~/.zsh_history
-	"	1	0
-
-> ~/mydata/git/JD_Utils/test.py
-	"	1	0
-	^	35	29
-	.	35	28
-	+	45	15
-	+	33	0
-	+	35	0
-	+	35	13
-	+	46	13
-	+	45	13
-	+	11	0
-	+	4	0
-	+	5	0
-	+	10	0
-	+	27	11
-	+	35	0
-	+	26	0
-	+	31	14
-	+	24	28
-	+	20	0
-	+	21	0
-	+	18	26
-	+	13	0
-	+	14	0
-	+	18	39
-	+	27	19
-	+	25	0
-	+	23	0
-	+	18	16
-	+	44	0
-	+	35	0
-	+	34	0
-	+	31	37
-	+	31	34
-	+	16	0
-	+	18	0
-	+	17	0
-	+	3	14
-	+	31	34
-	+	35	30
-	+	38	14
-	+	42	60
-	+	43	32
-	+	42	76
-	+	43	39
-	+	44	0
-	+	42	75
-	+	43	0
-	+	38	13
-	+	31	15
-	+	31	0
-	+	28	15
-	+	29	39
-	+	30	24
-	+	31	0
-	+	30	53
-	+	31	23
-	+	28	39
-	+	39	32
-	+	35	28
-
-> ~/.config/nvim/gittest.sh
-	"	4	8
-	^	4	9
-	.	4	8
-	+	2	9
-	+	3	9
-	+	4	8
-
-> ~/myconfigs/init.vim.test
-	"	1	0
-
-> ~/myconfigs/NERD_tree_1
-	"	10	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/init.vim.test
-	"	1	0
-
-> ~/mydata/backup/sys_install_backup/post_install1.sh
-	"	1	0
-	^	293	38
-	.	293	37
-	+	305	0
-	+	118	0
-	+	118	0
-	+	120	8
-	+	121	0
-	+	121	0
-	+	123	30
-	+	124	28
-	+	125	32
-	+	126	32
-	+	112	33
-	+	113	28
-	+	127	27
-	+	23	26
-	+	215	7
-	+	207	15
-	+	215	15
-	+	216	0
-	+	216	37
-	+	217	0
-	+	208	0
-	+	216	0
-	+	218	18
-	+	219	31
-	+	216	42
-	+	219	32
-	+	130	35
-	+	131	31
-	+	110	40
-	+	111	14
-	+	108	31
-	+	109	27
-	+	210	37
-	+	211	0
-	+	212	12
-	+	213	14
-	+	1	1
-	+	285	24
-	+	294	0
-	+	292	0
-	+	294	0
-	+	293	37
-
-> ~/mydata/git/JD_Utils/couponConfig.ini
-	"	16	0
-	.	16	0
-	+	12	23
-	+	18	23
-	+	12	29
-	+	18	29
-	+	18	0
-	+	12	41
-	+	11	6
-	+	12	35
-	+	12	12
-	+	12	0
-	+	12	7
-	+	12	11
-	+	12	47
-	+	12	6
-	+	12	12
-	+	12	7
-	+	12	35
-	+	12	11
-	+	11	6
-	+	18	0
-	+	18	11
-	+	12	59
-	+	18	47
-	+	18	11
-	+	12	11
-	+	12	6
-	+	18	6
-	+	19	13
-	+	20	6
-	+	27	6
-	+	21	0
-	+	27	0
-	+	22	4
-	+	23	6
-	+	12	0
-	+	18	0
-	+	21	0
-	+	27	0
-	+	1	0
-	+	8	13
-	+	12	0
-	+	3	0
-	+	12	0
-	+	5	0
-	+	7	0
-	+	12	0
-	+	18	0
-	+	21	0
-	+	27	0
-	+	9	0
-	+	2	6
-	+	2	37
-	+	12	0
-	+	18	0
-	+	21	0
-	+	27	0
-	+	2	0
-	+	8	11
-	+	2	41
-	+	8	11
-	+	7	128
-	+	11	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	13	0
-	+	14	6
-	+	13	12
-	+	22	4
-	+	23	6
-	+	22	12
-	+	25	0
-	+	24	0
-	+	25	12
-	+	26	6
-	+	16	19
-	+	13	20
-	+	4	7
-	+	6	11
-	+	8	11
-	+	23	0
-	+	26	0
-	+	26	0
-	+	22	13
-	+	22	6
-	+	22	11
-	+	22	0
-	+	18	0
-	+	18	0
-	+	17	6
-	+	14	6
-	+	20	0
-	+	20	0
-	+	19	0
-	+	17	6
-	+	14	0
-	+	22	0
-	+	20	6
-	+	17	0
-	+	16	0
-
-> ~/mydata/git/requests-2/iReserve/ireserve_smsupdate.py
-	"	33	11
-
-> ~/mydata/git/requests-2/iReserve/NERD_tree_1
-	"	24	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/mydata/git/requests-2/iReserve/ireserve_ctrl.py
-	"	1	0
-
-> ~/mydata/git/requests-2/iReserve/ireserve_http.py
-	"	109	12
-	.	215	0
-	+	247	0
-	+	215	0
-
-> ~/mydata/git/requests-2/iReserve/ireserve_runme.py
-	"	1	0
