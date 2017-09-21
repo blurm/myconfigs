@@ -40,7 +40,7 @@ else
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
     Plug 'amerlyq/vim-focus-autocmd' " Add focus event support for vim
 endif
-    Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+    "Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
 
@@ -53,8 +53,10 @@ endif
     Plug 'Shougo/unite.vim'
 
     " Syntax & hightlight & format
-    Plug 'Shutnik/jshint2.vim' " Javascript
-    Plug 'python-rope/ropevim' " Python
+    "Plug 'Shutnik/jshint2.vim' " Javascript
+    Plug 'python-rope/ropevim', {'for': 'python'} " Python
+    "Plug 'pangloss/vim-javascript'
+    Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 
     " Utils
     Plug 'jiangmiao/auto-pairs'
@@ -71,12 +73,12 @@ endif
 
     " Git Related
     Plug 'tpope/vim-fugitive'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'airblade/vim-gitgutter'
+    "Plug 'Xuyuanp/nerdtree-git-plugin'
+    "Plug 'airblade/vim-gitgutter'
     let g:gitgutter_enabled = 0
 
     " Color scheme & layout. Warning: devicons must be loaded last
-    Plug 'altercation/vim-colors-solarized'
+    "Plug 'altercation/vim-colors-solarized'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
 
@@ -90,37 +92,39 @@ endif
     Plug 'elzr/vim-json', { 'for': 'json' } " JSON formatter
     Plug 'Chiel92/vim-autoformat' " Format framework
     Plug 't9md/vim-choosewin'
-    Plug 'PotatoesMaster/i3-vim-syntax' " Highlighting for i3wm config
+    Plug 'PotatoesMaster/i3-vim-syntax', {'for': 'i3'} " Highlighting for i3wm config
     Plug 'dhruvasagar/vim-table-mode'
     Plug 'thinca/vim-quickrun'
     Plug 'ap/vim-css-color'
-    Plug 'Shougo/echodoc.vim'
-    let g:echodoc_enable_at_startup = 1
-    Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
+    "Displays function signatures from completions in the command line
+    "Plug 'Shougo/echodoc.vim'
+    "let g:echodoc_enable_at_startup = 1
+    "Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " Distraction free writing in vim
     Plug 'tpope/vim-scriptease'
-    Plug 'plasticboy/vim-markdown'
-    Plug 'mzlogin/vim-markdown-toc' " Generate table of content
-    Plug 'tenfyzhong/tagbar-markdown.vim'
+    Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+    Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'} " Generate table of content
+    Plug 'tenfyzhong/tagbar-markdown.vim', {'for': 'markdown'}
     Plug 'dyng/ctrlsf.vim'
     Plug 'Yggdroot/LeaderF'
-    Plug 'othree/yajs.vim'
+    " yajs slow the input down when you type comment
+    "Plug 'othree/yajs.vim'
     "Plug 'othree/javascript-libraries-syntax.vim'
-    Plug 'hail2u/vim-css3-syntax'
+    Plug 'hail2u/vim-css3-syntax', {'for': 'css'}
     Plug 'vim-scripts/BufOnly.vim'
-    Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
+    Plug 'MattesGroeger/vim-bookmarks'
+    "Plug 'Shougo/vimfiler.vim'
+    "Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
 
     " Useless Plugins
     "Plug 'neomake/neomake'
     "Plug 'vim-airline/vim-airline'
     "Plug 'vim-airline/vim-airline-themes'
     "Plug 'itchyny/vim-cursorword' " Underlines the word under the cursor
-    "Plug 'Shougo/vimfiler.vim'
     "ap/vim-css-colorPlug 'ctrlpvim/ctrlp.vim' " replace kien/ctrlp.vim. this
     "works better with devicons
     "Plug 'scrooloose/syntastic'  " Syntax check framework
     " making a column of increasing or decreasing numbers, dates, or daynames.
     "Plug 'vim-scripts/VisIncr'
-    "Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] }
     "Plug 'klen/python-mode'
     "Plug 'ConradIrwin/vim-bracketed-paste'
     "Plug 'Raimondi/delimitMate'
@@ -139,6 +143,18 @@ endif
 " }}}
 
 " Plugin Settings ----------------------------------------------------------{{{
+" vim-bookmark {
+let g:bookmark_no_default_key_mappings = 1
+"let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+nmap <Leader>bt <Plug>BookmarkToggle
+nmap <Leader>ba <Plug>BookmarkAnnotate
+nmap <Leader>bs <Plug>BookmarkShowAll
+nmap <Leader>bc <Plug>BookmarkClear
+"nmap <Leader>j <Plug>BookmarkNext
+"nmap <Leader>k <Plug>BookmarkPrev
+"nmap <Leader>x <Plug>BookmarkClearAll
+" }
 " others {
 nnoremap <leader>cf :CtrlSF<SPACE>
 nnoremap <leader>bo :BufOnly<CR>
@@ -154,13 +170,7 @@ nnoremap <leader>lf :LeaderfFunction<CR>
 nnoremap <leader>lh :LeaderfHelp<CR>
 nnoremap <leader>lb :LeaderfBuffer<CR>
 nnoremap <leader>lr :LeaderfMru<CR>
-let g:Lf_ExternalCommand = 'rg %s --files --no-ignore --hidden --follow --glob
-                                \gc !{.git/,
-                                   \gc.gvfs,
-                                   \gc.cache/dconf,
-                                   \gc.config/chromium,
-                                   \gc.config/pulse,
-                                   \gc.config/google-chrome}'
+let g:Lf_ExternalCommand = 'rg "%s" --files --no-ignore --hidden --follow --glob !{.git/,.gvfs,.cache/dconf,.config/chromium,.config/pulse,.config/google-chrome}'
 "let g:Lf_UseVersionControlTool = 0
 "let g:Lf_WildIgnore = {
             "\ 'dir': ['.svn','.git','.hg'],
@@ -206,6 +216,7 @@ autocmd User ALELint highlight ALEStyleWarningSign guifg=#F9E79F guibg=#3c3836 g
 let g:ale_enabled = 1
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 let g:ale_set_highlights = 1
 "let g:ale_set_quickfix = 1 " Push info into quicklist instead of loclist
 "let g:ale_open_list = 1 " Open loclist or quickfix when ale is triggered
@@ -283,9 +294,9 @@ if has("nvim") && loadDeoplete == 1
     " Set bin if you have many instalations
     let g:deoplete#sources#ternjs#tern_bin = '/usr/bin/tern'
 
-    let g:deoplete#enable_profile = 1
-    call deoplete#enable_logging('DEBUG', 'deoplete.log')
-    call deoplete#custom#source('tern', 'debug_enabled', 1)
+    "let g:deoplete#enable_profile = 1
+    "call deoplete#enable_logging('DEBUG', 'deoplete.log')
+    "call deoplete#custom#source('tern', 'debug_enabled', 1)
 
     " Use tern_for_vim.
     let g:tern_show_argument_hints='on_move'
@@ -307,9 +318,13 @@ autocmd InsertEnter *.json setlocal concealcursor=
 autocmd InsertLeave *.json setlocal concealcursor=inc
 "   }
 "   NerdTree {
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 " Run NERDTreeTabs on console vim startup
 let g:nerdtree_tabs_open_on_console_startup=0
-nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+" enable line numbers
+let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
 "   }
 "   YouCompleteMe {
     let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
@@ -319,15 +334,23 @@ nnoremap <silent> <leader>n :NERDTreeToggle<CR>
 "   UltiSnips {
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
+nnoremap <leader>u :UltiSnipsEdit<cr>
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<S-tab>'
+let g:UltiSnipsEnableSnipMate = 1
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 " When type UltisnipsEdit, the file will be saved into this dir
+"If only one directory is specified in this variable and this directory is
+"specified by absolute path, UltiSnips will not look for snippets in
+"&runtimepath
 let g:UltiSnipsSnippetsDir="~/.vim/MySnips"
 " Where UltiSnips find the snip files, the value should be runtimepath
-let g:UltiSnipsSnippetDirectories = ['/home/damon/.vim/MySnips']
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'MySnips']
+
+autocmd FileType javascript :UltiSnipsAddFiletypes html<cr>
+autocmd FileType html :UltiSnipsAddFiletypes javascript<cr>
 "   }
 "   CtrlP {
 let g:ctrlp_map = '<Leader>o'
@@ -361,6 +384,11 @@ let g:EasyMotion_use_smartsign_us = 1 " US layout
 "let tern_show_argument_hints = 'on_hold'
 "autocmd FileType javascript nnoremap <leader>d :TernDef<CR>
 "autocmd FileType javascript setlocal omnifunc=tern#Complete
+
+" Close preview window when autocomplete finished
+"autocmd CompleteDone * pclose
+" Don't open preview window at all
+autocmd BufEnter * set completeopt-=preview
 "   }
 "   Syntastic {
 "nnoremap <silent> <Leader>c :SyntasticCheck<CR>
@@ -410,6 +438,21 @@ nnoremap <F8> :TagbarToggle<CR>
         "\ 'k:Heading_L3'
     "\ ]
     "\ }
+    "let g:tagbar_type_javascript = {
+                "\ 'ctagstype': 'javascript',
+                "\ 'kinds': [
+                "\ 'c:classes',
+                "\ 'n:modules',
+                "\ 'f:functions',
+                "\ 'v:variables',
+                "\ 'v:varlambdas',
+                "\ 'm:members',
+                "\ 'i:interfaces',
+                "\ 'e:enums',
+                "\ ],
+                "\ 'sort':0,
+                "\'deffile':expand('<sfile>:p:h:h') . '/.ctags'
+                "\ }
 "   }
 "   devicons & nerdtree syntax highlight {
 " loading the plugin
@@ -488,10 +531,10 @@ silent! colorscheme gruvbox
 
 set tabpagemax=15 " Only show 15 tabs
 set showmode " Display the current mode
-if !has("nvim")
-    "set cursorline " Highlight current line
-    "hi CursorLine term=bold cterm=bold guibg=Grey35
-endif
+"if !has("nvim")
+"set cursorline " Highlight current line
+"hi CursorLine term=bold cterm=bold guibg=#504945
+"endif
 
 if has('cmdline_info')
 set ruler " Show the ruler
@@ -609,6 +652,8 @@ nnoremap <leader>ms :messages<CR>
 nnoremap Q <nop>
 "nnoremap q: <nop>
 
+nnoremap <SPACE><SPACE> i<SPACE><ESC>
+
 " Navigate between display lines
 noremap  <silent> k gk
 noremap  <silent> j gj
@@ -620,6 +665,8 @@ noremap J 5j
 noremap K 5k
 noremap <Leader>j J
 
+" go to Previous buffer
+noremap gb <C-^>
 nnoremap ' ;
 nnoremap ; :
 
@@ -789,7 +836,7 @@ if loadDenite == 1
     " statusline=0 is nesessary if you want to custom statusline
     call denite#custom#option('_', {
                 \ 'prompt': '❯',
-                \ 'winheight': 15,
+                \ 'winheight': 55,
                 \ 'reversed': 1,
                 \ 'highlight_matched_char': 'Underlined',
                 \ 'highlight_mode_normal': 'CursorLine',
@@ -1223,18 +1270,18 @@ endif
 
 if loadProfile == 1
 " Profile Record -----------------------------------------------------------{{{
-function! RecordLog() abort
-    profile start vim_profile.log
-    profile func *
-    profile file *
-endfunction
+    function! RecordLog() abort
+        profile start vim_profile.log
+        profile func *
+        profile file *
+    endfunction
 
-function! RecordLogEnd() abort
-    profile pause
-    noautocmd qall!
-endfunction
-nnoremap <leader>rs :call RecordLog()<CR>
-nnoremap <leader>re :call RecordLogEnd()<CR>
+    function! RecordLogEnd() abort
+        profile pause
+        noautocmd qall!
+    endfunction
+    nnoremap <leader>rs :call RecordLog()<CR>
+    nnoremap <leader>re :call RecordLogEnd()<CR>
 " }}}
 endif
 

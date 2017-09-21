@@ -1,5 +1,6 @@
 # reload non-login shell env
 alias sz="source $HOME/.zshrc"
+alias wd="wd -o"
 #alias rg="~/mydata/linux\ tools/ripgrep-0.5.2-x86_64-unknown-linux-musl/rg"
 
 # If you come from bash you might have to change your $PATH.

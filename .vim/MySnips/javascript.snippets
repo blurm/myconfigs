@@ -310,8 +310,12 @@ snippet de
 debugger;
 endsnippet
 
-snippet cl "console.log"
-console.log(${0});
+snippet cl "console.log" i
+console.log(${0:${VISUAL}})
+endsnippet
+
+snippet cl; "console.log" i
+console.log(${0:${VISUAL}});
 endsnippet
 
 snippet cd "console.debug"
@@ -379,7 +383,7 @@ console.profileEnd();
 endsnippet
 
 snippet ctable "console.table"
-console.table(${1:"${2:value}"});
+console.table(${1:"${2:valuesss}"});
 endsnippet
 
 # Misc
@@ -393,13 +397,55 @@ snippet timeout
 setTimeout(function () {${0}}${2}, ${1:10});
 endsnippet
 
+# Added by Damon Ma
 snippet st
 static ${1:method}(${2:param}) {
 	${0:pass}
 }
 endsnippet
 
-
 snippet r
 return ${1};
+endsnippet
+
+snippet jq "jquery $()"
+$(${0:${VISUAL}})
+endsnippet
+
+snippet docre "jquery document.ready"
+$(document).ready(function(){
+	${1:text}
+});
+endsnippet
+
+snippet l "let var = xxx;"
+let ${1:var} = ${2:value};
+endsnippet
+
+snippet c "const var = xxx;"
+const ${1:var} = ${2:value};
+endsnippet
+
+snippet afm "multi lines" i
+(${1}) => {
+	${0:${VISUAL:pass}}
+}
+endsnippet
+
+snippet afo "one line" i
+(${1}) => {${0:${VISUAL:pass}}}
+endsnippet
+snippet jf
+$(${1}).find('${2}');
+endsnippet
+
+# chrome
+snippet chsset "chrome storage set"
+chrome.storage.local.set({${1}: ${2}});
+endsnippet
+
+snippet chsget "chrome storage get"
+chrome.storage.local.get((items) => {
+	${1:${VISUAL:pass}}
+});
 endsnippet
