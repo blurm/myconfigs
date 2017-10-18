@@ -1,7 +1,7 @@
 
 # Added By Damon Ma
 snippet p "print" b
-print(${0})
+print(${0:${VISUAL:pass}})
 endsnippet
 
 snippet r "return" b
@@ -26,4 +26,5 @@ snippet fori "for loop" b
 for i ,key in enumerate(${2:iterable}):
 	${3:${VISUAL:pass}}
 endsnippet
+
 # vim:ft=snippets:

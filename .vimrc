@@ -107,11 +107,13 @@ endif
     Plug 'dyng/ctrlsf.vim'
     Plug 'Yggdroot/LeaderF'
     " yajs slow the input down when you type comment
-    "Plug 'othree/yajs.vim'
+    "Plug 'othree/yajs.vim' " javascript syntax hightlight
     "Plug 'othree/javascript-libraries-syntax.vim'
     Plug 'hail2u/vim-css3-syntax', {'for': 'css'}
     Plug 'vim-scripts/BufOnly.vim'
-    Plug 'MattesGroeger/vim-bookmarks'
+    Plug 'MattesGroeger/vim-bookmarks' " bookmark and annotate code
+    Plug 'hecal3/vim-leader-guide' " vim keymap displaying
+    Plug 'junegunn/fzf.vim'
     "Plug 'Shougo/vimfiler.vim'
     "Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'javascript.jsx'] }
 
@@ -1002,6 +1004,7 @@ let g:my_welcome_bannars = [
             \'    #+#    #+# #+#     #+# #+#       #+# #+#    #+# #+#   #+#+#   #+#+#+#       #+#     #+#       #+# ',
             \'    #########  ###     ### ###       ###  ########  ###    ####     ###     ########### ###       ### ',
             \'',
+            \'                                                                        version: '. g:version,
             \'',
             \'',
             \ ],
@@ -1119,7 +1122,7 @@ let g:my_welcome_bannars = [
             \'    ',
             \ ]
             \ ]
-let g:startify_custom_header = g:my_welcome_bannars[6]
+let g:startify_custom_header = g:my_welcome_bannars[0]
 
 let g:startify_disable_at_vimenter = 0
 let g:startify_session_dir = '~/.vim/sessions'

@@ -153,3 +153,10 @@ echo '---------------------- gnome terminal settings ---------------------'
     ./build.sh
     sudo make install
 ## }
+
+## mysql {
+    sudo apt -y install mysql-server
+    sudo mysql_secure_installation
+    sudo pip install -U mycli # cmd client utils for mysql
+    sudo pip3 install pymysql # mysql connector for python3
+## }

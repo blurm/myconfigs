@@ -261,6 +261,18 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
     gsettings set org.gnome.desktop.background show-desktop-icons false
 ## }
 
+## Downloading Tools {
+    echo '----------------------- uget ---------------------------'
+    sudo add-apt-repository ppa:plushuang-tw/uget-stable
+    sudo apt -y install uget
+    # Also need to install uGet Integration extension in Chrome
+    sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper
+    sudo apt install uget-chrome-wrapper
+    echo '----------------------- aria2 ---------------------------'
+    sudo add-apt-repository ppa:jonathonf/aria2
+    sudo apt -y install aria2
+## }
+
 ## Developing tools {
     echo '----------------- Developing Tools -------------------'
     # Vim
