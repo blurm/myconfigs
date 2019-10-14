@@ -11,39 +11,121 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/download
+~MSle0~/compo
 
 # Last Substitute Search Pattern:
-~MSle0&\v\n
+~MSle0&coupon
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1508324822,,"q"
+|2,0,1570895415,,"q"
 :w
-|2,0,1508324815,,"w"
+|2,0,1570880903,,"w"
+::q
+|2,0,1570549352,,":q"
+:x
+|2,0,1570122371,,"x"
+:s
+|2,0,1569580378,,"s"
+:UltiSnipsEdit
+|2,0,1554687433,,"UltiSnipsEdit"
+:X
+|2,0,1533911845,,"X"
+:Bookmarks
+|2,0,1528677134,,"Bookmarks"
+:Bookmark
+|2,0,1528677125,,"Bookmark"
+:help PlugUpdate
+|2,0,1517898875,,"help PlugUpdate"
+:PlugStatus
+|2,0,1517898845,,"PlugStatus"
+:help plugin
+|2,0,1517898761,,"help plugin"
+:!ls
+|2,0,1517659159,,"!ls"
+:xa
+|2,0,1517410935,,"xa"
+:vs BLSZhang.md
+|2,0,1517360974,,"vs BLSZhang.md"
+:wa
+|2,0,1517067138,,"wa"
+:e BLSDiet.md
+|2,0,1517063139,,"e BLSDiet.md"
+:e BLSRoutines.md
+|2,0,1517016525,,"e BLSRoutines.md"
+:ls
+|2,0,1516956338,,"ls"
+: UltiSnipsEdit
+|2,0,1516955168,," UltiSnipsEdit"
+:bd! #
+|2,0,1516955155,,"bd! #"
+:bp
+|2,0,1516955150,,"bp"
+:h zm
+|2,0,1516954888,,"h zm"
+:vsplit
+|2,0,1516954743,,"vsplit"
+:e biggerLeanerStronger.md
+|2,0,1516954376,,"e biggerLeanerStronger.md"
+:q!
+|2,0,1513596313,,"q!"
+:qa
+|2,0,1512471090,,"qa"
+:h :g
+|2,0,1511581148,,"h :g"
+:h g
+|2,0,1511581133,,"h g"
+:g/html/s/coupon/xxx/gc
+|2,0,1511581105,,"g/html/s/coupon/xxx/gc"
+:'<,'>s/\v(\S*)(:)@=/'\1'/gc
+|2,0,1509525133,,"'<,'>s/\\v(\\S*)(:)@=/'\\1'/gc"
+:'<,'>s/.*
+|2,0,1509524892,,"'<,'>s/.*"
+:'<,'>s/ =/:/gc
+|2,0,1509523770,,"'<,'>s/ =/:/gc"
+:%s/
+|2,0,1509523755,,"%s/"
+:CtrlSF com.ubuntu
+|2,0,1509458799,,"CtrlSF com.ubuntu"
+:s/\v(\.)/\2^^^/
+|2,0,1509022330,,"s/\\v(\\.)/\\2^^^/"
+:s/\v(\.)/\1^^^/
+|2,0,1509022319,,"s/\\v(\\.)/\\1^^^/"
+:%!python -m json.tool
+|2,0,1508822825,,"%!python -m json.tool"
+:e temp
+|2,0,1508822796,,"e temp"
+:pwd
+|2,0,1508822790,,"pwd"
+:CtrlSF storeCheck
+|2,0,1508821287,,"CtrlSF storeCheck"
+:CtrlSF eomnibar_defaultSuggestions
+|2,0,1508743100,,"CtrlSF eomnibar_defaultSuggestions"
+:h easymotion
+|2,0,1508726568,,"h easymotion"
+:CtrlSF activate
+|2,0,1508493701,,"CtrlSF activate"
+:CtrlSF onMessage
+|2,0,1508479377,,"CtrlSF onMessage"
+:CtrlSF onMessage add
+|2,0,1508479367,,"CtrlSF onMessage add"
+:CtrlSF eomnibarPort
+|2,0,1508470609,,"CtrlSF eomnibarPort"
 :CtrlSF HTMLHead
 |2,0,1508147197,,"CtrlSF HTMLHead"
-:xa
-|2,0,1507823235,,"xa"
 :CtrlSF \u4e00
 |2,0,1507790531,,"CtrlSF \\u4e00"
-:x
-|2,0,1507804500,,"x"
 :CtrlSF getSearchStrReg
 |2,0,1507696456,,"CtrlSF getSearchStrReg"
 :CtrlSF messagecha
 |2,0,1507029583,,"CtrlSF messagecha"
-:q!
-|2,0,1506869728,,"q!"
 :e test
 |2,0,1506866534,,"e test"
 :CtrlSF controller
 |2,0,1506826432,,"CtrlSF controller"
-:wa
-|2,0,1506823782,,"wa"
 :CtrlSF tabOperation
 |2,0,1506823773,,"CtrlSF tabOperation"
 :CtrlSF loadAll
@@ -82,8 +164,6 @@ $
 |2,0,1506656164,,"CtrlSF Client("
 :CtrlSF UserStore
 |2,0,1506656086,,"CtrlSF UserStore"
-:pwd
-|2,0,1506656031,,"pwd"
 :CtrlSF Evernote
 |2,0,1506656020,,"CtrlSF Evernote"
 :W
@@ -96,14 +176,10 @@ $
 |2,0,1506594778,,"CtrlSF eomnibar.js"
 :CtrlSF this.controller
 |2,0,1506594712,,"CtrlSF this.controller"
-:UltiSnipsEdit
-|2,0,1506584640,,"UltiSnipsEdit"
 :set filetype?
 |2,0,1506584603,,"set filetype?"
 :set fileType?
 |2,0,1506584592,,"set fileType?"
-: UltiSnipsEdit
-|2,0,1506584537,," UltiSnipsEdit"
 :CtrlSF eomnibarSuggestion
 |2,0,1506582152,,"CtrlSF eomnibarSuggestion"
 :CtrlSF index.js
@@ -172,8 +248,6 @@ $
 |2,0,1505984750,,"%s/><\\/script>//gc"
 :%s/<script type="text/javascript" src=//gc
 |2,0,1505984726,,"%s/<script type=\"text/javascript\" src=//gc"
-:qa
-|2,0,1505919652,,"qa"
 :,lr
 |2,0,1505894896,,",lr"
 :h quickrun
@@ -186,8 +260,6 @@ $
 |2,0,1505886016,,"ClearBookmarks snippets UltiSnips"
 :BookmarkClear snippets
 |2,0,1505885972,,"BookmarkClear snippets"
-:Bookmark
-|2,0,1505885850,,"Bookmark"
 :h ultisnips
 |2,0,1505874273,,"h ultisnips"
 :%s/', response: 9999}/\/"/g
@@ -262,14 +334,10 @@ $
 |2,0,1505127213,,"h leaderf"
 : PlugStatus
 |2,0,1505128547,," PlugStatus"
-:%s/
-|2,0,1505128523,,"%s/"
 :%s/for',/for':/gc
 |2,0,1505128507,,"%s/for',/for':/gc"
 :echo filetype
 |2,0,1505128403,,"echo filetype"
-:PlugStatus
-|2,0,1505128224,,"PlugStatus"
 :'<,'>s/})//gc
 |2,0,1505096219,,"'<,'>s/})//gc"
 :'<,'>s/\}\)//gc
@@ -539,7 +607,205 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1508324814,,"\\s\\+$"
+|2,1,1570893837,,"\\s\\+$"
+?/compo
+|2,1,1569873551,47,"compo"
+?/windows
+|2,1,1569494634,47,"windows"
+?/number
+|2,1,1554687438,47,"number"
+?/bookmark
+|2,1,1543576967,47,"bookmark"
+?/buffer
+|2,1,1534847819,47,"buffer"
+?/close buffer
+|2,1,1534847816,47,"close buffer"
+?/J
+|2,1,1534765316,47,"J"
+?/strong
+|2,1,1534146038,47,"strong"
+?/mark
+|2,1,1533855062,47,"mark"
+?/vimrc
+|2,1,1529416446,47,"vimrc"
+?/plugged
+|2,1,1517898807,47,"plugged"
+?/plugin
+|2,1,1517898792,47,"plugin"
+?/list
+|2,1,1516961691,47,"list"
+?/xb
+|2,1,1516955144,47,"xb"
+?/vs
+|2,1,1516954758,47,"vs"
+?/leaderf
+|2,1,1516954643,47,"leaderf"
+?/vsplit
+|2,1,1516954416,47,"vsplit"
+?/link
+|2,1,1512464367,47,"link"
+?/ult
+|2,1,1512464353,47,"ult"
+? coupon
+|2,1,1511581120,,"coupon"
+?/nerdcomm
+|2,1,1511352037,47,"nerdcomm"
+?/comm
+|2,1,1511352022,47,"comm"
+?/commend
+|2,1,1511352015,47,"commend"
+?/tab
+|2,1,1511351895,47,"tab"
+?/twin
+|2,1,1511351886,47,"twin"
+?/panel
+|2,1,1511351882,47,"panel"
+? \<_mergeRanges\>
+|2,1,1510225007,,"\\<_mergeRanges\\>"
+?/input
+|2,1,1510223642,47,"input"
+?/text
+|2,1,1510223628,47,"text"
+? \<couponURL\>
+|2,1,1509612183,,"\\<couponURL\\>"
+? \<coupon_section\>
+|2,1,1509612031,,"\\<coupon_section\\>"
+? \<coupon_process\>
+|2,1,1509611980,,"\\<coupon_process\\>"
+?/reg
+|2,1,1509528744,47,"reg"
+? \v(\S*)(:)@=
+|2,1,1509525133,,"\\v(\\S*)(:)@="
+?/\v.*(:)@=
+|2,1,1509525070,47,"\\v.*(:)@="
+?/\v(:)@=
+|2,1,1509525027,47,"\\v(:)@="
+?/\v(:)@<=
+|2,1,1509525015,47,"\\v(:)@<="
+?/\v.*(:)@<=
+|2,1,1509524927,47,"\\v.*(:)@<="
+?/.*(:)@=
+|2,1,1509524909,47,".*(:)@="
+?  =
+|2,1,1509523770,," ="
+? \<imgcode1\>
+|2,1,1509462160,,"\\<imgcode1\\>"
+? \<imgcode\>
+|2,1,1509462072,,"\\<imgcode\\>"
+? \<login_url\>
+|2,1,1509461553,,"\\<login_url\\>"
+? \<im\>
+|2,1,1509460815,,"\\<im\\>"
+?/w3m
+|2,1,1509459983,47,"w3m"
+?/login
+|2,1,1509460656,47,"login"
+?/login_by
+|2,1,1509459269,47,"login_by"
+?/qr.png
+|2,1,1509459112,47,"qr.png"
+? \<os\>
+|2,1,1509458820,,"\\<os\\>"
+?/com.ubuntu
+|2,1,1509458789,47,"com.ubuntu"
+? \v(\.)
+|2,1,1509022330,,"\\v(\\.)"
+?/\v(\.)
+|2,1,1509022082,47,"\\v(\\.)"
+?/(\.)
+|2,1,1509022028,47,"(\\.)"
+?/\.
+|2,1,1509022022,47,"\\."
+?/\v(.)
+|2,1,1509022005,47,"\\v(.)"
+?/easymo
+|2,1,1508821359,47,"easymo"
+? \<storeCheck\>
+|2,1,1508821279,,"\\<storeCheck\\>"
+? \<json\>
+|2,1,1508821258,,"\\<json\\>"
+?/togg
+|2,1,1508743165,47,"togg"
+?/toggle
+|2,1,1508743159,47,"toggle"
+? \<_getDefaultSuggestions\>
+|2,1,1508743114,,"\\<_getDefaultSuggestions\\>"
+?/ f 
+|2,1,1508731604,47," f "
+?/relative
+|2,1,1508726356,47,"relative"
+?/relat,n
+|2,1,1508726314,47,"relat,n"
+?/related
+|2,1,1508726290,47,"related"
+? \<onActionKeyup\>
+|2,1,1508587259,,"\\<onActionKeyup\\>"
+? \<_actionFromKeydownEvent\>
+|2,1,1508586930,,"\\<_actionFromKeydownEvent\\>"
+?/action
+|2,1,1508586337,47,"action"
+?/def
+|2,1,1508586257,47,"def"
+?/perform
+|2,1,1508586137,47,"perform"
+? \<_actionFromKeyEvent\>
+|2,1,1508583924,,"\\<_actionFromKeyEvent\\>"
+? \<forceNewTab\>
+|2,1,1508574301,,"\\<forceNewTab\\>"
+? \<displaySuggestions\>
+|2,1,1508573983,,"\\<displaySuggestions\\>"
+? \<_displaySuggestions\>
+|2,1,1508573927,,"\\<_displaySuggestions\\>"
+?/allNotes
+|2,1,1508573128,47,"allNotes"
+?/maxSugg
+|2,1,1508572491,47,"maxSugg"
+?/postMess
+|2,1,1508572251,47,"postMess"
+?/onAction
+|2,1,1508571588,47,"onAction"
+? \<_convertNote2HTML\>
+|2,1,1508570513,,"\\<_convertNote2HTML\\>"
+? \<_generateSuggestion\>
+|2,1,1508570475,,"\\<_generateSuggestion\\>"
+?/'E'
+|2,1,1508491573,47,"'E'"
+?/E
+|2,1,1508491568,47,"E"
+?/sendMessage
+|2,1,1508481975,47,"sendMessage"
+? \<eomnibar_activateInNewTab\>
+|2,1,1508479108,,"\\<eomnibar_activateInNewTab\\>"
+? \<openInNewTab\>
+|2,1,1508479084,,"\\<openInNewTab\\>"
+? \<hide\>
+|2,1,1508479028,,"\\<hide\\>"
+? \<channel\>
+|2,1,1508478825,,"\\<channel\\>"
+?/allnote
+|2,1,1508478608,47,"allnote"
+? \<handleMessage\>
+|2,1,1508475188,,"\\<handleMessage\\>"
+?/handle
+|2,1,1508471937,47,"handle"
+?/runtime
+|2,1,1508471755,47,"runtime"
+?/backgroundPort
+|2,1,1508471474,47,"backgroundPort"
+?/port
+|2,1,1508471467,47,"port"
+?////
+|2,1,1508471378,47,"///"
+?/openinnew
+|2,1,1508471286,47,"openinnew"
+?/hide
+|2,1,1508470745,47,"hide"
+? \<backgroundPort\>
+|2,1,1508470722,,"\\<backgroundPort\\>"
+?/message
+|2,1,1508470554,47,"message"
+?/server
+|2,1,1508422058,47,"server"
 ?/download
 |2,1,1508311759,47,"download"
 ?/session.get
@@ -570,14 +836,10 @@ $
 |2,1,1507788915,,"\\<_highlightQueryTerms\\>"
 ?/pinyinFields
 |2,1,1507787462,47,"pinyinFields"
-?/perform
-|2,1,1507786344,47,"perform"
 ? \<string\>
 |2,1,1507785350,,"\\<string\\>"
 ? \<ranges\>
 |2,1,1507785293,,"\\<ranges\\>"
-? \<_generateSuggestion\>
-|2,1,1507784260,,"\\<_generateSuggestion\\>"
 ? \<note\>
 |2,1,1507783406,,"\\<note\\>"
 ? \<title\>
@@ -616,8 +878,6 @@ $
 |2,1,1506782515,,"\\v.*: "
 ? \v:.*$
 |2,1,1506782366,,"\\v:.*$"
-? \<backgroundPort\>
-|2,1,1506754648,,"\\<backgroundPort\\>"
 ?/enter
 |2,1,1506754257,47,"enter"
 ?/shift
@@ -628,14 +888,10 @@ $
 |2,1,1506752422,47,"CTRL-^"
 ?/this.port
 |2,1,1506741303,47,"this.port"
-?/port
-|2,1,1506741297,47,"port"
 ?/chrome.tabs
 |2,1,1506736835,47,"chrome.tabs"
 ?/q
 |2,1,1506736378,47,"q"
-?/postMess
-|2,1,1506670861,47,"postMess"
 ?/auth.html
 |2,1,1506663050,47,"auth.html"
 ?/gotO
@@ -662,8 +918,6 @@ $
 |2,1,1506603477,,"\\<items\\>"
 ? \<controller\>
 |2,1,1506597170,,"\\<controller\\>"
-? \<_displaySuggestions\>
-|2,1,1506596966,,"\\<_displaySuggestions\\>"
 ? \<queryString\>
 |2,1,1506596716,,"\\<queryString\\>"
 ?/controller
@@ -682,8 +936,6 @@ $
 |2,1,1506582493,47,"perfor"
 ?/eomnibarSuggestion
 |2,1,1506582139,47,"eomnibarSuggestion"
-?/toggle
-|2,1,1506582039,47,"toggle"
 ? \<updateSelection\>
 |2,1,1506581968,,"\\<updateSelection\\>"
 ? \<generateSuggestion\>
@@ -698,8 +950,6 @@ $
 |2,1,1506581121,,"\\<actionFromKeyEvent\\>"
 ?/textarea
 |2,1,1506563744,47,"textarea"
-?/text
-|2,1,1506563725,47,"text"
 ?/ui-button
 |2,1,1506508108,47,"ui-button"
 ?/lr
@@ -740,8 +990,6 @@ $
 |2,1,1506429821,,"yinxiang"
 ? \<reset\>
 |2,1,1506429544,,"\\<reset\\>"
-?  =
-|2,1,1506428337,," ="
 ?/.app
 |2,1,1506427502,47,".app"
 ?/button
@@ -822,8 +1070,6 @@ $
 |2,1,1506224967,47," ul"
 ?/search-box__suggestions
 |2,1,1506224947,47,"search-box__suggestions"
-?/message
-|2,1,1506215801,47,"message"
 ?/tabs
 |2,1,1506169182,47,"tabs"
 ?/sear
@@ -832,10 +1078,6 @@ $
 |2,1,1506157252,47,"continue"
 ?/onkeydown
 |2,1,1506151816,47,"onkeydown"
-? \<handleMessage\>
-|2,1,1506089920,,"\\<handleMessage\\>"
-?/handle
-|2,1,1506089916,47,"handle"
 ? \<iframeWin\>
 |2,1,1506087483,,"\\<iframeWin\\>"
 ? \<iframe\>
@@ -846,18 +1088,10 @@ $
 |2,1,1506087225,,"\\<eomnibarDOM\\>"
 ? \<initEvent\>
 |2,1,1506087109,,"\\<initEvent\\>"
-? \<forceNewTab\>
-|2,1,1506086921,,"\\<forceNewTab\\>"
 ?/activate
 |2,1,1506086790,47,"activate"
-? \<openInNewTab\>
-|2,1,1506086680,,"\\<openInNewTab\\>"
 ?/forcenewtab
 |2,1,1506086618,47,"forcenewtab"
-?/hide
-|2,1,1506086312,47,"hide"
-? \<hide\>
-|2,1,1506086291,,"\\<hide\\>"
 ? \<postMessage\>
 |2,1,1506083002,,"\\<postMessage\\>"
 ?/this.iframe
@@ -908,10 +1142,6 @@ $
 |2,1,1505897899,47,"enum"
 ?/recomm
 |2,1,1505887523,47,"recomm"
-?/input
-|2,1,1505886474,47,"input"
-?/bookmark
-|2,1,1505885865,47,"bookmark"
 ?/snip
 |2,1,1505885827,47,"snip"
 ? \<getAsyncHTML\>
@@ -1028,8 +1258,6 @@ $
 |2,1,1505399808,47,"reset"
 ?/onInput
 |2,1,1505399763,47,"onInput"
-?/tab
-|2,1,1505396969,47,"tab"
 ?/ultisnip
 |2,1,1505384249,47,"ultisnip"
 ?/genera
@@ -1104,8 +1332,6 @@ $
 |2,1,1505360108,47,"hasUpperCase 1"
 ?/escapeRegexspecial
 |2,1,1505359581,47,"escapeRegexspecial"
-?/vs
-|2,1,1505359553,47,"vs"
 ? \<matches\>
 |2,1,1505359331,,"\\<matches\\>"
 ?/if 
@@ -1276,8 +1502,6 @@ $
 |2,1,1505019565,47,"debug"
 ? :
 |2,1,1505018157,,":"
-?/login
-|2,1,1505017721,47,"login"
 ? \<getTop100\>
 |2,1,1505009376,,"\\<getTop100\\>"
 ? \<getRecommend\>
@@ -1310,8 +1534,6 @@ $
 |2,1,1504930674,,"\\<loginWithEvernote\\>"
 ?/java
 |2,1,1504586992,47,"java"
-?/leaderf
-|2,1,1504235389,47,"leaderf"
 ?/tagbar
 |2,1,1504164894,47,"tagbar"
 ?/permission
@@ -1488,8 +1710,6 @@ $
 |2,1,1503545026,47,"tag:link"
 ?/rendertags
 |2,1,1503544617,47,"rendertags"
-?/link
-|2,1,1503544201,47,"link"
 ?/tag_group
 |2,1,1503543880,47,"tag_group"
 ? class="
@@ -1556,8 +1776,6 @@ $
 |2,1,1503337276,47,"imdbRating"
 ?/star
 |2,1,1503337237,47,"star"
-?/strong
-|2,1,1503337165,47,"strong"
 ?/imdb_rating
 |2,1,1503336832,47,"imdb_rating"
 ?/rating_num
@@ -1750,8 +1968,6 @@ $
 |2,1,1500267579,47,"deoplete"
 ?/cursorlin
 |2,1,1500264132,47,"cursorlin"
-?/relative
-|2,1,1500264013,47,"relative"
 ?/t_8
 |2,1,1500261753,47,"t_8"
 ?/ALEE
@@ -1808,6 +2024,24 @@ $
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@/home/damon/mydata/vim/evernote_md/howToRead.md
+|2,3,1554687160,,"/home/damon/mydata/vim/evernote_md/howToRead.md"
+@/home/damon/mydata/vim/evernote_md/nonviolentCommunication.md
+|2,3,1547682397,,"/home/damon/mydata/vim/evernote_md/nonviolentCommunication.md"
+@/home/damon/mydata/vim/evernote_md/BBLSMaintainLean.md
+|2,3,1543921412,,"/home/damon/mydata/vim/evernote_md/BBLSMaintainLean.md"
+@/home/damon/mydata/vim/evernote_md/BBLSHungerCtrl.md
+|2,3,1543920433,,"/home/damon/mydata/vim/evernote_md/BBLSHungerCtrl.md"
+@/home/damon/mydata/vim/evernote_md/BBLSPlateaus.md
+|2,3,1543577170,,"/home/damon/mydata/vim/evernote_md/BBLSPlateaus.md"
+@/home/damon/mydata/vim/evernote_md/energyBalance.md
+|2,3,1534848028,,"/home/damon/mydata/vim/evernote_md/energyBalance.md"
+@/home/damon/mydata/vim/evernote_md/protein.md
+|2,3,1534760438,,"/home/damon/mydata/vim/evernote_md/protein.md"
+@/home/damon/mydata/vim/evernote_md/fat.md
+|2,3,1533855124,,"/home/damon/mydata/vim/evernote_md/fat.md"
+@markdown 
+|2,3,1512464318,,"markdown "
 @/home/damon/mydata/project/douban_spider/demo.py
 |2,3,1508146965,,"/home/damon/mydata/project/douban_spider/demo.py"
 @/home/damon/mydata/project/evernote_qs/js/config.js.template
@@ -2084,36 +2318,47 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	    echo '----------------------- uget ---------------------------'
-|3,0,0,1,1,0,1508311956,"    echo '----------------------- uget ---------------------------'"
+"0	CHAR	0
+	67.228.74.123
+	
+|3,0,0,0,2,0,1570694321,"67.228.74.123",""
 "1	LINE	0
-	    tag_genres_a =
-|3,0,1,1,1,0,1508153093,"    tag_genres_a ="
+	    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+|3,0,1,1,1,0,1570893841,"    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1508152831,""
+	sudo -H pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyquery beautifulsoup4
+|3,0,2,1,1,0,1570876126,"sudo -H pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyquery beautifulsoup4"
 "3	LINE	0
-	    print(content)
-|3,0,3,1,1,0,1508152830,"    print(content)"
+	sudo apt -y install python-pip
+	mkdir ~/.pip
+	cd ~/.pip
+	# -e enable interpretation of backslash escapes
+	echo -e '[global]\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple' >> pip.conf
+	sudo -H pip install pip -U
+	sudo -H pip install pyquery
+	sudo -H pip install beautifulsoup4
+|3,0,3,1,8,0,1570875943,"sudo apt -y install python-pip","mkdir ~/.pip","cd ~/.pip","# -e enable interpretation of backslash escapes","echo -e '[global]\\nindex-url = https://pypi.tuna.tsinghua.edu.cn/simple' >> pip.conf","sudo -H pip install pip -U","sudo -H pip install pyquery","sudo -H pip install beautifulsoup4"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1508147727,""
+	sudo apt -y install phantomjs
+|3,0,4,1,1,0,1570875515,"sudo apt -y install phantomjs"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1508147700,""
+|3,0,5,1,1,0,1570875450,""
 "6	LINE	0
-	    self.__session.headers = headers
-|3,0,6,1,1,0,1508147456,"    self.__session.headers = headers"
-"7	LINE	0
 	
-|3,0,7,1,1,0,1508147346,""
+|3,0,6,1,1,0,1570709286,""
+"7	LINE	0
+	[http]
+		proxy = socks5://127.0.0.1:1080
+	[https]
+		proxy = socks5://127.0.0.1:1080
+|3,0,7,1,4,0,1570693837,"[http]","	proxy = socks5://127.0.0.1:1080","[https]","	proxy = socks5://127.0.0.1:1080"
 "8	LINE	0
 	
-|3,0,8,1,1,0,1508147341,""
+|3,0,8,1,1,0,1554687709,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1508147129,""
+|3,0,9,1,1,0,1534765344,""
 "g	CHAR	0
 	;
 |3,0,16,0,1,0,1500526341,";"
@@ -2127,1460 +2372,566 @@ $
 	kk
 |3,0,20,0,1,0,1505129685,"kk"
 "q	CHAR	0
-	Hf{aly$A: querystring.pA});j
-|3,0,26,0,1,0,1505043212,"Hf{aly$A: querystring.pA});j"
+	i### fdq
+|3,0,26,0,1,0,1517018199,"i### fdq"
 "u	CHAR	0
 	
 |3,0,30,0,1,0,1505695517,""
-""-	CHAR	0
-	uget
-|3,1,36,0,1,0,1508311962,"uget"
+"-	CHAR	0
+	proxychains4 
+|3,0,36,0,1,0,1570894667,"proxychains4 "
 
 # File marks:
 'M  33  21  ~/mydata/git/JD_Utils/javatest.java
 |4,77,33,21,1500523635,"~/mydata/git/JD_Utils/javatest.java"
-'0  268  62  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,48,268,62,1508324822,"~/mydata/backup/sys_install_backup/post_install1.sh"
-'1  158  4  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,49,158,4,1508311737,"~/mydata/backup/sys_install_backup/post_install2.sh"
-'2  160  57  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,50,160,57,1508247593,"~/mydata/backup/sys_install_backup/post_install2.sh"
-'3  160  57  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,51,160,57,1508247593,"~/mydata/backup/sys_install_backup/post_install2.sh"
-'4  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,52,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
-'5  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,53,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
-'6  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,54,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
-'7  13  0  ~/mydata/project/JD_Utils/NERD_tree_1
-|4,55,13,0,1507905894,"~/mydata/project/JD_Utils/NERD_tree_1"
-'8  20  4  ~/mydata/project/douban_spider/Startify
-|4,56,20,4,1507892068,"~/mydata/project/douban_spider/Startify"
-'9  103  8  ~/mydata/project/evernote_qs/js/controller.js
-|4,57,103,8,1507823235,"~/mydata/project/evernote_qs/js/controller.js"
+'0  1  0  ~/.zshrc
+|4,48,1,0,1570895415,"~/.zshrc"
+'1  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,49,3,0,1570895405,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+'2  25  4  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,50,25,4,1570895341,"~/mydata/backup/sys_install_backup/post_install2.sh"
+'3  2  0  ~/.pip/pip.conf
+|4,51,2,0,1570891219,"~/.pip/pip.conf"
+'4  7  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,52,7,0,1570880518,"~/mydata/backup/sys_install_backup/post_install0.sh"
+'5  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,53,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+'6  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,54,1,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+'7  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,55,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+'8  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,56,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+'9  8  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,57,8,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
 
 # Jumplist (newest first):
--'  268  62  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,268,62,1508324822,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  271  4  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,271,4,1508311961,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  265  4  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,265,4,1508311953,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  267  16  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,267,16,1508311930,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  273  21  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,273,21,1508311922,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  272  42  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,272,42,1508311910,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  270  35  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,270,35,1508311895,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  269  57  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,269,57,1508311888,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  266  51  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,266,51,1508311864,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  336  0  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,336,0,1508311759,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  1  0  ~/mydata/backup/sys_install_backup/post_install1.sh
-|4,39,1,0,1508311750,"~/mydata/backup/sys_install_backup/post_install1.sh"
--'  158  4  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,158,4,1508311737,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  158  4  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,158,4,1508311737,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  160  57  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,160,57,1508247593,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  160  57  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,160,57,1508247593,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  160  57  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,160,57,1508247593,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  160  57  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,160,57,1508247593,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  1  0  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,1,0,1508238078,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  1  0  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,1,0,1508238078,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  1  0  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,1,0,1508238078,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  1  0  ~/mydata/backup/sys_install_backup/post_install2.sh
-|4,39,1,0,1508238078,"~/mydata/backup/sys_install_backup/post_install2.sh"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  24  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,24,0,1508164980,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  40  2  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,40,2,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  1  0  ~/mydata/project/iReserve/NERD_tree_1
-|4,39,1,0,1508164978,"~/mydata/project/iReserve/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  5  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,5,0,1508153773,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  6  2  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,6,2,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  1  0  ~/mydata/project/douban_spider/NERD_tree_1
-|4,39,1,0,1508153755,"~/mydata/project/douban_spider/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,13,0,1508152985,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  23  2  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,23,2,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  1  0  ~/mydata/git/JD_Utils/NERD_tree_1
-|4,39,1,0,1508152982,"~/mydata/git/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/project/JD_Utils/NERD_tree_1
-|4,39,13,0,1507905894,"~/mydata/project/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/project/JD_Utils/NERD_tree_1
-|4,39,13,0,1507905894,"~/mydata/project/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/project/JD_Utils/NERD_tree_1
-|4,39,13,0,1507905894,"~/mydata/project/JD_Utils/NERD_tree_1"
--'  13  0  ~/mydata/project/JD_Utils/NERD_tree_1
-|4,39,13,0,1507905894,"~/mydata/project/JD_Utils/NERD_tree_1"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1570895415,"~/.zshrc"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570895405,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  25  4  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,25,4,1570895341,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  165  0  ~/.zshrc
+|4,39,165,0,1570893881,"~/.zshrc"
+-'  5  132  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,5,132,1570893839,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  2  0  ~/.pip/pip.conf
+|4,39,2,0,1570891219,"~/.pip/pip.conf"
+-'  2  0  ~/.pip/pip.conf
+|4,39,2,0,1570891219,"~/.pip/pip.conf"
+-'  68  0  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,68,0,1570890700,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  69  0  ~/mydata/backup/sys_install_backup/post_install2.sh
+|4,39,69,0,1570890091,"~/mydata/backup/sys_install_backup/post_install2.sh"
+-'  2  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,4,1570880527,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570880525,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  7  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,7,0,1570880518,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  7  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,7,0,1570880518,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  7  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,7,0,1570880518,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  7  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,7,0,1570880518,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,2,0,1570877373,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,2,0,1570877373,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,2,0,1570877373,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,2,0,1570877373,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,1,0,1570877372,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,1,0,1570877372,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,1,0,1570877372,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install0.sh
+|4,39,1,0,1570877372,"~/mydata/backup/sys_install_backup/post_install0.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570877353,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  8  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,8,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  10  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,10,0,1570875524,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  9  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,9,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  9  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,9,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  7  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,7,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  9  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,9,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  9  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,9,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  9  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,9,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  9  4  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,9,4,1570875514,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  4  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,4,0,1570875500,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  4  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,4,0,1570875500,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  4  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,4,0,1570875500,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  4  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,4,0,1570875500,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  4  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,4,0,1570875500,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  4  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,4,0,1570875500,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570875466,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570875466,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570875466,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570875466,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570875466,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  3  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,3,0,1570875466,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  2  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,2,0,1570875464,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/mydata/backup/sys_install_backup/post_install_test.sh
+|4,39,1,0,1570875449,"~/mydata/backup/sys_install_backup/post_install_test.sh"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871981,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871981,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
+-'  1  0  ~/.pip/pip.conf
+|4,39,1,0,1570871456,"~/.pip/pip.conf"
 
 # History of marks within files (newest to oldest):
 
-> ~/mydata/backup/sys_install_backup/post_install1.sh
-	*	1508324816	0
-	"	268	62
-	^	268	63
-	.	268	62
-	+	266	0
-	+	274	2
-	+	266	0
-	+	267	0
-	+	269	0
-	+	270	0
-	+	272	0
-	+	273	0
-	+	267	11
-	+	273	11
-	+	266	0
-	+	265	37
-	+	271	38
-	+	268	62
+> ~/.zshrc
+	*	1570895414	0
+	"	1	0
 
-> /usr/share/vim/vim80/File/LeaderF
-	*	1508311741	0
-	"	2	0
-	.	1	0
+> ~/mydata/backup/sys_install_backup/post_install_test.sh
+	*	1570895401	0
+	"	3	0
+	.	3	0
 	+	1	0
-	+	549239	0
+	+	1	85
 	+	1	0
+	+	2	0
+	+	3	0
 
 > ~/mydata/backup/sys_install_backup/post_install2.sh
-	*	1508311736	0
-	"	158	4
-	^	160	58
-	.	160	57
+	*	1570895319	0
+	"	25	4
+	^	5	0
+	.	19	0
 	+	161	58
 	+	160	57
-
-> ~/mydata/project/iReserve/ireserve_http.py
-	*	1508164978	0
-	"	236	19
-
-> ~/mydata/project/douban_spider/demo.py
-	*	1508153755	0
-	"	10	44
-	^	35	46
-	.	35	45
-	+	1	0
-	+	3	0
-	+	1	21
-	+	22	10
-	+	38	0
-	+	39	0
-	+	22	0
-	+	36	0
-	+	22	9
-	+	23	0
-	+	36	22
-	+	36	0
-	+	37	0
-	+	22	0
-	+	21	0
 	+	5	0
-	+	20	0
-	+	21	0
-	+	20	0
 	+	6	0
-	+	9	0
-	+	10	0
-	+	16	0
-	+	18	0
-	+	28	0
-	+	36	0
-	+	28	0
-	+	28	13
-	+	4	14
-	+	27	31
-	+	30	0
-	+	28	18
-	+	30	14
-	+	29	17
-	+	30	25
-	+	36	15
 	+	5	0
-	+	31	0
-	+	32	0
-	+	36	0
-	+	33	35
-	+	36	16
-	+	33	14
-	+	32	6
-	+	33	44
-	+	10	0
-	+	33	0
-	+	10	0
-	+	33	15
-	+	33	0
-	+	34	0
-	+	33	24
-	+	34	14
-	+	36	0
-	+	34	115
-	+	34	25
-	+	33	19
-	+	33	13
-	+	33	0
-	+	34	14
-	+	33	21
-	+	34	0
-	+	35	45
+	+	10	4
+	+	15	0
+	+	17	0
+	+	18	0
+	+	19	0
 
-> ~/mydata/project/douban_spider/[quickrun output]
-	*	1508153750	0
-	"	1	0
-	.	14	0
-	+	1	0
-	+	14	0
-
-> ~/mydata/git/JD_Utils/jd.py
-	*	1508152982	0
-	"	256	0
-
-> ~/mydata/git/JD_Utils/NERD_tree_1
-	*	1508147683	0
-	"	13	0
+> ~/.pip/pip.conf
+	*	1570891218	0
+	"	2	0
 	.	1	0
 	+	1	0
 
-> ~/mydata/project/iReserve/NERD_tree_1
-	*	1508147334	0
-	"	24	0
-	.	1	0
-	+	1	0
-
-> ~/mydata/project/iReserve/myutil.py
-	*	1508147288	0
+> ~/mydata/backup/sys_install_backup/post_install0.sh
+	*	1570880517	0
 	"	7	0
+	.	2	0
+	+	2	0
 
-> ~/mydata/project/iReserve/__CtrlSF__
-	*	1508147203	0
-	"	49	29
-	^	52	1
-	.	52	1
-	+	53	0
-	+	52	1
-
-> ~/mydata/project/douban_spider/NERD_tree_1
-	*	1508146966	0
-	"	5	0
-	.	1	0
-	+	1	0
-
-> ~/mydata/project/iReserve/ireserve_ctrl.py
-	*	1508145032	0
-	"	40	8
-
-> ~/mydata/project/JD_Utils/jd.py
-	*	1507905890	0
-	"	11	31
-
-> ~/mydata/project/JD_Utils/NERD_tree_1
-	*	1507892332	0
-	"	13	0
-	.	1	0
-	+	1	0
-
-> ~/mydata/project/evernote_qs/js/controller.js
-	*	1507823234	0
-	"	103	8
-	^	89	0
-	.	103	0
-	+	78	19
-	+	78	22
-	+	79	33
-	+	256	0
-	+	79	0
-	+	79	33
-	+	79	26
-	+	79	27
-	+	103	0
-	+	79	0
-	+	90	37
-	+	79	29
-	+	90	23
-	+	92	0
-	+	84	0
-	+	86	0
-	+	84	16
-	+	86	24
-	+	83	36
-	+	85	38
-	+	88	32
-	+	92	25
-	+	94	0
-	+	99	0
-	+	90	37
-	+	94	0
-	+	90	36
-	+	94	22
-	+	90	29
-	+	94	48
-	+	98	34
-	+	93	34
-	+	98	52
+> ~/.config/i3/config
+	*	1570710272	0
+	"	99	0
+	.	96	0
+	+	96	0
 	+	97	0
-	+	98	33
-	+	97	48
-	+	97	52
-	+	98	42
-	+	102	0
-	+	99	42
-	+	84	39
-	+	79	0
-	+	91	20
-	+	97	16
-	+	91	39
-	+	97	0
-	+	99	0
-	+	101	27
-	+	73	55
-	+	103	27
-	+	103	44
-	+	73	81
-	+	94	46
-	+	96	42
-	+	91	24
-	+	96	20
-	+	95	45
-	+	94	65
 	+	95	0
-	+	259	46
-	+	256	30
-	+	259	20
-	+	260	33
-	+	272	16
-	+	272	0
-	+	274	23
-	+	276	0
-	+	273	78
-	+	281	10
-	+	273	0
-	+	281	0
-	+	282	0
-	+	281	49
-	+	282	0
-	+	283	0
-	+	280	0
-	+	283	0
-	+	282	46
-	+	283	27
-	+	286	0
-	+	259	61
-	+	103	0
-	+	90	0
-	+	80	0
-	+	273	39
-	+	256	29
-	+	259	20
-	+	260	34
-	+	255	70
-	+	225	0
-	+	79	49
-	+	75	0
-	+	82	0
-	+	88	0
-	+	89	0
-	+	103	0
-	e	216	11
+	+	96	0
 
-> ~/mydata/project/evernote_qs/.git/COMMIT_EDITMSG
-	*	1507804498	0
-	"	2	0
-	^	1	34
-	.	35	0
-	+	35	0
-
-> ~/mydata/project/evernote_qs/manifest.json
-	*	1507804281	0
-	"	15	0
-	^	14	33
-	.	14	0
-	+	24	0
-	+	23	0
-	+	25	0
-	+	34	0
-	+	33	7
-	+	32	0
-	+	28	0
-	+	25	35
-	+	25	26
-	+	26	9
-	+	28	15
-	+	28	0
-	+	29	0
-	+	30	0
-	+	29	30
-	+	28	0
-	+	23	0
-	+	28	0
-	+	27	17
-	+	27	38
-	+	28	39
-	+	28	52
-	+	27	38
-	+	28	39
-	+	28	52
-	+	27	0
-	+	23	0
-	+	32	18
-	+	32	27
-	+	32	28
-	+	32	26
-	+	46	0
-	+	44	3
-	+	45	14
-	+	46	16
-	+	32	0
-	+	23	0
-	+	10	0
-	+	31	19
-	+	31	0
-	+	28	47
-	+	32	0
-	+	57	3
-	+	55	30
-	+	55	0
-	+	53	0
-	+	55	0
-	+	54	0
-	+	55	30
-	+	35	0
-	+	43	3
-	+	35	0
-	+	12	0
-	+	55	9
-	+	57	0
-	+	51	13
-	+	56	50
-	+	51	0
-	+	7	27
-	+	8	28
-	+	37	31
-	+	38	31
-	+	40	44
-	+	52	17
-	+	12	24
-	+	21	0
-	+	18	28
-	+	21	0
-	+	12	33
-	+	12	0
-	+	13	43
-	+	18	0
-	+	12	0
-	+	20	24
-	+	18	28
-	+	19	19
-	+	20	0
-	+	16	18
-	+	28	0
-	+	20	0
-	+	17	27
-	+	25	35
-	+	26	0
-	+	25	22
-	+	46	0
-	+	25	33
-	+	17	14
-	+	22	0
-	+	21	7
-	+	29	0
-	+	28	0
-	+	14	19
-	+	16	0
-	+	14	23
-	+	16	0
-	+	14	0
-	+	16	0
-	+	14	0
-	+	15	0
-	+	14	0
-
-> ~/mydata/project/evernote_qs/eomnibar.html
-	*	1507804238	0
-	"	6	4
-	^	6	62
-	.	7	0
-	+	13	42
-	+	13	49
-	+	1	0
-	+	7	0
-	+	9	48
-	+	7	0
-	+	7	58
-	+	5	0
-	+	7	0
-	+	9	52
-	+	7	0
-	+	15	79
-	+	29	0
-	+	34	56
-	+	15	16
-	+	29	20
-	+	32	14
-	+	34	17
-	+	32	34
-	+	32	0
-	+	33	8
-	+	29	42
-	+	32	17
-	+	32	42
-	+	12	52
-	+	30	0
-	+	30	11
-	+	30	12
-	+	32	0
-	+	30	32
-	+	29	0
-	+	16	0
-	+	29	0
-	+	16	41
-	+	17	51
-	+	18	49
-	+	25	0
-	+	26	20
-	+	29	0
-	+	28	0
-	+	29	0
-	+	27	0
-	+	16	0
-	+	25	0
-	+	19	0
-	+	27	95
-	+	32	0
-	+	30	0
-	+	31	0
-	+	31	35
-	+	32	0
-	+	31	0
-	+	30	0
-	+	6	0
-	+	7	0
-	+	6	0
-	+	8	0
-	+	7	48
-	+	7	42
-	+	7	0
-	+	4	0
-	+	3	0
-	+	7	0
-	+	6	0
-	+	7	0
-
-> ~/mydata/project/evernote_qs/js/utils.js
-	*	1507804199	0
-	"	21	0
-	^	21	11
-	.	22	0
-	+	1	0
-	+	2	2
-	+	1	0
-	+	3	41
-	+	4	0
-	+	6	1
-	+	7	0
-	+	5	0
-	+	4	0
-	+	5	45
-	+	8	0
-	+	3	40
-	+	5	43
-	+	8	0
-	+	8	28
-	+	9	35
-	+	10	1
-	+	8	0
-	+	11	0
-	+	12	0
-	+	12	44
-	+	18	0
-	+	19	0
-	+	13	0
-	+	18	0
-	+	13	0
-	+	17	85
-	+	13	40
-	+	14	40
-	+	15	5
-	+	16	0
-	+	17	39
-	+	12	26
-	+	13	38
-	+	14	40
-	+	16	35
-	+	21	0
-	+	21	10
-	+	22	0
-
-> ~/mydata/project/evernote_qs/main.html
-	*	1507804198	0
-	"	8	0
-	^	21	30
-	.	20	48
-	+	24	50
-	+	24	46
-	+	24	0
-	+	24	57
-	+	24	0
-	+	24	52
-	+	24	51
-	+	24	55
-	+	24	0
-	+	20	0
-	+	6	35
-	+	18	0
-	+	20	57
-	+	21	42
-	+	19	33
-	+	20	27
-	+	21	28
-	+	22	0
-	+	20	0
-	+	24	0
-	+	7	0
-	+	21	0
-	+	20	48
-
-> ~/mydata/project/evernote_qs/js/eomnibarIn.js
-	*	1507804192	0
-	"	263	9
-	^	252	45
-	.	75	0
-	+	149	103
-	+	150	0
-	+	149	101
-	+	147	0
-	+	25	24
-	+	68	26
-	+	70	0
-	+	169	0
-	+	170	0
-	+	170	30
-	+	170	0
-	+	149	46
-	+	149	47
-	+	146	49
-	+	81	0
-	+	81	26
-	+	81	44
-	+	81	0
-	+	69	0
-	+	70	62
-	+	70	0
-	+	70	38
-	+	70	0
-	+	70	60
-	+	70	0
-	+	75	0
-	+	75	57
-	+	75	0
-	+	75	61
-	+	75	0
-	+	75	36
-	+	75	0
-	+	252	63
-	+	206	66
-	+	216	34
-	+	219	0
-	+	218	16
-	+	223	46
-	+	218	17
-	+	244	33
-	+	257	0
-	+	263	0
-	+	257	0
-	+	258	0
-	+	257	12
-	+	264	0
-	+	268	0
-	+	265	44
-	+	268	0
-	+	266	46
-	+	252	0
-	+	257	0
-	+	255	0
-	+	256	0
-	+	253	62
-	+	252	38
-	+	254	29
-	+	264	0
-	+	264	28
-	+	254	63
-	+	268	0
-	+	270	0
-	+	284	0
-	+	272	0
-	+	271	21
-	+	272	0
-	+	271	15
-	+	268	0
-	+	267	56
-	+	252	0
-	+	250	57
-	+	251	0
-	+	250	12
-	+	201	29
-	+	271	0
-	+	267	19
-	+	271	6
-	+	271	9
-	+	271	11
-	+	271	12
-	+	267	27
-	+	271	19
-	+	267	33
-	+	250	31
-	+	223	24
-	+	244	11
-	+	264	0
-	+	263	0
-	+	260	61
-	+	252	44
-	+	75	0
-
-> /usr/share/vim/vim80/Mru/LeaderF
-	*	1507804165	0
-	"	3	0
-	.	1	0
-	+	2111	0
-	+	1994	0
-	+	1762	0
-	+	1661	0
-	+	1618	0
-	+	1347	0
-	+	1253	0
-	+	1223	0
-	+	1165	0
-	+	1051	0
-	+	795	0
-	+	677	0
-	+	576	0
-	+	453	0
-	+	312	0
-	+	191	0
-	+	1	0
-
-> ~/mydata/project/evernote_qs/js/NERD_tree_1
-	*	1507804143	0
+> /etc/hosts
+	*	1570710052	0
 	"	14	0
-	.	1	0
-	+	1	0
-
-> ~/mydata/project/evernote_qs/js/content_scripts/eomnibarOut.js
-	*	1507800811	0
-	"	26	0
-	.	86	0
-	+	51	26
-	+	52	16
-	+	81	25
-	+	85	25
-	+	81	59
-	+	85	67
-	+	81	63
-	+	85	72
-	+	80	0
-	+	81	0
-	+	83	0
-	+	85	0
-	+	81	0
-	+	85	0
-	+	81	0
-	+	81	71
-	+	83	0
-	+	82	0
-	+	84	0
-	+	85	0
-	+	37	0
-	+	45	0
-	+	44	89
-	+	45	0
-	+	44	89
-	+	53	0
-	+	16	0
-	+	78	33
-	+	78	0
-	+	78	16
-	+	78	22
-	+	78	0
-	+	78	73
-	+	78	18
-	+	78	0
-	+	68	0
-	+	78	27
-	+	78	41
-	+	70	84
-	+	78	32
-	+	78	50
-	+	78	23
-	+	74	0
-	+	77	0
-	+	74	58
-	+	77	0
-	+	78	0
-	+	75	0
-	+	75	21
-	+	75	0
-	+	74	0
-	+	71	44
-	+	74	18
-	+	71	58
-	+	74	35
-	+	74	0
-	+	74	82
-	+	75	0
-	+	77	0
-	+	75	0
-	+	74	0
-	+	74	99
-	+	81	0
-	+	116	12
-	+	74	53
-	+	74	107
-	+	1	0
-	+	2	60
-	+	116	14
-	+	72	0
-	+	74	13
-	+	72	31
-	+	74	27
-	+	74	42
-	+	73	0
-	+	74	57
-	+	73	92
-	+	73	0
-	+	72	32
-	+	72	121
-	+	74	53
-	+	75	0
-	+	72	0
-	+	112	0
-	+	115	0
-	+	116	0
-	+	113	0
-	+	115	0
-	+	114	37
-	+	86	0
-	+	86	27
-	+	114	0
-	+	34	22
-	+	35	26
-	+	43	28
-	+	34	22
-	+	35	26
-	+	43	28
-	+	34	0
-	+	86	0
-
-> ~/mydata/project/evernote_qs/js/__CtrlSF__
-	*	1507790535	0
-	"	15	22
-	^	18	1
-	.	18	1
-	+	1148	0
-	+	1147	1
-	+	873	0
-	+	872	1
-	+	855	0
-	+	855	1
-	+	855	0
-	+	854	1
-	+	19	0
-	+	18	1
-
-> ~/mydata/project/chrome_extentions/rating4U/js/controller/util.js
-	*	1507735456	0
-	"	35	0
-
-> ~/mydata/git/pinyinjs/NERD_tree_1
-	*	1507735455	0
-	"	27	1
-	.	1	0
-	+	1	0
-
-> ~/mydata/project/chrome_extentions/rating4U/js/model/douban_info.js
-	*	1507712681	0
-	"	93	26
-
-> ~/mydata/project/chrome_extentions/rating4U/js/base/common.js
-	*	1507712667	0
-	"	186	0
-
-> ~/mydata/project/chrome_extentions/rating4U/js/controller/jd.js
-	*	1507712636	0
-	"	2	0
-
-> ~/mydata/project/chrome_extentions/rating4U/js/utils/parse_torrent_name/patterns.js
-	*	1507712622	0
-	"	1	0
-
-> ~/mydata/project/chrome_extentions/rating4U/js/utils/parse_torrent_name/parser.js
-	*	1507712593	0
-	"	1	0
-
-> ~/mydata/project/evernote_qs/js/search.js
-	*	1507711180	0
-	"	44	76
-	^	44	79
-	.	44	76
-	+	1	14
-	+	19	0
-	+	2	16
-	+	4	42
-	+	2	22
-	+	5	36
-	+	7	13
+	^	14	28
+	.	15	0
+	+	12	23
+	+	13	28
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	14	0
+	+	15	0
 	+	14	13
-	+	19	0
-	+	14	0
-	+	12	0
-	+	3	42
-	+	57	0
-	+	57	81
-	+	57	0
-	+	57	20
-	+	13	46
-	+	57	0
-	+	57	46
-	+	57	16
-	+	8	12
-	+	9	12
-	+	57	20
-	+	57	28
-	+	57	35
-	+	57	85
-	+	57	0
-	+	57	64
-	+	57	0
-	+	57	7
-	+	57	0
-	+	57	36
-	+	10	0
-	+	11	0
-	+	11	35
-	+	11	12
-	+	11	13
-	+	12	0
-	+	56	0
-	+	57	24
-	+	57	0
-	+	57	16
-	+	57	41
-	+	57	0
-	+	57	30
-	+	57	0
 	+	15	0
-	+	19	0
-	+	16	50
-	+	57	88
-	+	19	0
-	+	18	0
-	+	57	0
-	+	19	0
-	+	57	0
-	+	57	45
-	+	57	27
-	+	3	0
-	+	6	0
-	+	52	0
-	+	54	14
-	+	52	29
-	+	52	0
-	+	53	0
-	+	52	35
-	+	53	12
-	+	52	0
-	+	11	51
-	+	57	0
-	+	21	0
-	+	53	0
-	+	51	35
-	+	55	0
-	+	55	14
-	+	54	0
-	+	55	0
-	+	54	0
-	+	29	0
-	+	14	0
-	+	43	13
-	+	47	0
-	+	25	34
-	+	45	26
-	+	25	0
-	+	45	19
-	+	45	27
-	+	25	38
-	+	25	42
-	+	42	59
-	+	44	76
-
-> ~/mydata/project/evernote_qs/NERD_tree_1
-	*	1507710114	0
-	"	20	7
-	.	1	0
-	+	1	0
-
-> ~/mydata/project/evernote_qs/eventPage.js
-	*	1507702933	0
-	"	1	0
-	^	23	22
-	.	23	22
-	+	33	0
-	+	2	33
-	+	3	0
-	+	2	41
-	+	31	41
-	+	3	0
-	+	29	0
-	+	4	0
-	+	5	38
-	+	6	0
-	+	17	0
-	+	6	0
-	+	15	0
-	+	7	26
-	+	8	0
-	+	9	0
-	+	8	44
-	+	9	35
-	+	12	0
-	+	11	0
-	+	10	0
-	+	11	63
-	+	12	2
-	+	13	0
-	+	12	2
-	+	13	0
-	+	12	13
-	+	13	0
-	+	12	17
-	+	13	53
-	+	14	0
-	+	13	54
-	+	3	0
-	+	2	0
-	+	1	86
-	+	18	0
-	+	19	0
-	+	19	34
-	+	23	0
-	+	28	0
-	+	23	0
-	+	25	0
-	+	28	0
-	+	24	0
-	+	25	12
-	+	26	0
-	+	25	56
-	+	23	31
-	+	26	0
-	+	24	39
-	+	26	39
-	+	20	0
-	+	20	11
-	+	20	0
-	+	21	0
-	+	22	0
-	+	22	39
-	+	21	89
-	+	22	43
-	+	21	98
-	+	21	96
-	+	21	94
-	+	21	93
-	+	22	43
-	+	21	99
-	+	22	19
-	+	20	45
-	+	21	58
-	+	21	60
-	+	22	0
-	+	21	8
-	+	22	0
-	+	20	16
-	+	25	25
-	+	25	26
-	+	23	22
-
-> ~/mydata/project/evernote_qs/__CtrlSF__
-	*	1507696457	0
-	"	7	17
-	^	28	1
-	.	28	1
-	+	651	0
-	+	651	1
-	+	651	12
-	+	651	0
-	+	651	1
-	+	651	0
-	+	651	1
-	+	651	0
-	+	651	1
-	+	651	0
-	+	651	1
-	+	651	0
-	+	269	0
-	+	268	1
-	+	195	0
-	+	194	1
-	+	189	0
-	+	189	1
-	+	189	0
-	+	189	56
-	+	189	0
-	+	188	1
-	+	134	0
-	+	133	1
-	+	113	0
-	+	112	1
-	+	38	0
-	+	37	1
-	+	29	0
-	+	28	1
-
-> ~/mydata/project/evernote_qs/js/pinyinUtil.js
-	*	1507688376	0
-	"	1	0
-
-> ~/mydata/project/evernote_qs/js/pinyin_dict_notone.js
-	*	1507688370	0
-	"	4	269
-
-> ~/mydata/project/evernote_qs/README.md
-	*	1506871797	0
-	"	3	0
-	^	3	70
-	.	3	0
-	+	3	0
-
-> ~/mydata/project/chrome_extentions/rating4U/test
-	*	1506869726	0
-	"	1	0
-	^	20	0
-	.	1	0
-	+	5	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	10	0
-	+	14	0
-	+	18	0
-	+	17	0
-	+	11	45
-	+	3	0
-	+	7	0
-	+	10	0
-	+	8	0
-	+	3	0
-	+	19	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	22	0
-	+	20	0
-	+	22	0
-	+	3	0
-	+	1	0
-
-> ~/mydata/project/chrome_extentions/rating4U/.tern-project
-	*	1506832055	0
-	"	1	0
-
-> ~/mydata/project/evernote_qs/main.js
-	*	1506827039	0
-	"	8	0
-	^	5	14
-	.	7	0
-	+	1	0
-	+	1	21
-	+	1	20
-	+	1	64
-	+	1	29
-	+	1	20
-	+	1	0
-	+	1	19
-	+	1	6
-	+	1	10
-	+	1	0
-	+	1	33
-	+	1	0
-	+	1	2
-	+	1	0
-	+	2	0
-	+	1	0
-	+	17	0
-	+	17	43
-	+	8	45
-	+	2	0
-	+	17	0
-	+	8	0
-	+	17	0
-	+	17	14
-	+	17	0
-	+	17	48
-	+	17	0
-	+	17	48
-	+	17	0
-	+	17	29
-	+	17	14
-	+	17	0
-	+	17	34
-	+	17	0
-	+	17	43
-	+	17	0
-	+	17	22
-	+	17	0
-	+	17	10
-	+	17	0
-	+	17	5
-	+	17	0
-	+	8	0
-	+	2	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	17	0
-	+	10	0
 	+	16	0
-	+	13	0
+	+	14	0
 	+	15	0
-	+	12	37
-	+	14	56
-	+	12	47
+	+	14	39
+	+	15	13
+	+	15	0
+
+> ~/.gitconfig
+	*	1570693841	0
+	"	5	1
+	.	6	0
+	+	6	0
+
+> ~/mydata/backup/sys_install_backup/post_install3.sh
+	*	1570549224	0
+	"	1	0
+
+> ~/mydata/alicloudSource.txt
+	*	1570122370	0
+	"	10	0
+	.	1	0
+	+	1	0
+
+> ~/.config/ulauncher/settings.json
+	*	1569873717	0
+	"	1	0
+
+> ~/mydata/git/SSRSpeed/README.md
+	*	1569826034	0
+	"	61	0
+
+> ~/mydata/git/SSRSpeed/ssrspeed_config.json
+	*	1569821895	0
+	"	94	0
+
+> ~/mydata/git/SSRSpeed/ssrspeed_config.example.json
+	*	1569821867	0
+	"	118	0
+
+> /etc/fstab
+	*	1569673824	0
+	"	1	0
+
+> /etc/default/grub
+	*	1569580870	0
+	"	25	0
+	^	25	2
+	.	25	0
+	+	25	0
+
+> ~/mydata/newVolume/Windows/System32/license.rtf
+	*	1569495569	0
+	"	892	131
+
+> ~/mydata/vim/evernote_md/howToRead.md
+	*	1554859070	0
+	"	34	129
+	^	34	132
+	.	34	0
+	+	1	0
+	+	1	12
 	+	3	0
+	+	3	49
+	+	4	0
+	+	38	0
+	+	5	14
+	+	6	44
+	+	8	59
+	+	9	86
+	+	11	0
+	+	11	10
+	+	10	0
 	+	2	0
-	+	3	21
-	+	4	29
-	+	5	0
-	+	5	8
-	+	7	8
-	+	7	0
-	+	6	65
-	+	17	0
-	+	5	13
-	+	7	0
+	+	12	120
+	+	14	0
+	+	14	55
+	+	15	0
+	+	19	0
+	+	15	41
+	+	16	38
+	+	17	68
+	+	18	29
+	+	20	0
+	+	20	16
+	+	21	0
+	+	25	0
+	+	21	44
+	+	22	50
+	+	23	86
+	+	24	20
+	+	39	0
+	+	26	0
+	+	26	31
+	+	31	21
+	+	33	0
+	+	33	28
+	+	34	129
+	+	34	0
 
-> ~/mydata/project/evernote_qs/js/content_scripts/controller.js
-	*	1506822595	0
-	"	1	0
+> ~/.vim/MySnips/markdown.snippets
+	*	1554765483	0
+	"	120	0
 
-> ~/mydata/project/evernote_qs/js/content_scripts/__CtrlSF__
-	*	1506822585	0
-	"	13	18
-	^	16	1
-	.	16	1
-	+	17	0
-	+	17	1
-	+	17	0
-	+	16	1
-
-> ~/mydata/project/evernote_qs/js/content_scripts/NERD_tree_1
-	*	1506822576	0
-	"	7	0
+> ~/NERD_tree_1
+	*	1554687161	0
+	"	25	1
 	.	1	0
 	+	1	0
 
-> ~/mydata/linux tools/deepin/install.sh
-	*	1506783956	0
-	"	4	0
-
-> ~/test
-	*	1506783953	0
-	"	1	0
-	.	1	0
-	+	1	0
+> ~/mydata/vim/evernote_md/nonviolentCommunication.md
+	*	1547735848	0
+	"	2	120
+	^	2	123
+	.	2	0
+	+	2	120
 	+	2	0
-	+	1	0
 
-> /usr/share/vim/vim80/Cmd_History/LeaderF
-	*	1506782583	0
-	"	5	0
-	^	894	29
-	.	1	0
-	+	1163	0
-	+	1110	0
-	+	1108	0
-	+	1046	0
+> ~/mydata/vim/evernote_md/energyBalance.md
+	*	1545056669	0
+	"	13	0
+	^	64	0
+	.	64	0
 	+	1	0
-	+	939	0
+	+	1	36
+	+	4	117
+	+	6	0
+	+	6	24
+	+	8	0
+	+	8	22
+	+	7	0
+	+	12	57
+	+	17	99
+	+	17	0
+	+	19	0
+	+	17	0
+	+	20	0
+	+	20	31
+	+	24	0
+	+	26	0
+	+	26	49
+	+	27	0
+	+	28	117
+	+	32	0
+	+	32	12
+	+	43	52
+	+	38	0
+	+	49	51
+	+	51	108
+	+	53	0
+	+	53	16
+	+	64	0
+
+> ~/mydata/vim/evernote_md/BBLSMaintainLean.md
+	*	1543930916	0
+	"	2	0
+	^	1	73
+	.	1	72
 	+	1	0
+	+	1	72
 
-> ~/mydata/linux tools/deepin/remove.sh
-	*	1506781874	0
-	"	6	0
+> ~/mydata/vim/evernote_md/BBLSHungerCtrl.md
+	*	1543921417	0
+	"	3	21
+	^	12	22
+	.	12	19
+	+	1	81
+	+	8	67
+	+	11	18
+	+	12	19
 
-> ~/mydata/linux tools/deepin/remove
-	*	1506781859	0
+> ~/mydata/vim/evernote_md/BBLSPlateaus.md
+	*	1543588945	0
 	"	1	0
+	^	21	20
+	.	21	17
+	+	1	113
+	+	7	131
+	+	7	0
+	+	7	83
+	+	1	54
+	+	5	90
+	+	10	0
+	+	10	23
+	+	13	9
+	+	12	0
+	+	17	17
+	+	16	0
+	+	18	75
+	+	20	16
+	+	21	17
+
+> ~/mydata/vim/evernote_md/protein.md
+	*	1534848043	0
+	"	40	132
+	.	41	0
+	+	1	0
+	+	1	24
+	+	3	1
+	+	9	96
+	+	12	0
+	+	12	24
+	+	14	84
+	+	19	27
+	+	21	97
+	+	24	1
+	+	23	2
+	+	29	0
+	+	29	18
+	+	34	51
+	+	40	135
+	+	44	0
+	+	44	21
+	+	46	0
+	+	46	45
+	+	53	82
+	+	53	36
+	+	78	0
+	+	53	36
+	+	55	0
+	+	55	15
+	+	57	118
+	+	58	36
+	+	60	0
+	+	60	13
+	+	62	105
+	+	64	0
+	+	64	17
+	+	66	30
+	+	69	114
+	+	68	106
+	+	72	109
+	+	75	84
+	+	43	48
+	+	41	0
+
+> ~/mydata/vim/evernote_md/NERD_tree_1
+	*	1534848028	0
+	"	10	0
+	.	1	0
+	+	1	0
 
 > ~/.vimrc
-	*	1506763644	0
-	"	1007	0
-	.	1007	0
-	+	133	0
-	+	10	15
-	+	12	21
-	+	13	15
-	+	10	15
-	+	11	21
-	+	14	15
-	+	15	15
-	+	16	17
-	+	17	18
-	+	18	19
-	+	19	19
+	*	1534847999	0
+	"	705	13
+	^	705	14
+	.	705	13
 	+	20	19
 	+	21	18
 	+	23	80
 	+	23	81
 	+	23	0
 	+	12	21
-	+	646	0
+	+	648	0
 	+	107	0
 	+	106	0
-	+	605	0
-	+	604	13
+	+	607	0
+	+	606	13
 	+	37	0
 	+	113	0
 	+	39	0
@@ -3593,14 +2944,14 @@ $
 	+	39	0
 	+	298	0
 	+	297	42
-	+	504	0
+	+	506	0
 	+	164	33
 	+	166	0
 	+	165	0
-	+	1256	0
+	+	1260	0
 	+	91	0
-	+	1227	37
-	+	1220	0
+	+	1231	37
+	+	1224	0
 	+	75	0
 	+	76	0
 	+	77	0
@@ -3612,15 +2963,15 @@ $
 	+	101	0
 	+	110	0
 	+	109	51
-	+	1282	0
+	+	1286	0
 	+	99	0
 	+	102	0
 	+	110	0
 	+	57	0
 	+	58	0
-	+	828	0
-	+	829	0
-	+	828	31
+	+	832	0
+	+	833	0
+	+	832	31
 	+	60	0
 	+	59	51
 	+	57	46
@@ -3651,658 +3002,1430 @@ $
 	+	116	0
 	+	117	0
 	+	110	46
-	+	1125	52
-	+	1006	0
-	+	1008	0
-	+	1006	0
-	+	1007	0
+	+	1129	52
+	+	1010	0
+	+	1012	0
+	+	1010	0
+	+	1011	0
+	+	579	0
+	+	592	0
+	+	1280	0
+	+	378	5
+	+	379	5
+	+	378	25
+	+	379	25
+	+	648	0
+	+	667	0
+	+	678	0
+	+	648	0
+	+	659	0
+	+	703	13
+	+	705	13
 	j	107	4
-	m	1006	12
+	m	1010	12
 	p	106	4
 
-> /usr/share/vim/vim80/doc/editing.txt
-	*	1506752810	0
-	"	284	41
-
-> /usr/share/vim/vim80/doc/motion.txt
-	*	1506752453	0
-	"	257	3
-
-> ~/mydata/project/evernote_qs/.gitignore
-	*	1506665251	0
-	"	1	4
-	^	1	20
-	.	1	3
-	+	1	3
-
-> ~/mydata/project/evernote_qs/js/config.js.template
-	*	1506665207	0
+> ~/[quickrun output]
+	*	1534765348	0
 	"	1	0
-
-> ~/mydata/project/evernote_qs/js/config.js
-	*	1506665206	0
-	"	1	0
-
-> ~/mydata/project/evernote_qs/js/evernote/thrift/gen-js2/UserStore.js
-	*	1506662996	0
-	"	256	0
-	^	256	4
-
-> ~/mydata/project/evernote_qs/js/evernote/vomnibar.js
-	*	1506601351	0
-	"	1	0
-
-> ~/mydata/project/evernote_qs/js/evernote/index.js
-	*	1506601267	0
-	"	17	0
-
-> ~/mydata/project/evernote_qs/js/eomnibar.js
-	*	1506594909	0
-	"	2	0
-	^	2	0
-	.	37	0
-	+	1	0
-	+	1	33
-	+	1	32
-	+	1	0
-	+	1	23
-	+	1	36
-	+	1	0
-	+	1	35
-	+	1	11
-	+	1	28
-	+	1	12
-	+	1	17
-	+	1	0
-	+	1	22
-	+	1	0
-	+	1	10
-	+	1	28
-	+	1	0
-	+	1	42
-	+	1	0
-	+	1	35
-	+	1	24
-	+	1	0
-	+	1	28
-	+	1	0
-	+	1	35
-	+	1	0
-	+	1	51
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	43
-	+	1	52
-	+	1	35
-	+	1	50
-	+	1	0
-	+	1	64
-	+	1	45
-	+	1	0
-	+	1	47
+	.	2	0
 	+	1	0
 	+	2	0
-	+	82	0
+
+> ~/mydata/vim/evernote_md/fat.md
+	*	1534164989	0
+	"	117	0
+	^	115	57
+	.	116	0
+	+	1	0
+	+	1	24
+	+	5	3
+	+	9	86
+	+	11	0
+	+	11	24
+	+	16	64
+	+	18	0
+	+	18	36
+	+	22	66
 	+	24	0
-	+	27	0
-	+	23	0
-	+	24	16
-	+	23	0
-	+	24	0
+	+	24	18
 	+	26	0
+	+	26	19
+	+	29	30
+	+	31	0
+	+	31	28
+	+	34	48
+	+	36	0
+	+	36	19
+	+	37	0
+	+	37	17
+	+	43	82
+	+	45	110
+	+	47	35
+	+	48	20
+	+	50	0
+	+	50	26
+	+	57	36
+	+	59	46
+	+	56	78
+	+	61	0
+	+	61	38
+	+	65	28
+	+	64	47
+	+	62	27
+	+	67	87
+	+	70	122
+	+	75	72
+	+	77	29
+	+	78	0
+	+	78	17
+	+	78	0
+	+	78	39
+	+	78	0
+	+	78	24
+	+	78	0
+	+	79	0
+	+	92	0
+	+	92	13
+	+	98	86
+	+	98	0
+	+	102	51
+	+	104	44
+	+	106	0
+	+	106	33
+	+	109	87
+	+	109	1
+	+	116	0
+
+> ~/mydata/vim/evernote_md/carbs.md
+	*	1533855071	0
+	"	64	0
+	.	86	0
+	+	1	0
+	+	1	1
+	+	3	0
+	+	3	28
+	+	4	0
+	+	5	0
+	+	5	11
+	+	7	27
+	+	9	0
+	+	14	0
+	+	10	66
+	+	14	0
+	+	17	0
+	+	15	135
+	+	17	0
+	+	17	8
+	+	18	24
+	+	20	78
+	+	10	69
+	+	12	0
+	+	32	0
+	+	32	31
+	+	35	144
+	+	39	81
+	+	41	162
+	+	43	0
+	+	43	32
+	+	47	49
+	+	11	56
+	+	21	0
+	+	21	38
+	+	31	0
+	+	30	12
+	+	49	0
+	+	49	13
+	+	52	0
+	+	52	12
+	+	53	183
+	+	54	0
+	+	56	137
+	+	57	122
+	+	60	0
+	+	60	22
+	+	68	0
+	+	68	28
+	+	71	152
+	+	77	36
+	+	79	0
+	+	80	0
+	+	80	9
+	+	82	48
+	+	81	90
+	+	84	36
+	+	90	99
+	+	86	0
+
+> ~/.fzf.zsh
+	*	1529399743	0
+	"	1	0
+
+> ~/.bashrc
+	*	1529399363	0
+	"	148	0
+
+> ~/mydata/project/JD_Utils/couponConfig.ini
+	*	1529338657	0
+	"	27	0
+	^	30	1
+	.	28	0
+	+	19	0
+	+	2	42
+	+	22	0
+	+	24	19
+	+	24	156
+	+	24	17
+	+	24	0
+	+	24	6
+	+	24	0
+	+	24	323
+	+	24	21
+	+	24	6
+	+	24	0
+	+	24	20
+	+	24	6
+	+	24	0
+	+	24	20
+	+	24	6
+	+	24	21
+	+	25	6
+	+	24	11
+	+	11	0
 	+	25	0
+	+	24	0
+	+	28	5
+	+	27	0
+	+	26	0
+	+	28	0
+	+	2	30
+	+	28	6
+	+	27	7
+	+	2	83
+	+	30	0
+	+	29	0
+	+	30	5
+	+	31	6
+	+	31	0
+	+	30	0
+	+	31	0
+	+	28	0
+
+> /usr/share/vim/vim80/Cmd_History/LeaderF
+	*	1528677215	0
+	"	1	0
+	^	905	29
+	.	1	0
+	+	1174	0
+	+	1121	0
+	+	1119	0
+	+	1057	0
+	+	1	0
+	+	950	0
+	+	1	0
+
+> /media/damon/Disk2-1/backup_Backup(J)/QQ_Back/86915072/Backup/Tina(614422460).txt
+	*	1526529138	0
+	"	16685	0
+
+> /media/damon/Disk2-1/backup_Backup(J)/QQ_Back/86915072/Backup/●ロ觜捔丄揚(37246210).txt
+	*	1526528452	0
+	"	5566	0
+
+> ~/mydata/video/The.Commuter.2018.1080p.WEBRip.DD5.1.x264-FGT/The.Commuter.2018.1080p.WEBRip.DD5.1.x264-FGT_en.srt
+	*	1522591383	0
+	"	1696	0
+
+> ~/mydata/sharon.json
+	*	1522320656	0
+	"	1	0
+
+> ~/mydata/backup/sys_install_backup/shadowsocks.json
+	*	1522319732	0
+	"	7	4
+	^	2	13
+	.	3	21
+	+	2	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	2	14
+	+	3	21
+
+> ~/mydata/video/Annihilation.2018.1080p.NF.WEBRip.DD5.1.x264-NTG/Annihilation.2018.1080p.NF.WEB-DL.DD5.1.x264-NTG_en.srt
+	*	1521622945	0
+	"	1	0
+
+> ~/biggerLeanerStronger.md
+	*	1518343073	0
+	"	59	8
+	^	124	2
+	.	125	0
+	+	1	0
+	+	21	0
+	+	21	38
+	+	22	169
+	+	24	0
+	+	24	43
+	+	25	22
+	+	26	112
+	+	28	0
+	+	28	38
+	+	28	0
+	+	35	0
+	+	35	30
+	+	37	83
+	+	41	0
+	+	40	142
+	+	39	100
+	+	42	0
+	+	46	0
+	+	42	55
+	+	43	65
+	+	44	68
+	+	45	50
+	+	48	0
+	+	48	53
+	+	49	59
+	+	51	0
+	+	51	8
+	+	52	0
+	+	58	0
+	+	53	0
+	+	53	28
+	+	52	0
+	+	54	25
+	+	55	26
+	+	53	13
+	+	56	21
+	+	57	19
+	+	59	0
+	+	59	7
+	+	60	0
+	+	144	0
+	+	60	17
+	+	61	12
+	+	62	21
+	+	68	14
+	+	70	0
+	+	70	12
+	+	71	0
+	+	78	0
+	+	71	42
+	+	77	20
+	+	78	0
+	+	79	0
+	+	79	7
+	+	80	0
+	+	89	0
+	+	88	28
+	+	89	0
+	+	90	135
+	+	99	13
+	+	116	0
+	+	111	1
+	+	113	1
+	+	100	5
+	+	105	8
+	+	110	5
+	+	115	180
+	+	117	0
+	+	117	7
+	+	130	0
+	+	130	7
+	+	137	15
+	+	144	0
+	+	142	0
+	+	143	21
+	+	144	0
+	+	144	10
+	+	144	108
+	+	144	0
+	+	144	21
+	+	144	7
+	+	144	11
+	+	144	7
+	+	144	19
+	+	144	7
+	+	144	17
+	+	144	7
+	+	144	17
+	+	144	21
+	+	144	38
+	+	144	103
+	+	144	0
+	+	118	0
+	+	123	0
+	+	124	0
+	+	119	0
+	+	125	0
+
+> /usr/bin/wps
+	*	1518091643	0
+	"	37	0
+
+> ~/mydata/linux tools/LibreOffice_6.0.0.3_Linux_x86-64_deb/readmes/README_en-US
+	*	1518089809	0
+	"	63	18
+
+> /usr/share/vim/vim80/doc/usr_05.txt
+	*	1517898782	0
+	"	305	40
+
+> ~/BLSDiet.md
+	*	1517671306	0
+	"	1	0
+	^	7	26
+	.	7	23
+	+	13	0
+	+	13	18
+	+	17	0
+	+	17	20
+	+	13	18
+	+	18	58
+	+	14	87
+	+	19	51
+	+	23	87
+	+	25	0
+	+	25	26
+	+	26	3
+	+	27	42
+	+	28	0
+	+	35	0
+	+	34	17
+	+	37	8
+	+	29	32
+	+	40	90
+	+	25	9
+	+	42	0
+	+	42	25
+	+	43	88
+	+	45	0
+	+	45	25
+	+	46	66
+	+	49	17
+	+	58	10
+	+	60	30
+	+	62	0
+	+	62	29
+	+	64	77
+	+	63	50
+	+	65	0
+	+	68	0
+	+	67	0
+	+	72	0
+	+	73	0
+	+	75	4
+	+	76	4
+	+	1	0
+	+	1	15
+	+	2	47
+	+	4	33
+	+	11	30
+	+	7	23
+
+> ~/BLSRoutines.md
+	*	1517659166	0
+	"	194	0
+	^	194	175
+	.	195	0
+	+	1	0
+	+	19	0
+	+	20	0
+	+	19	0
+	+	20	0
 	+	27	0
 	+	28	0
-	+	29	0
-	+	30	31
-	+	32	0
+	+	36	0
 	+	37	0
+	+	42	0
+	+	43	0
+	+	44	0
+	+	53	0
+	+	61	93
+	+	63	0
+	+	63	21
+	+	64	0
+	+	66	0
+	+	68	0
+	+	70	0
+	+	67	0
+	+	64	0
+	+	66	0
+	+	64	0
+	+	66	0
+	+	68	0
+	+	70	0
+	+	69	0
+	+	72	0
+	+	73	0
+	+	74	0
+	+	106	0
+	+	106	22
+	+	107	0
+	+	1	1
+	+	3	0
+	+	19	8
+	+	19	0
+	+	27	0
+	+	27	8
+	+	28	0
+	+	36	0
+	+	36	8
+	+	27	6
+	+	37	0
+	+	43	0
+	+	43	8
+	+	44	0
+	+	53	0
+	+	52	0
+	+	51	0
+	+	52	0
+	+	53	0
+	+	52	3
+	+	54	0
+	+	63	2
+	+	73	3
+	+	82	3
+	+	92	3
+	+	82	3
+	+	92	3
+	+	100	3
+	+	106	2
+	+	108	0
+	+	123	0
+	+	123	8
+	+	124	0
+	+	132	3
+	+	142	3
+	+	150	0
+	+	151	0
+	+	155	0
+	+	151	3
+	+	161	3
+	+	170	3
+	+	177	0
+	+	177	19
+	+	178	0
+	+	178	12
+	+	179	55
+	+	180	13
+	+	182	0
+	+	182	14
+	+	184	12
+	+	186	0
+	+	186	13
+	+	187	38
+	+	188	12
+	+	190	0
+	+	190	13
+	+	192	15
+	+	194	194
+	+	194	174
+	+	195	0
 
-> ~/mydata/project/evernote_qs/__CtrlSFPreview__
-	*	1506594824	0
-	"	34	14
-	.	65	0
-	+	65	0
-
-> ~/.vim/MySnips/html<cr>.snippets
-	*	1506584754	0
+> ~/BLSZhang.md
+	*	1517410932	0
 	"	1	0
+	^	2	53
+	.	2	50
+	+	4	0
+	+	4	7
+	+	4	10
+	+	4	0
+	+	4	4
+	+	5	0
+	+	8	0
+	+	6	33
+	+	8	0
+	+	7	22
+	+	8	16
+	+	10	0
+	+	9	63
+	+	10	6
+	+	13	7
+	+	14	20
+	+	15	16
+	+	16	15
+	+	18	18
+	+	19	11
+	+	20	0
+	+	22	10
+	+	23	46
+	+	25	27
+	+	26	6
+	+	29	10
+	+	30	0
+	+	33	0
+	+	31	28
+	+	33	0
+	+	32	18
+	+	33	27
+	+	35	11
+	+	38	4
+	+	40	15
+	+	42	0
+	+	41	24
+	+	42	32
+	+	44	0
+	+	43	23
+	+	44	6
+	+	48	18
+	+	49	10
+	+	50	50
+	+	52	0
+	+	51	12
+	+	53	10
+	+	55	12
+	+	56	0
+	+	57	13
+	+	59	12
+	+	60	0
+	+	50	42
+	+	63	12
+	+	64	0
+	+	3	0
+	+	1	136
+	+	4	0
+	+	2	50
 
 > ~/.vim/MySnips/vim.snippets
-	*	1506584617	0
+	*	1516955056	0
 	"	1	0
 
-> ~/mydata/project/evernote_qs/css/index.css
-	*	1506508151	0
-	"	124	16
-	^	124	21
-	.	124	16
-	+	50	37
-	+	118	0
-	+	120	15
-	+	122	0
-	+	126	19
-	+	121	22
-	+	120	15
-	+	55	0
-	+	134	0
-	+	75	18
-	+	44	0
-	+	124	16
+> /usr/share/vim/vim80/doc/fold.txt
+	*	1516954934	0
+	"	378	0
 
-> ~/mydata/project/evernote_qs/js/index.js
-	*	1506507490	0
-	"	179	0
-
-> /usr/share/vim/vim80/doc/pattern.txt
-	*	1506504102	0
-	"	298	26
-
-> ~/mydata/project/iphoneHelper/js/main.js
-	*	1506501905	0
-	"	7	41
-	^	7	42
-	.	7	41
-	+	1	19
-	+	2	0
-	+	3	0
-	+	10	0
-	+	14	41
-	+	6	0
-	+	10	0
-	+	6	0
-	+	14	0
-	+	6	0
-	+	4	0
-	+	9	6
-	+	7	41
-
-> ~/mydata/project/evernote_qs/evernote_qs.css
-	*	1506422982	0
-	"	404	0
-
-> ~/mydata/project/evernote_qs/images/evernote6.png
-	*	1506422642	0
-	"	4	0
-
-> ~/mydata/project/torrent360/README.txt
-	*	1506349821	0
-	"	6	0
-	^	5	0
-	.	5	0
-	+	1	0
-	+	2	0
-	+	3	0
-	+	3	83
-	+	3	68
-	+	3	190
-	+	3	132
-	+	3	0
-	+	2	102
-	+	5	0
-	+	5	33
-	+	5	0
-
-> ~/mydata/project/evernote_qs/eomnibar.css
-	*	1506348149	0
-	"	130	33
-	^	130	34
-	.	130	33
-	+	92	7
-	+	94	0
-	+	93	30
-	+	81	24
-	+	27	0
-	+	169	0
-	+	72	0
-	+	40	0
-	+	52	22
-	+	52	0
-	+	53	0
-	+	66	24
-	+	66	0
-	+	69	18
-	+	69	0
-	+	71	0
-	+	53	8
-	+	40	9
-	+	47	20
-	+	82	0
-	+	81	0
-	+	55	18
-	+	76	16
-	+	92	0
-	+	54	18
-	+	76	0
-	+	80	0
-	+	77	0
-	+	76	0
-	+	80	0
-	+	76	0
-	+	54	0
-	+	77	0
-	+	77	11
-	+	78	18
-	+	77	18
-	+	77	0
-	+	81	0
-	+	79	11
-	+	76	0
-	+	75	20
-	+	22	17
-	+	79	12
-	+	61	9
-	+	68	9
-	+	98	19
-	+	22	14
-	+	79	0
-	+	55	0
-	+	47	22
-	+	96	0
-	+	29	0
-	+	21	0
-	+	19	0
-	+	104	0
-	+	97	0
-	+	104	0
-	+	10	0
-	+	36	0
-	+	37	19
-	+	36	20
-	+	10	0
-	+	13	0
-	+	13	4
-	+	28	18
-	+	13	0
-	+	97	15
-	+	97	17
-	+	161	14
-	+	10	0
-	+	52	0
-	+	112	0
-	+	103	0
-	+	97	0
-	+	97	2
-	+	161	0
-	+	111	21
-	+	11	0
-	+	97	15
-	+	100	14
-	+	100	0
-	+	104	18
-	+	100	0
-	+	104	0
-	+	113	0
-	+	97	12
-	+	157	0
-	+	160	16
-	+	130	48
-	+	132	12
-	+	131	24
-	+	132	14
-	+	130	36
-	+	132	11
-	+	133	2
-	+	159	0
-	+	130	33
-	t	157	39
-
-> ~/mydata/project/evernote_qs/css/sourceGraph.css
-	*	1506322023	0
-	"	269	46
-	.	1	0
-	+	4	0
-	+	1	0
-
-> ~/mydata/project/evernote_qs/js/content_scripts/[denite]
-	*	1506157273	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /usr/share/vim/vim80/Function/LeaderF
-	*	1506151825	0
+> /usr/share/vim/vim80/Mru/LeaderF
+	*	1516954699	0
 	"	3	0
 	.	1	0
-	+	21	0
+	+	2283	0
+	+	2166	0
+	+	1934	0
+	+	1833	0
+	+	1790	0
+	+	1519	0
+	+	1425	0
+	+	1395	0
+	+	1337	0
+	+	1223	0
+	+	967	0
+	+	849	0
+	+	748	0
+	+	625	0
+	+	484	0
+	+	363	0
 	+	3	0
 	+	1	0
 
-> ~/mydata/project/torrent_download/manifest.json
-	*	1506147744	0
-	"	3	0
-	^	3	19
-	.	3	18
-	+	25	0
-	+	12	0
-	+	21	35
-	+	3	18
+> ~/mydata/project/91Helper/js/controller/jd.js
+	*	1513838431	0
+	"	90	0
 
-> ~/mydata/project/torrent_download/NERD_tree_1
-	*	1506143969	0
-	"	14	0
+> ~/mydata/project/91Helper/NERD_tree_1
+	*	1513827547	0
+	"	11	0
 	.	1	0
 	+	1	0
 
-> ~/mydata/git/vimium/manifest.json
-	*	1506000460	0
-	"	82	19
+> ~/mydata/project/91Helper/manifest.json
+	*	1513827527	0
+	"	25	0
+	^	27	31
+	.	27	30
+	+	4	34
+	+	5	26
+	+	6	80
+	+	22	33
+	+	27	30
 
-> ~/mydata/project/chrome_extentions/rating4U/manifest.json
-	*	1505986109	0
-	"	1	0
-	^	121	29
-	.	53	0
-	+	51	0
-	+	50	0
-	+	51	39
-	+	117	0
-	+	119	0
-	+	123	0
-	+	119	43
-	+	128	38
-	+	122	0
-	+	119	44
-	+	122	24
-	+	52	41
-	+	54	24
-	+	120	0
-	+	121	28
-	+	53	0
+> ~/mydata/project/91Helper/js/main.js
+	*	1513827523	0
+	"	2	0
 
-> ~/mydata/project/chrome_extentions/rating4U/NERD_tree_1
-	*	1505986098	0
-	"	9	0
-	.	1	0
-	+	1	0
+> /etc/environment
+	*	1513596696	0
+	"	2	17
+	^	2	19
+	.	2	17
+	+	2	0
+	+	3	0
+	+	2	17
 
-> ~/mydata/git/vimium/NERD_tree_1
-	*	1505984337	0
+> ~/.profile
+	*	1513596162	0
+	"	20	0
+	.	21	0
+	+	21	0
+
+> ~/mydata/project/iReserve/todo.markdown
+	*	1512464362	0
+	"	7	0
+
+> ~/[denite]
+	*	1512464262	0
 	"	16	0
 	.	1	0
 	+	1	0
 
-> ~/.vim/plugged/vim-snippets/UltiSnips/python.snippets
-	*	1505983432	0
-	"	68	0
+> /usr/share/vim/vim80/doc/repeat.txt
+	*	1511679461	0
+	"	49	6
 
-> ~/mydata/project/torrent_download/main.js
-	*	1505971947	0
-	"	76	34
-	^	76	52
-	.	76	0
-	+	18	25
-	+	37	40
-	+	77	0
-	+	77	40
-	+	77	0
-	+	77	44
-	+	77	33
-	+	77	0
-	+	77	40
-	+	77	0
-	+	77	33
-	+	77	39
-	+	77	46
-	+	77	0
-	+	143	0
-	+	143	28
-	+	143	207
-	+	143	0
-	+	18	26
-	+	51	0
-	+	51	23
-	+	51	0
-	+	54	0
-	+	51	0
-	+	51	35
-	+	143	0
-	+	143	1
-	+	143	0
-	+	143	35
-	+	47	0
-	+	51	22
-	+	52	0
-	+	143	0
-	+	12	0
-	+	6	0
-	+	15	0
-	+	6	53
-	+	29	0
-	+	197	0
-	+	194	0
+> /usr/share/vim/vim80/doc/index.txt
+	*	1511581133	0
+	"	688	36
+
+> ~/.config/ranger/rc.conf
+	*	1511352269	0
+	"	27	0
+	^	27	1
+	.	27	0
+	+	26	0
+	+	27	0
+	+	26	0
+	+	27	0
+
+> ~/mydata/project/JD_Utils/NERD_tree_1
+	*	1510378905	0
+	"	9	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/project/evernote_qs/js/eomnibarIn.js
+	*	1510225020	0
+	"	273	22
+	.	273	0
+	+	297	31
+	+	270	24
+	+	291	11
+	+	311	0
+	+	310	0
+	+	307	61
+	+	299	44
+	+	94	0
+	+	224	0
+	+	225	0
+	+	225	24
+	+	225	0
+	+	225	26
+	+	225	49
+	+	36	0
+	+	34	20
+	+	42	20
+	+	48	0
+	+	63	16
+	+	24	0
+	+	33	0
+	+	26	36
+	+	28	38
+	+	27	50
+	+	25	30
+	+	225	0
+	+	82	0
+	+	83	30
+	+	196	0
+	+	205	0
 	+	101	0
+	+	125	0
+	+	121	0
+	+	21	17
+	+	32	0
+	+	29	74
+	+	31	0
+	+	32	0
+	+	31	0
+	+	31	82
+	+	221	37
+	+	221	34
+	+	221	0
+	+	221	19
+	+	218	21
+	+	221	54
+	+	120	0
+	+	161	9
+	+	161	25
+	+	31	0
+	+	353	30
+	+	361	0
+	+	354	0
+	+	31	0
+	+	30	45
+	+	161	54
+	+	75	0
+	+	116	0
+	+	117	42
+	+	109	0
+	+	115	0
+	+	162	0
+	+	109	8
+	+	103	0
+	+	104	0
+	+	104	43
+	+	205	24
+	+	125	50
+	+	197	0
+	+	198	0
+	+	204	0
+	+	203	0
+	+	199	0
+	+	203	0
+	+	203	8
+	+	221	0
+	+	200	0
+	+	202	0
 	+	201	0
+	+	200	8
+	+	203	0
+	+	221	0
+	+	221	5
+	+	220	0
+	+	198	19
+	+	104	43
+	+	76	56
+	+	74	83
+	+	75	72
+	+	76	56
+	+	102	12
+	+	358	0
+	+	357	65
+	+	38	0
+	+	18	0
+	+	273	0
+
+> ~/mydata/project/evernote_qs/js/content_scripts/eomnibarOut.js
+	*	1510224994	0
+	"	1	0
+	.	97	0
+	+	1	0
+	+	2	60
+	+	146	14
+	+	78	0
+	+	78	13
+	+	78	31
+	+	78	27
+	+	78	42
+	+	78	0
+	+	78	57
+	+	78	92
+	+	78	0
+	+	78	32
+	+	78	121
+	+	78	53
+	+	79	0
+	+	78	0
+	+	142	0
+	+	145	0
+	+	146	0
 	+	143	0
-	+	102	0
-	+	107	0
-	+	235	31
-	+	76	32
-	+	111	0
-	+	109	29
-	+	22	0
-	+	22	33
-	+	22	24
-	+	51	0
-	+	54	0
-	+	51	0
-	+	103	0
-	+	22	0
-	+	222	0
-	+	234	0
-	+	235	0
-	+	223	0
-	+	38	20
-	+	51	0
-	+	54	0
-	+	51	31
-	+	103	0
-	+	106	0
-	+	103	31
-	+	6	53
+	+	145	0
+	+	144	37
+	+	94	0
+	+	94	27
+	+	144	0
+	+	41	22
+	+	42	26
+	+	50	28
+	+	41	22
+	+	42	26
+	+	50	28
+	+	41	0
+	+	94	0
 	+	15	0
-	+	6	53
-	+	15	0
-	+	8	46
-	+	197	48
-	+	105	0
-	+	57	0
-	+	59	0
-	+	57	78
-	+	59	0
-	+	60	0
-	+	61	0
-	+	60	18
-	+	61	16
-	+	61	0
-	+	60	48
-	+	61	37
-	+	64	21
-	+	67	0
-	+	73	0
-	+	74	14
-	+	7	0
-	+	58	0
-	+	59	46
-	+	60	54
-	+	63	38
-	+	8	46
-	+	15	0
-	+	76	0
-
-> ~/mydata/project/torrent_download/main.html
-	*	1505969928	0
-	"	3	0
-
-> ~/.vim/plugged/vim-snippets/snippets/python.snippets
-	*	1505897927	0
-	"	242	1
-
-> ~/mydata/vim/python/testIf.py
-	*	1505887460	0
-	"	2	0
-
-> ~/.vim/plugged/vim-quickrun/doc/quickrun.txt
-	*	1505886525	0
-	"	239	39
-
-> ~/mydata/vim/python/NERD_tree_1
-	*	1505886065	0
-	"	66	11
-	.	1	0
-	+	1	0
-
-> ~/.vim/plugged/vim-snippets/UltiSnips/ada.snippets
-	*	1505885943	0
-	"	4	0
-
-> ~/mydata/vim/python/[quickrun output]
-	*	1505885810	0
-	"	1	0
-	.	9	0
-	+	1	0
-	+	9	0
-
-> ~/mydata/vim/python/testStr.py
-	*	1505874686	0
-	"	15	0
-	.	13	0
 	+	16	0
-	+	13	0
+	+	16	42
+	+	16	0
+	+	16	35
+	+	16	0
+	+	16	45
+	+	16	0
+	+	16	78
+	+	14	0
+	+	13	20
+	+	12	0
+	+	13	11
+	+	12	0
+	+	10	21
+	+	16	0
+	+	123	16
+	+	125	0
+	+	124	6
+	+	119	0
+	+	16	0
+	+	60	0
+	+	84	0
+	+	89	0
+	+	89	29
+	+	87	49
+	+	89	0
+	+	16	0
+	+	17	27
+	+	18	0
+	+	21	0
+	+	16	0
+	+	89	103
+	+	89	0
+	+	89	118
+	+	89	0
+	+	89	136
+	+	87	0
+	+	86	42
+	+	89	39
+	+	89	24
+	+	89	144
+	+	89	78
+	+	89	129
+	+	89	39
+	+	89	78
+	+	89	0
+	+	83	0
+	+	85	0
+	+	89	0
+	+	88	0
+	+	91	0
+	+	73	0
+	+	73	25
+	+	73	22
+	+	73	19
+	+	73	53
+	+	73	0
+	+	73	44
+	+	78	33
+	+	79	0
+	+	78	16
+	+	73	0
+	+	97	0
 
-> ~/.vim/MySnips/python.snippets
-	*	1505874635	0
-	"	1	0
+> ~/mydata/project/JD_Utils/jd.py
+	*	1509972000	0
+	"	281	8
+	^	129	37
+	.	468	0
+	+	468	0
+	+	469	0
+	+	464	0
+	+	466	0
+	+	104	0
+	+	107	0
+	+	98	44
+	+	128	64
+	+	129	21
+	+	107	0
+	+	127	0
+	+	128	0
+	+	108	0
+	+	129	36
+	+	469	0
+	+	468	0
+	a	65	0
 
-> ~/.vim/plugged/ultisnips/doc/UltiSnips.txt
-	*	1505874345	0
-	"	192	0
-	m	457	0
+> ~/mydata/project/douban_spider/dao.py
+	*	1509553935	0
+	"	33	20
+	^	33	13
+	.	33	12
+	+	24	0
+	+	28	18
+	+	29	10
+	+	32	0
+	+	33	12
 
-> ~/mydata/vim/python/[denite]
-	*	1505874305	0
-	"	52	0
+> ~/mydata/project/douban_spider/demo.py
+	*	1509529218	0
+	"	105	0
+	^	105	8
+	.	105	0
+	+	33	6
+	+	34	44
+	+	11	0
+	+	34	0
+	+	11	0
+	+	34	15
+	+	34	0
+	+	35	0
+	+	34	24
+	+	35	14
+	+	37	0
+	+	35	115
+	+	35	25
+	+	34	19
+	+	34	13
+	+	34	0
+	+	35	14
+	+	34	21
+	+	35	0
+	+	36	45
+	+	76	0
+	+	76	48
+	+	102	22
+	+	87	20
+	+	88	0
+	+	76	18
+	+	100	0
+	+	76	0
+	+	90	0
+	+	91	0
+	+	92	0
+	+	89	32
+	+	99	31
+	+	62	32
+	+	59	40
+	+	76	64
+	+	79	0
+	+	80	0
+	+	79	37
+	+	82	40
+	+	82	39
+	+	82	36
+	+	82	16
+	+	82	36
+	+	82	0
+	+	85	37
+	+	84	40
+	+	83	0
+	+	82	0
+	+	80	0
+	+	82	0
+	+	81	0
+	+	78	0
+	+	88	0
+	+	86	0
+	+	91	71
+	+	90	56
+	+	92	66
+	+	93	38
+	+	94	47
+	+	95	44
+	+	96	33
+	+	97	36
+	+	88	0
+	+	98	0
+	+	99	69
+	+	94	0
+	+	88	0
+	+	89	0
+	+	90	0
+	+	91	0
+	+	92	0
+	+	93	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	97	0
+	+	98	0
+	+	99	0
+	+	102	21
+	+	79	34
+	+	77	28
+	+	79	0
+	+	80	0
+	+	79	17
+	+	110	0
+	+	7	8
+	+	110	29
+	+	110	13
+	+	92	86
+	+	110	0
+	+	110	12
+	+	110	0
+	+	6	0
+	+	110	0
+	+	101	0
+	+	74	18
+	+	103	28
+	+	105	0
+
+> ~/mydata/project/douban_spider/NERD_tree_1
+	*	1509528934	0
+	"	5	0
 	.	1	0
 	+	1	0
 
-> ~/.vim/plugged/YouCompleteMe/doc/youcompleteme.txt
-	*	1505874295	0
-	"	2755	4
+> ~/mydata/project/douban_spider/init.sql
+	*	1509528930	0
+	"	7	0
+	^	17	45
+	.	17	48
+	+	17	48
 
-> ~/mydata/vim/python/MySnips/python.snippets
-	*	1505874226	0
-	"	1	0
+> ~/mydata/project/douban_spider/[quickrun output]
+	*	1509528929	0
+	"	20	102
+	.	53	0
+	+	1	0
+	+	12	0
+	+	1	0
+	+	53	0
 
-> ~/mydata/vim/python/default.json
-	*	1505866975	0
-	"	3	0
-
-> ~/mydata/project/evernote_qs/js/vomnibar.js
-	*	1505826564	0
-	"	1	0
-	^	245	65
-	.	245	64
-	+	204	81
-	+	204	123
-	+	204	125
-	+	204	105
-	+	204	81
-	+	204	112
-	+	204	133
-	+	204	81
-	+	258	0
-	+	280	0
-	+	263	25
+> ~/mydata/backup/sys_install_backup/post_install1.sh
+	*	1509465876	0
+	"	133	32
+	^	268	63
+	.	268	62
 	+	266	0
-	+	279	0
-	+	268	0
+	+	274	2
 	+	266	0
-	+	204	97
-	+	204	156
-	+	204	81
-	+	266	13
-	+	268	13
-	+	266	39
-	+	268	39
+	+	267	0
 	+	269	0
 	+	270	0
-	+	269	29
-	+	270	0
-	+	271	0
-	+	270	37
-	+	271	61
-	+	273	39
-	+	275	28
-	+	277	25
-	+	278	0
-	+	263	0
-	+	260	27
-	+	262	6
-	+	261	81
-	+	262	0
-	+	264	34
-	+	267	32
-	+	264	100
-	+	265	14
-	+	204	81
-	+	232	0
-	+	204	81
-	+	204	90
-	+	204	117
-	+	204	140
-	+	204	81
-	+	204	114
-	+	204	106
-	+	204	113
-	+	232	0
-	+	204	101
-	+	204	81
-	+	232	21
-	+	201	3
-	+	83	67
-	+	85	42
-	+	204	81
-	+	204	0
-	+	204	103
-	+	74	58
-	+	73	53
-	+	74	68
-	+	83	112
-	+	85	87
-	+	201	34
-	+	221	7
-	+	227	20
-	+	277	20
-	+	213	10
-	+	229	45
-	+	266	10
-	+	273	21
-	+	235	0
-	+	236	61
-	+	208	0
-	+	209	55
-	+	256	29
-	+	83	119
-	+	85	94
-	+	245	65
-	+	242	10
-	+	243	0
-	+	242	10
-	+	243	10
-	+	244	59
-	+	246	0
-	+	253	0
-	+	246	59
-	+	256	0
-	+	247	0
-	+	245	64
-	m	76	26
+	+	272	0
+	+	273	0
+	+	267	11
+	+	273	11
+	+	266	0
+	+	265	37
+	+	271	38
+	+	268	62
 
-> ~/mydata/project/torrent_download/rating.js
-	*	1505808207	0
+> ~/mydata/git/JD_Utils/jd.py
+	*	1509460715	0
+	"	468	4
+	^	98	45
+	.	468	0
+	+	464	0
+	+	466	0
+	+	98	44
+	+	468	0
+	+	469	0
+	+	468	0
+	l	425	0
+
+> ~/mydata/git/JD_Utils/rk.py
+	*	1509460639	0
 	"	1	0
 
-> ~/mydata/project/torrent_download/eventPage.js
-	*	1505808169	0
+> ~/mydata/git/JD_Utils/couponConfig.ini
+	*	1509460637	0
+	"	28	61
+	^	18	19
+	.	22	0
+	+	17	0
+	+	17	6
+	+	16	18
+	+	19	0
+	+	18	18
+	+	19	6
+	+	22	0
+
+> /usr/share/vim/vim80/Function/LeaderF
+	*	1509459264	0
+	"	10	0
+	.	1	0
+	+	56	0
+	+	38	0
+	+	29	0
+	+	3	0
+	+	1	0
+	m	3	0
+
+> ~/mydata/git/JD_Utils/__CtrlSF__
+	*	1509458800	0
+	"	1	0
+	^	1	1
+	.	1	1
+	+	2	0
+	+	1	1
+
+> ~/mydata/git/JD_Utils/NERD_tree_1
+	*	1509458716	0
+	"	12	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/git/JD_Utils/javatest.java
+	*	1509458665	0
+	"	1	0
+
+> ~/mydata/git/JD_Utils/couponConfigHelper.py
+	*	1509458651	0
+	"	1	0
+
+> ~/mydata/project/chrome_extentions/rating4U/manifest.json
+	*	1509367788	0
+	"	1	0
+	^	98	40
+	.	98	39
+	+	51	0
+	+	50	0
+	+	51	39
+	+	119	0
+	+	121	0
+	+	125	0
+	+	121	43
+	+	130	38
+	+	124	0
+	+	121	44
+	+	124	24
+	+	52	41
+	+	54	24
+	+	122	0
+	+	123	28
+	+	53	0
+	+	64	0
+	+	63	35
+	+	64	0
+	+	65	0
+	+	64	33
+	+	99	0
+	+	98	39
+
+> ~/mydata/project/chrome_extentions/rating4U/js/controller/jd.js
+	*	1509367088	0
+	"	92	0
+	^	25	42
+	.	25	41
+	+	86	36
+	+	25	41
+
+> ~/mydata/project/chrome_extentions/rating4U/NERD_tree_1
+	*	1509366384	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/project/iReserve/sql/insert.sql
+	*	1508861469	0
+	"	6	0
+	^	6	0
+	.	6	0
+	+	19	0
+	+	11	0
+	+	19	0
+	+	6	0
+
+> ~/mydata/project/iReserve/NERD_tree_1
+	*	1508823556	0
+	"	15	4
+	.	1	0
+	+	1	0
+
+> ~/mydata/project/iReserve/temp
+	*	1508823547	0
+	"	381	0
+	.	1	0
+	+	1	0
+
+> ~/mydata/project/iReserve/monitor_run_me.py
+	*	1508822800	0
+	"	112	46
+	^	52	47
+	.	53	0
+	+	41	0
+	+	51	46
+	+	53	0
+	+	52	9
+	+	53	0
+	+	52	9
+	+	51	34
+	+	52	46
+	+	53	0
+
+> ~/mydata/project/iReserve/config.ini
+	*	1508822141	0
+	"	27	17
+
+> ~/mydata/project/iReserve/ireserve_ctrl.py
+	*	1508822014	0
+	"	75	28
+
+> ~/mydata/project/iReserve/__CtrlSF__
+	*	1508821288	0
+	"	7	16
+	^	45	1
+	.	45	1
+	+	97	0
+	+	96	1
+	+	46	0
+	+	45	1
+
+> ~/mydata/project/iReserve/ireserve_selenium.py
+	*	1508820066	0
+	"	1	0
+
+> ~/mydata/project/iReserve/ireserve_http.py
+	*	1508820033	0
+	"	1	0
+
+> ~/mydata/project/iReserve/ireserve.py
+	*	1508820029	0
+	"	1	0
+
+> ~/mydata/project/iReserve/ireserve_http.pyc
+	*	1508820025	0
+	"	1	0
+
+> ~/mydata/project/iReserve/configHelper.py
+	*	1508819933	0
+	"	80	0
+
+> ~/mydata/project/evernote_qs/.git/COMMIT_EDITMSG
+	*	1508743236	0
 	"	2	0
+	^	1	34
+	.	35	0
+	+	35	0
+
+> ~/mydata/project/evernote_qs/__CtrlSF__
+	*	1508743105	0
+	"	8	50
+	^	22	1
+	.	22	1
+	+	782	0
+	+	782	1
+	+	782	12
+	+	782	0
+	+	782	1
+	+	782	0
+	+	782	1
+	+	782	0
+	+	782	1
+	+	782	0
+	+	782	1
+	+	782	0
+	+	400	0
+	+	399	1
+	+	326	0
+	+	325	1
+	+	320	0
+	+	320	1
+	+	320	0
+	+	320	56
+	+	320	0
+	+	319	1
+	+	265	0
+	+	264	1
+	+	244	0
+	+	243	1
+	+	169	0
+	+	168	1
+	+	160	0
+	+	159	1
+	+	136	0
+	+	136	1
+	+	136	72
+	+	136	73
+	+	136	75
+	+	136	0
+	+	135	1
+	+	94	0
+	+	93	1
+	+	23	0
+	+	22	1
+
+> ~/mydata/project/evernote_qs/NERD_tree_1
+	*	1508742996	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/plugged/vim-easymotion/doc/easymotion.txt
+	*	1508742767	0
+	"	91	24
+
+> ~/mydata/project/evernote_qs/eventPage.js
+	*	1508587886	0
+	"	38	0
+	.	38	0
+	+	16	0
+	+	8	26
+	+	9	0
+	+	10	0
+	+	9	44
+	+	10	35
+	+	13	0
+	+	12	0
+	+	11	0
+	+	12	63
+	+	13	2
+	+	14	0
+	+	13	2
+	+	14	0
+	+	13	13
+	+	14	0
+	+	13	17
+	+	14	53
+	+	15	0
+	+	14	54
+	+	3	0
+	+	2	0
+	+	1	86
+	+	19	0
+	+	21	0
+	+	21	34
+	+	31	2
+	+	40	0
+	+	31	2
+	+	33	0
+	+	40	0
+	+	31	39
+	+	33	12
+	+	34	0
+	+	33	56
+	+	31	33
+	+	34	0
+	+	31	78
+	+	34	39
+	+	29	2
+	+	29	13
+	+	29	2
+	+	30	0
+	+	31	0
+	+	31	39
+	+	30	89
+	+	31	43
+	+	30	98
+	+	30	96
+	+	30	94
+	+	30	93
+	+	31	43
+	+	30	99
+	+	31	19
+	+	29	47
+	+	30	58
+	+	30	60
+	+	31	0
+	+	30	8
+	+	31	0
+	+	29	18
+	+	33	25
+	+	33	26
+	+	31	24
+	+	21	37
+	+	20	26
+	+	4	24
+	+	22	31
+	+	29	0
+	+	23	35
+	+	24	51
+	+	29	0
+	+	25	0
+	+	24	0
+	+	28	0
+	+	27	33
+	+	28	0
+	+	27	33
+	+	31	2
+	+	31	30
+	+	31	2
+	+	31	48
+	+	31	2
+	+	35	2
+	+	40	0
+	+	38	4
+	+	35	16
+	+	37	37
+	+	38	48
+	+	30	0
+	+	29	9
+	+	31	46
+	+	31	5
+	+	32	0
+	+	31	9
+	+	36	0
+	+	35	9
+	+	38	4
+	+	38	0

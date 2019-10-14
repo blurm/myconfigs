@@ -375,6 +375,8 @@ map f <Plug>(easymotion-f)
 map F <Plug>(easymotion-F)
 map t <Plug>(easymotion-t)
 map T <Plug>(easymotion-T)
+map fj <Plug>(easymotion-j)
+map fk <Plug>(easymotion-k)
 let g:EasyMotion_smartcase = 1
 "let g:EasyMotion_do_mapping = 1
 " 1 will match 1 and !; ! matches !
@@ -574,20 +576,20 @@ set tm=500
 
 " 相对行号: 行号变成相对，可以用 nj/nk 进行跳转
 "if !has('nvim')
-    set relativenumber number
+    "set relativenumber number
     "autocmd FocusLost * :set norelativenumber number
     "autocmd FocusGained * :set relativenumber
     "" 插入模式下用绝对行号, 普通模式下用相对
     "autocmd InsertEnter * :set norelativenumber number
     "autocmd InsertLeave * :set relativenumber
-    function! NumberToggle()
-        if(&relativenumber == 1)
-            set norelativenumber number
-        else
-            set relativenumber
-        endif
-    endfunc
-    nnoremap <F2> :call NumberToggle()<CR>
+    "function! NumberToggle()
+        "if(&relativenumber == 1)
+            "set norelativenumber number
+        "else
+            "set relativenumber
+        "endif
+    "endfunc
+    "nnoremap <F2> :call NumberToggle()<CR>
 "endif
 
 " Turn off highlight until next search
@@ -673,6 +675,7 @@ nnoremap ' ;
 nnoremap ; :
 
 nnoremap p p=`]
+
 " Copy & paste to system clipboard
 vmap <Leader>y "+y
 nmap <Leader>y :echo("good")<CR>
@@ -697,7 +700,9 @@ nnoremap <silent><C-k> :set paste<CR>O<Esc>:set nopaste<CR>
 "nnoremap <C-p> :bprevious<CR>
 
 " Close stuffs
+" Close buffer
 nnoremap <leader>xb :bp<cr>:bd #<cr>
+" Close window
 nnoremap <leader>xw :q<cr>
 
 nnoremap <leader>w :wall<cr>

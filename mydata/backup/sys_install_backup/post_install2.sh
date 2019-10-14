@@ -2,21 +2,21 @@
 
 ## Install oh-my-zsh plugin and other terminal tools {
     echo '---------------------- zsh-syntax-highlighting ---------------------'
-    proxychains4 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ## }
 
 ## Clone dotfiles from Git {
     echo '---------------------- myconfigs ---------------------'
-    proxychains4 git clone --no-checkout https://github.com/blurm/myconfigs ~/myconfigs
+    git clone --no-checkout https://github.com/blurm/myconfigs ~/myconfigs
     cd ~/myconfigs
     git config core.worktree "../../"
     git reset --hard origin/master
     # Using SSL
-    git remote set-url origin git@github.com:blurm/myconfigs.git
+    #git remote set-url origin git@github.com:blurm/myconfigs.git
     # Generate new SSL key
-    ssh-keygen -t rsa -b 4096 -C "blurm@126.com"
-    xclip -sel clip < ~/.ssh/id_rsa.pub
-    cd ~
+    #ssh-keygen -t rsa -b 4096 -C "blurm@126.com"
+    #xclip -sel clip < ~/.ssh/id_rsa.pub
+    #cd ~
 
 ## }
 
